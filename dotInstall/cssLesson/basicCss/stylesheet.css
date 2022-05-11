@@ -1,8 +1,16 @@
-body {
-  color: skyblue;
-  border: 1px solid pink;
+h1 {
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: line-through;
 }
 
-h1 {
-  border: inherit;
+p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
