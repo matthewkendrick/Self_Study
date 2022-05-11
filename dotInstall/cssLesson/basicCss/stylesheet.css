@@ -1,7 +1,4 @@
-h1 {
-  /* 同じプロパティは、後に書いたものが反映される */
-  /* これは上から順に文書が読み込まれていくから */
+body {
   color: skyblue;
-  font-size: 12px;
-  /* color: red; */
+  border: 1px solid pink;
 }
