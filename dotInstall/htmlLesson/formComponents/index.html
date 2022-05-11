@@ -10,10 +10,17 @@
   <!-- ラベルの中に入れることで、テキストをクリックすることでもcheckできる -->
   <!-- checked : あらかじめ選択されるアイテムを指定できる -->
 <fieldset>
-  <legend>お使いのスマホ</legend>
+  <legend>お使いのスマホ(複数選択可)</legend>
   <label><input type="checkbox" checked>iPhone</label>
   <label><input type="checkbox">Android</label>
   <label><input type="checkbox">その他</label>
+</fieldset>
+<fieldset>
+  <!-- name属性をつけないと複数選択ができてしまう -->
+  <legend>一番好きなスマホ</legend>
+  <label><input type="radio" name="phone">iPhone</label>
+  <label><input type="radio" name="phone">Android</label>
+  <label><input type="radio" name="phone">その他</label>
 </fieldset>
 </body>
 </html>
