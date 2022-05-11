@@ -7,11 +7,15 @@
   <title>ドットインストール</title>
 </head>
 <body>
-  <input type="text" placeholder="Your Name"> 
-  <input type="text" value="hello"> 
-  <input type="password">
+  <!-- 
+    目の不自由な方が使うブラウザでは
+    この”ラベル”が読み上げられる 
+  -->
+  <label for="Name">Name: </label>
+  <input id="Name" type="text"> 
 
-  <textarea name="" id="" cols="30" rows="5"></textarea>
-  <textarea name="" id="" cols="30" rows="5">hello</textarea>
-</body>
+  <!-- ↑どちらも同じように表示される↓ -->
+
+  <label >Name: <input type="text"></label>
+
 </html>
