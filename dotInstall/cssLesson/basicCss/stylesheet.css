@@ -2,3 +2,7 @@ body {
   color: skyblue;
   border: 1px solid pink;
 }
+
+h1 {
+  border: inherit;
+}
