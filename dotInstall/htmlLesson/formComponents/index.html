@@ -7,16 +7,13 @@
   <title>ドットインストール</title>
 </head>
 <body>
-  <label for="color">好きな色</label>
-  <!-- size="NUM" : 一度に表示されるアイテム数を指定できる -->
-  <!-- multiple : 一度に選択できるアイテム数を指定できる -->
-  <!-- selected : 初めに選択されるアイテムを指定できる -->
-  <select>
-    <option>色1</option>
-    <option>色2</option>
-    <option>色3</option>
-    <option>色4</option>
-    <option>色5</option>
-  </select>
+  <!-- ラベルの中に入れることで、テキストをクリックすることでもcheckできる -->
+  <!-- checked : あらかじめ選択されるアイテムを指定できる -->
+<fieldset>
+  <legend>お使いのスマホ</legend>
+  <label><input type="checkbox" checked>iPhone</label>
+  <label><input type="checkbox">Android</label>
+  <label><input type="checkbox">その他</label>
+</fieldset>
 </body>
 </html>
