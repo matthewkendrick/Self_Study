@@ -7,11 +7,10 @@
   <title>ドットインストール</title>
 </head>
 <body>
-  <!-- 基本はbuttonタグを用いて作成する -->
-  <!-- disabled : あらかじめ押せないアイテムを指定する -->
-  <input type="button" value="OK">
-  <button>OK</button>
-  <input type="button" value="OK" disabled>
-  <button disabled>OK</button>
+  <form action="process.php" method="post">
+    <label>担当者 <input type="text" name="username"></label>
+    <label for="">タスク <input type="text" name="task"></label>
+    <button>追加</button>
+  </form>
 </body>
 </html>
