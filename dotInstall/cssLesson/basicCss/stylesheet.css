@@ -1,12 +1,9 @@
-main {
-  font-size: 32px;
-  /* 2emだと計算結果(32*2)がそのまま子要素にも適用される */
-  /* line-height: 2em; */
-
-  /* 単位なしだと文字サイズの２倍という設定だけが継承される */
-  line-height: 2;
+p {
+  line-height: 5;
+  background-color: pink;
 }
 
-section {
-  font-size: 16px;
+/* baselineというものを軸に決められる */
+img {
+  vertical-align: middle;
 }
