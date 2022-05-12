@@ -1,8 +1,12 @@
-p {
+main {
+  font-size: 32px;
+  /* 2emだと計算結果(32*2)がそのまま子要素にも適用される */
+  /* line-height: 2em; */
+
+  /* 単位なしだと文字サイズの２倍という設定だけが継承される */
+  line-height: 2;
+}
+
+section {
   font-size: 16px;
-  /* 以下の指定はどれも同じ */
-  /* line-height: 48px; */
-  /* line-height: 3em; */
-  /* line-height: 3; */
-  background-color: pink;
 }
