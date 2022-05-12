@@ -1,6 +1,9 @@
 p {
   line-height: 5;
-  background-color: pink;
+  /* 以下はどれも”赤”を表現している */
+  /* background-color: rgba(255, 0, 0, 1); */
+  /* background-color: #ff0000ff; */
+  /* background-color: #f00; */
 }
 
 /* baselineというものを軸に決められる */
