@@ -1,3 +1,8 @@
-h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+p {
+  font-size: 16px;
+  /* 以下の指定はどれも同じ */
+  /* line-height: 48px; */
+  /* line-height: 3em; */
+  /* line-height: 3; */
+  background-color: pink;
 }
