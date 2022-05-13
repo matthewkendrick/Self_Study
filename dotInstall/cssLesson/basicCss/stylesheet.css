@@ -1,11 +1,9 @@
-p {
-  line-height: 5;
-  /* hsla(色相, 彩度, 明度, 透明度)で色を表現できる */
-  background-color: hsla(180, 50%, 50%, 1);
+ul {
+  list-style-type: circle;
+  list-style-image: url(img/icon.png);
 }
 
-/* opacityは背景だけでなく画像にも適用することができる */
-img {
-  vertical-align: middle;
-  opacity: 0.5;
+ol {
+  /* list-style-type: lower-alpha; */
+  list-style-type: none;
 }
