@@ -1,8 +1,11 @@
-/* セレクターを使用すると指定した部分のみを変化させることができる */
-.info {
-  color: skyblue;
+.box1 {
+  background-color: orange;
 }
 
-.info span {
-  color: red;
+.box2 {
+  background-color: skyblue;
+}
+
+.box3 {
+  background-color: tomato;
 }
