@@ -1,9 +1,9 @@
+/* lesson15で見た方法は一括でも指定できる */
 ul {
-  list-style-type: circle;
-  list-style-image: url(img/icon.png);
+  list-style: circle image(img/icon.png);
 }
 
 ol {
   /* list-style-type: lower-alpha; */
-  list-style-type: none;
+  list-style-type: lower-alpha;
 }
