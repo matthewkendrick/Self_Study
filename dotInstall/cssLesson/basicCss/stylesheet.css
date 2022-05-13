@@ -1,9 +1,8 @@
-/* lesson15で見た方法は一括でも指定できる */
-ul {
-  list-style: circle image(img/icon.png);
+/* セレクターを使用すると指定した部分のみを変化させることができる */
+.info {
+  color: skyblue;
 }
 
-ol {
-  /* list-style-type: lower-alpha; */
-  list-style-type: lower-alpha;
+.info span {
+  color: red;
 }
