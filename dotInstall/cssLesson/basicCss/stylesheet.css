@@ -1,0 +1,9 @@
+ul {
+  list-style-type: circle;
+  list-style-image: url(img/icon.png);
+}
+
+ol {
+  /* list-style-type: lower-alpha; */
+  list-style-type: none;
+}
