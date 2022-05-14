@@ -1,22 +1,11 @@
-/* marginの相殺：　垂直方向に重なった時、より広い方に巻き込まれること */
-.box1 {
-  background-color: orange;
-  width: 100px;
-  height: 100px;
-  position: fixed;
+img {
+  float: right;
 }
 
-.box2 {
-  background-color: skyblue;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  top: 30px;
-  left: 30px;
-}
-
-.box3 {
-  background-color: tomato;
-  width: 100px;
-  height: 1000px;
+/*
+h1の画像に指定したfloatの設定を解除させて、
+h２には影響が及ばないようにもできます
+ */
+h2 {
+  clear: right;
 }
