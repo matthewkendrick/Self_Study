@@ -1,9 +1,18 @@
 .box1 {
   background-color: orange;
+  width: 200px;
+  height: 200px;
 }
 
+/* ％の指定は親要素を基準に決められる */
 .box2 {
   background-color: skyblue;
+  width: 50%;
+  height: 50%;
+  /* 領域から溢れたテキストなどを隠すことができる */
+  /* overflow: hidden; */
+  /* 領域から溢れたテキストをスクロールで見えるようにもできる */
+  overflow: scroll;
 }
 
 .box3 {
