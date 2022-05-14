@@ -3,7 +3,6 @@
   background-color: orange;
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
 }
 
 .box2 {
@@ -14,5 +13,7 @@
 
 .box3 {
   background-color: tomato;
-  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
 }
