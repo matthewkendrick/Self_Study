@@ -1,19 +1,18 @@
-/* marginの指定ルールもpaddingと同じ */
+/* marginの相殺：　垂直方向に重なった時、より広い方に巻き込まれること */
 .box1 {
   background-color: orange;
   width: 200px;
   height: 200px;
-  /* 外側（左右）の余白をautoとすることで”中央配置”にレイアウトできる */
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .box2 {
   background-color: skyblue;
   width: 50%;
   height: 50%;
-  border: solid 2px blue;
 }
 
 .box3 {
   background-color: tomato;
+  margin-top: 10px;
 }
