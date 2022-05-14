@@ -1,23 +1,31 @@
-* {
-  /* 大抵は枠線も含めてレイアウトするのでこのような記述が良い */
-  box-sizing: border-box;
-}
-
+/*
+それぞれのBOXの余白を２０pxで画面幅１００％としたい場合、
+  3x + 40px = 100%
+        ↓
+  3x = 100% - 40px
+        ↓
+  x = (100% - 40%) / 3
+という式が成り立つことがわかるかと思います
+*/
 .box1 {
   background-color: orange;
   width: 100px;
   height: 100px;
+  width: calc((100% - 40px) / 3);
 }
 
 .box2 {
   background-color: skyblue;
   width: 100px;
   height: 100px;
-  border: solid 10px blue;
+  margin: 0 auto;
+  width: calc((100% - 40px) / 3);
 }
 
 .box3 {
   background-color: tomato;
   width: 100px;
   height: 100px;
+  margin-left: auto;
+  width: calc((100% - 40px) / 3);
 }
