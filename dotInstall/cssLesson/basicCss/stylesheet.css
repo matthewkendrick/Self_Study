@@ -4,21 +4,17 @@
   height: 200px;
 }
 
-/* ％の指定は親要素を基準に決められる */
 .box2 {
   background-color: skyblue;
   width: 50%;
   height: 50%;
-  /* 線の表現方法はいくつかあるので調べてみましょう */
-  /* 以下の２つはどちらも同じレイアウトになります */
-  
-  border-top: dashed 2px blue;
-  border-bottom: dashed 2px blue;
-  border-radius: 10px;
-
-  /* border: dashed 2px blue;
-  border-left: none;
-  border-right: none; */
+  border: solid 2px blue;
+  /* paddingの一括指定のルール */
+  /* 1つの値（Apx）：　上下左右 */
+  /* ２つの値（Apx Bpx）：　Aが上下、Bが左右を指定したことになる */
+  /* 3つの値（Apx Bpx Cpx）：　Aが上、Bが左右、Cが下を指定したことになる */
+  /* 4つの値（Apx Bpx Cpx Dpx）：　Aが上とし、そこから時計回りにB C Dと値が反映されていく */
+  padding: 20px 0 0 20px;
 }
 
 .box3 {
