@@ -1,9 +1,22 @@
-ul {
-  list-style-type: circle;
-  list-style-image: url(img/icon.png);
+/* marginの相殺：　垂直方向に重なった時、より広い方に巻き込まれること */
+.box1 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  position: fixed;
 }
 
-ol {
-  /* list-style-type: lower-alpha; */
-  list-style-type: none;
+.box2 {
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.box3 {
+  background-color: tomato;
+  width: 100px;
+  height: 1000px;
 }
