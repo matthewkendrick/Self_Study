@@ -1,11 +1,11 @@
-header {
-  height: 80px;
-  background: center/cover pink url(img/header.png);
-  /* 以下の４行を一括で指定した記述方法が上記になります */
-  /* 
-  background-color: pink;
-  background-image: url(img/header.png);
-  background-size: cover;
-  background-position: center;
-  */
+img {
+  float: right;
+}
+
+/*
+h1の画像に指定したfloatの設定を解除させて、
+h２には影響が及ばないようにもできます
+ */
+h2 {
+  clear: right;
 }
