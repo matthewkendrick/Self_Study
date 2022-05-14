@@ -9,10 +9,16 @@
   background-color: skyblue;
   width: 50%;
   height: 50%;
-  /* 領域から溢れたテキストなどを隠すことができる */
-  /* overflow: hidden; */
-  /* 領域から溢れたテキストをスクロールで見えるようにもできる */
-  overflow: scroll;
+  /* 線の表現方法はいくつかあるので調べてみましょう */
+  /* 以下の２つはどちらも同じレイアウトになります */
+  
+  border-top: dashed 2px blue;
+  border-bottom: dashed 2px blue;
+  border-radius: 10px;
+
+  /* border: dashed 2px blue;
+  border-left: none;
+  border-right: none; */
 }
 
 .box3 {
