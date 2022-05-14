@@ -1,29 +1,11 @@
-.box1 {
-  background-color: orange;
-  width: 100px;
-  height: 100px;
-  width: calc((100% - 40px) / 3);
-  box-shadow: 10px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* 3番目の数値（px）は、ぼかし具合を指定できる */
-.box2 {
-  background-color: skyblue;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  width: calc((100% - 40px) / 3);
-  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
-  text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* 4番目の数値（px）は、影の大きさを指定できる */
-.box3 {
-  background-color: tomato;
-  width: 100px;
-  height: 100px;
-  margin-left: auto;
-  width: calc((100% - 40px) / 3);
-  box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, 0.3);
+header {
+  height: 80px;
+  background: center/cover pink url(img/header.png);
+  /* 以下の４行を一括で指定した記述方法が上記になります */
+  /* 
+  background-color: pink;
+  background-image: url(img/header.png);
+  background-size: cover;
+  background-position: center;
+  */
 }
