@@ -1,7 +1,15 @@
-.info {
-  color: skyblue;
+/*
+idは一位性が求められるので、
+使い勝手がいいとは言えない
+*/
+#title {
+  color: pink;
 }
 
-.title {
-  font-weight: normal;
+/*
+全ての要素に適用されるので、
+リセットCSSなどを設定したい場合などに使われる
+*/
+* {
+  font-size: 10px;
 }
