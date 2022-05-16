@@ -1,21 +1,13 @@
 main {
-  // odd(奇数)、even(偶数)で分けてスタイリングを変更することができます
-  & > :nth-child(odd) {
+  // :nth-child()がBOX全体を走査し適用するものであったのに対し、
+  // X：nth-of-type()は指定した要素（X）を走査し適用させます
+  & > h2:nth-of-type(odd) {
     background-color: pink;
   }
-  & > :nth-child(even) {
+  & > h2:first-of-type {
     background-color: skyblue;
   }
-  // 最初と最後の要素で分けてスタイリングを変更することもできます
-  & > :first-child {
-    background-color: red;
-  }
-  & > :last-child {
-    background-color: blue;
-  }
-  // ”３”だけだと３番目という意味になりますが、
-  // ”n”が付くことによって３の倍数の要素をスタイリングすることができます
-  & > :nth-child(3) {
-    background-color: yellow;
+  & > h2:last-of-type {
+    background-color: purple;
   }
 }

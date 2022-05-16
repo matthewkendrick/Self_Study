@@ -1,20 +1,12 @@
-main > :nth-child(odd) {
+main > h2:nth-of-type(odd) {
   background-color: pink;
 }
 
-main > :nth-child(even) {
+main > h2:first-of-type {
   background-color: skyblue;
 }
 
-main > :first-child {
-  background-color: red;
-}
-
-main > :last-child {
-  background-color: blue;
-}
-
-main > :nth-child(3) {
-  background-color: yellow;
+main > h2:last-of-type {
+  background-color: purple;
 }
 /*# sourceMappingURL=stylesheet.css.map */
