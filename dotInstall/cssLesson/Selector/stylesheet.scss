@@ -1,13 +1,10 @@
-main {
-  // :nth-child()がBOX全体を走査し適用するものであったのに対し、
-  // X：nth-of-type()は指定した要素（X）を走査し適用させます
-  & > h2:nth-of-type(odd) {
-    background-color: pink;
-  }
-  & > h2:first-of-type {
+li {
+  // 半角空白や改行はemptyとは見做されません
+  &:empty {
     background-color: skyblue;
   }
-  & > h2:last-of-type {
-    background-color: purple;
+  // これまで見てきた疑似クラスなどとも疑似クラスなどとも組み合わせて使うことができます
+  &:not(empty) {
+    background-color: pink;
   }
 }

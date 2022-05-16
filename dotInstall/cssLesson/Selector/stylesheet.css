@@ -1,12 +1,8 @@
-main > h2:nth-of-type(odd) {
-  background-color: pink;
-}
-
-main > h2:first-of-type {
+li:empty {
   background-color: skyblue;
 }
 
-main > h2:last-of-type {
-  background-color: purple;
+li:not(empty) {
+  background-color: pink;
 }
 /*# sourceMappingURL=stylesheet.css.map */
