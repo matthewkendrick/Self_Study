@@ -1,24 +1,23 @@
-/* 
-カーソルが当たっている時のスタイリング
-  ・ 今回はhoverを用いて透明度を変更している
-  ・ また、cursorを用いてマウスの形が変化するようにしている
-    a. help
-    b. wait(progress)
-    c. crosshair
-    d. not-allowed
-    e. zoom-in
-    f. grab
-    g. pointer
-*/
-.btn {
-  width: 100px;
+// odd(奇数)、even(偶数)で分けてスタイリングを変更することができます
+main > :nth-child(odd) {
+  background-color: pink;
+}
+
+main > :nth-child(even) {
   background-color: skyblue;
-  text-align: center;
-  padding: 4px;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
+}
+
+// 最初と最後の要素で分けてスタイリングを変更することもできます
+main > :first-child {
+  background-color: red;
+}
+
+main > :last-child {
+  background-color: blue;
+}
+
+// ”３”だけだと３番目という意味になりますが、
+// ”n”が付くことによって３の倍数の要素をスタイリングすることができます
+main > :nth-child(3) {
+  background-color: yellow;
 }
