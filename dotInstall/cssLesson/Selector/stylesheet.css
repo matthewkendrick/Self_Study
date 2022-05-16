@@ -1,0 +1,20 @@
+#about > #main {
+  color: gray;
+}
+
+h1 {
+  color: red !important;
+}
+
+h1#main.box {
+  color: yellow;
+}
+
+section > #main .title {
+  color: blue;
+}
+
+section#about > h1 {
+  color: pink;
+}
+/*# sourceMappingURL=stylesheet.css.map */
