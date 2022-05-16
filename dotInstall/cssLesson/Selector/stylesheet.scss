@@ -1,23 +1,21 @@
-// odd(奇数)、even(偶数)で分けてスタイリングを変更することができます
-main > :nth-child(odd) {
-  background-color: pink;
-}
-
-main > :nth-child(even) {
-  background-color: skyblue;
-}
-
-// 最初と最後の要素で分けてスタイリングを変更することもできます
-main > :first-child {
-  background-color: red;
-}
-
-main > :last-child {
-  background-color: blue;
-}
-
-// ”３”だけだと３番目という意味になりますが、
-// ”n”が付くことによって３の倍数の要素をスタイリングすることができます
-main > :nth-child(3) {
-  background-color: yellow;
+main {
+  // odd(奇数)、even(偶数)で分けてスタイリングを変更することができます
+  & > :nth-child(odd) {
+    background-color: pink;
+  }
+  & > :nth-child(even) {
+    background-color: skyblue;
+  }
+  // 最初と最後の要素で分けてスタイリングを変更することもできます
+  & > :first-child {
+    background-color: red;
+  }
+  & > :last-child {
+    background-color: blue;
+  }
+  // ”３”だけだと３番目という意味になりますが、
+  // ”n”が付くことによって３の倍数の要素をスタイリングすることができます
+  & > :nth-child(3) {
+    background-color: yellow;
+  }
 }
