@@ -1,10 +1,37 @@
-li {
-  // 半角空白や改行はemptyとは見做されません
-  &:empty {
-    background-color: skyblue;
+// スタイルを適用させる場合の書き方は色々ありますが、
+// その詳細度によっては適用されなかったりもします
+
+// 詳細度のスコア　：　（idの数, class・属性・疑似クラスの数, 要素・疑似要素の数）
+#about { //(2, 0, 0)
+  & > #main {
+    color: gray;
   }
-  // これまで見てきた疑似クラスなどとも疑似クラスなどとも組み合わせて使うことができます
-  &:not(empty) {
-    background-color: pink;
+}
+
+// importantを使うと詳細度を無視してそれが適用されます
+h1 { //(0, 0, 1)
+  color: red!important;
+}
+
+h1 { //(1, 1, 1)
+  &#main {
+    &.box {
+      color: yellow;
+    }
+  }
+}
+section { //(1, 1, 1)
+  & > #main {
+    .title {
+      color: blue;
+    }
+  }
+}
+
+section { //(1, 0, 2)
+  &#about {
+    & > h1 {
+      color: pink;
+    }
   }
 }
