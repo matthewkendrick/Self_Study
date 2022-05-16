@@ -1,0 +1,4 @@
+/*  before・afterを使う際は”content”が必ず必要です */
+h1::before {
+  content: attr(data-subtitle);
+}
