@@ -1,0 +1,24 @@
+/* 
+カーソルが当たっている時のスタイリング
+  ・ 今回はhoverを用いて透明度を変更している
+  ・ また、cursorを用いてマウスの形が変化するようにしている
+    a. help
+    b. wait(progress)
+    c. crosshair
+    d. not-allowed
+    e. zoom-in
+    f. grab
+    g. pointer
+*/
+.btn {
+  width: 100px;
+  background-color: skyblue;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
