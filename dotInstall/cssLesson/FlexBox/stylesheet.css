@@ -19,6 +19,14 @@ main {
           flex: 1;
 }
 
+nav {
+  background-color: tomato;
+  width: 100px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
 aside {
   background-color: orange;
   width: 100px;
