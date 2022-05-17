@@ -1,21 +1,12 @@
-body {
-  margin: 0;
-}
-
 header {
-  height: 200px;
-  background-color: silver;
-  position: relative;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  // justify-content: space-between;
 }
-
-div {
-  width: 50px;
-  height: 100px;
-  background-color: skyblue;
-  position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 50px);
+nav {
+  margin-left: auto;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
