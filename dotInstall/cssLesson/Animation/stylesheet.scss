@@ -10,13 +10,14 @@ body {
     height: 100px;
     background-color: orange;
     // 以下の２行で変化までの中間を設定しています
-    transition-property: transform;
-    transition-duration: 0.3s;
-    // delayは、上記の変化が起こるまでの時間を指定できます
-    transition-delay: 0.3s;
+    transition-property: transform, border-radius;
+    transition-duration: 0.5s;
+
+    transition-timing-function: ease-out;
     // 以下のように変化後のスタイリングを記述してあげます
-    &:hover {
-      transform: translateX(80px);
+    &:active {
+      transform: translateX(240px);
+      border-radius: 50%;
     }
   }
 }
