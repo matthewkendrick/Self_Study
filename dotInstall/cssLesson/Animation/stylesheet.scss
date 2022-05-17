@@ -10,11 +10,20 @@ body {
     height: 100px;
     background-color: orange;
     // 以下の２行で変化までの中間を設定しています
-    transition: border-radius;
-    transition-duration: 0.3s;
+    transition: transform;
+    transition-duration: 0.5s;
     // 以下のように変化後のスタイリングを記述してあげます
     &:hover {
-      border-radius: 50%;
+      // (Apx, Bpx)はAが横方向、Bが縦方向の移動を示しています
+      // transform: translate(50px, 20px);
+
+      // ()内に角度を書いてあげることでその角度まで回転させることができます
+      // transform: rotate(30deg);
+
+      //(A, B)は、X方向にA倍、Y方向にB倍変化することを指定できます 
+      // transform: scale(0.5, 2);
+
+      transform: rotate(30deg) translateX(100px);
     }
   }
 }
