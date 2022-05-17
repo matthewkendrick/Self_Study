@@ -2,6 +2,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  border-radius: 50%;
 }
 
 nav {
@@ -12,5 +19,20 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 64px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #eee;
 }
 /*# sourceMappingURL=stylesheet.css.map */

@@ -1,12 +1,27 @@
 header {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
+  img {
+    border-radius: 50%;
+  }
 }
+
 nav {
   margin-left: auto;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+  }
+  a {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 64px;
+    display: block;
+    &:hover {
+      background-color: #eee;
+    }
   }
 }
