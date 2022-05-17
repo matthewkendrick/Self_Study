@@ -11,16 +11,18 @@ body .box {
   width: 100px;
   height: 100px;
   background-color: orange;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 body .box:hover {
-  -webkit-transform: rotate(30deg) translateX(100px);
-          transform: rotate(30deg) translateX(100px);
+  -webkit-transform: scale(0.5, 2);
+          transform: scale(0.5, 2);
 }
 /*# sourceMappingURL=stylesheet.css.map */
