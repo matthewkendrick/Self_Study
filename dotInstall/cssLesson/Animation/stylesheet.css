@@ -11,19 +11,15 @@ body .box {
   width: 100px;
   height: 100px;
   background-color: orange;
-  -webkit-transition-property: border-radius, -webkit-transform;
-  transition-property: border-radius, -webkit-transform;
-  transition-property: transform, border-radius;
-  transition-property: transform, border-radius, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  -webkit-transition: background 0.3s, -webkit-transform 0.3s ease-out 0.5s;
+  transition: background 0.3s, -webkit-transform 0.3s ease-out 0.5s;
+  transition: transform 0.3s ease-out 0.5s, background 0.3s;
+  transition: transform 0.3s ease-out 0.5s, background 0.3s, -webkit-transform 0.3s ease-out 0.5s;
 }
 
-body .box:active {
+body .box:hover {
   -webkit-transform: translateX(240px);
           transform: translateX(240px);
-  border-radius: 50%;
+  background: skyblue;
 }
 /*# sourceMappingURL=stylesheet.css.map */

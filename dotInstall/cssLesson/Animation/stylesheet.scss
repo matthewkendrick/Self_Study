@@ -9,15 +9,14 @@ body {
     width: 100px;
     height: 100px;
     background-color: orange;
-    // 以下の２行で変化までの中間を設定しています
-    transition-property: transform, border-radius;
-    transition-duration: 0.5s;
-
-    transition-timing-function: ease-out;
+    // transition関連を一括で記述することもできます
+    // 順不同で書くことができますが、時間関連の記述は
+    // 最初の方がduration、後の方がdelayと認識される点に注意しましょう
+    transition: transform 0.3s ease-out 0.5s, background 0.3s;
     // 以下のように変化後のスタイリングを記述してあげます
-    &:active {
+    &:hover {
       transform: translateX(240px);
-      border-radius: 50%;
+      background: skyblue;
     }
   }
 }
