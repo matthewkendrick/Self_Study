@@ -3,16 +3,23 @@ section {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.pic {
+section:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section .pic {
   width: 180px;
-  margin-right: 32px;
 }
 
-.desc {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+section .desc {
+  width: calc(100% - 180px - 32px);
 }
 /*# sourceMappingURL=stylesheet.css.map */
