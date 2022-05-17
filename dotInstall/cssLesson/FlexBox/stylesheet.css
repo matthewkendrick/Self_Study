@@ -1,53 +1,26 @@
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
 }
 
 header {
-  background-color: pink;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-main {
-  background-color: skyblue;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-nav {
-  background-color: tomato;
-  width: 100px;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
-aside {
-  background-color: orange;
-  width: 100px;
-}
-
-footer {
+  height: 200px;
   background-color: silver;
+  position: relative;
+  display: flexbox;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div {
+  width: 50px;
+  height: 100px;
+  background-color: skyblue;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 50px);
 }
 /*# sourceMappingURL=stylesheet.css.map */
