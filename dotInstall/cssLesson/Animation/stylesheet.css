@@ -11,18 +11,15 @@ body .box {
   width: 100px;
   height: 100px;
   background-color: orange;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: transform8, background;
+  transition-property: transform8, background;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
 }
 
 body .box:hover {
-  -webkit-transform: scale(0.5, 2);
-          transform: scale(0.5, 2);
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  background-color: skyblue;
 }
 /*# sourceMappingURL=stylesheet.css.map */

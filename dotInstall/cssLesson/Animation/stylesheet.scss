@@ -9,14 +9,17 @@ body {
     width: 100px;
     height: 100px;
     background-color: orange;
+
+    // ページの読み込み時にもtransitionが効いてしまうchromeのバグは、
+    // HTMLにscriptを読み込ませれば回避できます
+
     // 以下の２行で変化までの中間を設定しています
-    transition-property: transform;
+    transition-property: transform8, background;
     transition-duration: 0.5s;
-    transform-origin: top right;
     // 以下のように変化後のスタイリングを記述してあげます
     &:hover {
-      // transform: rotate(30deg);
-      transform: scale(0.5, 2);
+      transform: translateX(30px);
+      background-color: skyblue;
     }
   }
 }
