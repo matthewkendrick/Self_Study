@@ -2,4 +2,22 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  padding: 64px;
+}
+
+body .box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  -webkit-transition: border-radius;
+  transition: border-radius;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .box:hover {
+  border-radius: 50%;
+}
 /*# sourceMappingURL=stylesheet.css.map */
