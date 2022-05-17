@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .pic {
+    width: 180px;
+    // margin-right: 32px;
+  }
+  .desc {
+    // flex: 1;
+    width: calc(100% - 180px - 32px);
+  }
+}
