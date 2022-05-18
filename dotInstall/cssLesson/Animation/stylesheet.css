@@ -7,35 +7,58 @@ body {
   padding: 64px;
 }
 
-.loading {
-  width: 40px;
-  height: 40px;
-  border: 8px solid #ccc;
-  border-right-color: transparent;
-  border-radius: 50%;
-  -webkit-animation: spin 0.8s infinite linear;
-          animation: spin 0.8s infinite linear;
+.message {
+  width: 300px;
+  padding: 8px 16px;
+  background: #2c2c2c;
+  color: #ddd;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  -webkit-animation: popup 2s forwards;
+          animation: popup 2s forwards;
 }
 
-@-webkit-keyframes spin {
-  from {
+@-webkit-keyframes popup {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  20%, 80% {
     -webkit-transform: none;
             transform: none;
+    opacity: 1;
   }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
   }
 }
 
-@keyframes spin {
-  from {
+@keyframes popup {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  20%, 80% {
     -webkit-transform: none;
             transform: none;
+    opacity: 1;
   }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */
