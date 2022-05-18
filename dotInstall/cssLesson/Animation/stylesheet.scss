@@ -10,18 +10,18 @@ body {
     height: 100px;
     background-color: orange;
 
-    // @keyframesでつけた名前を明示してあげます
     animation: move;
 
     // この２秒内で以下の（０％, 80%, 100%）という設定が実行されます
-    animation-duration: 2s;
+    // animation-duration: 2s;
 
-    // animation-delay: 1s;
-    // animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    // animation-iteration-count: infinite;
 
-    // 再生順を設定することもできます
-    animation-direction: alternate-reverse;
+    // // 再生順を設定することもできます
+    // animation-direction: alternate-reverse;
+
+    // これまでの設定を一括して指定することもできます
+    animation: move 2s infinite alternate-reverse;
   }
 }
 

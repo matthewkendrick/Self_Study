@@ -13,11 +13,7 @@ body .box {
   background-color: orange;
   -webkit-animation: move;
           animation: move;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation: move 2s infinite alternate-reverse;
 }
 
 @-webkit-keyframes move {
