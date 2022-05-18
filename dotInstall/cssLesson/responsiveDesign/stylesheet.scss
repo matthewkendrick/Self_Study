@@ -3,11 +3,15 @@
   margin: 0;
 }
 
-// chromeのデベロッパーツールで見てみると、
-// スマートフォンの縦では青色が反映されており、
-// しかし横向きにしたときには反映されないよになっているはずです
-@media (min-width: 300px) and (max-width: 500px) {
-  body {
-    background: skyblue;
-  }
+$pc : (min-width: 800px);
+$tab: (min-width: 600px) and (max-width: 799px);
+$sp : (min-width: 0px) and (max-width: 599px);
+
+@media ($sp) {
+}
+
+@media ($tab) {
+}
+
+@media ($pc) {
 }
