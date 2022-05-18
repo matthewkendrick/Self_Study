@@ -18,7 +18,10 @@ body {
 
     // animation-delay: 1s;
     // animation-fill-mode: forwards;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+
+    // 再生順を設定することもできます
+    animation-direction: alternate-reverse;
   }
 }
 

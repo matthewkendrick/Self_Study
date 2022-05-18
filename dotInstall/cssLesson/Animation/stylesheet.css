@@ -15,8 +15,9 @@ body .box {
           animation: move;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @-webkit-keyframes move {
