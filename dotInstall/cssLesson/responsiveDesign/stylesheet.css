@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+body .image {
+  background-color: pink;
+  height: 100px;
+}
+
+body .text {
+  background-color: silver;
+  height: 100px;
+}
+
+aside {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .image {
+    width: 200px;
+  }
+  .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+    margin: 0 auto;
+  }
+  aside {
+    display: block;
+    background: plum;
+    width: 160px;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */

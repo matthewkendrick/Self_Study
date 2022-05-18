@@ -1,0 +1,43 @@
+// small screen
+body {
+  margin: 0;
+  .image {
+    background-color: pink;
+    height: 100px;
+  }
+  .text {
+    background-color: silver;
+    height: 100px;
+  }
+}
+
+aside {
+  display: none;
+}
+
+// medium screen
+@media (min-width: 600px) {
+  section {
+    display: flex;
+  }
+  .image {
+    width: 200px;
+  }
+  .text {
+    flex: 1;
+  }
+}
+
+// large screen
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  aside {
+    display: block;
+    background: plum;
+    width: 160px;
+  }
+}
