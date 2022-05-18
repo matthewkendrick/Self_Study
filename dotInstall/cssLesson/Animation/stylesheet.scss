@@ -5,34 +5,17 @@
 
 body {
   padding: 64px;
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-
-    animation: move;
-
-    // この２秒内で以下の（０％, 80%, 100%）という設定が実行されます
-    // animation-duration: 2s;
-
-    // animation-iteration-count: infinite;
-
-    // // 再生順を設定することもできます
-    // animation-direction: alternate-reverse;
-
-    // これまでの設定を一括して指定することもできます
-    animation: move 2s infinite alternate-reverse;
-  }
 }
 
-@keyframes move {
-  0% {
-    transform: none;
-  }
-  80% {
-    transform: translateX(200px) rotate(360deg);
-  }
-  100% {
-    transform: translateX(300px) rotate(360deg);
+.btn {
+  padding: 8px 24px;
+  background: hsl(200, 100%, 50%);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background: hsl(200, 100%, 60%);
   }
 }

@@ -7,42 +7,19 @@ body {
   padding: 64px;
 }
 
-body .box {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  -webkit-animation: move;
-          animation: move;
-  animation: move 2s infinite alternate-reverse;
+.btn {
+  padding: 8px 24px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  }
-  80% {
-    -webkit-transform: translateX(200px) rotate(360deg);
-            transform: translateX(200px) rotate(360deg);
-  }
-  100% {
-    -webkit-transform: translateX(300px) rotate(360deg);
-            transform: translateX(300px) rotate(360deg);
-  }
-}
-
-@keyframes move {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  }
-  80% {
-    -webkit-transform: translateX(200px) rotate(360deg);
-            transform: translateX(200px) rotate(360deg);
-  }
-  100% {
-    -webkit-transform: translateX(300px) rotate(360deg);
-            transform: translateX(300px) rotate(360deg);
-  }
+.btn:hover {
+  background: #33bbff;
 }
 /*# sourceMappingURL=stylesheet.css.map */
