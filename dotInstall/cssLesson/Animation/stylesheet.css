@@ -7,19 +7,35 @@ body {
   padding: 64px;
 }
 
-.btn {
-  padding: 8px 24px;
-  background: #00aaff;
-  color: #fff;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+.loading {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ccc;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s infinite linear;
+          animation: spin 0.8s infinite linear;
 }
 
-.btn:hover {
-  background: #33bbff;
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: none;
+            transform: none;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: none;
+            transform: none;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */

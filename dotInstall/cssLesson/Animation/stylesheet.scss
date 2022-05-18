@@ -6,16 +6,21 @@
 body {
   padding: 64px;
 }
+.loading {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ccc;
+  border-right-color: transparent;
+  border-radius: 50%;
 
-.btn {
-  padding: 8px 24px;
-  background: hsl(200, 100%, 50%);
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition: background 0.3s;
-  &:hover {
-    background: hsl(200, 100%, 60%);
+  animation: spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
