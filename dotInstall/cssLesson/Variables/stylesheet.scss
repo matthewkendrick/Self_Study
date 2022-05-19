@@ -8,6 +8,12 @@
 // $main-main-color: red;
 // $body-sub-color: pink;
 
+// 以下の2つをbodyあるいはmainのどちらかに入れてしまうと、
+// 宣言されていないものを呼び出そうとしていることになるため、
+// コンパイルエラーが発生してしまいます
+  $my-margin-left: 80px;
+  $my-margin-right: 160px;
+
 body {
   $main-color: blue;
   $sub-color: skyblue;
@@ -18,6 +24,7 @@ body {
     // color: var(--main-color);
     color: $main-color;
     border-bottom: 3px solid $sub-color;
+    margin-left: $my-margin-left;
   }
 
   & > p {
@@ -33,9 +40,12 @@ main {
   $main-color: red;
   $sub-color: pink;
 
+  text-align: right;
+
   & > h1 {
     color: $main-color;
     border-bottom: 3px solid $sub-color;
+    margin-right: $my-margin-right;
   }
 
   & > p {

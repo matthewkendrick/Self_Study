@@ -6,15 +6,21 @@
 body > h1 {
   color: blue;
   border-bottom: 3px solid skyblue;
+  margin-left: 80px;
 }
 
 body > p {
   color: blue;
 }
 
+main {
+  text-align: right;
+}
+
 main > h1 {
   color: red;
   border-bottom: 3px solid pink;
+  margin-right: 160px;
 }
 
 main > p {
