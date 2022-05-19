@@ -6,10 +6,9 @@
 .container {
   display: grid;
 
-  // １００pxの列が4つ欲しいといった場合には以下のように記述することで実現できます
-  // repeatを用いることでグリッドを繰り返し生成したり、
-  // そのグリッドを画面幅に応じて敷き詰めることもでき
-  grid-template-columns: repeat(auto-fill, 100px);
+  // auto-fitにすることで、画面幅が広がっていって余白が出てきても
+  // 均等に割り当ててくれるようになります
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 100px 100px;
 }
 
