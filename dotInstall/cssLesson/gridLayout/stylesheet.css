@@ -6,11 +6,10 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px;
+  -ms-grid-columns: (100px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 100px);
   -ms-grid-rows: 100px 100px;
       grid-template-rows: 100px 100px;
-  gap: 20px 40px;
 }
 
 .box1 {
@@ -31,5 +30,9 @@
 
 .box5 {
   background: #5c5cd6;
+}
+
+.box6 {
+  background: #d65cd6;
 }
 /*# sourceMappingURL=stylesheet.css.map */

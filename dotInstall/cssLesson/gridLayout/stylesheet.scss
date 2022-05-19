@@ -6,13 +6,11 @@
 .container {
   display: grid;
 
-  // 可変にしたい場合はfraction( fr )を用いることで実装できます
-  // また、以下のようにすることで余白を2：１の比率で割り当ててくれます
-  grid-template-columns: 100px 100px 100px;
+  // １００pxの列が4つ欲しいといった場合には以下のように記述することで実現できます
+  // repeatを用いることでグリッドを繰り返し生成したり、
+  // そのグリッドを画面幅に応じて敷き詰めることもでき
+  grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: 100px 100px;
-
-  // 以下のようにgapを用いる（Apx Bpxとする）ことで余白を指定することができる
-  gap: 20px 40px;
 }
 
 .box1 {
@@ -29,4 +27,7 @@
 }
 .box5 {
   background: hsl(240, 60%, 60%);
+}
+.box6 {
+  background: hsl(300, 60%, 60%);
 }
