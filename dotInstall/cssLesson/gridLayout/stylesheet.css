@@ -2,4 +2,33 @@
   padding: 0;
   margin: 0;
 }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 2fr 1fr;
+      grid-template-columns: 100px 2fr 1fr;
+  -ms-grid-rows: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+}
+
+.box1 {
+  background: #d65c5c;
+}
+
+.box2 {
+  background: #d6d65c;
+}
+
+.box3 {
+  background: #5cd65c;
+}
+
+.box4 {
+  background: #5cd6d6;
+}
+
+.box5 {
+  background: #5c5cd6;
+}
 /*# sourceMappingURL=stylesheet.css.map */

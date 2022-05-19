@@ -2,3 +2,28 @@
   padding: 0;
   margin: 0;
 }
+
+.container {
+  display: grid;
+
+  // 可変にしたい場合はfraction( fr )を用いることで実装できます
+  // また、以下のようにすることで余白を2：１の比率で割り当ててくれます
+  grid-template-columns: 100px 2fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.box1 {
+  background: hsl(0, 60%, 60%);
+}
+.box2 {
+  background: hsl(60, 60%, 60%);
+}
+.box3 {
+  background: hsl(120, 60%, 60%);
+}
+.box4 {
+  background: hsl(180, 60%, 60%);
+}
+.box5 {
+  background: hsl(240, 60%, 60%);
+}
