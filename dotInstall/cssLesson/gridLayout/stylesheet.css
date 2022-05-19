@@ -6,10 +6,11 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 2fr 1fr;
-      grid-template-columns: 100px 2fr 1fr;
-  -ms-grid-rows: 100px 100px 100px;
-      grid-template-rows: 100px 100px 100px;
+  -ms-grid-columns: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+  gap: 20px 40px;
 }
 
 .box1 {

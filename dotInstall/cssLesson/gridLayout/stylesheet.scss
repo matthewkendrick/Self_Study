@@ -8,8 +8,11 @@
 
   // 可変にしたい場合はfraction( fr )を用いることで実装できます
   // また、以下のようにすることで余白を2：１の比率で割り当ててくれます
-  grid-template-columns: 100px 2fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+
+  // 以下のようにgapを用いる（Apx Bpxとする）ことで余白を指定することができる
+  gap: 20px 40px;
 }
 
 .box1 {
