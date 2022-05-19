@@ -1,29 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
+body {
+  background: #f7edf7;
 }
 
-body > h1 {
-  color: blue;
-  border-bottom: 3px solid skyblue;
-  margin-left: 80px;
+h1, p {
+  color: #b464b4;
 }
 
-body > p {
-  color: blue;
-}
-
-main {
-  text-align: right;
-}
-
-main > h1 {
-  color: red;
-  border-bottom: 3px solid pink;
-  margin-right: 160px;
-}
-
-main > p {
-  color: red;
+.btn {
+  width: 80px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  background: #40bf40;
 }
 /*# sourceMappingURL=stylesheet.css.map */
