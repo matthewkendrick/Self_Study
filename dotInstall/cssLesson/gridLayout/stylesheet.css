@@ -6,8 +6,8 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px;
+  -ms-grid-columns: 100px [target-start] 100px 100px [target-end];
+      grid-template-columns: 100px [target-start] 100px 100px [target-end];
   -ms-grid-rows: 100px 100px;
       grid-template-rows: 100px 100px;
   grid-auto-rows: 100px;
@@ -17,9 +17,7 @@
   background: #d65c5c;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / span 2;
+  grid-column: target;
 }
 
 .box2 {
