@@ -6,26 +6,28 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px [target-start] 100px 100px [target-end];
-      grid-template-columns: 100px [target-start] 100px 100px [target-end];
-  -ms-grid-rows: 100px 100px;
-      grid-template-rows: 100px 100px;
-  grid-auto-rows: 100px;
+  -ms-grid-columns: (100px)[3];
+      grid-template-columns: repeat(3, 100px);
+  -ms-grid-rows: (100px)[4];
+      grid-template-rows: repeat(4, 100px);
+  grid-auto-flow: column dense;
+  grid-auto-columns: 100px;
 }
 
 .box1 {
   background: #d65c5c;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  grid-column: target;
 }
 
 .box2 {
   background: #d6d65c;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .box3 {
   background: #5cd65c;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .box4 {

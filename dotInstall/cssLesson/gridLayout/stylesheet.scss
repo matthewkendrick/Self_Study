@@ -6,26 +6,25 @@
 .container {
   display: grid;
 
-  // auto-fitにすることで、画面幅が広がっていって余白が出てきても
-  // 均等に割り当ててくれるようになります
-  grid-template-columns: 100px [target-start] 100px 100px [target-end];
-  grid-template-rows: 100px 100px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
 
-  // これは、上記で設定されたgrid-template-rows以外の部分に適応されます
-  grid-auto-rows: 100px;
+  grid-auto-flow: column dense;
+  grid-auto-columns: 100px;
 }
 
-// lesson9-10
 .box1 {
   background: hsl(0, 60%, 60%);
-  grid-row: 2;
-  grid-column: target;
 }
 .box2 {
   background: hsl(60, 60%, 60%);
+  grid-column: span 2;
+  grid-row: span 2;
 }
 .box3 {
   background: hsl(120, 60%, 60%);
+  grid-column: span 2;
+  grid-row: span 2;
 }
 .box4 {
   background: hsl(180, 60%, 60%);
