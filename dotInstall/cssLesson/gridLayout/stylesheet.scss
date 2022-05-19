@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+
+  width: 400px;
+  height: 300px;
+  background: #eee;
+
+  justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+
+  div {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.box1 {
+  background: hsl(0, 60%, 60%);
+  justify-self: start;
+  align-self: start;
+}
+.box2 {
+  background: hsl(60, 60%, 60%);
+}
+.box3 {
+  background: hsl(120, 60%, 60%);
+}
+.box4 {
+  background: hsl(180, 60%, 60%);
+}
+.box5 {
+  background: hsl(240, 60%, 60%);
+}
+.box6 {
+  background: hsl(300, 60%, 60%);
+}
