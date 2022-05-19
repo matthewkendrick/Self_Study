@@ -3,12 +3,21 @@
   margin: 0;
 }
 
-h1 {
-  color: orange;
-  border-bottom: 3px solid orange;
+body > h1 {
+  color: blue;
+  border-bottom: 3px solid skyblue;
 }
 
-p {
-  color: orange;
+body > p {
+  color: blue;
+}
+
+main > h1 {
+  color: red;
+  border-bottom: 3px solid pink;
+}
+
+main > p {
+  color: red;
 }
 /*# sourceMappingURL=stylesheet.css.map */

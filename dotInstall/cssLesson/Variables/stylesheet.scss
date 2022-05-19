@@ -3,17 +3,42 @@
   margin: 0;
 }
 
-// scssの場合はこのように前もって変数を宣言することで使い回しができます
-$main-color: orange;
+// $body-main-color: blue;
+// $body-sub-color: skyblue;
+// $main-main-color: red;
+// $body-sub-color: pink;
 
-h1 {
-  // cssでの変数宣言は以下２行のように記述してあげます
-  // --main-color: orange;
-  // color: var(--main-color);
-  color: $main-color;
-  border-bottom: 3px solid $main-color;
+body {
+  $main-color: blue;
+  $sub-color: skyblue;
+
+  & > h1 {
+    // cssでの変数宣言は以下２行のように記述してあげます
+    // --main-color: orange;
+    // color: var(--main-color);
+    color: $main-color;
+    border-bottom: 3px solid $sub-color;
+  }
+
+  & > p {
+    // cssで変数を使い回す場合はbody要素で宣言する必要があります
+    // color: var(--main-color);
+    color: $main-color;
+  }
 }
 
-p {
-  color: $main-color;
+main {
+  //  SCSSではこのように、個々のスタイル内で変数を宣言してあげることもできますし、
+  // 最初の方に記述してあるように名前を変えてあげることで一気に宣言することもできます
+  $main-color: red;
+  $sub-color: pink;
+
+  & > h1 {
+    color: $main-color;
+    border-bottom: 3px solid $sub-color;
+  }
+
+  & > p {
+    color: $main-color;
+  }
 }
