@@ -8,15 +8,18 @@
 
   // auto-fitにすることで、画面幅が広がっていって余白が出てきても
   // 均等に割り当ててくれるようになります
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
 
   // これは、上記で設定されたgrid-template-rows以外の部分に適応されます
   grid-auto-rows: 100px;
 }
 
+// lesson9-10
 .box1 {
   background: hsl(0, 60%, 60%);
+  grid-row: 2;
+  grid-column: 2 / span 2;
 }
 .box2 {
   background: hsl(60, 60%, 60%);
