@@ -1,0 +1,17 @@
+body {
+  background: #f7edf7;
+}
+
+h1, p {
+  color: #b464b4;
+}
+
+.btn {
+  width: 80px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  background: #40bf40;
+}
+/*# sourceMappingURL=stylesheet.css.map */

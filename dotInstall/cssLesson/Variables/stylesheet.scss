@@ -1,0 +1,22 @@
+
+$my-hue: 300;
+// 以下のように書いておくことで、
+// 上記を変更するだけでテーマカラーを変更できます
+
+body {
+  background: hsl($my-hue, 40%, 95%);
+}
+
+h1, p {
+  color: hsl($my-hue, 35%, 55%);
+}
+
+.btn {
+  width: 80px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  // background: hsl($my-hue, 50%, 50%);
+  background: hsl($my-hue + 180, 50%, 50%);
+}
