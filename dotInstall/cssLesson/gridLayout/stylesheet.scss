@@ -10,6 +10,9 @@
   // 均等に割り当ててくれるようになります
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 100px 100px;
+
+  // これは、上記で設定されたgrid-template-rows以外の部分に適応されます
+  grid-auto-rows: 100px;
 }
 
 .box1 {
