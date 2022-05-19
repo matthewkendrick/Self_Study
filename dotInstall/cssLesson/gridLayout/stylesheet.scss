@@ -6,38 +6,41 @@
 .container {
   display: grid;
 
-  grid-template-columns: repeat(5, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
 
-  grid-template-areas:
-    "r r r y y"
-    "r r r y y"
-    "c c g y y"
-    "c c b . ."
-    ; 
+  width: 400px;
+  height: 300px;
+  background: #eee;
+
+  justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+
+  div {
+    width: 50px;
+    height: 50px;
+  }
 }
-
-// lesson13-14
 
 .box1 {
   background: hsl(0, 60%, 60%);
-  grid-area: r;
+  justify-self: start;
+  align-self: start;
 }
 .box2 {
   background: hsl(60, 60%, 60%);
-  grid-area: y;
 }
 .box3 {
   background: hsl(120, 60%, 60%);
-  grid-area: g;
 }
 .box4 {
   background: hsl(180, 60%, 60%);
-  grid-area: c;
 }
 .box5 {
   background: hsl(240, 60%, 60%);
-  grid-area: b;
 }
 .box6 {
   background: hsl(300, 60%, 60%);
