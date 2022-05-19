@@ -2,3 +2,18 @@
   padding: 0;
   margin: 0;
 }
+
+// scssの場合はこのように前もって変数を宣言することで使い回しができます
+$main-color: orange;
+
+h1 {
+  // cssでの変数宣言は以下２行のように記述してあげます
+  // --main-color: orange;
+  // color: var(--main-color);
+  color: $main-color;
+  border-bottom: 3px solid $main-color;
+}
+
+p {
+  color: $main-color;
+}
