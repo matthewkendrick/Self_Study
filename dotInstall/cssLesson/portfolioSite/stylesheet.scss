@@ -8,7 +8,6 @@
 html {
   img {
     vertical-align: bottom;
-    border-radius: 16px;
   }
   .container {
     width: 400px;
@@ -54,6 +53,9 @@ header {
 // main
 main {
   padding-bottom: 60px;
+  img {
+    border-radius: 16px;
+  }
   h1 {
     font-size: 24px;
     text-align: center;

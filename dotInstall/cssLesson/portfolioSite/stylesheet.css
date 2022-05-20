@@ -6,7 +6,6 @@
 
 html img {
   vertical-align: bottom;
-  border-radius: 16px;
 }
 
 html .container {
@@ -58,6 +57,10 @@ header ul li + li {
 
 main {
   padding-bottom: 60px;
+}
+
+main img {
+  border-radius: 16px;
 }
 
 main h1 {
