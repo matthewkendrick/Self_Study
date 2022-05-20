@@ -63,4 +63,9 @@ main .container h1 {
   font-weight: normal;
   text-align: center;
 }
+
+main .container img {
+  width: 400px;
+  height: 225px;
+}
 /*# sourceMappingURL=stylesheet.css.map */
