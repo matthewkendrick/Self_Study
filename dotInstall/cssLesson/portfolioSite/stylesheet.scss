@@ -47,17 +47,21 @@ header {
 
 // main
 main {
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  p {
+    line-height: 1.8;
+  }
   .container {
     width: 400px;
     margin: 0 auto;
-    outline: 2px solid red;
-
-    h1 {
-      font-size: 24px;
-      font-weight: normal;
-      text-align: center;
-    }
-
     img {
       width: 400px;
       height: 225px;
