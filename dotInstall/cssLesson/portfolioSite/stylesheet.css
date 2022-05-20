@@ -58,9 +58,9 @@ main .container {
   outline: 2px solid red;
 }
 
-main h1 {
+main .container h1 {
   font-size: 24px;
-  font-weight: none;
+  font-weight: normal;
   text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
