@@ -10,4 +10,10 @@
 header {
   background: #efefef;
 }
+
+header .container {
+  width: 400px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 /*# sourceMappingURL=stylesheet.css.map */

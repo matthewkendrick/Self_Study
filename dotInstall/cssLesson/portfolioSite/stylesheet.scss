@@ -12,6 +12,11 @@
 // header
 header {
   background: #efefef;
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    outline: 2px solid red;
+  }
 }
 
 
