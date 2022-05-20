@@ -14,10 +14,21 @@ header {
 header .container {
   width: 400px;
   margin: 0 auto;
-  outline: 2px solid red;
+  padding: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container div + div {
+  margin-left: 32px;
+}
+
+header .container .icon img {
+  border-radius: 50%;
 }
 
 header h1 {
