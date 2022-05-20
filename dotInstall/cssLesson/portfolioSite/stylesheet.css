@@ -15,5 +15,13 @@ header .container {
   width: 400px;
   margin: 0 auto;
   outline: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 24px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

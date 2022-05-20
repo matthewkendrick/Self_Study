@@ -16,6 +16,11 @@ header {
     width: 400px;
     margin: 0 auto;
     outline: 2px solid red;
+    display: flex;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 24px;
   }
 }
 
