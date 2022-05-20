@@ -84,4 +84,10 @@ main .container img {
   height: 225px;
   border-radius: 8px;
 }
+
+footer {
+  padding: 60px;
+  text-align: center;
+  color: #aaa;
+}
 /*# sourceMappingURL=stylesheet.css.map */
