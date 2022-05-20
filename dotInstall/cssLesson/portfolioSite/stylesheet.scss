@@ -1,9 +1,18 @@
 // common
 * {
+  font-weight: normal;
   padding: 0;
   margin: 0;
+}
+
+html {
   img {
     vertical-align: bottom;
+    border-radius: 16px;
+  }
+  .container {
+    width: 400px;
+    margin: 0 auto;
   }
 }
 
@@ -13,8 +22,6 @@
 header {
   background: #efefef;
   .container {
-    width: 400px;
-    margin: 0 auto;
     padding: 32px 0;
     display: flex;
     align-items: center;
@@ -26,7 +33,6 @@ header {
     }
   }
   h1 {
-    font-weight: normal;
     font-size: 24px;
   }
   ul {
@@ -47,14 +53,13 @@ header {
 
 // main
 main {
+  padding-bottom: 60px;
   h1 {
     font-size: 24px;
-    font-weight: normal;
     text-align: center;
     padding: 60px 0;
   }
   h2 {
-    font-weight: normal;
     font-size: 20px;
     margin-top: 16px;
   }
@@ -65,14 +70,9 @@ main {
   section + section {
     margin-top: 60px;
   }
-  .container {
+  img {
     width: 400px;
-    margin: 0 auto;
-    img {
-      width: 400px;
-      height: 225px;
-      border-radius: 8px;
-    }
+    height: 225px;
   }
 }
 
@@ -81,7 +81,8 @@ main {
 // footer
 
 footer {
-  padding: 60px;
+  padding: 40px;
   text-align: center;
   color: #aaa;
+  background: #efefef;
 }

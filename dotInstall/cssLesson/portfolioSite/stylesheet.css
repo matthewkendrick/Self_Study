@@ -1,10 +1,17 @@
 * {
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
-* img {
+html img {
   vertical-align: bottom;
+  border-radius: 16px;
+}
+
+html .container {
+  width: 400px;
+  margin: 0 auto;
 }
 
 header {
@@ -12,8 +19,6 @@ header {
 }
 
 header .container {
-  width: 400px;
-  margin: 0 auto;
   padding: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,7 +37,6 @@ header .container .icon img {
 }
 
 header h1 {
-  font-weight: normal;
   font-size: 24px;
 }
 
@@ -52,15 +56,17 @@ header ul li + li {
   margin-left: 8px;
 }
 
+main {
+  padding-bottom: 60px;
+}
+
 main h1 {
   font-size: 24px;
-  font-weight: normal;
   text-align: center;
   padding: 60px 0;
 }
 
 main h2 {
-  font-weight: normal;
   font-size: 20px;
   margin-top: 16px;
 }
@@ -74,20 +80,15 @@ main section + section {
   margin-top: 60px;
 }
 
-main .container {
-  width: 400px;
-  margin: 0 auto;
-}
-
-main .container img {
+main img {
   width: 400px;
   height: 225px;
-  border-radius: 8px;
 }
 
 footer {
-  padding: 60px;
+  padding: 40px;
   text-align: center;
   color: #aaa;
+  background: #efefef;
 }
 /*# sourceMappingURL=stylesheet.css.map */
