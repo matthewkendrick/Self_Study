@@ -62,10 +62,16 @@ main h1 {
 main h2 {
   font-weight: normal;
   font-size: 20px;
+  margin-top: 16px;
 }
 
 main p {
   line-height: 1.8;
+  margin-top: 16px;
+}
+
+main section + section {
+  margin-top: 60px;
 }
 
 main .container {
@@ -76,5 +82,6 @@ main .container {
 main .container img {
   width: 400px;
   height: 225px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

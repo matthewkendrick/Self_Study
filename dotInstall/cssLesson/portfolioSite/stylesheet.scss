@@ -56,9 +56,14 @@ main {
   h2 {
     font-weight: normal;
     font-size: 20px;
+    margin-top: 16px;
   }
   p {
     line-height: 1.8;
+    margin-top: 16px;
+  }
+  section + section {
+    margin-top: 60px;
   }
   .container {
     width: 400px;
@@ -66,6 +71,7 @@ main {
     img {
       width: 400px;
       height: 225px;
+      border-radius: 8px;
     }
   }
 }
