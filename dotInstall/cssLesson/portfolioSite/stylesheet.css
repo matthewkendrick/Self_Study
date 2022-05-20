@@ -51,4 +51,16 @@ header ul img {
 header ul li + li {
   margin-left: 8px;
 }
+
+main .container {
+  width: 400px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+main h1 {
+  font-size: 24px;
+  font-weight: none;
+  text-align: center;
+}
 /*# sourceMappingURL=stylesheet.css.map */
