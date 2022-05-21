@@ -88,4 +88,8 @@ header .container {
 .hero .btn {
   margin: 64px auto 0;
 }
+
+.features {
+  text-align: center;
+}
 /*# sourceMappingURL=stylesheet.css.map */
