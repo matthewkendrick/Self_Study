@@ -17,6 +17,11 @@ html {
   img {
     vertical-align: bottom;
   }
+  .container {
+    outline: 2px solid red;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
 }
 
 body {
@@ -41,10 +46,6 @@ body {
     font-weight: bold;
     padding: 8px 0;
     border-radius: 8px;
-  }
-  .container {
-    width: calc(100% - 32px);
-    margin: 0 auto;
   }
 }
 
@@ -101,5 +102,12 @@ header {
   }
   .pic {
     padding: 32px;
+  }
+}
+
+.voices {
+  img {
+    width: 40px;
+    height: 40px;
   }
 }
