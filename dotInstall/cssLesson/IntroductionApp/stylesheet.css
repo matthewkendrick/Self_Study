@@ -8,7 +8,11 @@ html a {
   color: inherit;
 }
 
-html .btn {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .btn {
   display: block;
   width: 160px;
   background: #329e00;
@@ -19,7 +23,7 @@ html .btn {
   border-radius: 8px;
 }
 
-html .container {
+body .container {
   width: calc(100% - 32px);
   margin: 0 auto;
   outline: 2px solid red;
@@ -45,5 +49,10 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero img {
+  width: 320px;
+  height: 330px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
