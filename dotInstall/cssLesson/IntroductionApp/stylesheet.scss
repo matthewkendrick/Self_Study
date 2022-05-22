@@ -131,3 +131,17 @@ header {
     margin-top: 16px;
   }
 }
+
+.call-to-action {
+  background-color: #85D8F2;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding: 64px 0;
+  h1 {
+    padding-bottom: 64px;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+}
