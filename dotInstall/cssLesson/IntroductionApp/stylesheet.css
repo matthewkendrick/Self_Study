@@ -126,8 +126,24 @@ header .container {
   padding: 32px;
 }
 
+.voices {
+  background: #99e6ff;
+  padding: 64px 0;
+}
+
+.voices h1 {
+  text-align: center;
+  padding-bottom: 64px;
+}
+
 .voices img {
   width: 40px;
   height: 40px;
+}
+
+.voices .section {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
