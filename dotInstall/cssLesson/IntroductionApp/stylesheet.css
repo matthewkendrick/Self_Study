@@ -188,4 +188,15 @@ header .container {
   font-size: 16px;
   color: #eee;
 }
+
+@media (min-width: 600px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .desc, .hero .pic {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */

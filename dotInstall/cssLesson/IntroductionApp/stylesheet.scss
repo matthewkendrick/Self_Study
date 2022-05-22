@@ -155,3 +155,18 @@ header {
     color: #eee;
   }
 }
+
+
+
+// large screen
+
+@media (min-width: 600px) {
+  .hero {
+    .container {
+      display: flex;
+    }
+    .desc, .pic {
+      width: 50%;
+    }
+  }
+}
