@@ -116,9 +116,18 @@ header {
     width: 40px;
     height: 40px;
   }
-  .section {
+  section {
     background: #fff;
     padding: 16px;
     border-radius: 16px;
+    footer {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+    }
+  }
+  section + section {
+    margin-top: 16px;
   }
 }

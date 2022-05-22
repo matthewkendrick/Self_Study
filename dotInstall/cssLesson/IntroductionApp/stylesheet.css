@@ -141,9 +141,24 @@ header .container {
   height: 40px;
 }
 
-.voices .section {
+.voices section {
   background: #fff;
   padding: 16px;
   border-radius: 16px;
+}
+
+.voices section footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.voices section + section {
+  margin-top: 16px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
