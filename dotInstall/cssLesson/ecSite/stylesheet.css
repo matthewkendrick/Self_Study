@@ -3,12 +3,12 @@
   margin: 0;
 }
 
-html img {
-  vertical-align: bottom;
-}
-
 html img:not(.logo) {
   border-radius: 8px;
+}
+
+html .logo {
+  vertical-align: bottom;
 }
 
 html .container {
@@ -16,13 +16,31 @@ html .container {
   outline: 2px solid red;
 }
 
-header {
+html ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body header {
   background: #eee;
   padding: 8px 0;
 }
 
-header img {
+body header img {
   width: 168px;
   height: 48px;
+}
+
+body header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */

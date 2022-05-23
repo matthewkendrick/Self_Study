@@ -4,23 +4,35 @@
 }
 
 html {
-  img {
-    vertical-align: bottom;
-  }
   img:not(.logo) {
     border-radius: 8px;
+  }
+  .logo {
+    vertical-align: bottom;
   }
   .container {
     margin: 0 16px;
     outline: 2px solid red;
   }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-header {
-  background: #eee;
-  padding: 8px 0;
-  img {
-    width: 168px;
-    height: 48px;
+body {
+  header {
+    background: #eee;
+    padding: 8px 0;
+    img {
+      width: 168px;
+      height: 48px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
