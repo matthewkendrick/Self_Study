@@ -18,7 +18,6 @@ html {
     vertical-align: bottom;
   }
   .container {
-    outline: 2px solid red;
     width: calc(100% - 32px);
     margin: 0 auto;
     max-width: 800px;
@@ -185,6 +184,12 @@ header {
     }
   }
   .voices {
+    section {
+      width: calc((100% - 32px) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     section + section {
       margin-top: 0;
     }

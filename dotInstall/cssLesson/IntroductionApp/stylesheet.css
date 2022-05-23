@@ -21,7 +21,6 @@ html img {
 }
 
 html .container {
-  outline: 2px solid red;
   width: calc(100% - 32px);
   margin: 0 auto;
   max-width: 800px;
@@ -217,6 +216,19 @@ header .container {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  .voices section {
+    width: calc((100% - 32px) / 3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .voices section + section {
     margin-top: 0;
