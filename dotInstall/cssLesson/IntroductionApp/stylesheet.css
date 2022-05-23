@@ -207,5 +207,16 @@ header .container {
   .hero .desc, .hero .pic {
     width: 50%;
   }
+  .features section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features section:nth-child(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */

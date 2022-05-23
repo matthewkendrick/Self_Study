@@ -176,4 +176,12 @@ header {
       width: 50%;
     }
   }
+  .features {
+    section {
+      display: flex;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
