@@ -184,4 +184,13 @@ header {
       }
     }
   }
+  .voices {
+    section + section {
+      margin-top: 0;
+    }
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+  }
 }
