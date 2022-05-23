@@ -5,13 +5,20 @@
 
 html {
   img {
-    border-radius: 8px;
     vertical-align: bottom;
+  }
+  img:not(.logo) {
+    border-radius: 8px;
+  }
+  .container {
+    margin: 0 16px;
+    outline: 2px solid red;
   }
 }
 
 header {
   background: #eee;
+  padding: 8px 0;
   img {
     width: 168px;
     height: 48px;

@@ -4,12 +4,21 @@
 }
 
 html img {
-  border-radius: 8px;
   vertical-align: bottom;
+}
+
+html img:not(.logo) {
+  border-radius: 8px;
+}
+
+html .container {
+  margin: 0 16px;
+  outline: 2px solid red;
 }
 
 header {
   background: #eee;
+  padding: 8px 0;
 }
 
 header img {
