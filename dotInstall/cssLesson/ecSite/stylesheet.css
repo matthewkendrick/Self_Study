@@ -3,7 +3,17 @@
   margin: 0;
 }
 
-link .icon {
-  color: white;
+html img {
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+
+header {
+  background: #eee;
+}
+
+header img {
+  width: 168px;
+  height: 48px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

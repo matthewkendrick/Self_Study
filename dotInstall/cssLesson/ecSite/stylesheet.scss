@@ -2,3 +2,18 @@
   padding: 0;
   margin: 0;
 }
+
+html {
+  img {
+    border-radius: 8px;
+    vertical-align: bottom;
+  }
+}
+
+header {
+  background: #eee;
+  img {
+    width: 168px;
+    height: 48px;
+  }
+}
