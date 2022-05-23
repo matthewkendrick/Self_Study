@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  p {
+    line-height: 1.6;
+  }
+  p + p {
+    margin-top: 16px;
+  }
+  img {
+    vertical-align: bottom;
+  }
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  h1, h2 {
+    font-weight: normal;
+    color: #222577;
+  }
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .btn {
+    display: block;
+    width: 160px;
+    background: #329e00;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 8px;
+  }
+}
+
+header {
+  padding: 16px 0;
+  h1 {
+    img {
+      width: 240px;
+      height: 27px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hero {
+  background-color: #99e6ff;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-top: 64px;
+  text-align: center;
+  img {
+    width: 320px;
+    height: 330px;
+  }
+  p {
+    margin-top: 8px;
+  }
+  img {
+    margin-top: 64px;
+  }
+  .btn {
+    margin: 64px auto 0;
+  }
+}
+
+.features {
+  padding: 64px 0;
+  img {
+    width: 100%;
+  }
+  h1 {
+    padding-bottom: 64px;
+  }
+  h2 {
+    padding-bottom: 16px;
+  }
+  section + section {
+    margin-top: 40px;
+  }
+  .pic {
+    padding: 32px;
+  }
+}
+
+.voices {
+  background: #99e6ff;
+  padding: 64px 0;
+  h1 {
+    text-align: center;
+    padding-bottom: 64px;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  section {
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    footer {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+    }
+  }
+  section + section {
+    margin-top: 16px;
+  }
+}
+
+.call-to-action {
+  background-color: #85D8F2;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding: 64px 0;
+  h1 {
+    padding-bottom: 64px;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+.copyright {
+  background: #323435;
+  padding: 64px 0;
+  text-align: center;
+  small {
+    font-size: 16px;
+    color: #eee;
+  }
+}
+
+
+
+// large screen
+
+@media (min-width: 600px) {
+  .hero {
+    img {
+      margin-top: 0;
+      width: calc(100% - 32px);
+      height: auto;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .desc, .pic {
+      width: 50%;
+    }
+  }
+  .features {
+    section {
+      display: flex;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .voices {
+    section {
+      width: calc((100% - 32px) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    section + section {
+      margin-top: 0;
+    }
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}
