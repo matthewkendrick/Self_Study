@@ -22,6 +22,17 @@ html ul {
   padding: 0;
 }
 
+html a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html a:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 body header {
   background: #eee;
   padding: 8px 0;
@@ -42,10 +53,15 @@ body header ul li a {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 12px;
+  text-align: center;
 }
 
 body header ul li a i {
   font-size: 18px;
+}
+
+body header ul li + li {
+  margin-left: 8px;
 }
 
 body header img {

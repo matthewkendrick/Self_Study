@@ -19,6 +19,14 @@ html {
     margin: 0;
     padding: 0;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
 }
 
 body {
@@ -32,10 +40,14 @@ body {
           display: flex;
           flex-direction: column;
           font-size: 12px;
+          text-align: center;
           i {
             font-size: 18px;
           }
         }
+      }
+      li + li {
+        margin-left: 8px;
       }
     }
     img {
