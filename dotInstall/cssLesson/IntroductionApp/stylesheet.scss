@@ -21,6 +21,7 @@ html {
     outline: 2px solid red;
     width: calc(100% - 32px);
     margin: 0 auto;
+    max-width: 800px;
   }
 }
 
@@ -162,8 +163,14 @@ header {
 
 @media (min-width: 600px) {
   .hero {
+    img {
+      margin-top: 0;
+      width: calc(100% - 32px);
+      height: auto;
+    }
     .container {
       display: flex;
+      align-items: center;
     }
     .desc, .pic {
       width: 50%;

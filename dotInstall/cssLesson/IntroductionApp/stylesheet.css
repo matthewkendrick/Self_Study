@@ -24,6 +24,7 @@ html .container {
   outline: 2px solid red;
   width: calc(100% - 32px);
   margin: 0 auto;
+  max-width: 800px;
 }
 
 body {
@@ -190,10 +191,18 @@ header .container {
 }
 
 @media (min-width: 600px) {
+  .hero img {
+    margin-top: 0;
+    width: calc(100% - 32px);
+    height: auto;
+  }
   .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero .desc, .hero .pic {
     width: 50%;
