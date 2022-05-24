@@ -56,6 +56,9 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+  form {
+    display: none;
+  }
 }
 
 .hero {
@@ -138,6 +141,11 @@ footer {
 @media ( min-width: 800px ) {
   body {
     background: skyblue;
+  }
+  header {
+    form {
+      display: block;
+    }
   }
   .container {
     margin: 0 auto;

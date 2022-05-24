@@ -82,6 +82,10 @@ header .container {
           align-items: center;
 }
 
+header form {
+  display: none;
+}
+
 .hero img {
   width: 100%;
   height: 400px;
@@ -178,6 +182,9 @@ footer .container {
 @media (min-width: 800px) {
   body {
     background: skyblue;
+  }
+  header form {
+    display: block;
   }
   .container {
     margin: 0 auto;
