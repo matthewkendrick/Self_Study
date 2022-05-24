@@ -10,7 +10,6 @@
 
 * .container {
   margin: 0 16px;
-  outline: 2px solid red;
 }
 
 * ul {
@@ -35,7 +34,6 @@
 }
 
 header {
-  background: #eee;
   padding: 8px 0;
 }
 
@@ -132,7 +130,6 @@ header button {
 
 .products li {
   width: calc((100% - 16px) / 2);
-  outline: 2px solid blue;
 }
 
 .products li a {
@@ -185,18 +182,12 @@ footer .container {
 }
 
 @media (min-width: 600px) {
-  body {
-    background: pink;
-  }
   .products li {
     width: calc((100% - 32px) / 3);
   }
 }
 
 @media (min-width: 800px) {
-  body {
-    background: skyblue;
-  }
   header form {
     display: block;
   }

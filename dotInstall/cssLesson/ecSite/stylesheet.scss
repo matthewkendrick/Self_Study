@@ -7,7 +7,6 @@
   }
   .container {
     margin: 0 16px;
-    outline: 2px solid red;
   }
   ul {
     list-style: none;
@@ -28,7 +27,6 @@
 }
 
 header {
-  background: #eee;
   padding: 8px 0;
   ul {
     display: flex;
@@ -98,7 +96,6 @@ header {
   }
   li {
     width: calc((100% - 16px) / 2 );
-    outline: 2px solid blue;
     a {
       display: block;
     }
@@ -140,9 +137,6 @@ footer {
 // mediun screen
 
 @media ( min-width: 600px ) {
-  body {
-    background: pink;
-  }
   .products li {
     width: calc((100% - 32px) / 3 );
   }
@@ -150,9 +144,6 @@ footer {
 
 // large screen
 @media ( min-width: 800px ) {
-  body {
-    background: skyblue;
-  }
   header {
     form {
       display: block;
