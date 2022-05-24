@@ -59,6 +59,17 @@ header {
   form {
     display: none;
   }
+  input, button {
+    all: unset;
+  }
+  input {
+    border-bottom: 1px solid #aaa;
+    padding: 4px;
+    width: 300px;
+  }
+  button {
+    cursor: pointer;
+  }
 }
 
 .hero {
