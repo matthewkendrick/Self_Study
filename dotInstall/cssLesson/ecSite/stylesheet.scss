@@ -71,6 +71,14 @@ header {
 
 .products {
   padding: 80px 0;
+  .more {
+    display: block;
+    width: 70%;
+    line-height: 48px;
+    border: 2px solid #333;
+    text-align: center;
+    margin: 32px auto 0;
+  }
   ul {
     display: flex;
     flex-wrap: wrap;
