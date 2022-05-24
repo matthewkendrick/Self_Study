@@ -94,11 +94,17 @@ header .container {
 }
 
 .products ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
   margin-top: 32px;
 }
 
 .products li {
-  width: 50%;
+  width: calc((100% - 16px) / 2);
   outline: 2px solid blue;
 }
 
