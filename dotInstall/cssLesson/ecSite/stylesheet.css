@@ -129,4 +129,22 @@ header .container {
   font-size: 16px;
   margin-top: 8px;
 }
+
+footer {
+  background: #4c4948;
+  padding: 16px 0;
+  color: #eee;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=stylesheet.css.map */

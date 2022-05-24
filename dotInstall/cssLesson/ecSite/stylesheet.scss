@@ -100,3 +100,14 @@ header {
     }
   }
 }
+
+footer {
+  background: #4c4948;
+  padding: 16px 0;
+  color: #eee;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
