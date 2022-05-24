@@ -170,6 +170,9 @@ footer .container {
   body {
     background: pink;
   }
+  .products li {
+    width: calc((100% - 32px) / 3);
+  }
 }
 
 @media (min-width: 800px) {
