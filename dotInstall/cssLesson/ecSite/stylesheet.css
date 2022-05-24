@@ -93,9 +93,17 @@ header .container {
   padding: 80px 0;
 }
 
+.products ul {
+  margin-top: 32px;
+}
+
 .products li {
   width: 50%;
   outline: 2px solid blue;
+}
+
+.products li a {
+  display: block;
 }
 
 .products li img {
@@ -104,5 +112,6 @@ header .container {
 
 .products li h2 {
   font-size: 16px;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
