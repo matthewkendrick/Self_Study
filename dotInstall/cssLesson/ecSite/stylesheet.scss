@@ -2,9 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-html {
   .logo {
     vertical-align: bottom;
   }
@@ -142,5 +139,9 @@ footer {
   body {
     background: skyblue;
   }
-  
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    max-width: 800px;
+  }
 }
