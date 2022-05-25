@@ -1,11 +1,7 @@
 'use strict'
 
-let price = 500;
+// typeofを用いると、入力した値のデータ型を見ることができます
+// 以下の右辺を数値などに変更すると、consoleでそれが確認できるかと思います
+const data = false;
 
-// 以下のような書き方もできます
-price += 100;
-price *= 2;
-price++;
-price--;
-
-console.log(price)
+console.log(typeof data);
