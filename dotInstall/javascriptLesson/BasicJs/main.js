@@ -1,12 +1,20 @@
 'use strict'
 
-const score = 85;
+const score = 60;
+const name = 'Taguchi';
 
-if (score >= 80) {
-  console.log('Greate!');
-} else {
-  console.log('OK...');
+if (score >= 50) {
+  if (name == 'Taguchi') {
+    console.log('Good Job!!!');
+  }
 }
 
-// if else文に関しては以下のようにも書ける、ということを知っておきましょう
-score >= 80 ? console.log('Greate!') : console.log('OK...');
+// 上記をさらに見やすくするため、
+// 論理演算子を使って書いていきましょう
+// &&  : なおかつ
+// ||  : もしくは
+// !   : 〜ではない
+
+if (score >= 50 && name == 'Taguchi') {
+  console.log('Good Job!!!');
+}
