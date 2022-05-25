@@ -1,7 +1,9 @@
 'use strict'
 
-// typeofを用いると、入力した値のデータ型を見ることができます
-// 以下の右辺を数値などに変更すると、consoleでそれが確認できるかと思います
-const data = false;
+// プラスだけは文字列の連結として扱われます
+const num = 3
 
-console.log(typeof data);
+console.log('5' * num);
+console.log('5' + num);
+
+console.log(parseInt('5, 10') + num);
