@@ -14,6 +14,14 @@ section {
 
 section img {
   border-radius: 50%;
+  cursor: pointer;
+}
+
+section img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 section h1 {

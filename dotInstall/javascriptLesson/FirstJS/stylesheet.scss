@@ -12,6 +12,12 @@ section {
   text-align: center;
   img {
     border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
   }
   h1 {
     margin: 16px;
