@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin: 8px;
+  padding: 24px 0;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-image: url(img/background.png);
+  text-align: center;
+  img {
+    border-radius: 50%;
+  }
+  h1 {
+    margin: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+footer {
+  text-align: center;
+}

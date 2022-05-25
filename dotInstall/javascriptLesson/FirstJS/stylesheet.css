@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin: 8px;
+  padding: 24px 0;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-image: url(img/background.png);
+  text-align: center;
+}
+
+section img {
+  border-radius: 50%;
+}
+
+section h1 {
+  margin: 16px;
+}
+
+section p {
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=stylesheet.css.map */
