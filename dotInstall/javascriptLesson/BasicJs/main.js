@@ -1,13 +1,7 @@
 'use strict'
 
-// 数値の計算は以下のようにできます
+// 以下のように"定数"を宣言することができます
 
-console.log(10 + 3);
-console.log(10 - 3);
-console.log(10 * 3);
-console.log(10 / 3);
-console.log(10 % 3);
-console.log(10 ** 3);
+const price = 150;
 
-//　計算の優先度は数学で習ったのと同じです
-console.log((1 + 2) * 3);
+console.log(price * 100)
