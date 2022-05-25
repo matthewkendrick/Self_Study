@@ -1,20 +1,28 @@
 'use strict'
 
-const score = 60;
-const name = 'Taguchi';
+const signal = 'blue';
 
-if (score >= 50) {
-  if (name == 'Taguchi') {
-    console.log('Good Job!!!');
-  }
-}
+// if (signal == 'red') {
+//   console.log('Stop!');
+// } else if (signal == 'yellow') {
+//   console.log('Caution!');
+// } else if (signal == 'blue') {
+//   console.log('Go!');
+// }
 
-// 上記をさらに見やすくするため、
-// 論理演算子を使って書いていきましょう
-// &&  : なおかつ
-// ||  : もしくは
-// !   : 〜ではない
-
-if (score >= 50 && name == 'Taguchi') {
-  console.log('Good Job!!!');
+// switch文は上記のように条件が全て==で繋がれるような場合に使うことができます
+switch (signal) {
+  case 'red':
+    console.log('Stop!');
+    break;
+  case 'yellow':
+    console.log('Caution');
+    break;
+  case 'blue':
+  case 'green':
+    console.log('Go!');
+    break;
+  default:
+    console.log('Wrong Signal');
+    break;
 }
