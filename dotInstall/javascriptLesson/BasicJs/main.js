@@ -1,7 +1,7 @@
 'use strict'
 
-// 以下のように"定数"を宣言することができます
-
-const price = 150;
-
+// constで宣言された値は再代入できません
+// しかし基本的には再代入できない方が望ましいのでconstが使われやすいです
+let price = 150;
+price = 100
 console.log(price * 100)
