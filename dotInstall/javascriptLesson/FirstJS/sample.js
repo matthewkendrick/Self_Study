@@ -1,3 +1,3 @@
 'user strict';
 
-document.getElementById('trigger')
+document.getElementById('trigger').addEventListener('click', process);
