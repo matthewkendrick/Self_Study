@@ -12,11 +12,12 @@ section {
   text-align: center;
   img {
     border-radius: 50%;
+    transition: border-radius 0.5s;
     cursor: pointer;
     &:hover {
       cursor: pointer;
       opacity: 0.8;
-      transition: 0.3s;
+      transition: opacity 0.3s;
     }
   }
   h1 {
@@ -24,6 +25,9 @@ section {
   }
   p {
     font-size: 14px;
+  }
+  .changed {
+    border-radius: 0;
   }
 }
 
