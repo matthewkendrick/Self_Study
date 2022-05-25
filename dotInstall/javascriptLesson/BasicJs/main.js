@@ -1,13 +1,12 @@
 'use strict'
 
-const score = 60;
+const score = 85;
 
 if (score >= 80) {
   console.log('Greate!');
-} else if (score >= 70) {
-  console.log('Good');
-} else if (score <= 60) {
-  console.log('Expect more');
 } else {
   console.log('OK...');
 }
+
+// if else文に関しては以下のようにも書ける、ということを知っておきましょう
+score >= 80 ? console.log('Greate!') : console.log('OK...');
