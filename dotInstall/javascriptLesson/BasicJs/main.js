@@ -1,9 +1,13 @@
 'use strict'
 
-console.log("its me!");
+// 数値の計算は以下のようにできます
 
-// 以下のような特殊な記述もできる
-// \n : 改行
-// \t : タブ
+console.log(10 + 3);
+console.log(10 - 3);
+console.log(10 * 3);
+console.log(10 / 3);
+console.log(10 % 3);
+console.log(10 ** 3);
 
-console.log("hello\n" + "World")
+//　計算の優先度は数学で習ったのと同じです
+console.log((1 + 2) * 3);
