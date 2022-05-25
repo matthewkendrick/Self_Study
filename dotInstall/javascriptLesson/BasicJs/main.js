@@ -1,7 +1,11 @@
 'use strict'
 
-// constで宣言された値は再代入できません
-// しかし基本的には再代入できない方が望ましいのでconstが使われやすいです
-let price = 150;
-price = 100
-console.log(price * 100)
+let price = 500;
+
+// 以下のような書き方もできます
+price += 100;
+price *= 2;
+price++;
+price--;
+
+console.log(price)
