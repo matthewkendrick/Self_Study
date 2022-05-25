@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin: 8px;
+  padding: 24px 0;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-image: url(img/background.png);
+  text-align: center;
+}
+
+section img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+section img:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s border-radius 0.5s;
+  transition: opacity 0.3s border-radius 0.5s;
+}
+
+section h1 {
+  margin: 16px;
+}
+
+section p {
+  font-size: 14px;
+}
+
+section .changed {
+  border-radius: 0;
+  -webkit-transition: border-radius 0.5s;
+  transition: border-radius 0.5s;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=stylesheet.css.map */

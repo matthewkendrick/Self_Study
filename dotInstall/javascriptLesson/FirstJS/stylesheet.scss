@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin: 8px;
+  padding: 24px 0;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-image: url(img/background.png);
+  text-align: center;
+  img {
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 0.3s border-radius 0.5s;
+    }
+  }
+  h1 {
+    margin: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .changed {
+    border-radius: 0;
+    transition: border-radius 0.5s;
+  }
+}
+
+footer {
+  text-align: center;
+}
