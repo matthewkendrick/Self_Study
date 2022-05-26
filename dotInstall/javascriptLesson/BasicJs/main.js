@@ -1,8 +1,19 @@
 'use strict'
 
-for (let i = 1; i < 10; i++) {
-  // console.log('Hello' + i);
+// 指定した条件が満たされている間、特定の処理を繰り返す書き方は以下のようになります
 
-  // 以下のようにバッククォートを用いることで、${}内が数値であっても文字列に変換してくれます
-  console.log(`Hello ${i}`);
-}
+// let hp = 100;
+
+// while (hp > 0) {
+//   console.log(`${hp} HP left!`);
+//   hp -= 15;
+// }
+
+// また、一度でも処理を実行したい場合は、以下のように記述します
+
+let hp = -50;
+
+do {
+  console.log(`${hp} HP left!`);
+  hp -= 15;
+} while (hp > 0);
