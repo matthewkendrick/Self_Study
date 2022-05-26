@@ -1,13 +1,11 @@
 'use strict'
 
-// function sum(a, b, c) {
-//   return a + b + c;
-// }
+const x = 2;  //　グローバルスコープ
 
-// const sum = (a, b, c) => a + b + c;
+function f() {
+  const x = 1;  //ブロック内で宣言された定数はそのブロック内でしか使えません
+  console.log(x);
+}
 
-// const total = sum(1, 2, 3) + sum(4, 5, 6);
-// console.log(total);
-
-const double = (a) => a * 2
-console.log(double(12));
+f();               // １が出力される
+console.log(x);    // ２が出力される
