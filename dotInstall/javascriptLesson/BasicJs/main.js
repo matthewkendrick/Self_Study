@@ -1,11 +1,32 @@
 'use strict'
 
-for (let i = 1; i <= 10; i++) {
-  if (i % 3 == 0) {      // iを３で割った時の余理が０がどうか　 
-    continue;           // 即ち３の倍数の時に処理をスキップする
-  } else if (i == 7) {   // 7になったら処理を停止させる
-    break;
-  } else {
-    console.log(i);     // iか７になるまで上記２行の処理結果を出力する
-  }
+// console.log('------------------');
+// console.log('--------Ad--------');
+// console.log('------------------');
+// console.log('Tom is great!');
+// console.log('Bob is great!');
+// console.log('------------------');
+// console.log('--------Ad--------');
+// console.log('------------------');
+// console.log('Steve is great!');
+// console.log('Richard is great!');
+// console.log('------------------');
+// console.log('--------Ad--------');
+// console.log('------------------');
+
+
+// 上記のように何度も使いまわせるような部品は関数としてまとめることで以下のようにスッキリと書くことができます
+
+function showAd() {
+  console.log('------------------');
+  console.log('--------Ad--------');
+  console.log('------------------');
 }
+
+showAd()
+console.log('Tom is great!');
+console.log('Bob is great!');
+showAd()
+console.log('Steve is great!');
+console.log('Richard is great!');
+showAd()
