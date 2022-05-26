@@ -1,28 +1,8 @@
 'use strict'
 
-const signal = 'blue';
+for (let i = 1; i < 10; i++) {
+  // console.log('Hello' + i);
 
-// if (signal == 'red') {
-//   console.log('Stop!');
-// } else if (signal == 'yellow') {
-//   console.log('Caution!');
-// } else if (signal == 'blue') {
-//   console.log('Go!');
-// }
-
-// switch文は上記のように条件が全て==で繋がれるような場合に使うことができます
-switch (signal) {
-  case 'red':
-    console.log('Stop!');
-    break;
-  case 'yellow':
-    console.log('Caution');
-    break;
-  case 'blue':
-  case 'green':
-    console.log('Go!');
-    break;
-  default:
-    console.log('Wrong Signal');
-    break;
+  // 以下のようにバッククォートを用いることで、${}内が数値であっても文字列に変換してくれます
+  console.log(`Hello ${i}`);
 }
