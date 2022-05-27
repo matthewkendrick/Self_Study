@@ -1,12 +1,17 @@
 'use strict'
 
 {
-  const prices = [180, 190, 140];
+  const numbers = [1, 4, 7, 8, 10];
 
-  // const updatedPrices = prices.map((price) => {
-  //   return price + 20;
+  // const evenNumbers = numbers.filter(number => {
+  //   if (number % 2 == 0) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
   // });
 
-  const updatedPrices = prices.map(price => price + 20);
-  console.log(updatedPrices);
+  const evenNumbers = numbers.filter(number => number % 2 == 0)
+
+  console.log(evenNumbers);
 }
