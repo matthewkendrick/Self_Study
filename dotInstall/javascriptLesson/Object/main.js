@@ -1,15 +1,19 @@
 'use strict'
 
 {
-  const otherScores = [10, 20];
+  const scores = [80, 90, 40, 70];
 
-  // スプレッド構文( ... )を使うことによって、配列内で配列を扱えるようになります
-  const scores = [80, 90, 40, 70, ...otherScores];
-  // console.log(scores);
+  // const [a, b, c, d] = scores;
+  // console.log(c);
 
-  function sum(a, b) {
-    console.log(a + b);
-  }
+  // const [a, b, ...others] = scores;
+  // console.log(others);
 
-  sum(...otherScores)
+  // 分割代入
+  let x = 30;
+  let y = 70;
+  [x, y] = [y, x]
+
+  console.log(`x: ${x}`);
+  console.log(`y: ${y}`);
 }
