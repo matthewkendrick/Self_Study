@@ -1,15 +1,23 @@
 'use strict'
 
 {
-  const d = [2019, 11, 14];
+  const scores = [10, 3, 9];
 
-  // console.log(d.join('/'));
+  let sum = 0;
 
-  const t = '17:08:24';
-  // console.log(t.split(':'));
+  scores.forEach(score => {
+    sum += score;
+  });
+
+  const avg = sum / scores.length;
+
+  // console.log(sum);
+  // console.log(avg);
   
-  const [hour, minute, second] = t.split(':');
-  console.log(hour);
-  console.log(minute);
-  console.log(second);
+  console.log(Math.floor(avg));
+  console.log(Math.ceil(avg));
+  console.log(Math.round(avg));
+  console.log(avg.toFixed(3));
+
+  console.log(Math.random());
 }
