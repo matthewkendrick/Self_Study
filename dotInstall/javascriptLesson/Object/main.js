@@ -1,5 +1,14 @@
 'use strict'
 
 {
-  console.log(Math.floor(Math.random() * 6) + 1); 
+  const d = new Date();
+  console.log(d);
+
+  // d.getFullYear();
+  // d.getMonth();
+  // d.getDate();
+  // d.getDay();
+  // d.getTime();
+
+  console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
 }
