@@ -5,6 +5,9 @@
     {
       text: 'JavaScriptの勉強中...',
       likeCount: 0,
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      }
     },
     {
       text: 'プログラミング楽しい！',
@@ -12,9 +15,5 @@
     },
   ];
 
-  function show(post) {
-    console.log(`${post.text} - ${post.likeCount}いいね`);
-  }
-
-  show(posts[1]);
+  posts[0].show();
 }
