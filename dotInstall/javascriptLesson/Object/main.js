@@ -1,14 +1,8 @@
 'use strict'
 
 {
-  const d = new Date();
+  const d = new Date(2019, 10);
+  d.setHours(10, 20, 30);
+  d.setDate(d.getDate() + 3);
   console.log(d);
-
-  // d.getFullYear();
-  // d.getMonth();
-  // d.getDate();
-  // d.getDay();
-  // d.getTime();
-
-  console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
 }
