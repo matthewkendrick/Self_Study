@@ -1,13 +1,20 @@
 'use strict'
 
 {
-  // const name = 'taguchi';
-  const name = 5;
+  const posts = [
+    {
+      text: 'JavaScriptの勉強中...',
+      likeCount: 0,
+    },
+    {
+      text: 'プログラミング楽しい！',
+      likeCount: 10,
+    },
+  ];
 
-  try {
-    console.log(name.toLowerCase());
-  } catch (error) {
-    console.log(error);
+  function show(post) {
+    console.log(`${post.text} - ${post.likeCount}いいね`);
   }
-  console.log('Finish!');
+
+  show(posts[1]);
 }
