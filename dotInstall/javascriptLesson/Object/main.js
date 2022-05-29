@@ -1,16 +1,13 @@
 'use strict'
 
 {
-  let i = 0;
+  // const name = 'taguchi';
+  const name = 5;
 
-  function showTime() {
-    console.log(new Date());
-    const timeoutId = setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timeoutId);
-    }
+  try {
+    console.log(name.toLowerCase());
+  } catch (error) {
+    console.log(error);
   }
-
-  showTime();
+  console.log('Finish!');
 }
