@@ -3,13 +3,22 @@
   margin: 0;
 }
 
-button {
-  width: 80px;
-  height: 40px;
-  border: solid 2px lightgray;
-  border-radius: 8px;
-  &:hover {
-    background-color: #CFD8DC;
-    opacity: 0.8;
+body {
+  button {
+    width: 80px;
+    height: 40px;
+    border: solid 2px lightgray;
+    border-radius: 8px;
+    &:hover {
+      background-color: #CFD8DC;
+      opacity: 0.8;
+    }
+  }
+  .my_color {
+    color: red;
+    background-color: skyblue;
+  }
+  .my_border {
+    border-bottom: 4px solid orange;
   }
 }
