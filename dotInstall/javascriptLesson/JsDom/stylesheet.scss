@@ -2,3 +2,14 @@
   padding: 0;
   margin: 0;
 }
+
+button {
+  width: 80px;
+  height: 40px;
+  border: solid 2px lightgray;
+  border-radius: 8px;
+  &:hover {
+    background-color: #CFD8DC;
+    opacity: 0.8;
+  }
+}
