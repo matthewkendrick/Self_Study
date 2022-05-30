@@ -2,8 +2,10 @@
 
 {
   document.querySelector('button').addEventListener('click', () => {
-    const targetNode = document.getElementById('target');
+    const item2 = document.createElement('li');
+    item2.textContent = 'item 2';
 
-    targetNode.textContent = targetNode.dataset.translation;
+    const ulNode = document.querySelector('ul');
+    ulNode.appendChild(item2);
   });
 }
