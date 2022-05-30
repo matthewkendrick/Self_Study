@@ -1,15 +1,23 @@
 'use strict'
 
 {
-  document.querySelector('button').addEventListener('dblclick', () => {
-    console.log('Double Clicked!');
+  const text = document.querySelector('textarea');
+
+  // focus and blur
+  // text.addEventListener('focus', () => {
+  //   console.log('focus');
+  // });
+
+  // text.addEventListener('blur', () => {
+  //   console.log('blur');
+  // });
+
+  // input and change
+  text.addEventListener('input', () => {
+    console.log(text.value.length);
   });
 
-  // document.addEventListener('mousemove', e => {
-  //   console.log(e.clientX, e.clientY);
-  // })
-
-  document.addEventListener('keydown', e => {
-    console.log(e.key);
-  })
+  text.addEventListener('change', () => {
+    console.log('change');
+  });
 }
