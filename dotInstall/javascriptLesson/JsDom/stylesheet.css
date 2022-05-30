@@ -3,24 +3,20 @@
   margin: 0;
 }
 
-body button {
-  width: 80px;
-  height: 40px;
+body input {
   border: solid 2px lightgray;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+body button {
+  width: 40px;
+  height: 20px;
+  border: solid 2px lightgray;
+  border-radius: 4px;
 }
 
 body button:hover {
   background-color: #CFD8DC;
   opacity: 0.8;
-}
-
-body .my_color {
-  color: red;
-  background-color: skyblue;
-}
-
-body .my_border {
-  border-bottom: 4px solid orange;
 }
 /*# sourceMappingURL=stylesheet.css.map */
