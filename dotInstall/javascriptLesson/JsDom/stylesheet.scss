@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  input {
+    border: solid 2px lightgray;
+    border-radius: 4px;
+  }
+  select {
+    width: 80px;
+    border: solid 2px lightgray;
+    border-radius: 4px;
+  }
+  .textarea {
+    display: flex;
+    textarea {
+      border: solid 2px lightgray;
+      border-radius: 8px;
+    }
+  }
+  button {
+    width: 40px;
+    height: 20px;
+    border: solid 2px lightgray;
+    border-radius: 4px;
+    &:hover {
+      background-color: #CFD8DC;
+      opacity: 0.8;
+    }
+  }
+  li {
+    cursor: pointer;
+    &.done {
+      text-decoration: line-through;
+    }
+  }
+}
