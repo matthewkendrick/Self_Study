@@ -30,4 +30,10 @@ body {
       opacity: 0.8;
     }
   }
+  li {
+    cursor: pointer;
+    &.done {
+      text-decoration: line-through;
+    }
+  }
 }

@@ -36,4 +36,12 @@ body button:hover {
   background-color: #CFD8DC;
   opacity: 0.8;
 }
+
+body li {
+  cursor: pointer;
+}
+
+body li.done {
+  text-decoration: line-through;
+}
 /*# sourceMappingURL=stylesheet.css.map */

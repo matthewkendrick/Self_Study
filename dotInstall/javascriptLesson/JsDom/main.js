@@ -1,8 +1,9 @@
 'use strict'
 
 {
-  document.querySelector('form').addEventListener('submit', e => {
-    e.preventDefault();
-    console.log('submit');
+  document.querySelector('ul').addEventListener('click', e => {
+    if (e.target.nodeName == 'LI') {
+      e.target.classList.toggle('done')
+    }
   });
 }
