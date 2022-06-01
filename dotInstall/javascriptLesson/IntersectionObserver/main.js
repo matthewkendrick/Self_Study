@@ -7,7 +7,11 @@
     console.log('fired!');
   }
 
-  const observer = new IntersectionObserver(callback);
+  const options = {
+    threshold: [0.2, 0.8],
+  };
+
+  const observer = new IntersectionObserver(callback, options);
 
   observer.observe(target);
 }
