@@ -6,4 +6,11 @@
 img {
   width: 200px;
   height: 200px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  .appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

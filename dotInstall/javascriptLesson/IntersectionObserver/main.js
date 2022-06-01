@@ -3,12 +3,12 @@
 {
   const target = document.querySelector('img');
 
-  function callback() {
-    console.log('fired!');
+  function callback(entries) {
+    console.log(entries[0]);
   }
 
   const options = {
-    threshold: [0.2, 0.8],
+    threshold: 0.2,
   };
 
   const observer = new IntersectionObserver(callback, options);
