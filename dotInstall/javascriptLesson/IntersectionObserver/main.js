@@ -12,15 +12,11 @@
 
     entries[0].target.classList.add('appear')
 
-    // if (entries[0].isIntersecting) {
-    //   entries[0].target.classList.add('appear')
-    // } else {
-    //   entries[0].target.classList.remove('appear')
-    // }
   }
 
   const options = {
-    threshold: 0.2,
+    threshold: 1,
+    rootMargin: '0px 0px -100px',
   };
 
   const observer = new IntersectionObserver(callback, options);
