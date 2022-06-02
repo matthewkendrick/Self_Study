@@ -7,9 +7,9 @@ img {
   width: 200px;
   height: 200px;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s, transform 0.3s;
-  .appear {
+  transform: translateY(50px);
+  transition: opacity 0.8s, transform 0.5s;
+  &.appear {
     opacity: 1;
     transform: translateY(0);
   }
