@@ -6,14 +6,15 @@
   function callback(entries, obs) {
     console.log(entries);
 
-    if (!entries[0].isIntersecting) {
-      return;
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add('appear');
+        obs.unobserve(entries[0].target);
+      });
     }
-
-    entries[0].target.classList.add('appear')
-    obs.unobserve(entries[0].target);
-
-  }
 
   const options = {
     threshold: 0.2,
