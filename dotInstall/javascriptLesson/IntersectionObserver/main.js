@@ -1,10 +1,10 @@
 'use strict'
 
 {
-  const target = document.querySelector('img');
+  const targets = document.querySelectorAll('img');
 
   function callback(entries, obs) {
-    console.log(entries[0]);
+    console.log(entries);
 
     if (!entries[0].isIntersecting) {
       return;
@@ -21,5 +21,7 @@
 
   const observer = new IntersectionObserver(callback, options);
 
-  observer.observe(target);
+  targets.forEach(target => {
+    observer.observe(target);
+  });
 }
