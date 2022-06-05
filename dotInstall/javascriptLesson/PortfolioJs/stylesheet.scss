@@ -6,6 +6,7 @@
 body {
   img {
     vertical-align: bottom;
+    border-radius: 8px;
   }
   h1,
   h2 {
@@ -83,10 +84,15 @@ footer {
 
 .animate {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s, transform 0.3s;
-  .appear {
-    opacity: 0;
+  transition: opacity 0.3s, transform 0.8s;
+  &.slide-from-left {
+    transform: translateX(-160px);
+  }
+  &.slide-from-right {
+    transform: translateX(160px);
+  }
+  &.appear {
+    opacity: 1;
     transform: none;
   }
 }

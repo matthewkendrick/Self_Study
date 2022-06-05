@@ -2,9 +2,10 @@
 
 {
   // Intersection Observer API
+  
   function callback(entries, obs) {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (!entry.isIntersecting) {
         return;
       }
 
@@ -12,5 +13,16 @@
       obs.unobserve(entry.target);
     });
   }
+
+  const options = {
+    threshold: 0.4,
+  };
+
   const observer = new IntersectionObserver(callback, options);
+
+  const targets = document.querySelectorAll('.animate');
+
+  targets.forEach(target => {
+    observer.observe(target);
+  });
 }

@@ -5,6 +5,7 @@
 
 body img {
   vertical-align: bottom;
+  border-radius: 8px;
 }
 
 body h1,
@@ -97,16 +98,24 @@ footer {
 
 .animate {
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.8s;
+  transition: opacity 0.3s, -webkit-transform 0.8s;
+  transition: opacity 0.3s, transform 0.8s;
+  transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;
 }
 
-.animate .appear {
-  opacity: 0;
+.animate.slide-from-left {
+  -webkit-transform: translateX(-160px);
+          transform: translateX(-160px);
+}
+
+.animate.slide-from-right {
+  -webkit-transform: translateX(160px);
+          transform: translateX(160px);
+}
+
+.animate.appear {
+  opacity: 1;
   -webkit-transform: none;
           transform: none;
 }
