@@ -94,4 +94,20 @@ footer {
   text-align: center;
   color: #aaa;
 }
+
+.animate {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.animate .appear {
+  opacity: 0;
+  -webkit-transform: none;
+          transform: none;
+}
 /*# sourceMappingURL=stylesheet.css.map */
