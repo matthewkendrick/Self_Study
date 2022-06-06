@@ -72,10 +72,12 @@ header {
 }
 
 .hero {
+  height: 400px;
   img {
     width: 100px;
     height: 400px;
     object-fit: cover;
+    position: absolute;
   }
 }
 

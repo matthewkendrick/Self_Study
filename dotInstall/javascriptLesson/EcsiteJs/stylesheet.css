@@ -98,11 +98,16 @@ header .container {
           align-items: center;
 }
 
+.hero {
+  height: 400px;
+}
+
 .hero img {
   width: 100px;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
 }
 
 .products {
