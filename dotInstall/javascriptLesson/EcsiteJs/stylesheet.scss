@@ -78,6 +78,10 @@ header {
     height: 400px;
     object-fit: cover;
     position: absolute;
+    opacity: 0;
+    & .current {
+      opacity: 1;
+    }
   }
 }
 

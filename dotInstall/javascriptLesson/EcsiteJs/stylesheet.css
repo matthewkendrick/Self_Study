@@ -108,6 +108,11 @@ header .container {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  opacity: 0;
+}
+
+.hero img .current {
+  opacity: 1;
 }
 
 .products {
