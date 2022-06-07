@@ -73,7 +73,7 @@ header {
 
 .hero {
   height: 400px;
-  img {
+  & > img {
     width: 100px;
     height: 400px;
     object-fit: cover;
