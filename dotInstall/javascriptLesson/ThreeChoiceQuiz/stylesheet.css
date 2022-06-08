@@ -12,18 +12,18 @@ body {
   padding: 16px;
 }
 
-#question {
+.container #question {
   margin-bottom: 16px;
   font-weight: bold;
 }
 
-#choices {
+.container #choices {
   list-style: none;
   padding: 0;
   margin-bottom: 16px;
 }
 
-#choices > li {
+.container #choices > li {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
@@ -31,7 +31,25 @@ body {
   cursor: pointer;
 }
 
-#choices > li:hover {
+.container #choices > li:hover {
   background: #f8f8f8;
+}
+
+.container #btn {
+  background: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 0 #2880b9;
+          box-shadow: 0 4px 0 #2880b9;
+}
+
+.container #btn.disabled {
+  background: #ccc;
+  -webkit-box-shadow: 0 4px 0 #bbb;
+          box-shadow: 0 4px 0 #bbb;
+  opacity: 1;
 }
 /*# sourceMappingURL=stylesheet.css.map */
