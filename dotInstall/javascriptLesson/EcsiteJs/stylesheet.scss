@@ -79,6 +79,7 @@ header {
     object-fit: cover;
     position: absolute;
     opacity: 0;
+    transition: opacity 0.5s;
     & .current {
       opacity: 1;
     }
