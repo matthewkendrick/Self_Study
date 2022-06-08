@@ -16,4 +16,22 @@ body {
   margin-bottom: 16px;
   font-weight: bold;
 }
+
+#choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#choices > li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices > li:hover {
+  background: #f8f8f8;
+}
 /*# sourceMappingURL=stylesheet.css.map */
