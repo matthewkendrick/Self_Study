@@ -10,6 +10,7 @@ body {
   background: #fff;
   border-radius: 4px;
   padding: 16px;
+  position: relative;
 }
 
 .container #question {
@@ -73,5 +74,18 @@ body {
   -webkit-box-shadow: 0 4px 0 #bbb;
           box-shadow: 0 4px 0 #bbb;
   opacity: 1;
+}
+
+#result {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=stylesheet.css.map */
