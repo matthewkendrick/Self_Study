@@ -66,6 +66,9 @@ body {
 }
 
 #result {
+  .hidden {
+    transform: rotateY(-500px);
+  }
   position: absolute;
   width: 300px;
   background: #fff;
@@ -77,6 +80,7 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   text-align: center;
+  transition: 0.4s;
   & > p {
     font-size: 24px;
   }

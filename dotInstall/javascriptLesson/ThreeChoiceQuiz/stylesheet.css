@@ -89,6 +89,13 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#result .hidden {
+  -webkit-transform: rotateY(-500px);
+          transform: rotateY(-500px);
 }
 
 #result > p {
