@@ -12,7 +12,6 @@
   ];
   let currentNum = 0;
 
-  question.textContent = quizSet[currentNum].q;
 
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) { 
@@ -23,11 +22,27 @@
     return arr;
   }
 
-  const shuffledChoices = shuffle([...quizSet[currentNum].c]);
+  function checkAnswer(li) {
+    if (li.textContent == quizSet[currentNum].c[0]) {
+      console.log('correct');
+    } else {
+      console.log('wrong');
+    }
+  }
 
-  shuffledChoices.forEach(choice => {
-    const li = document.createElement('li');
-    li.textContent = choice;
-    choices.appendChild(li);
-  });
+  function setQuiz() {
+    question.textContent = quizSet[currentNum].q;
+
+    const shuffledChoices = shuffle([...quizSet[currentNum].c]);
+    shuffledChoices.forEach(choice => {
+      const li = document.createElement('li');
+      li.textContent = choice;
+      li.addEventListener('click', () => {
+        checkAnswer(li);
+      });
+      choices.appendChild(li);
+    });
+  }
+
+  setQuiz();
 }
