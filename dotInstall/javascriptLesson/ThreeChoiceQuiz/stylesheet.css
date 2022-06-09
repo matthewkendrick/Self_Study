@@ -38,11 +38,19 @@ body {
   font-weight: bold;
 }
 
+.container #choices > li.correct::after {
+  content: '...correct!';
+}
+
 .container #choices > li.wrong {
   background: #f8d8da;
   border-color: #f5c6cb;
   color: #721c24;
   font-weight: bold;
+}
+
+.container #choices > li.wrong::after {
+  content: '...wrong';
 }
 
 .container #choices > li:hover {

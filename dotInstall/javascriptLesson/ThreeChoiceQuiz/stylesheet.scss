@@ -30,12 +30,18 @@ body {
         border-color: #c3e6cd;
         color: #155724;
         font-weight: bold;
+        &::after {
+          content: '...correct!';
+        }
       }
       &.wrong {
         background: #f8d8da;
         border-color: #f5c6cb;
         color: #721c24;
         font-weight: bold;
+        &::after {
+          content: '...wrong';
+        }
       }
       &:hover {
         background: #f8f8f8;
