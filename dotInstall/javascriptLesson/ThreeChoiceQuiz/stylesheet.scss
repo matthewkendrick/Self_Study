@@ -9,8 +9,8 @@ body {
   width: 400px;
   margin: 8px auto;
   background: #fff;
-  border-radius: 4px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 24px;
   position: relative;
   #question {
     margin-bottom: 16px;
@@ -66,12 +66,12 @@ body {
 }
 
 #result {
-  .hidden {
-    transform: rotateY(-500px);
+  &.hidden {
+    transform: translateY(-500px);
   }
   position: absolute;
   width: 300px;
-  background: #fff;
+  background: #BDBDBD;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 50px;

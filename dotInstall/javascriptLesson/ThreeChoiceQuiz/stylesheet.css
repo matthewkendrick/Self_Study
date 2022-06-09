@@ -8,8 +8,8 @@ body {
   width: 400px;
   margin: 8px auto;
   background: #fff;
-  border-radius: 4px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 24px;
   position: relative;
 }
 
@@ -79,7 +79,7 @@ body {
 #result {
   position: absolute;
   width: 300px;
-  background: #fff;
+  background: #BDBDBD;
   padding: 30px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -93,9 +93,9 @@ body {
   transition: 0.4s;
 }
 
-#result .hidden {
-  -webkit-transform: rotateY(-500px);
-          transform: rotateY(-500px);
+#result.hidden {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
 }
 
 #result > p {
