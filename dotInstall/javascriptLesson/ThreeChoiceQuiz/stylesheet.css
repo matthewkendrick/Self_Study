@@ -31,6 +31,20 @@ body {
   cursor: pointer;
 }
 
+.container #choices > li.correct {
+  background: #d4edda;
+  border-color: #c3e6cd;
+  color: #155724;
+  font-weight: bold;
+}
+
+.container #choices > li.wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
 .container #choices > li:hover {
   background: #f8f8f8;
 }
