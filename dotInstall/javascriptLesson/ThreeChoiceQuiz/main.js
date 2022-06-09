@@ -56,11 +56,20 @@
       });
       choices.appendChild(li);
     });
+
+    if (currentNum == quizSet.length - 1) {
+      btn.textContent = 'Show Score'
+    }
   }
 
   setQuiz();
 
   btn.addEventListener('click', () => {
+    if (btn.classList.contains('disabled')) {
+      return;
+    }
+    btn.classList.add('disabled');
+
     currentNum++;
     setQuiz();
   });
