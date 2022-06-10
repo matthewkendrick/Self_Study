@@ -17,8 +17,14 @@ body {
     font-weight: bold;
     font-size: 42px;
     cursor: pointer;
+    box-shadow: 0 10px 0  10px #d1483e;
+    user-select: none;
     &:hover {
       opacity: 0.9;
+    }
+    &:active {
+      box-shadow: 0 5px 0  5px #d1483e;
+      margin-top: 35px;
     }
   }
 }
