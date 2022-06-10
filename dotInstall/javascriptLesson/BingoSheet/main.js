@@ -15,22 +15,26 @@
     return column;
   }
 
-  const columns = [];
-  columns[0] = createColumn(0);
-  columns[1] = createColumn(1);
-  columns[2] = createColumn(2);
-  columns[3] = createColumn(3);
-  columns[4] = createColumn(0);
-  columns[2][2] = 'FREE';
+  function createColumns() {
+    const columns = [];
 
-  const bingo = [];
-  for (let row = 0; row < 5; row++) {
-    bingo[row] = [];
-    for (let col = 0; col < 5; col++) {
-      bingo[row][col] = columns[col][row];
+    for (let i = 0; i < 5; i++) {
+      columns[i]  = createColumn(i);
     }
+    columns[2][2] = 'FREE';
+    return columns;
   }
-  console.table(bingo);
+
+  function createBingo(columns) {
+    const bingo = [];
+    for (let row = 0; row < 5; row++) {
+      bingo[row] = [];
+      for (let col = 0; col < 5; col++) {
+        bingo[row][col] = columns[col][row];
+      }
+    }
+    return bingo;
+  }
 
   for (let row = 0; row < 5; row++) {
     const tr = document.createElement('tr');
