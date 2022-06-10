@@ -1,4 +1,22 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+table {
+  padding: 8px;
+  margin: 16px;
+  height: 300px;
+  width: 300px;
+  background: #EC407A;
+  border-radius: 8px;
+}
+
+th, td {
+  background: pink;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
