@@ -7,21 +7,14 @@
       source[i] = i + 1 + 15 * col;
     }
 
-    const b = [];
-    // b[0] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-    // b[1] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-    // b[2] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-    // b[3] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-    // b[4] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-
+    const column = [];
     for (let i = 0; i < 5; i++) {
-      b[i] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
-      
+      column[i] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
     }
 
-    console.log(b);
+    return column;
       
-    }
+  }
 
   const columns = [];
   columns[0] = createColumn(0);
@@ -29,4 +22,7 @@
   columns[2] = createColumn(2);
   columns[3] = createColumn(3);
   columns[4] = createColumn(0);
+  columns[2][2] = 'FREE';
+
+  console.table(columns);
 }
