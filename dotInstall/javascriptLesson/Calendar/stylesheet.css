@@ -1,5 +1,24 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+}
+
+table {
+  margin: 16px;
+  border: 8px solid #eee;
+  border-collapse: collapse;
+}
+
+table thead,
+table tfoot {
+  background: #eee;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
