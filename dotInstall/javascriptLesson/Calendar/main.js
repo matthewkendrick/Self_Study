@@ -18,7 +18,6 @@ console.clear();
         isDisabled: true
       });
     }
-
     console.log(dates);
   }
   
