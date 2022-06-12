@@ -25,7 +25,7 @@ console.clear();
     const dates = [];
     const lastDate = new Date(year, month + 1, 0).getDate();
 
-    for (let i = 0; i <= lastDate; i++) {
+    for (let i = 1; i <= lastDate; i++) {
       dates.push({
         date: i,
         isToday: false,
@@ -50,6 +50,14 @@ console.clear();
   }
 
   function createCalendar() {
+    const tbody = document.querySelector('tbody');
+
+    while (tbody.firstChild) {
+      tbody.removeChild(tbody.firstChild);
+    }
+
+    const title = `${year}/${String( month + 1 ).padStart(2, '0')}`;
+    document.getElementById('title').textContent = title;
     const dates = [
       ...getCalendarHead(),
       ...getCalendarBody(),
@@ -88,6 +96,7 @@ console.clear();
       year--;
       month = 11;
     }
+    createCalendar();
   });
 
   document.getElementById('next').addEventListener('click', () => {
@@ -96,7 +105,6 @@ console.clear();
       year++;
       month = 0;
     }
-
     createCalendar();
   });
 
