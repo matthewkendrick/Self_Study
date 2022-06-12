@@ -61,9 +61,25 @@ console.clear();
 
     for (let i = 0; i < weeksCount; i++) {
        weeks.push(dates.splice(0, 7));
-      
     }
-    console.log(weeks);
+
+    weeks.forEach(week => {
+      const tr = document.createElement('tr');
+      week.forEach(date => {
+        const td = document.createElement('td');
+
+        td.textContent = date.date;
+        if (date.isToday) {
+          td.classList.add('today')
+        }
+        if (date.isDisabled) {
+          td.classList.add('disabled')
+        }
+
+        tr.appendChild(td);
+      });
+      document.querySelector('tbody').appendChild(tr);
+    });
   }
 
   createCalendar();
