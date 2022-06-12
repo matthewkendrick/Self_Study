@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+}
+
+table {
+  margin: 16px;
+  border: 8px solid #eee;
+  border-collapse: collapse;
+  thead,
+  tfoot {
+    background: #eee;
+  }
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+  tbody td:first-child {
+    color: pink;
+  }
+  tbody td:last-child {
+    color: skyblue;
+  }
+  tfoot {
+    font-weight: bold;
+  }
+  td {
+    &.disabled {
+    opacity: 0.3;
+    }
+    &.today {
+      font-weight: bold;
+    }
+  }
+  #prev,
+  #next,
+  #today {
+    cursor: pointer;
+    user-select: none;
+  }
+}

@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+}
+
+table {
+  margin: 16px;
+  border: 8px solid #eee;
+  border-collapse: collapse;
+}
+
+table thead,
+table tfoot {
+  background: #eee;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table tbody td:first-child {
+  color: pink;
+}
+
+table tbody td:last-child {
+  color: skyblue;
+}
+
+table tfoot {
+  font-weight: bold;
+}
+
+table td.disabled {
+  opacity: 0.3;
+}
+
+table td.today {
+  font-weight: bold;
+}
+
+table #prev,
+table #next,
+table #today {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=stylesheet.css.map */
