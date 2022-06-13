@@ -13,5 +13,9 @@ body #target {
   font-size: 48px;
   letter-spacing: 0.1em;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=stylesheet.css.map */

@@ -13,13 +13,19 @@
     'yellow',
     'pink',
   ];
+
   let word = 'red';
   let loc = 0;
   let startTime;
+  let isPlaying = false;
 
   const target = document.getElementById('target');
 
   document.addEventListener('click', () => {
+    if (isPlaying == true) {
+      return;
+    }
+    isPlaying = true;
     startTime = Date.now();
     setWord();
   });
