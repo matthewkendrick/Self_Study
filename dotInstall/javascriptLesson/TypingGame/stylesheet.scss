@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  text-align: center;
+  #target {
+    padding: 40px;
+    font-size: 48px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    user-select: none;
+  }
+}
