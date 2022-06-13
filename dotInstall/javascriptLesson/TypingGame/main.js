@@ -15,10 +15,14 @@
   ];
   let word = 'red';
   let loc = 0;
+  let startTime;
 
   const target = document.getElementById('target');
 
-  setWord();
+  document.addEventListener('click', () => {
+    startTime = Date.now();
+    setWord();
+  });
 
   document.addEventListener('keydown', e => {
     if (e.key != word[loc]) {
@@ -31,8 +35,9 @@
 
     if (loc == word.length) {
       if (words.length == 0) {
+        const elapsedTime = (( Date.now() - startTime) / 1000 ).toFixed(2);
         const result = document.getElementById('result');
-        result.textContent = 'Finished!!!';
+        result.textContent = `Finished!!! ${elapsedTime} seconds`;
         return;
       }
       setWord();
