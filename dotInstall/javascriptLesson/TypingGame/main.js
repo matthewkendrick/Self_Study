@@ -10,6 +10,8 @@
   document.addEventListener('keydown', e => {
     if (e.key == word[loc]) {
       loc++;
+
+      target.textContent = '_'.repeat(loc) + word.substring(loc);
     }
   });
 }
