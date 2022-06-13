@@ -15,7 +15,7 @@ body .container {
   background: #fff;
   padding: 15px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 body #timer {
@@ -25,5 +25,28 @@ body #timer {
   font-size: 40px;
   margin-bottom: 15px;
   border-radius: 8px;
+}
+
+body .controlls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .controlls .button {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=stylesheet.css.map */
