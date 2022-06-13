@@ -26,6 +26,9 @@ body {
   .controlls {
     display: flex;
     justify-content: space-between;
+    .inactive {
+      opacity: 0.6;
+    }
     .button {
       width: 80px;
       height: 45px;

@@ -36,6 +36,10 @@ body .controlls {
           justify-content: space-between;
 }
 
+body .controlls .inactive {
+  opacity: 0.6;
+}
+
 body .controlls .button {
   width: 80px;
   height: 45px;
