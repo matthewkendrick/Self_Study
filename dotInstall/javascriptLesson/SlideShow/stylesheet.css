@@ -61,6 +61,23 @@ main #main {
   height: 200px;
 }
 
+main .thumbnails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[5];
+      grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+main .thumbnails li {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+main .thumbnails li:hover, main .thumbnails li.current {
+  opacity: 1;
+}
+
 main .thumbnails img {
   border-radius: 4px;
   width: 56px;

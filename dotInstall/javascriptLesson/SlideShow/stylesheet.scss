@@ -44,6 +44,16 @@ main {
     height: 200px;
   }
   .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(5, 56px);
+    gap: 5px;
+    li {
+      cursor: pointer;
+      opacity: 0.4;
+      &:hover, &.current {
+        opacity: 1;
+      }
+    }
     img {
       border-radius: 4px;
       width: 56px;
