@@ -27,6 +27,10 @@
     }
     li.addEventListener('click', () => {
       mainImage.src = image;
+      const thumbnails = document.querySelectorAll('.thumbnail > li');
+      thumbnails[currentIndex].classList.remove('current');
+      currentIndex = index;
+      thumbnails[currentIndex].classList.add('current');
     });
 
     li.appendChild(img);
