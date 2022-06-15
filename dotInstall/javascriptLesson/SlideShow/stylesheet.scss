@@ -5,7 +5,7 @@
 
 main {
   width: 300px;
-  margin: 0 auto;
+  margin: 16px auto;
   img {
     vertical-align: bottom;
   }
@@ -19,7 +19,8 @@ main {
       justify-content: space-between;
     }
     li {
-      border: 1px solid #ddd;
+      font-weight: bold;
+      border: 2px solid #ddd;
       border-radius: 4px;
       font-size: 12px;
       padding: 4px;
