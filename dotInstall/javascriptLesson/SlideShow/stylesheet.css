@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 300px;
+  margin: 16px auto;
+}
+
+main img {
+  vertical-align: bottom;
+}
+
+main ul {
+  list-style: none;
+}
+
+main nav {
+  margin-bottom: 8px;
+}
+
+main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main nav li {
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+main nav li:hover {
+  background: #f8f8f8;
+}
+
+main nav li#play {
+  width: 140px;
+}
+
+main nav li#prev, main nav li#next {
+  width: 60px;
+}
+
+main #main {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+}
+
+main .thumbnails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[5];
+      grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+main .thumbnails li {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+main .thumbnails li:hover, main .thumbnails li.current {
+  opacity: 1;
+}
+
+main .thumbnails img {
+  border-radius: 4px;
+  width: 56px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
