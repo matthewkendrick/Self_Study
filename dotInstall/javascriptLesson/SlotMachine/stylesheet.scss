@@ -4,10 +4,12 @@
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
   width: 300px;
   background: #ecf0f1;
   padding: 20px;
-  border: 4px solid skyblue;
+  border: 4px solid pink;
   border-radius: 12px;
   margin: 16px auto;
   body {
@@ -19,5 +21,20 @@ main {
   .panel img {
     width: 90px;
     height: 110px;
+    margin-bottom: 4px;
+  }
+  .stop {
+    cursor: pointer;
+    width: 90px;
+    height: 48px;
+    background: #ef454a;
+    box-shadow: 0 4px 0 #d1483e;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
   }
 }
