@@ -14,14 +14,33 @@ body {
 body #container {
   width: 120px;
   margin: 16px auto;
-  background: pink;
-  border-radius: 16px;
+  border-radius: 8px;
+}
+
+body #container #timer {
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: right;
 }
 
 body #container #board {
   list-style: none;
   padding: 10px;
+  margin: 0 0 8px;
   background: #fff;
   border-radius: 8px;
+}
+
+body #container #board li {
+  background: #0af;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 0 #0088cc;
+          box-shadow: 0 4px 0 #0088cc;
 }
 /*# sourceMappingURL=stylesheet.css.map */
