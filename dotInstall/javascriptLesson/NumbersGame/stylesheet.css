@@ -56,4 +56,24 @@ body #container #board li.pressed {
   margin-top: 9px;
   margin-bottom: 1px;
 }
+
+body #container #btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #f44336;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 0 #d1483e;
+          box-shadow: 0 4px 0 #d1483e;
+}
+
+body #container #btn:active {
+  margin-top: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=stylesheet.css.map */
