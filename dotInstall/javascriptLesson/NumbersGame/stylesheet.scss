@@ -19,6 +19,8 @@ body {
       text-align: right;
     }
     & #board {
+      display: flex;
+      flex-wrap: wrap;
       list-style: none;
       padding: 10px;
       margin: 0 0 8px;
@@ -34,6 +36,12 @@ body {
         line-height: 40px;
         text-align: center;
         box-shadow: 0 4px 0 #0088cc;
+        &.pressed {
+          background: #ccc;
+          box-shadow: none;
+          margin-top: 9px;
+          margin-bottom: 1px;
+        }
       }
     }
   }

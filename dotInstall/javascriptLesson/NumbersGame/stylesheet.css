@@ -24,6 +24,11 @@ body #container #timer {
 }
 
 body #container #board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 10px;
   margin: 0 0 8px;
@@ -42,5 +47,13 @@ body #container #board li {
   text-align: center;
   -webkit-box-shadow: 0 4px 0 #0088cc;
           box-shadow: 0 4px 0 #0088cc;
+}
+
+body #container #board li.pressed {
+  background: #ccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 9px;
+  margin-bottom: 1px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
