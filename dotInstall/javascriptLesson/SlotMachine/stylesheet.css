@@ -2,4 +2,25 @@
   padding: 0;
   margin: 0;
 }
+
+main {
+  width: 300px;
+  background: #ecf0f1;
+  padding: 20px;
+  border: 4px solid skyblue;
+  border-radius: 12px;
+  margin: 16px auto;
+}
+
+main body {
+  background: #bdc3c7;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main .panel img {
+  width: 90px;
+  height: 110px;
+}
 /*# sourceMappingURL=stylesheet.css.map */
