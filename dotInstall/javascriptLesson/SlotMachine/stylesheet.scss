@@ -51,6 +51,9 @@ body {
     color: #fff;
     user-select: none;
   }
+  .unmatched {
+    opacity: 0.5;
+  }
   & #spin {
     cursor: pointer;
     width: 280px;

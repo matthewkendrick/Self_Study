@@ -64,6 +64,10 @@ body .stop {
           user-select: none;
 }
 
+body .unmatched {
+  opacity: 0.5;
+}
+
 body #spin {
   cursor: pointer;
   width: 280px;
