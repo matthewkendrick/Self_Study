@@ -15,6 +15,10 @@
       this.stop.textContent = 'STOP';
       this.stop.classList.add('stop');
       this.stop.addEventListener('click', () => {
+        if (this.stop.classList.contains('inactive')) {
+          return;
+        }
+        this.stop.classList.add('inactive');
         clearTimeout(this.timeoutId);
 
         panelsLeft--;
@@ -78,6 +82,10 @@
 
   const spin = document.getElementById('spin');
   spin.addEventListener('click', () => {
+    if (spin.classList.contains('inactive')) {
+      return;
+    }
+    spin.classList.add('inactive');
     panels.forEach(panel => {
       panel.spin();
     })

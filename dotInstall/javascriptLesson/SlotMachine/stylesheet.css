@@ -68,6 +68,10 @@ body .unmatched {
   opacity: 0.5;
 }
 
+body .inactive {
+  opacity: 0.5;
+}
+
 body #spin {
   cursor: pointer;
   width: 280px;

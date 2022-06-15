@@ -54,6 +54,9 @@ body {
   .unmatched {
     opacity: 0.5;
   }
+  .inactive {
+    opacity: 0.5;
+  }
   & #spin {
     cursor: pointer;
     width: 280px;
