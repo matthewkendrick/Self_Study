@@ -2,3 +2,19 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-size: 14px;
+  .container {
+    margin: 30px auto;
+    width: 500px;
+  }
+  .menu {
+    list-style-type: none;
+    display: flex;
+    li a {
+      display: inline-block;
+      width: 100px;
+    }
+  }
+}
