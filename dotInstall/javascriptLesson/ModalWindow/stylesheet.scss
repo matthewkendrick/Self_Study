@@ -14,6 +14,9 @@ body {
     padding: 12px 0;
     margin: 16px auto 0;
     font-weight: bold;
+    &:hover {
+      background: #ccc;
+    }
   }
   #mask {
     background: rgba($color: #000000, $alpha: 0.4);

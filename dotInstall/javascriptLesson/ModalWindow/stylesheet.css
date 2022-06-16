@@ -18,6 +18,10 @@ body #open, body #close {
   font-weight: bold;
 }
 
+body #open:hover, body #close:hover {
+  background: #ccc;
+}
+
 body #mask {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
