@@ -8,13 +8,29 @@ body {
   .container {
     margin: 30px auto;
     width: 500px;
-  }
-  .menu {
-    list-style-type: none;
-    display: flex;
-    li a {
-      display: inline-block;
-      width: 100px;
+    .menu {
+      list-style-type: none;
+      display: flex;
+      li a {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        padding: 8px 0;
+        color: #333;
+        text-decoration: none;
+        &.active {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+    .content {
+      display: none;
+      &.active {
+        display: block;
+        background: #333;
+        color: #fff;
+      }
     }
   }
 }

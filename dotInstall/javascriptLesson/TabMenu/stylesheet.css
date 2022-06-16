@@ -12,15 +12,34 @@ body .container {
   width: 500px;
 }
 
-body .menu {
+body .container .menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .menu li a {
+body .container .menu li a {
   display: inline-block;
   width: 100px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+body .container .menu li a.active {
+  background: #333;
+  color: #fff;
+}
+
+body .container .content {
+  display: none;
+}
+
+body .container .content.active {
+  display: block;
+  background: #333;
+  color: #fff;
 }
 /*# sourceMappingURL=stylesheet.css.map */
