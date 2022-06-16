@@ -56,31 +56,42 @@
     }
   }
 
-  function runTimer() {
-    const timer = document.getElementById('timer');
-    timer.textContent = ((Date.now() - startTime) / 1000).toFixed(2);
 
-    timeoutId = setTimeout(() => {
-      runTimer();
-    }, 10);
-  }
+  class Game {
+    constructor() {
+      this.board = new Board();
 
-  const board = new Board();
+      this.currentNum = undefined;
+      this.startTime = undefined;
+      this.timeoutId = undefined;
 
-  let currentNum;
-  let startTime;
-  let timeoutId;
-
-  const btn = document.getElementById('btn');
-  btn.addEventListener('click', () => {
-    if (typeof timeoutId!= 'undefined') {
-      clearTimeout(timeoutId);
+      const btn = document.getElementById('btn');
+      btn.addEventListener('click', () => {
+        this.startTime();
+      });
     }
 
-    currentNum = 0;
-    board.activate();
+    start() {
+      if (typeof this.timeoutId!= 'undefined') {
+        clearTimeout(timeoutId);
+      }
 
-    startTime = Date.now();
-    runTimer();
-  });
+      this.currentNum = 0;
+      this.board.activate();
+
+      this.startTime = Date.now();
+      this.runTimer();
+    }
+
+    runTimer() {
+      const timer = document.getElementById('timer');
+      timer.textContent = ((Date.now() - this.startTime) / 1000).toFixed(2);
+
+      this.timeoutId = setTimeout(() => {
+        this.runTimer();
+      }, 10);
+    }
+  }
+
+  new Game();
 }
