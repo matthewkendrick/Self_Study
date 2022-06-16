@@ -12,7 +12,6 @@ body {
 }
 
 body #container {
-  width: 120px;
   margin: 16px auto;
   border-radius: 8px;
 }
