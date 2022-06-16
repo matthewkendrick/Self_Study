@@ -15,6 +15,7 @@ body #open, body #close {
   text-align: center;
   padding: 12px 0;
   margin: 16px auto 0;
+  font-weight: bold;
 }
 
 body #mask {
@@ -24,6 +25,10 @@ body #mask {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+body #mask.hidden {
+  display: none;
 }
 
 body #modal {
@@ -40,5 +45,10 @@ body #modal {
 
 body #modal p {
   margin: 0 0 20px;
+}
+
+body #modal.hidden {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
 }
 /*# sourceMappingURL=stylesheet.css.map */

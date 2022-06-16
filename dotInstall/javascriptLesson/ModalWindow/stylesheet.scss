@@ -13,6 +13,7 @@ body {
     text-align: center;
     padding: 12px 0;
     margin: 16px auto 0;
+    font-weight: bold;
   }
   #mask {
     background: rgba($color: #000000, $alpha: 0.4);
@@ -21,6 +22,9 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    &.hidden {
+      display: none;
+    }
   }
   #modal {
     background: #fff;
@@ -34,6 +38,9 @@ body {
     margin: 0 auto;
     & p {
       margin: 0 0 20px;
+    }
+    &.hidden {
+      transform: translateY(-500px);
     }
   }
 }
