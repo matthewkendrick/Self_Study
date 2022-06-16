@@ -21,12 +21,12 @@
     }
 
     check() {
-      if (currentNum == parseInt(this.el.textContent, 10)) {
+      if (this.game.getCurrentNum() == parseInt(this.el.textContent, 10)) {
         this.el.classList.add('pressed');
-        currentNum++;
+        this.game.addCurrentNum();
 
-        if (currentNum == 4) {
-          clearTimeout(timeoutId);
+        if (this.game.getCurrentNum() == 4) {
+          clearTimeout(this.game.getTimeoutId());
         }
       }
     }
@@ -58,7 +58,6 @@
     }
   }
 
-
   class Game {
     constructor() {
       this.board = new Board(this);
@@ -69,7 +68,7 @@
 
       const btn = document.getElementById('btn');
       btn.addEventListener('click', () => {
-        this.startTime();
+        this.start();
       });
     }
 
@@ -92,6 +91,18 @@
       this.timeoutId = setTimeout(() => {
         this.runTimer();
       }, 10);
+    }
+
+    addCurrentNum() {
+      this.currentNum++;
+    }
+
+    getCurrentNum() {
+      return this.currentNum;
+    }
+
+    getTimeoutId() {
+      return this.timeoutId;
     }
   }
 
