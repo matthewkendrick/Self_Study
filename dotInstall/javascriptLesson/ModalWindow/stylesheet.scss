@@ -2,3 +2,16 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-size: 14px;
+  #open, #close {
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 16px auto 0;
+  }
+}
