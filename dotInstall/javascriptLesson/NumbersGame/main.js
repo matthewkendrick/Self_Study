@@ -2,7 +2,8 @@
 
 {
   class Panel {
-    constructor() {
+    constructor(game) {
+      this.game = game;
       this.el = document.createElement('li');
       this.el.classList.add('pressed');
       this.el.addEventListener('click', () => {
@@ -32,10 +33,11 @@
   }
 
   class Board {
-    constructor() {
+    constructor(game) {
+      this.game = game;
       this.panels = [];
       for (let i = 0; i < 4; i++) {
-        this.panels.push(new Panel());
+        this.panels.push(new Panel(this.game));
       }
       this.setup();
     }
@@ -59,7 +61,7 @@
 
   class Game {
     constructor() {
-      this.board = new Board();
+      this.board = new Board(this);
 
       this.currentNum = undefined;
       this.startTime = undefined;
