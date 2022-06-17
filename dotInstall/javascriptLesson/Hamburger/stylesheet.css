@@ -14,7 +14,22 @@ body header {
   padding: 0 16px;
 }
 
+body header .logo h1 {
+  font-size: 22px;
+  line-height: 64px;
+}
+
 body header .sp-menu {
   margin-left: auto;
+}
+
+body header .sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+body main {
+  padding: 0 16px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
