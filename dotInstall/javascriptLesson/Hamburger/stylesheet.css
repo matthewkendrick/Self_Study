@@ -2,4 +2,19 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 16px;
+}
+
+body header .sp-menu {
+  margin-left: auto;
+}
 /*# sourceMappingURL=stylesheet.css.map */
