@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+* a {
+  color: #007BFF;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -113,6 +117,23 @@ body .pc-menu {
   body .pc-menu {
     display: block;
     margin-left: auto;
+  }
+  body .pc-menu ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .pc-menu a {
+    display: block;
+    width: 80px;
+    line-height: 64px;
+    text-align: center;
+    text-decoration: none;
+  }
+  body .pc-menu a:hover {
+    background: #17A2B8;
+    border-radius: 0 0 16px 16px;
   }
   body .sp-menu {
     display: none;

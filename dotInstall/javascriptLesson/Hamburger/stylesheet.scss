@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  a {
+    color: #007BFF;
+  }
 }
 
 body {
@@ -85,6 +88,21 @@ body {
     .pc-menu {
       display: block;
       margin-left: auto;
+      & ul {
+        list-style-type: none;
+        display: flex;
+      }
+      a {
+        display: block;
+        width: 80px;
+        line-height: 64px;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+          background: #17A2B8;
+          border-radius: 0 0 16px 16px;
+        }
+      }
     }
     .sp-menu {
       display: none;
