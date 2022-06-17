@@ -54,6 +54,13 @@ body .overlay ul {
 
 body .overlay ul li {
   margin-top: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
 body .overlay ul li a {
@@ -71,6 +78,27 @@ body .overlay #close {
 body .overlay.show {
   opacity: 1;
   pointer-events: auto;
+}
+
+body .overlay.show li {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+body .overlay.show li:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+body .overlay.show li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+body .overlay.show li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 body main {
