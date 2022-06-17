@@ -44,6 +44,8 @@ body .overlay {
   padding: 64px;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 body .overlay ul {

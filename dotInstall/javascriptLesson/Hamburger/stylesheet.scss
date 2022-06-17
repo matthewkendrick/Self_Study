@@ -37,6 +37,7 @@ body {
     padding: 64px;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.4s;
     ul {
       list-style-type: none;
       li {
