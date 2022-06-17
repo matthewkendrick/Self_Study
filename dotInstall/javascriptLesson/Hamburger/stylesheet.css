@@ -104,4 +104,18 @@ body .overlay.show li:nth-child(3) {
 body main {
   padding: 0 16px;
 }
+
+body .pc-menu {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  body .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+  body .sp-menu {
+    display: none;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
