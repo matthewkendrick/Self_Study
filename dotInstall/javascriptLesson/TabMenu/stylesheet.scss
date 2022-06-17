@@ -20,7 +20,7 @@ body {
         text-decoration: none;
         border-radius: 8px 8px 0 0;
         &.active {
-          background: #333;
+          background: #17A2B8;
           color: #fff;
         }
         &:not(.active):hover {
@@ -33,10 +33,11 @@ body {
       display: none;
       &.active {
         display: block;
-        background: #333;
+        background: #17A2B8;
         color: #fff;
         min-height: 150px;
         padding: 12px;
+        border-radius: 0 0 8px 8px;
       }
     }
   }

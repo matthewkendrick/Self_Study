@@ -30,7 +30,7 @@ body .container .menu li a {
 }
 
 body .container .menu li a.active {
-  background: #333;
+  background: #17A2B8;
   color: #fff;
 }
 
@@ -46,9 +46,10 @@ body .container .content {
 
 body .container .content.active {
   display: block;
-  background: #333;
+  background: #17A2B8;
   color: #fff;
   min-height: 150px;
   padding: 12px;
+  border-radius: 0 0 8px 8px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
