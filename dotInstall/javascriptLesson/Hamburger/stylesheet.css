@@ -36,6 +36,30 @@ body .overlay {
   right: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body .overlay ul {
+  list-style-type: none;
+}
+
+body .overlay ul li {
+  margin-top: 24px;
+}
+
+body .overlay ul li a {
+  text-decoration: none;
+}
+
+body .overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 body main {

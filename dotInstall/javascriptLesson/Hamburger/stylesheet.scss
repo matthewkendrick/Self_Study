@@ -30,6 +30,26 @@ body {
     right: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    ul {
+      list-style-type: none;
+      li {
+        margin-top: 24px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    & #close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 32px;
+      cursor: pointer;
+    }
   }
   main {
     padding: 0 16px;
