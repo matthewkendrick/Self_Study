@@ -20,6 +20,9 @@ body {
         font-size: 32px;
         line-height: 64px;
         cursor: pointer;
+        &.hide {
+          display: none;
+        }
       }
     }
   }
@@ -49,6 +52,10 @@ body {
       right: 16px;
       font-size: 32px;
       cursor: pointer;
+    }
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
     }
   }
   main {

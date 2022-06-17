@@ -29,6 +29,10 @@ body header .sp-menu #open {
   cursor: pointer;
 }
 
+body header .sp-menu #open.hide {
+  display: none;
+}
+
 body .overlay {
   position: fixed;
   top: 0;
@@ -60,6 +64,11 @@ body .overlay #close {
   right: 16px;
   font-size: 32px;
   cursor: pointer;
+}
+
+body .overlay.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 body main {
