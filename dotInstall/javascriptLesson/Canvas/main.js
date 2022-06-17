@@ -8,12 +8,15 @@
     }
     const ctx = canvas.getContext('2d');
 
-    ctx.shadowOffsetX = 4;
-    ctx.shadowOffsetY = 4;
-    ctx.shadowBlur = 4;
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+    ctx.fillStyle = 'skyblue';
 
-    ctx.fillRect(50, 50, 50, 50);
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(100, 50);
+    ctx.lineTo(100, 100);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fill();
   }
   draw();
 }
