@@ -8,9 +8,18 @@
     }
     const ctx = canvas.getContext('2d');
 
-    ctx.ellipse(100, 100, 50, 30, 0, 0, 2 * Math.PI);
-    ctx.rect(50, 50, 50, 50);
+    ctx.beginPath();
+    ctx.moveTo(0, 100);
+    ctx.lineTo(canvas.width, 100);
+    ctx.moveTo(100, 0);
+    ctx.lineTo(100, canvas.height);
     ctx.stroke();
+
+    ctx.font = 'bold 32px Verdana';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'top';
+
+    ctx.strokeText('Tokyo', 100, 100, 100);
   }
   draw();
 }
