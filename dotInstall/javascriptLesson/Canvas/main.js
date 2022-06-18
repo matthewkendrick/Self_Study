@@ -8,9 +8,8 @@
     }
     const ctx = canvas.getContext('2d');
 
-    ctx.beginPath();
-    ctx.moveTo(100, 100);
-    ctx.arc(100, 100, 50, 0, 300 / 180 * Math.PI);
+    ctx.ellipse(100, 100, 50, 30, 0, 0, 2 * Math.PI);
+    ctx.rect(50, 50, 50, 50);
     ctx.stroke();
   }
   draw();
