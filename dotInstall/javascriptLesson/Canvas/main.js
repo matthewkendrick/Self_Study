@@ -22,6 +22,8 @@
     ctx.fillStyle = 'skyblue';
     ctx.fill();
 
+    ctx.save();
+
     ctx.scale(0.5, 0.5);
     ctx.translate(400, 0);
     ctx.rotate(45 / 180 * Math.PI);
@@ -39,6 +41,11 @@
     ctx.ellipse(120, 100, 8, 8, 0, 0, 2 * Math.PI);
     ctx.fillStyle = 'skyblue';
     ctx.fill();
+
+    ctx.restore();
+
+    ctx.fillStyle = 'black';
+    ctx.fillRect(80, 120, 40, 40);
   }
   draw();
 }
