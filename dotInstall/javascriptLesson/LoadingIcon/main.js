@@ -1,20 +1,22 @@
 'use strict';
 
 (() => {
-  class Icon {
+  class IconDrawer {
     constructor(canvas) {
-      this.ctx = canvas.getContext('2d');
-      this.width = canvas.width;
-      this.height = canvas.height;
-      this.r = 30;
-      this.angle = 0;
+        this.ctx = canvas.getContext('2d');
+        this.width = canvas.width;
+        this.height = canvas.height;
+        this.r = 30;
     }
-    draw() {
+
+    draw(angle) {
       this.ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
       this.ctx.fillRect(0, 0, this.width, this.height);
+
       this.ctx.save();
+
       this.ctx.translate(this.width / 2, this.height / 2);
-      this.ctx.rotate(Math.PI / 180 * this.angle);
+      this.ctx.rotate(Math.PI / 180 * angle);
 
       this.ctx.beginPath();
       this.ctx.moveTo(0, -this.r - 10);
@@ -24,6 +26,16 @@
       this.ctx.stroke();
 
       this.ctx.restore();
+    }
+  }
+  class Icon {
+    constructor(drawer) {
+      this.drawer = drawer;
+      this.angle = 0;
+    }
+
+    draw() {
+      this.drawer.draw(this.angle);
     }
 
     update() {
@@ -45,6 +57,6 @@
     return;
   }
 
-  const icon = new Icon(canvas);
+  const icon = new Icon(new IconDrawer(canvas));
   icon.run();
 })();
