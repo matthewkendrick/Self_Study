@@ -9,11 +9,16 @@ body {
 
 body .canvas {
   text-align: center;
-  padding-top: 16px;
+  margin: 16px auto;
+  padding-top: 32px;
+  height: 550px;
+  width: 380px;
+  background: #4E342E;
+  border-radius: 240px 240px 16px 16px;
 }
 
 body canvas {
-  background: #fff;
-  border-radius: 16px;
+  background: #e5e5e5;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=stylesheet.css.map */

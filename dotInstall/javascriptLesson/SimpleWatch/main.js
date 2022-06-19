@@ -24,6 +24,15 @@
 
         ctx.beginPath();
         ctx.moveTo(0, -this.r);
+        if (angle % 30 == 0) {
+          ctx.lineWidth = 2;
+          ctx.lineTo(0, -this.r + 10);
+          ctx.font = '16px bold Arial';
+          ctx.textAlign = 'center';
+          ctx.fillText(angle / 30 || 12, 0, -this.r - 10);
+        } else {
+          ctx.lineTo(0, -this.r + 5);
+        }
         ctx.lineTo(0, -this.r + 5);
         ctx.stroke();
 
