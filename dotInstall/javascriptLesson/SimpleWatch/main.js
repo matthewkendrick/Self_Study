@@ -2,6 +2,10 @@
 
 {
   class Clock {
+    constructor() {
+      this.r = 100;
+    }
+
     drawFace() {
       const canvas = document.querySelector('canvas');
       if (typeof canvas.getContext == 'undefined') {
@@ -17,6 +21,11 @@
 
         ctx.translate(width / 2, height / 2);
         ctx.rotate(Math.PI / 180 * angle);
+
+        ctx.beginPath();
+        ctx.moveTo(0, -this.r);
+        ctx.lineTo(0, -this.r + 5);
+        ctx.stroke();
 
         ctx.restore();
       }

@@ -3,7 +3,14 @@
   margin: 0;
 }
 
-canvas {
-  width: 300px;
-  height: 260px;
+body {
+  background: #BDBDBD;
+  .canvas {
+    text-align: center;
+    padding-top: 16px;
+  }
+  canvas {
+    background: #fff;
+    border-radius: 16px;
+  }
 }
