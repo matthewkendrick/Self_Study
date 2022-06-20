@@ -14,8 +14,9 @@
   <div id="app" class="container">
     <div class="title-set">
       <h1>
+        <button @click="purge">Purge</button>
         Todos
-        <span class="info">({{remaining}}/{{todos.length}})</span>
+        <span class="info">({{remaining.length}}/{{todos.length}})</span>
       </h1>
       <form action="" @submit.prevent="addItem">
         <input type="text" v-model="newItem">

@@ -17,6 +17,21 @@ body {
       letter-spacing: 0.5rem;
       border-bottom: 1px solid #ddd;
       padding: 16px 0;
+      button {
+        float: right;
+        margin-top: 4px;
+        background-color: #F3BEC3;
+        color: #E71F63;
+        font-weight: bold;
+        width: 50px;
+        height: 28px;
+        border: 2px solid #E71F63;
+        border-radius: 8px;
+        &:hover {
+          background: #E71F63;
+          color: #fff;
+        }
+      }
       .info {
         color: #bbb;
         font-size: 12px;
