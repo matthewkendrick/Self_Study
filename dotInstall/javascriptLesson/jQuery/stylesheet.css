@@ -24,8 +24,12 @@ body .text button:hover {
   background: #B0BEC5;
 }
 
-body .text p.red-text {
+body .text .red-text {
   color: red;
   font-weight: bold;
+}
+
+body .text ul {
+  list-style: none;
 }
 /*# sourceMappingURL=stylesheet.css.map */

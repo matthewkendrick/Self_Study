@@ -2,8 +2,7 @@
 
 $(() => {
   $('button').click(() => {
-    $('p')
-      .text('おはよう！')
+    $('li:nth-child(odd), li:last-child')
       .addClass('red-text');
   });
 });

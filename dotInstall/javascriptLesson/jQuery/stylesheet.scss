@@ -18,9 +18,12 @@ body {
         background: #B0BEC5;
       }
     }
-    p.red-text {
+    .red-text {
       color: red;
       font-weight: bold;
+    }
+    ul {
+      list-style: none;
     }
   }
 }
