@@ -14,7 +14,7 @@
   <div id="app" class="container">
     <div class="title-set">
       <h1>
-        <button @click="purge">Purge</button>
+        <button @click="purge">Clear</button>
         Todos
         <span class="info">({{remaining.length}}/{{todos.length}})</span>
       </h1>
@@ -26,9 +26,9 @@
     <ul v-if="todos.length" class="">
       <li v-for="(todo, index) in todos">
         <input type="checkbox" v-model="todo.isDone" name="" id="">
-        <span :class="{done: todo.isDone}">{{ todo.title }}</span>
+        <span class="{done: todo.isDone}">{{ todo.title }}</span>
         <span class="command" @click="deleteItem(index)">
-        <span class="material-symbols-rounded">close</span>
+        <span class="material-symbols-rounded icon">close</span>
       </li>
     </ul>
     <ul v-else>

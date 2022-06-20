@@ -13,11 +13,19 @@
         isDone: false
       }, { 
         title: 'task 3',
-        isDone:true 
+        isDone: true 
       }]
     },
+    watch: {
+      todos: { 
+        handler: function() {
+        localStorage.setItem('todos', JSON.stringify(this.todos)); 
+        },
+        deep: true
+      }
+    },
     methods: {
-      addItem: function(e) {
+      addItem: function() {
         var item = {
           title: this.newItem,
           isDone: false
@@ -31,7 +39,7 @@
         }
       },
       purge: function() {
-        if (!confirm('delete finished?')) {
+        if (!confirm('Delete has finished?')) {
           return;
         }
         this.todos = this.remaining;

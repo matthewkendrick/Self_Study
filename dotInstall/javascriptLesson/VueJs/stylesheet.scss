@@ -71,12 +71,28 @@ body {
       }
       .command {
         font-weight: bold;
-        height: 25px;
+        height: 24px;
+        width: 24px;
         text-align: right;
         display: inline-block;
         vertical-align: middle;
         cursor: pointer;
         color: #08c;
+        background-color: skyblue;
+        border-radius: 50%;
+        &:hover {
+          color: #fff;
+          background-color: #007BFF;
+          border-radius: 50%;
+        }
+        .icon {
+          height: 24px;
+          width: 24px;
+          font-size: 14px;
+          font-weight: bold;
+          vertical-align: middle;
+          text-align: center;
+        }
       }
     }
   }

@@ -80,11 +80,29 @@ body #app ul li span.done {
 
 body #app ul .command {
   font-weight: bold;
-  height: 25px;
+  height: 24px;
+  width: 24px;
   text-align: right;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
   color: #08c;
+  background-color: skyblue;
+  border-radius: 50%;
+}
+
+body #app ul .command:hover {
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 50%;
+}
+
+body #app ul .command .icon {
+  height: 24px;
+  width: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
