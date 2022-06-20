@@ -16,6 +16,7 @@ body .container {
 
 body #app h1 {
   font-size: 24px;
+  letter-spacing: 0.5rem;
   border-bottom: 1px solid #ddd;
   padding: 16px 0;
 }
@@ -29,6 +30,7 @@ body #app form .btn {
 
 body #app form .btn:hover {
   background: lightgray;
+  cursor: pointer;
 }
 
 body #app form input {
