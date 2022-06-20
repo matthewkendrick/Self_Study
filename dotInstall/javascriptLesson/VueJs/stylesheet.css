@@ -45,6 +45,17 @@ body #app form input[type="text"] {
 
 body #app ul li {
   line-height: 2;
+  height: 40px;
   list-style: none;
+}
+
+body #app ul .command {
+  font-weight: bold;
+  height: 25px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #08c;
 }
 /*# sourceMappingURL=stylesheet.css.map */
