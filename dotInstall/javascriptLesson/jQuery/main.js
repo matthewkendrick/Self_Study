@@ -1,9 +1,12 @@
 'use strict';
 
 $(() => {
-  $('button').click(() => {
+  $('button').keydown(() => {
     $('<li>')
-      .text('New Item')
+      .text($('input').val())
       .appendTo('ul');
+    $('input')
+      .val('')
+      .focus();
   });
 });

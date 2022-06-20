@@ -32,4 +32,10 @@ body .text .red-text {
 body .text ul {
   list-style: none;
 }
+
+body .text input {
+  height: 35px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=stylesheet.css.map */
