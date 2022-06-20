@@ -13,7 +13,10 @@
 <body>
   <div id="app" class="container">
     <div class="title-set">
-      <h1>Todos</h1>
+      <h1>
+        Todos
+        <span class="info">({{remaining}}/{{todos.length}})</span>
+      </h1>
       <form action="" @submit.prevent="addItem">
         <input type="text" v-model="newItem">
         <input class="btn" type="submit" value="ADD">

@@ -17,6 +17,12 @@ body {
       letter-spacing: 0.5rem;
       border-bottom: 1px solid #ddd;
       padding: 16px 0;
+      .info {
+        color: #bbb;
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: middle;
+      }
     }
     form {
       .btn {

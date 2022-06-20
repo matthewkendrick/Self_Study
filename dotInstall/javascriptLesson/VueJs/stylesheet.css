@@ -21,6 +21,13 @@ body #app h1 {
   padding: 16px 0;
 }
 
+body #app h1 .info {
+  color: #bbb;
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
 body #app form .btn {
   font-weight: bold;
   width: 50px;
