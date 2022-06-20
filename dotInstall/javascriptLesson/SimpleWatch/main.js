@@ -11,7 +11,7 @@
     draw(angle, func) {
       this.ctx.save();
 
-      this.ctx.translate(width / 2, height / 2);
+      this.ctx.translate(this.width / 2, this.height / 2);
       this.ctx.rotate(Math.PI / 180 * angle);
 
       this.ctx.beginPath();
@@ -25,6 +25,10 @@
     constructor(drawer) {
       this.r = 100;
       this.drawer = drawer;
+
+      this.h = (new Date()).getHours();
+      this.m = (new Date()).getMinutes();
+      this.s = (new Date()).getSeconds();
     }
 
     drawFace() {
@@ -44,8 +48,17 @@
       }
     }
 
+    drawHands() {
+      this.drawer.draw(this.h * 30 + this.m * 0.5, ctx => {
+        ctx.lineWidth = 6;
+        ctx.moveTo(0, 10);
+        ctx.lineTo(0, -this.r + 50);
+      });
+    }
+
     run() {
       this.drawFace();
+      this.drawHands();
     }
   }
 
