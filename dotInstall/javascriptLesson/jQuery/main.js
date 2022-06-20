@@ -2,7 +2,8 @@
 
 $(() => {
   $('button').click(() => {
-    $('li:nth-child(odd), li:last-child')
-      .addClass('red-text');
+    $('<li>')
+      .text('New Item')
+      .appendTo('ul');
   });
 });
