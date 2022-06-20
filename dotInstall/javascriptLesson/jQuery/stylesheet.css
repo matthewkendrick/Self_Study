@@ -33,6 +33,19 @@ body .text ul {
   list-style: none;
 }
 
+body .text ul li {
+  cursor: pointer;
+}
+
+body .text ul li:hover::after {
+  margin: 8px;
+  font-family: "Font Awesome 5 Free";
+  content: 'X';
+  font-size: 16px;
+  color: #aaa;
+  margin-left: 4px;
+}
+
 body .text input {
   height: 35px;
   border: 2px solid gray;
