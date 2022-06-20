@@ -49,6 +49,11 @@ body #app ul li {
   list-style: none;
 }
 
+body #app ul li span.done {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
 body #app ul .command {
   font-weight: bold;
   height: 25px;

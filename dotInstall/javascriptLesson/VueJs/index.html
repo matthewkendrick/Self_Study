@@ -20,7 +20,9 @@
       </form>
     </div>
     <ul class="">
-      <li v-for="(todo, index) in todos">{{ todo.title }}
+      <li v-for="(todo, index) in todos">
+        <input type="checkbox" v-model="todo.isDone" name="" id="">
+        <span :class="{done: todo.isDone}">{{ todo.title }}</span>
         <span class="command" @click="deleteItem(index)">
         <span class="material-symbols-rounded">close</span>
       </span>
