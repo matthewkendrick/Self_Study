@@ -33,7 +33,7 @@
         }
       },
       purge: function() {
-        if (!confirm('Delete has finished?')) {
+        if (!confirm('Delete items as finished?')) {
           return;
         }
         this.todos = this.remaining;

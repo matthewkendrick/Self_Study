@@ -43,6 +43,8 @@ body #app h1 .info {
   font-size: 12px;
   font-weight: normal;
   vertical-align: middle;
+  letter-spacing: normal;
+  margin-left: -1rem;
 }
 
 body #app form .btn {
@@ -80,8 +82,8 @@ body #app ul li span.done {
 
 body #app ul .command {
   font-weight: bold;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   text-align: right;
   display: inline-block;
   vertical-align: middle;
@@ -89,6 +91,7 @@ body #app ul .command {
   color: #08c;
   background-color: skyblue;
   border-radius: 50%;
+  margin-bottom: 0.1rem;
 }
 
 body #app ul .command:hover {
@@ -98,11 +101,12 @@ body #app ul .command:hover {
 }
 
 body #app ul .command .icon {
-  height: 24px;
-  width: 24px;
-  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
+  padding-bottom: 0.7rem;
 }
 /*# sourceMappingURL=stylesheet.css.map */
