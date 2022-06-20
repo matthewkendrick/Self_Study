@@ -2,6 +2,8 @@
 
 $(() => {
   $('button').click(() => {
-    $('p').text('おはよう！');
+    $('p')
+      .text('おはよう！')
+      .addClass('red-text');
   });
 });

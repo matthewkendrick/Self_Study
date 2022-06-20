@@ -23,4 +23,9 @@ body .text button {
 body .text button:hover {
   background: #B0BEC5;
 }
+
+body .text p.red-text {
+  color: red;
+  font-weight: bold;
+}
 /*# sourceMappingURL=stylesheet.css.map */
