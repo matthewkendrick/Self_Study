@@ -17,6 +17,6 @@ $(() => {
     if (e.target.nodeName !== 'LI' || !confirm('Are you sure?')) {
       return;
     }
-    e.target.remove();
+    $( e.target ).fadeOut();
   });
 });
