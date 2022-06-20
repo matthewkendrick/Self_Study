@@ -1,11 +1,13 @@
 'use strict';
 
 $(() => {
+  const $input = $('input');
+  $input.focus();
   $('button').keydown(() => {
     $('<li>')
-      .text($('input').val())
+      .text($input.val())
       .appendTo('ul');
-    $('input')
+    $input
       .val('')
       .focus();
   });
