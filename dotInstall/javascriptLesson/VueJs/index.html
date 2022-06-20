@@ -20,7 +20,7 @@
       </form>
     </div>
     <ul class="">
-      <li v-for="(todo, index) in todos">{{ todo }}
+      <li v-for="(todo, index) in todos">{{ todo.title }}
         <span class="command" @click="deleteItem(index)">
         <span class="material-symbols-rounded">close</span>
       </span>
