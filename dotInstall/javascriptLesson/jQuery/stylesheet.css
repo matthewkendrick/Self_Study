@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  padding: 16px;
+}
+
+body .text {
+  text-align: center;
+}
+
+body .text button {
+  margin: 8px;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+body .text button:hover {
+  background: #B0BEC5;
+}
+
+body .text .red-text {
+  color: red;
+  font-weight: bold;
+}
+
+body .text ul {
+  list-style: none;
+}
+
+body .text ul li {
+  cursor: pointer;
+}
+
+body .text ul li:hover::after {
+  margin: 8px;
+  font-family: "Font Awesome 5 Free";
+  content: '[X]';
+  font-size: 16px;
+  color: #aaa;
+}
+
+body .text input {
+  height: 35px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
