@@ -4,24 +4,42 @@
 }
 
 body {
-  .app {
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  .container {
+    width: 300px;
+    margin: auto;
     text-align: center;
   }
   #app {
+    h1 {
+      font-size: 24px;
+      border-bottom: 1px solid #ddd;
+      padding: 16px 0;
+    }
     form {
       .btn {
         font-weight: bold;
-        width: 40px;
+        width: 50px;
         height: 28px;
-        margin: 8px 0 16px;
+        margin: 16px 0 24px;
         &:hover {
           background: lightgray;
         }
       }
       input {
         border: 2px solid gray;
-        border-radius: 8px;
+        border-radius: 16px;
         height: 24px;
+      }
+      input[type="text"] {
+        padding: 0 8px;
+      }
+    }
+    ul {
+      li {
+        line-height: 2;
+        list-style: none;
       }
     }
   }
