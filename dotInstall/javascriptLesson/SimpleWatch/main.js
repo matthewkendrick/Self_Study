@@ -49,10 +49,25 @@
     }
 
     drawHands() {
+      // hour
       this.drawer.draw(this.h * 30 + this.m * 0.5, ctx => {
         ctx.lineWidth = 6;
         ctx.moveTo(0, 10);
         ctx.lineTo(0, -this.r + 50);
+      });
+
+       //minute
+      this.drawer.draw(this.m * 6 + this.m * 0.5, ctx => {
+        ctx.lineWidth = 4;
+        ctx.moveTo(0, 10);
+        ctx.lineTo(0, -this.r + 30);
+      });
+
+      //second
+      this.drawer.draw(this.s * 6 + this.m * 0.5, ctx => {
+        ctx.strokeStyle = '#DC3545';
+        ctx.moveTo(0, 20);
+        ctx.lineTo(0, -this.r + 20);
       });
     }
 
