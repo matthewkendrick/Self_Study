@@ -8,8 +8,17 @@
   <title>VueJs</title>
 </head>
 <body>
-  <div id="app">
-    <p>Hello! {{ name }}!</p>
+  <div id="app" class="app">
+    <div class="title-set">
+      <h1>Todos</h1>
+      <form action="">
+        <input type="text">
+        <input class="btn" type="submit" value="ADD">
+      </form>
+    </div>
+    <ul class="">
+      <li v-for="todo in todos">{{ todo }}</li>
+    </ul>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
