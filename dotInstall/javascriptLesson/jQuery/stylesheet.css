@@ -2,4 +2,25 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  padding: 16px;
+}
+
+body .text {
+  text-align: center;
+}
+
+body .text button {
+  margin: 8px;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+body .text button:hover {
+  background: #B0BEC5;
+}
 /*# sourceMappingURL=stylesheet.css.map */
