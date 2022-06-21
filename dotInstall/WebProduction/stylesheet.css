@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body .card {
+  background-image: url(img/background.png);
+  border: 2px solid lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+}
+
+body .profile h1 {
+  margin: 8px;
+}
+
+body .profile img {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=stylesheet.css.map */
