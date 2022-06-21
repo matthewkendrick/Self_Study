@@ -4,20 +4,29 @@
 }
 
 body {
-  .card {
+  section {
     background-image: url(img/background.png);
     border: 2px solid lightgray;
     border-radius: 16px;
     padding: 16px;
     margin: 16px;
     text-align: center;
-  }
-  .profile {
-    h1 {
-      margin: 8px;
+    .profile {
+      h1 {
+        margin: 8px;
+      }
+      img {
+        border-radius: 50%;
+      }
     }
-    img {
-      border-radius: 50%;
-    }
   }
+}
+
+footer {
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  height: 40px;
+  padding: 16px;
+  text-align: center;
 }

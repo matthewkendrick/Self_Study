@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-body .card {
+body section {
   background-image: url(img/background.png);
   border: 2px solid lightgray;
   border-radius: 16px;
@@ -12,11 +12,20 @@ body .card {
   text-align: center;
 }
 
-body .profile h1 {
+body section .profile h1 {
   margin: 8px;
 }
 
-body .profile img {
+body section .profile img {
   border-radius: 50%;
+}
+
+footer {
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  height: 40px;
+  padding: 16px;
+  text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
