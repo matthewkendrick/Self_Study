@@ -30,7 +30,7 @@ if ($n === 1) {
       </div>
       <div class="info">
         <h1>山田太郎</h1>
-        <p><?= $message; ?></p>
+        <p><?= htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
         <ul>
           <li>
             <a href="https://dotinstall.com" target="_blank">
