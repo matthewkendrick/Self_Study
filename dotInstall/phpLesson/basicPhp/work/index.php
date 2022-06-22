@@ -1,13 +1,10 @@
 <?php
 
-// comment
+$name = 'Kendrick';
+$Name = 'Anna';
 
-# comment
+// echo 'Hello Anna' . PHP_EOL;
+// echo 'Hello Kendrick' . PHP_EOL;
 
-/*
-Multi-line
-comments
-*/
-
-echo 'Hello Anna' . PHP_EOL;
-echo 'Hello Kendrick' . PHP_EOL;
+echo 'Hello '. $Name . PHP_EOL;
+echo 'Hi '. $name . PHP_EOL;
