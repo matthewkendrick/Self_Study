@@ -1,3 +1,9 @@
+<?php
+
+$message = 'こんにちは！' . date('l');
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +21,7 @@
       </div>
       <div class="info">
         <h1>山田太郎</h1>
-        <?php echo 'こんにちは！' . date('l'); ?>
+        <?= $message; ?>
         <p>UI/UXデザイナー見習いです</p>
         <ul>
           <li>
