@@ -1,13 +1,13 @@
 <?php
 
-$name = 'Anna';
+// echo 10 + 3 . PHP_EOL;
+// echo 10 - 3 . PHP_EOL;
+// echo 10 * 3 . PHP_EOL;
+// echo 10 / 3 . PHP_EOL;
 
-$text = <<<EOT
+// echo 10 % 3 . PHP_EOL;
+// echo 10 ** 3 . PHP_EOL;
 
-hello! $name
- this is looong
-text!
+echo ( 2 + 10 ) * 3 . PHP_EOL;
 
-EOT;
-
-echo $text;
+echo 2 + '3' . PHP_EOL;
