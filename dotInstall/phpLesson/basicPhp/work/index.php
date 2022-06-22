@@ -2,5 +2,12 @@
 
 $name = 'Anna';
 
-echo "It's Sunday. Hi $name" . PHP_EOL;
-echo "It's \"Sunday\". Hi $name" . PHP_EOL;
+$text = <<<EOT
+
+hello! $name
+ this is looong
+text!
+
+EOT;
+
+echo $text;
