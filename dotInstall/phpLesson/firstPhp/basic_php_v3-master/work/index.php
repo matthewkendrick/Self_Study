@@ -12,6 +12,7 @@ $message = 'こんにちは！' . date('l');
   <link rel="icon" href="favicon.ico">
   <meta name="description" content="太郎のポートフォリオサイトです。">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/051eb814e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -62,7 +63,7 @@ $message = 'こんにちは！' . date('l');
   </section>
 
   <footer>
-    <p>(c) dotinstall.com</p>
+    <p><i class="far fa-copyright"></i> dotinstall.com</p>
   </footer>
 </body>
 </html>
