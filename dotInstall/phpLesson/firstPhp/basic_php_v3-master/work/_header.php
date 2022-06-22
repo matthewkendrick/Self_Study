@@ -16,7 +16,7 @@ if ($n === 1) {
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>太郎のポートフォリオサイト</title>
+  <title><?= htmlspecialchars($title, ENT_QUOTES, 'UTF-8'); ?>太郎のポートフォリオサイト</title>
   <link rel="icon" href="favicon.ico">
   <meta name="description" content="太郎のポートフォリオサイトです。">
   <link rel="stylesheet" href="css/styles.css">
