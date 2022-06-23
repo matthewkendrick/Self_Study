@@ -12,20 +12,22 @@
     <div class="text">
       <p>
         <?php
-          function showAd()
+          
+          function showAd($message = 'Ad')
           {
             echo '------------<br>' . PHP_EOL;
-            echo '-----AD-----<br>' . PHP_EOL;
+            echo '----- '. $message .' -----<br>' . PHP_EOL;
             echo '------------<br>' . PHP_EOL;
           }
 
-          showAd();
+          showAd('Header Ad');
           echo 'Tom is great!<br>' . PHP_EOL;
           echo 'Bob is great!<br>' . PHP_EOL;
+          showAd('Ad');
           showAd();
           echo 'Steve is great!<br>' . PHP_EOL;
           echo 'Bob is great!<br>' . PHP_EOL;
-          showAd();
+          showAd('Footer Ad');
         ?>
       </p>
     </div>
