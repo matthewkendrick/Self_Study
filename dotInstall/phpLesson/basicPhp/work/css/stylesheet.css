@@ -17,4 +17,9 @@ body section .text {
   font-size: 32px;
   text-align: center;
 }
+
+body section .text .border {
+  border: 2px dashed lightgray;
+  margin: 0 8px;
+}
 /*# sourceMappingURL=stylesheet.css.map */

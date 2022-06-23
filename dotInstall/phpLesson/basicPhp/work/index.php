@@ -12,13 +12,29 @@
     <div class="text">
       <p>
         <?php
-          define('FIRST_NAME', 'Anna');
-          // echo FIRST_NAME . PHP_EOL;
+          $a = 'hello';
+          $b = 10;
+          $c = -1.3;
+          $d = null;
+          $e = true;
 
-          const LAST_NAME = 'Kendrick';
-          // echo LAST_NAME . PHP_EOL;
+          var_dump($a);
+          echo '<br>';
+          var_dump($b);
+          echo '<br>';
+          // var_dump($c);
+          // echo '<br>';
+          // var_dump($d);
+          // echo '<br>';
+          // var_dump($e);
 
-          echo FIRST_NAME.' '.LAST_NAME;
+          $a = (float)10;
+          $b = (string)1.3;
+
+          echo '<p class="border"></p>';
+          var_dump($a);
+          echo '<br>';
+          var_dump($b);
         ?>
       </p>
     </div>

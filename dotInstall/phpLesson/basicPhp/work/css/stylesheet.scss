@@ -13,6 +13,10 @@ body {
     .text {
       font-size: 32px;
       text-align: center;
+      .border {
+        border: 2px dashed lightgray;
+        margin: 0 8px;
+      }
     }
   }
 }
