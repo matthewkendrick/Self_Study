@@ -12,10 +12,19 @@
     <div class="text">
       <p>
         <?php
-          for ($i=1; $i < 10 + 1; $i++) { 
-            // echo 'Hello <br>' . PHP_EOL;
-            echo "$i - Hello <br>" . PHP_EOL;
+          $hp = 100;
+
+          while ($hp > 0) {
+            echo " Your HP: $hp<br>" . PHP_EOL;
+            $hp -= 10;
           }
+
+          // 一度は実行してくれる
+          // そのためこちらのコードではHP:0が表示される
+          do {
+            echo " Your HP: $hp<br>" . PHP_EOL;
+            $hp -= 10;
+          } while ($hp > 0);
         ?>
       </p>
     </div>
