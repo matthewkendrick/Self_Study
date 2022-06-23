@@ -12,14 +12,13 @@
     <div class="text">
       <p>
         <?php
-          $score = 40;
+          $score = 60;
+          $name = 'Anna';
 
-          if ($score >= 80) {
-            echo 'Great!' . PHP_EOL;
-          } elseif ($score >= 60) {
-            echo 'Good' . PHP_EOL;
+          if ($score >= 90 && $name === 'Anna') {
+              echo 'Good Job!' . PHP_EOL;
           } else {
-            echo 'OK!' . PHP_EOL;
+            echo 'Who are you?';
           }
         ?>
       </p>
