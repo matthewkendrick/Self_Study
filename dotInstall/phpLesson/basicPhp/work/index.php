@@ -12,13 +12,28 @@
     <div class="text">
       <p>
         <?php
-          $score = 60;
-          $name = 'Anna';
+          $signal = 'blue';
 
-          if ($score >= 90 && $name === 'Anna') {
-              echo 'Good Job!' . PHP_EOL;
-          } else {
-            echo 'Who are you?';
+          if ($signal === 'red') {
+            echo 'Stop!' . PHP_EOL;
+          } elseif ($signal === 'yellow') {
+            echo 'Caution!' . PHP_EOL;
+          } elseif ($signal === 'blue') {
+            echo 'Go' . PHP_EOL;
+          }          
+
+          echo '<br>';
+
+          switch ($signal) {
+            case 'red':
+              echo 'Stop!';
+              break;
+            case 'yellow':
+              echo 'Caution!';
+              break;
+            case 'blue':
+              echo 'Go';
+              break;
           }
         ?>
       </p>
