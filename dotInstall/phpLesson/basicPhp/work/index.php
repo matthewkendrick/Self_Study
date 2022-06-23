@@ -15,15 +15,15 @@
       <p>
         <?php
 
-          // declare(strict_types=1);
+          $scores = [
+            90,
+            40,
+            100,
+          ];
 
-          function getAward(int $score): ?string
-          {
-            return $score >= 100 ? '<span class="material-symbols-rounded">workspace_premium</span>' : null;
-          }
-
-          echo getAward(150) . '<br> Congratulations!!!' . PHP_EOL;
-          echo getAward(40) . '<br>' . PHP_EOL;
+          echo $scores[1]. '点<br>' . PHP_EOL;
+          $scores[1] = 60;
+          echo $scores[1]. '点<br>' . PHP_EOL;
         ?>
       </p>
     </div>
