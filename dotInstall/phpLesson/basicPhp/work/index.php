@@ -12,13 +12,20 @@
     <div class="text">
       <p>
         <?php
-          for ($i=1; $i <= 10; $i++) { 
-            if ($i % 3 === 0) {
-              continue;
-              // break;
-            }
-            echo "$i <br>" . PHP_EOL;
+          function showAd()
+          {
+            echo '------------<br>' . PHP_EOL;
+            echo '-----AD-----<br>' . PHP_EOL;
+            echo '------------<br>' . PHP_EOL;
           }
+
+          showAd();
+          echo 'Tom is great!<br>' . PHP_EOL;
+          echo 'Bob is great!<br>' . PHP_EOL;
+          showAd();
+          echo 'Steve is great!<br>' . PHP_EOL;
+          echo 'Bob is great!<br>' . PHP_EOL;
+          showAd();
         ?>
       </p>
     </div>
