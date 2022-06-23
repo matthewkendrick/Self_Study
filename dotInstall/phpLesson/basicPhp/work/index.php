@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,11 +12,13 @@
     <div class="text">
       <p>
         <?php
-          $price = 500;
-          echo $price += 100;
+          define('FIRST_NAME', 'Anna');
+          // echo FIRST_NAME . PHP_EOL;
 
-          $price *= 100;
-          echo $price++;
+          const LAST_NAME = 'Kendrick';
+          // echo LAST_NAME . PHP_EOL;
+
+          echo FIRST_NAME.' '.LAST_NAME;
         ?>
       </p>
     </div>
