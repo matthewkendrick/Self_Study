@@ -21,7 +21,9 @@
             'third'  => 100,
           ];
 
-          echo $scores['first'] . PHP_EOL;
+          foreach ($scores as $key => $score) {
+            echo $key . ' - ' . $score . '<br>' . PHP_EOL;
+          }
         ?>
       </p>
     </div>
