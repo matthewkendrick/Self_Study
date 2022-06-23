@@ -13,21 +13,16 @@
       <p>
         <?php
 
-        function sum($a, $b, $c) {
-           $total =  $a + $b + $c;
+          // declare(strict_types=1);
 
-          //  if ($total < 0) {
-          //    return 0;
-          //  } else {
-          //    return $total;
-          //  }
+          function showInfo(string $name, int $score) :void
+          {
+            echo $name . ': ' . $score . '<br>' . PHP_EOL;
+          }
 
-          // 上記と同じ結果を得ることができる
-           return $total < 0 ? 0 : $total;
-         }
-
-         echo sum(100, 200, 300) . "<br>" . PHP_EOL;
-         echo sum(-1000, 300, 500) . "<br>" . PHP_EOL;
+          showInfo('Anna', 50);
+          showInfo('Anna', '50');
+          // showInfo('Anna', 'text');
         ?>
       </p>
     </div>
