@@ -13,12 +13,21 @@
       <p>
         <?php
 
-        $sum = function ($a, $b, $c) {
-           return ( $a + $b + $c );
-         };
+        function sum($a, $b, $c) {
+           $total =  $a + $b + $c;
 
-         echo $sum(100, 300, 500) . PHP_EOL;
+          //  if ($total < 0) {
+          //    return 0;
+          //  } else {
+          //    return $total;
+          //  }
 
+          // 上記と同じ結果を得ることができる
+           return $total < 0 ? 0 : $total;
+         }
+
+         echo sum(100, 200, 300) . "<br>" . PHP_EOL;
+         echo sum(-1000, 300, 500) . "<br>" . PHP_EOL;
         ?>
       </p>
     </div>
