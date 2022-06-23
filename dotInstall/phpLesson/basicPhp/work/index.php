@@ -12,7 +12,10 @@
     <div class="text">
       <p>
         <?php
-          $signal = 'blue';
+          $signal = 'red';
+          // $signal = 'blue';
+          // $signal = 'green';
+          // $signal = 'yellow';
 
           if ($signal === 'red') {
             echo 'Stop!' . PHP_EOL;
@@ -32,7 +35,11 @@
               echo 'Caution!';
               break;
             case 'blue':
+            case 'green':
               echo 'Go';
+              break;
+            default:
+              echo 'Wrong signal!!!' . PHP_EOL;
               break;
           }
         ?>
