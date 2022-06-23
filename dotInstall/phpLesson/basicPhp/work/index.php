@@ -12,22 +12,16 @@
     <div class="text">
       <p>
         <?php
-          
-          function showAd($message = 'Ad')
-          {
-            echo '------------<br>' . PHP_EOL;
-            echo '----- '. $message .' -----<br>' . PHP_EOL;
-            echo '------------<br>' . PHP_EOL;
-          }
+         function sum($a, $b, $c) 
+         {
+           return $a + $b + $c;
+         }
 
-          showAd('Header Ad');
-          echo 'Tom is great!<br>' . PHP_EOL;
-          echo 'Bob is great!<br>' . PHP_EOL;
-          showAd('Ad');
-          showAd();
-          echo 'Steve is great!<br>' . PHP_EOL;
-          echo 'Bob is great!<br>' . PHP_EOL;
-          showAd('Footer Ad');
+         echo sum(100, 200, 300);
+         echo '<br>';
+         echo sum(300, 400, 500);
+         echo '<br>';
+         echo sum(100, 200, 300) + sum(300, 400, 500);
         ?>
       </p>
     </div>
