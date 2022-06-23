@@ -12,35 +12,9 @@
     <div class="text">
       <p>
         <?php
-          $signal = 'red';
-          // $signal = 'blue';
-          // $signal = 'green';
-          // $signal = 'yellow';
-
-          if ($signal === 'red') {
-            echo 'Stop!' . PHP_EOL;
-          } elseif ($signal === 'yellow') {
-            echo 'Caution!' . PHP_EOL;
-          } elseif ($signal === 'blue') {
-            echo 'Go' . PHP_EOL;
-          }          
-
-          echo '<br>';
-
-          switch ($signal) {
-            case 'red':
-              echo 'Stop!';
-              break;
-            case 'yellow':
-              echo 'Caution!';
-              break;
-            case 'blue':
-            case 'green':
-              echo 'Go';
-              break;
-            default:
-              echo 'Wrong signal!!!' . PHP_EOL;
-              break;
+          for ($i=1; $i < 10 + 1; $i++) { 
+            // echo 'Hello <br>' . PHP_EOL;
+            echo "$i - Hello <br>" . PHP_EOL;
           }
         ?>
       </p>
