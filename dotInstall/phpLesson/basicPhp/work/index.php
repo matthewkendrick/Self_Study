@@ -12,29 +12,15 @@
     <div class="text">
       <p>
         <?php
-          $a = 'hello';
-          $b = 10;
-          $c = -1.3;
-          $d = null;
-          $e = true;
+          $score = 40;
 
-          var_dump($a);
-          echo '<br>';
-          var_dump($b);
-          echo '<br>';
-          // var_dump($c);
-          // echo '<br>';
-          // var_dump($d);
-          // echo '<br>';
-          // var_dump($e);
-
-          $a = (float)10;
-          $b = (string)1.3;
-
-          echo '<p class="border"></p>';
-          var_dump($a);
-          echo '<br>';
-          var_dump($b);
+          if ($score >= 80) {
+            echo 'Great!' . PHP_EOL;
+          } elseif ($score >= 60) {
+            echo 'Good' . PHP_EOL;
+          } else {
+            echo 'OK!' . PHP_EOL;
+          }
         ?>
       </p>
     </div>
