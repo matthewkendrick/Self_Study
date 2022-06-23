@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body container .text {
+  width: 300px;
+  height: 150px;
+  background: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */
