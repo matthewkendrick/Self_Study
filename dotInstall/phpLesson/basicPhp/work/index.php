@@ -12,9 +12,14 @@
     <div class="text">
       <p>
         <?php
-         function sum($a, $b, $c) 
+
+        $rate = 1.1;
+
+        function sum($a, $b, $c) 
          {
-           return $a + $b + $c;
+           global $rate;
+          //  $rate = 1.08;
+           return ( $a + $b + $c ) * $rate;
          }
 
          echo sum(100, 200, 300);
