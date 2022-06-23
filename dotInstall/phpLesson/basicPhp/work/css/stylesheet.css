@@ -4,13 +4,13 @@
 }
 
 body section {
-  width: 400px;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background: #DC3545;
   margin: 16px auto;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 body section .text {
