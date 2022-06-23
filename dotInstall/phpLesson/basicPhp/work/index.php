@@ -15,15 +15,21 @@
       <p>
         <?php
 
-          $scores = [
-            'first'  => 90,
-            'second' => 40,
-            'third'  => 100,
+          $moreScores = [
+            55,
+            72,
+            'perfect',
+            [90, 42, 88],
           ];
 
-          foreach ($scores as $key => $score) {
-            echo $key . ' - ' . $score . '<br>' . PHP_EOL;
-          }
+          $scores = [
+            90,
+            40,
+            100,
+          ];
+
+          echo $scores[1][0] . PHP_EOL;
+
         ?>
       </p>
     </div>
