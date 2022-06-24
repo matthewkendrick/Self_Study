@@ -14,14 +14,11 @@
     <div class="text">
       <p>
         <?php
-          $input = 'Call us at 03-3001-1256 or 03-3015-3222';
-          $pattern = '/\d{2}-\d{4}-\d{4}/';
+          $d = [2020, 11, 15];
+          echo implode('-', $d) . '<br>';
 
-          preg_match_all($pattern, $input, $matches) . '<br>';
-          // print_r($matches) . '<br>' . PHP_EOL;
-
-          $input = preg_replace($pattern, '**-****-****', $input);
-          echo $input . '<br>' . PHP_EOL;
+          $t = '17:32:45';
+          print_r( explode(':', $t) );
         ?>
       </p>
     </div>
