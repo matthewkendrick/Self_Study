@@ -15,18 +15,21 @@
       <p>
         <?php
           // $scores = array_fill(0, 5, 10);
-          $scores = range(1, 10, 2);
+          $a = [3, 4, 8];
+          $b = [4, 8, 12];
 
-          // print_r($scores);
-          // echo '<br>';
+          // array_diff(X, Y)の内、XからYを引いたもの
+          $diff1 = array_diff($a, $b);
+          print_r($diff1);
+          echo '<br>';
 
-          echo array_sum($scores);
+          $diff2 = array_diff($b, $a);
+          print_r($diff2);
           echo '<br>';
-          echo max($scores);
-          echo '<br>';
-          echo min($scores);
-          echo '<br>';
-          echo array_sum($scores) / count($scores);
+
+          // array_diff(X, Y)の内、XとYの共通項
+          $common = array_intersect($a, $b);
+          print_r($common);
           echo '<br>';
         ?>
       </p>
