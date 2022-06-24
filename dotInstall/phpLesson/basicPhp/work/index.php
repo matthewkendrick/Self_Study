@@ -14,22 +14,17 @@
     <div class="text">
       <p>
         <?php
+          function sum(...$numbers)
+          {
+            $total = 0;
+            foreach ($numbers as $key => $number) {
+              $total += $number;
+            }
+            return $total;
+          }
 
-          $moreScores = [
-            55,
-            72,
-            'perfect',
-            [90, 42, 88],
-          ];
-
-          $scores = [
-            90,
-            40,
-            100,
-          ];
-
-          echo $scores[1][0] . PHP_EOL;
-
+          echo sum(1, 3, 5). '<br>';
+          echo sum(4, 2, 5, 1). '<br>';
         ?>
       </p>
     </div>
