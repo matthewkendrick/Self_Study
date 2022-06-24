@@ -14,15 +14,15 @@
     <div class="text">
       <p>
         <?php
-          $input = ' dot_Anna ';
-          echo strlen($input) . '<br>' . PHP_EOL;
+          $input = ' こんにちは ';
+          echo mb_strlen($input) . '<br>' . PHP_EOL;
 
           $input = trim($input);
-          echo strlen($input) . '<br>' . PHP_EOL;
+          echo mb_strlen($input) . '<br>' . PHP_EOL;
 
-          echo strpos($input, '_') . '<br>' . PHP_EOL;
+          echo mb_strpos($input, '_') . '<br>' . PHP_EOL;
 
-          $input = str_replace('_', ' - ', $input);
+          $input = str_replace('にち', 'ばん', $input);
           echo $input . '<br>' . PHP_EOL;
         ?>
       </p>
