@@ -14,15 +14,12 @@
     <div class="text">
       <p>
         <?php
-          $scores = [30, 40, 50];
+          $scores = [30, 40, 50, 60, 70];
 
-          // array_unshift($scores, 10, 20);
-          // array_push($scores, 60, 70);
-          // $scores[] = 80;
-          // array_shift($scores);
-          array_pop($scores);
+          $partial = array_slice($scores, -2);
 
-          print_r($scores);
+          print_r($scores) . '<br>';
+          print_r($partial) . '<br>';
         ?>
       </p>
     </div>
