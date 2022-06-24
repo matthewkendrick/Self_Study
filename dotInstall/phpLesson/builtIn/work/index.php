@@ -14,23 +14,15 @@
     <div class="text">
       <p>
         <?php
-          // $scores = array_fill(0, 5, 10);
-          $a = [3, 4, 8];
-          $b = [4, 8, 12];
+          $prices = [100, 200, 300];
 
-          // array_diff(X, Y)の内、XからYを引いたもの
-          $diff1 = array_diff($a, $b);
-          print_r($diff1);
-          echo '<br>';
+          $newPrices = array_map(
+            function ($n) {return $n * 1.1;},
+            // fn($n) => $n * 1.1,
+            $prices
+          );
 
-          $diff2 = array_diff($b, $a);
-          print_r($diff2);
-          echo '<br>';
-
-          // array_diff(X, Y)の内、XとYの共通項
-          $common = array_intersect($a, $b);
-          print_r($common);
-          echo '<br>';
+          print_r($newPrices) . '<br>';
         ?>
       </p>
     </div>
