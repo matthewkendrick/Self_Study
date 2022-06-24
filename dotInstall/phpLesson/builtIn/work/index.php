@@ -14,16 +14,14 @@
     <div class="text">
       <p>
         <?php
-          $input = '20200320Item-A  1200';
-          $input = substr_replace($input, 'Item-B  ', 8, 8);
+          $input = 'Call us at 03-3001-1256 or 03-3015-3222';
+          $pattern = '/\d{2}-\d{4}-\d{4}/';
 
-          $date = substr($input, 0, 8);
-          $product = substr($input, 8, 8);
-          $amount = substr($input, 16);
+          preg_match_all($pattern, $input, $matches) . '<br>';
+          // print_r($matches) . '<br>' . PHP_EOL;
 
-          echo $date . '<br>' . PHP_EOL;
-          echo $product . '<br>' . PHP_EOL;
-          echo number_format($amount) . '<br>' . PHP_EOL;
+          $input = preg_replace($pattern, '**-****-****', $input);
+          echo $input . '<br>' . PHP_EOL;
         ?>
       </p>
     </div>
