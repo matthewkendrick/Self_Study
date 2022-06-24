@@ -14,16 +14,16 @@
     <div class="text">
       <p>
         <?php
-          $input = ' こんにちは ';
-          echo mb_strlen($input) . '<br>' . PHP_EOL;
+          $input = '20200320Item-A  1200';
+          $input = substr_replace($input, 'Item-B  ', 8, 8);
 
-          $input = trim($input);
-          echo mb_strlen($input) . '<br>' . PHP_EOL;
+          $date = substr($input, 0, 8);
+          $product = substr($input, 8, 8);
+          $amount = substr($input, 16);
 
-          echo mb_strpos($input, '_') . '<br>' . PHP_EOL;
-
-          $input = str_replace('にち', 'ばん', $input);
-          echo $input . '<br>' . PHP_EOL;
+          echo $date . '<br>' . PHP_EOL;
+          echo $product . '<br>' . PHP_EOL;
+          echo number_format($amount) . '<br>' . PHP_EOL;
         ?>
       </p>
     </div>
