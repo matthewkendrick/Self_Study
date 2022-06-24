@@ -14,11 +14,20 @@
     <div class="text">
       <p>
         <?php
-          $d = [2020, 11, 15];
-          echo implode('-', $d) . '<br>';
+          $n = 5.6283;
+          // echo ceil($n) . '<br>';
+          // echo floor($n) . '<br>';
+          // echo round($n) . '<br>';
+          // echo round($n, 2) . '<br>';
 
-          $t = '17:32:45';
-          print_r( explode(':', $t) );
+          $rand1 = mt_rand(1, 100) . '<br>';
+          $rand2 = mt_rand(1, 100) . '<br>';
+
+          echo $rand1 . '<br>';
+          echo $rand2 . '<br>';
+          echo max($rand1, $rand2) . '<br>';
+          echo min($rand1, $rand2) . '<br>';
+
         ?>
       </p>
     </div>
