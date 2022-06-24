@@ -14,17 +14,20 @@
     <div class="text">
       <p>
         <?php
-          function sum(...$numbers)
+          function getStats(...$numbers)
           {
             $total = 0;
             foreach ($numbers as $key => $number) {
               $total += $number;
             }
-            return $total;
+            return [ $total, $total / count($numbers) ];
           }
 
-          echo sum(1, 3, 5). '<br>';
-          echo sum(4, 2, 5, 1). '<br>';
+          list($sum, $average) = getStats(1, 3, 5);
+
+          echo $sum . '<br>';
+          echo $average . '<br>';
+
         ?>
       </p>
     </div>
