@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body section {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #DC3545;
+  margin: 16px auto;
+  border-radius: 8px;
+}
+
+body section .text {
+  font-size: 32px;
+  text-align: center;
+}
+
+body section .text .border {
+  border: 2px dashed lightgray;
+  margin: 0 8px;
+}
+
+body section .material-symbols-rounded {
+  font-size: 64px;
+  color: #FFC107;
+}
+/*# sourceMappingURL=stylesheet.css.map */
