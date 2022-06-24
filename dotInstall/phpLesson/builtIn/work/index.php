@@ -14,11 +14,16 @@
     <div class="text">
       <p>
         <?php
-          $name = 'Apple';
-          $score = 32.246;
+          $input = ' dot_Anna ';
+          echo strlen($input) . '<br>' . PHP_EOL;
 
-          printf("[%-15s] <br> [%010.2f]", $name, $score);
+          $input = trim($input);
+          echo strlen($input) . '<br>' . PHP_EOL;
 
+          echo strpos($input, '_') . '<br>' . PHP_EOL;
+
+          $input = str_replace('_', ' - ', $input);
+          echo $input . '<br>' . PHP_EOL;
         ?>
       </p>
     </div>
