@@ -14,28 +14,20 @@
     <div class="text">
       <p>
         <?php
-          $scores = [30, 40, 50];
+          // $scores = array_fill(0, 5, 10);
+          $scores = range(1, 10, 2);
 
-          echo 'sort: <br>';
-          sort($scores);
-          print_r($scores);
-          echo '<br><br>';
+          // print_r($scores);
+          // echo '<br>';
 
-          echo 'rsort: <br>';
-          rsort($scores);
-          print_r($scores);
-          echo '<br><br>';
-
-          echo 'shuffle: <br>';
-          shuffle($scores);
-          print_r($scores);
-          echo '<br><br>';
-
-          $picked = array_rand($scores, 2);
-          echo 'picked: <br>';
-          echo $scores[$picked[0]] . '<br>';
-          echo $scores[$picked[1]] . '<br>';
-
+          echo array_sum($scores);
+          echo '<br>';
+          echo max($scores);
+          echo '<br>';
+          echo min($scores);
+          echo '<br>';
+          echo array_sum($scores) / count($scores);
+          echo '<br>';
         ?>
       </p>
     </div>
