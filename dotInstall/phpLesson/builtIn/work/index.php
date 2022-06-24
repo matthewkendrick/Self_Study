@@ -14,15 +14,21 @@
     <div class="text">
       <p>
         <?php
-          $prices = [100, 200, 300];
+          $numbers = range(1, 10);
 
-          $newPrices = array_map(
-            function ($n) {return $n * 1.1;},
-            // fn($n) => $n * 1.1,
-            $prices
+          $evenNumbers = array_filter(
+            $numbers,
+            function ($n) {
+              if ($n % 2 === 0) {
+                return true;
+              } else {
+                return false;
+              }
+            }
+            // fn($n) => $n % 2 === 0;
           );
 
-          print_r($newPrices) . '<br>';
+          print_r($evenNumbers);
         ?>
       </p>
     </div>
