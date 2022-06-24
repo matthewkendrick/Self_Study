@@ -14,20 +14,15 @@
     <div class="text">
       <p>
         <?php
-          $n = 5.6283;
-          // echo ceil($n) . '<br>';
-          // echo floor($n) . '<br>';
-          // echo round($n) . '<br>';
-          // echo round($n, 2) . '<br>';
+          $scores = [30, 40, 50];
 
-          $rand1 = mt_rand(1, 100) . '<br>';
-          $rand2 = mt_rand(1, 100) . '<br>';
+          // array_unshift($scores, 10, 20);
+          // array_push($scores, 60, 70);
+          // $scores[] = 80;
+          // array_shift($scores);
+          array_pop($scores);
 
-          echo $rand1 . '<br>';
-          echo $rand2 . '<br>';
-          echo max($rand1, $rand2) . '<br>';
-          echo min($rand1, $rand2) . '<br>';
-
+          print_r($scores);
         ?>
       </p>
     </div>
