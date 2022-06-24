@@ -13,7 +13,13 @@
   <section>
     <div class="text">
       <p>
-        sample
+        <?php
+          $name = 'Apple';
+          $score = 32.246;
+
+          printf("[%-15s] <br> [%010.2f]", $name, $score);
+
+        ?>
       </p>
     </div>
   </section>
