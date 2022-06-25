@@ -14,11 +14,6 @@
     <div class="text">
       <p>
         <?php
-          $scores = [
-            'Mike' => 80,
-            'Anna' => 70,
-            'Matthew' => 60,
-          ];
 
           $data = [
             ['name' => 'Mike',    'score' => 80],
@@ -27,14 +22,19 @@
             ['name' => 'Emma',    'score' => 60],
           ];
 
-          usort(
+          $scores = array_column($data, 'score');
+          $names = array_column($data, 'name');
+
+          print_r($scores);
+          echo '<br><br>';
+
+          print_r($names);
+          echo '<br><br>';
+
+          array_multisort(
+            $scores, SORT_DESC, SORT_NUMERIC,
+            $names, SORT_DESC, SORT_STRING,
             $data,
-            function ($a, $b) {
-              if ($a['score'] === $b['score']) {
-                return 0;
-              }
-              return $a['score'] > $b['score'] ? 1 : -1;
-            }
           );
 
           print_r($data);
