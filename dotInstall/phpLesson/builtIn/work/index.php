@@ -14,31 +14,11 @@
     <div class="text">
       <p>
         <?php
+          $fp = fopen('names.txt', 'w');
 
-          $data = [
-            ['name' => 'Mike',    'score' => 80],
-            ['name' => 'Anna',    'score' => 60],
-            ['name' => 'Matthew', 'score' => 70],
-            ['name' => 'Emma',    'score' => 60],
-          ];
+          fwrite($fp, "taro\n");
 
-          $scores = array_column($data, 'score');
-          $names = array_column($data, 'name');
-
-          print_r($scores);
-          echo '<br><br>';
-
-          print_r($names);
-          echo '<br><br>';
-
-          array_multisort(
-            $scores, SORT_DESC, SORT_NUMERIC,
-            $names, SORT_DESC, SORT_STRING,
-            $data,
-          );
-
-          print_r($data);
-          echo '<br><br>';
+          fclose($fp);
         ?>
       </p>
     </div>
