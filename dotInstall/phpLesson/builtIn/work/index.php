@@ -20,24 +20,24 @@
             'Matthew' => 60,
           ];
 
-          // スコアの昇順
-          asort($scores);
-          print_r($scores);
-          echo '<br><br>';
+          $data = [
+            ['name' => 'Mike',    'score' => 80],
+            ['name' => 'Anna',    'score' => 60],
+            ['name' => 'Matthew', 'score' => 70],
+            ['name' => 'Emma',    'score' => 60],
+          ];
 
-          // スコアの降順
-          arsort($scores);
-          print_r($scores);
-          echo '<br><br>';
+          usort(
+            $data,
+            function ($a, $b) {
+              if ($a['score'] === $b['score']) {
+                return 0;
+              }
+              return $a['score'] > $b['score'] ? 1 : -1;
+            }
+          );
 
-          // 名前の昇順
-          ksort($scores);
-          print_r($scores);
-          echo '<br><br>';
-
-          // 名前の降順
-          krsort($scores);
-          print_r($scores);
+          print_r($data);
           echo '<br><br>';
         ?>
       </p>
