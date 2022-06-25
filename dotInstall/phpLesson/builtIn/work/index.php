@@ -14,21 +14,28 @@
     <div class="text">
       <p>
         <?php
-          $numbers = range(1, 10);
+          $scores = [
+            'Mike' => 80,
+            'Anna' => 70,
+            'Matthew' => 60,
+          ];
 
-          $evenNumbers = array_filter(
-            $numbers,
-            function ($n) {
-              if ($n % 2 === 0) {
-                return true;
-              } else {
-                return false;
-              }
-            }
-            // fn($n) => $n % 2 === 0;
-          );
+          $keys = array_keys($scores);
+          print_r($keys);
+          echo '<br>';
 
-          print_r($evenNumbers);
+          $values = array_values($scores);
+          print_r($values);
+          echo '<br>';
+
+          if (array_key_exists('Mike',$scores) === true) {
+            echo 'Mike is here!' . '<br>';
+          }
+          if (in_array(80, $scores) === true) {
+            echo '80 is here!' . '<br>';
+          }
+
+          echo array_search(70, $scores) . '<br>';
         ?>
       </p>
     </div>
