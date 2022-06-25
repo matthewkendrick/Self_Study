@@ -20,22 +20,25 @@
             'Matthew' => 60,
           ];
 
-          $keys = array_keys($scores);
-          print_r($keys);
-          echo '<br>';
+          // スコアの昇順
+          asort($scores);
+          print_r($scores);
+          echo '<br><br>';
 
-          $values = array_values($scores);
-          print_r($values);
-          echo '<br>';
+          // スコアの降順
+          arsort($scores);
+          print_r($scores);
+          echo '<br><br>';
 
-          if (array_key_exists('Mike',$scores) === true) {
-            echo 'Mike is here!' . '<br>';
-          }
-          if (in_array(80, $scores) === true) {
-            echo '80 is here!' . '<br>';
-          }
+          // 名前の昇順
+          ksort($scores);
+          print_r($scores);
+          echo '<br><br>';
 
-          echo array_search(70, $scores) . '<br>';
+          // 名前の降順
+          krsort($scores);
+          print_r($scores);
+          echo '<br><br>';
         ?>
       </p>
     </div>
