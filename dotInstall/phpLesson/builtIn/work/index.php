@@ -14,19 +14,21 @@
     <div class="text">
       <p>
         <?php
-          // file_put_contents('data/anna.txt', "Anna\n");
-          // file_put_contents('data/matthew.txt', "Matthew\n");
 
-          // $dp = opendir('data');
-          // while (( $item = readdir($dp)) !== false) {
-          //   if ($item === '.' || $item === '..') {
-          //     continue;
-          //   }
-          //   echo $item . '<br>';
-          // }
+          if (!file_exists('data/harry.txt')) {
+            echo 'Harry isn\'t here' . '<br>';
+            exit;
+          }
+          if (file_exists('data') === true) {
+            echo 'data exists' . '<br>';
+          }
 
-          foreach (glob('data/*.txt') as $item) {
-            echo basename( $item ) . '<br>';
+          if (is_writable('data/anna.txt') === true) {
+            echo 'anna is writable' . '<br>';
+          }
+
+          if (is_writable('data/matthew.txt') === true) {
+            echo 'matthew is writable' . '<br>';
           }
         ?>
       </p>
