@@ -17,12 +17,16 @@
           // file_put_contents('data/anna.txt', "Anna\n");
           // file_put_contents('data/matthew.txt', "Matthew\n");
 
-          $dp = opendir('data');
-          while (( $item = readdir($dp)) !== false) {
-            if ($item === '.' || $item === '..') {
-              continue;
-            }
-            echo $item . '<br>';
+          // $dp = opendir('data');
+          // while (( $item = readdir($dp)) !== false) {
+          //   if ($item === '.' || $item === '..') {
+          //     continue;
+          //   }
+          //   echo $item . '<br>';
+          // }
+
+          foreach (glob('data/*.txt') as $item) {
+            echo basename( $item ) . '<br>';
           }
         ?>
       </p>
