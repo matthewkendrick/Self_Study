@@ -14,11 +14,10 @@
     <div class="text">
       <p>
         <?php
-          $fp = fopen('names.txt', 'a');
-
-          fwrite($fp, "Anna\n");
-          fwrite($fp, "Matthew\n");
-
+          $fp = fopen('names.txt', 'r');
+          while (( $line = fgets($fp)) != false) {
+            echo $line . '<br>';
+          }
           fclose($fp);
         ?>
       </p>
