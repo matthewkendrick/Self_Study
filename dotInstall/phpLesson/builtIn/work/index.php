@@ -14,14 +14,16 @@
     <div class="text">
       <p>
         <?php
-          // $contents = "Anna\nMatthew\nHarry\n";
-          // file_put_contents('names.txt', $contents);
+          // file_put_contents('data/anna.txt', "Anna\n");
+          // file_put_contents('data/matthew.txt', "Matthew\n");
 
-          $contents = file_get_contents('names.txt');
-          echo $contents;
-
-          // $lines = file('names.txt');
-          // var_dump($lines);
+          $dp = opendir('data');
+          while (( $item = readdir($dp)) !== false) {
+            if ($item === '.' || $item === '..') {
+              continue;
+            }
+            echo $item . '<br>';
+          }
         ?>
       </p>
     </div>
