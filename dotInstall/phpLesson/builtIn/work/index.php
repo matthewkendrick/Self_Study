@@ -14,9 +14,10 @@
     <div class="text">
       <p>
         <?php
-          $fp = fopen('names.txt', 'w');
+          $fp = fopen('names.txt', 'a');
 
-          fwrite($fp, "taro\n");
+          fwrite($fp, "Anna\n");
+          fwrite($fp, "Matthew\n");
 
           fclose($fp);
         ?>
