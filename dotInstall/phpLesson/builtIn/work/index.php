@@ -14,11 +14,14 @@
     <div class="text">
       <p>
         <?php
-          $fp = fopen('names.txt', 'r');
-          while (( $line = fgets($fp)) != false) {
-            echo $line . '<br>';
-          }
-          fclose($fp);
+          // $contents = "Anna\nMatthew\nHarry\n";
+          // file_put_contents('names.txt', $contents);
+
+          $contents = file_get_contents('names.txt');
+          echo $contents;
+
+          // $lines = file('names.txt');
+          // var_dump($lines);
         ?>
       </p>
     </div>
