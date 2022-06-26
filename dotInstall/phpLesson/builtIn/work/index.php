@@ -14,7 +14,17 @@
     <div class="text">
       <p>
         <?php
-          echo 'sample';
+          $posts = [];
+          $posts[0] = ['text' => 'hello', 'likes' => 0];
+          $posts[1] = ['text' => 'hello again', 'likes' => 0];
+
+          function show($post)
+          {
+            printf('%s (%d)' . '<br>', $post['text'], $post['likes']);
+          }
+
+          show($posts[0]) . '<br>';
+          show($posts[1]) . '<br>';
         ?>
       </p>
     </div>
