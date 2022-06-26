@@ -14,6 +14,17 @@
     <div class="text">
       <p>
         <?php
+          class Post
+          {
+            public $text;
+            public $likes;
+
+            public function show()
+            {
+              printf('%s (%d)' . '<br>', $this->text, $this->likes);
+            }
+          }
+          
           $posts = [];
           $posts[0] = ['text' => 'hello', 'likes' => 0];
           $posts[1] = ['text' => 'hello again', 'likes' => 0];
