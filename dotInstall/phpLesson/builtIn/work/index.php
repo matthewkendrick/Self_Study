@@ -14,22 +14,10 @@
     <div class="text">
       <p>
         <?php
-
-          if (!file_exists('data/harry.txt')) {
-            echo 'Harry isn\'t here' . '<br>';
-            exit;
-          }
-          if (file_exists('data') === true) {
-            echo 'data exists' . '<br>';
-          }
-
-          if (is_writable('data/anna.txt') === true) {
-            echo 'anna is writable' . '<br>';
-          }
-
-          if (is_writable('data/matthew.txt') === true) {
-            echo 'matthew is writable' . '<br>';
-          }
+          echo date('Y-m-d l') . '<br>';
+          echo date('Y-m-d l', mktime(0, 0, 0, 5, 1, 2022)) . '<br>';
+          echo date('Y-m-d l', strtotime('2022-05-07')) . '<br>';
+          echo date('Y-m-d l', strtotime('2022-05-07 +1 day')) . '<br>';
         ?>
       </p>
     </div>
