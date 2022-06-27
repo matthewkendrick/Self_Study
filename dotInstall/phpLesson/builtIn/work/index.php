@@ -46,11 +46,6 @@
               $this->sponsor = $sponsor;
             }
 
-            public function showSponsor()
-            {
-              printf('%s' . '<br>', $this->sponsor);
-            }
-
             public function show()
             {
               printf('%s by %s' . '<br>', $this->text, $this->sponsor);
@@ -63,10 +58,14 @@
           $posts[1] = new Post('hello again');
           $posts[2] = new SponsoredPost('hello hello!', 'dotinstall');
 
-          $posts[0]->show() . '<br>';
-          $posts[1]->show() . '<br>';
-          $posts[2]->show() . '<br>';
-          $posts[2]->showSponsor() . '<br>';
+          function processPost(Post $post)
+          {
+            $post->show();
+          }
+
+          foreach ($posts as $post) {
+            processPost($post);
+          }
 
         ?>
       </p>
