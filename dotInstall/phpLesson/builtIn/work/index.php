@@ -15,9 +15,20 @@
       <p>
         <?php
            
+           trait LikeTrait
+           {
+              private $likes = 0;
+
+              public function like()
+              {
+                $this->likes++;
+              }
+           }
+           
+           
            interface LikeInterface
            {
-             public function like();
+              public function like();
            }
 
            abstract class BasePost
@@ -34,12 +45,7 @@
 
           class Post extends BasePost implements LikeInterface
           {
-            private $likes = 0;
-
-            public function like()
-            {
-              $this->likes++;
-            }
+            use LikeTrait;
 
             public function show()
             {
@@ -65,13 +71,9 @@
 
           class PremiumPost extends BasePost implements LikeInterface
           {
-            private $price;
-            private $likes = 0;
+            use LikeTrait;
 
-            public function like()
-            {
-              $this->likes++;
-            }
+            private $price;
 
             public function  __construct($text, $price)
             {
