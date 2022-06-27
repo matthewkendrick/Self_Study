@@ -14,36 +14,27 @@
     <div class="text">
       <p>
         <?php
+
+          declare(strict_types=1);
+
           class Post
           {
-            private $text;
-            private $likes = 0;
+            private string $text;
 
-            public function __construct($text)
+            public function __construct(string $text)
             {
               $this->text = $text;
             }
 
             public function show()
             {
-              printf('%s (%d)' . '<br>', $this->text, $this->likes);
-            }
-
-            public function like()
-            {
-              $this->likes++;
-
-              if ($this->likes > 100) {
-                $this->likes = 100;
-              }
+              printf('%s (%d)' . '<br>', $this->text);
             }
           }
           
           $posts = [];
-          $posts[0] = new Post('hello');
+          $posts[0] = new Post(5);
           $posts[1] = new Post('hello again');
-
-          $posts[0]->like();
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
