@@ -14,8 +14,13 @@
     <div class="text">
       <p>
         <?php
+           abstract class BasePost
+           {
+             abstract public function show()
+           }
+           
 
-          class Post
+          class Post extends BasePost
           {
             protected $text;
             public const VERSION = 0.1;
@@ -36,7 +41,7 @@
             }
           }
 
-          class SponsoredPost extends Post
+          class SponsoredPost extends BasePost
           {
             private $sponsor;
 
