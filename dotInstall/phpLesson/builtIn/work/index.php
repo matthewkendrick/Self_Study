@@ -15,30 +15,36 @@
       <p>
         <?php
 
-          declare(strict_types=1);
-
           class Post
           {
-            private string $text;
+            private $text;
+            private static $count = 0;
 
             public function __construct(string $text)
             {
               $this->text = $text;
+              self::$count++;
             }
 
             public function show()
             {
-              printf('%s (%d)' . '<br>', $this->text);
+              printf('%s' . '<br>', $this->text);
+            }
+
+            public static function showInfo()
+            {
+              printf('Count: %d' . '<br>', self::$count);
             }
           }
           
           $posts = [];
-          $posts[0] = new Post(5);
+          $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
 
+          Post::showInfo();
         ?>
       </p>
     </div>
