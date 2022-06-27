@@ -19,10 +19,9 @@
             public $text;
             public $likes;
 
-            public function _construct($text, $likes)
+            public function __construct($text)
             {
               $this->text = $text;
-              $this->likes = $likes;
             }
 
             public function show()
@@ -32,8 +31,8 @@
           }
           
           $posts = [];
-          $posts[0] = new Post('hello', 0);
-          $posts[1] = new Post('hello again', 1);
+          $posts[0] = new Post('hello');
+          $posts[1] = new Post('hello again');
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
