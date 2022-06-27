@@ -16,28 +16,22 @@
         <?php
            abstract class BasePost
            {
-             abstract public function show()
+              protected $text;
+
+              public function __construct($text)
+              {
+                $this->text = $text;
+              }
+
+              abstract public function show();
            }
            
 
           class Post extends BasePost
           {
-            protected $text;
-            public const VERSION = 0.1;
-
-            public function __construct($text)
-            {
-              $this->text = $text;
-            }
-
             public function show()
             {
               printf('%s' . '<br>', $this->text);
-            }
-
-            public static function showInfo()
-            {
-              printf('Count: %d' . '<br>', self::$count);
             }
           }
 
@@ -63,7 +57,7 @@
           $posts[1] = new Post('hello again');
           $posts[2] = new SponsoredPost('hello hello!', 'dotinstall');
 
-          function processPost(Post $post)
+          function processPost(BasePost $post)
           {
             $post->show();
           }
