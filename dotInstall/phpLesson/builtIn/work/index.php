@@ -38,17 +38,30 @@
 
           class SponsoredPost extends Post
           {
+            private $sponsor;
+
+            public function  __construct($text, $sponsor)
+            {
+              parent::__construct($text);
+              $this->sponsor = $sponsor;
+            }
+
+            public function showSponsor()
+            {
+              printf('%s' . '<br>', $this->sponsor);
+            }
           }
           
           
           $posts = [];
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
-          $posts[2] = new SponsoredPost('hello hello!');
+          $posts[2] = new SponsoredPost('hello hello!', 'dotinstall');
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
           $posts[2]->show() . '<br>';
+          $posts[2]->showSponsor() . '<br>';
 
         ?>
       </p>
