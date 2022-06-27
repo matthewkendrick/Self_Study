@@ -18,13 +18,11 @@
           class Post
           {
             private $text;
-            private static $count = 0;
             public const VERSION = 0.1;
 
-            public function __construct(string $text)
+            public function __construct($text)
             {
               $this->text = $text;
-              self::$count++;
             }
 
             public function show()
@@ -35,20 +33,23 @@
             public static function showInfo()
             {
               printf('Count: %d' . '<br>', self::$count);
-              printf('VERSION: %.1f' . '<br>', self::VERSION);
             }
           }
+
+          class SponsoredPost extends Post
+          {
+          }
+          
           
           $posts = [];
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
+          $posts[2] = new SponsoredPost('hello hello!');
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
+          $posts[2]->show() . '<br>';
 
-          Post::showInfo() . '<br>';
-
-           echo Post::VERSION . '<br>';
         ?>
       </p>
     </div>
