@@ -19,6 +19,7 @@
           {
             private $text;
             private static $count = 0;
+            public const VERSION = 0.1;
 
             public function __construct(string $text)
             {
@@ -34,6 +35,7 @@
             public static function showInfo()
             {
               printf('Count: %d' . '<br>', self::$count);
+              printf('VERSION: %.1f' . '<br>', self::VERSION);
             }
           }
           
@@ -44,7 +46,9 @@
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
 
-          Post::showInfo();
+          Post::showInfo() . '<br>';
+
+           echo Post::VERSION . '<br>';
         ?>
       </p>
     </div>
