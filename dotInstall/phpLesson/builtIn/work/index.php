@@ -17,7 +17,7 @@
           class Post
           {
             public $text;
-            public $likes;
+            private $likes = 0;
 
             public function __construct($text)
             {
@@ -34,8 +34,11 @@
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
 
+          $posts[0]->likes++;
+
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
+
         ?>
       </p>
     </div>
