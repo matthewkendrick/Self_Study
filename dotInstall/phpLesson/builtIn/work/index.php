@@ -17,7 +17,7 @@
 
           class Post
           {
-            private $text;
+            protected $text;
             public const VERSION = 0.1;
 
             public function __construct($text)
@@ -49,6 +49,11 @@
             public function showSponsor()
             {
               printf('%s' . '<br>', $this->sponsor);
+            }
+
+            public function show()
+            {
+              printf('%s by %s' . '<br>', $this->text, $this->sponsor);
             }
           }
           
