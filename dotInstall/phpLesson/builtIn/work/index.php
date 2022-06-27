@@ -25,7 +25,6 @@
 
               abstract public function show();
            }
-           
 
           class Post extends BasePost
           {
@@ -50,12 +49,29 @@
               printf('%s by %s' . '<br>', $this->text, $this->sponsor);
             }
           }
+
+          class PremiumPost extends BasePost
+          {
+            private $price;
+
+            public function  __construct($text, $price)
+            {
+              parent::__construct($text);
+              $this->price = $price;
+            }
+
+            public function show()
+            {
+              printf('%s [%d JPY]' . '<br>', $this->text, $this->price);
+            }
+          }
           
           
           $posts = [];
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
           $posts[2] = new SponsoredPost('hello hello!', 'dotinstall');
+          $posts[3] = new PremiumPost('Hello there', 300);
 
           function processPost(BasePost $post)
           {
