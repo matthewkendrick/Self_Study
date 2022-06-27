@@ -15,8 +15,9 @@
       <p>
         <?php
            
-          require('Post.php');
-          // include('Post.php');
+          spl_autoload_register(function ($class) {
+            require($class . '.php');
+          });
           
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
