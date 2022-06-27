@@ -16,7 +16,7 @@
         <?php
           class Post
           {
-            public $text;
+            private $text;
             private $likes = 0;
 
             public function __construct($text)
@@ -28,13 +28,22 @@
             {
               printf('%s (%d)' . '<br>', $this->text, $this->likes);
             }
+
+            public function like()
+            {
+              $this->likes++;
+
+              if ($this->likes > 100) {
+                $this->likes = 100;
+              }
+            }
           }
           
           $posts = [];
           $posts[0] = new Post('hello');
           $posts[1] = new Post('hello again');
 
-          $posts[0]->likes++;
+          $posts[0]->like();
 
           $posts[0]->show() . '<br>';
           $posts[1]->show() . '<br>';
