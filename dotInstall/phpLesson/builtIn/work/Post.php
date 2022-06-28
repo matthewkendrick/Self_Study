@@ -1,4 +1,7 @@
 <?php
+  
+  namespace Dotinstall\MyPHPApp;
+
   class Post
   {
     private $text;

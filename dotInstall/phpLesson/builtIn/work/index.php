@@ -14,13 +14,13 @@
     <div class="text">
       <p>
         <?php
+
+          use Dotinstall\MyPHPApp;
            
-          spl_autoload_register(function ($class) {
-            require($class . '.php');
-          });
+          require('Post.php');
           
-          $posts[0] = new Post('hello');
-          $posts[1] = new Post('hello again');
+          $posts[0] = new MyPHPApp\Post('hello');
+          $posts[1] = new MyPHPApp\Post('hello again');
 
           foreach ($posts as $post) {
             $post->show();
