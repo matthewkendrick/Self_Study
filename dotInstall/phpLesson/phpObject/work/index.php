@@ -14,19 +14,19 @@
     <div class="text">
       <p>
         <?php
-
-          require('Post.php');
-
-          try { 
-            $posts[0] = new Post('!');
-            $posts[1] = new Post('hello again');
-
-            foreach ($posts as $post) {
-              $post->show();
+          function getStats(...$numbers)
+          {
+            $total = 0;
+            foreach ($numbers as $key => $number) {
+              $total += $number;
             }
-          } catch (Exception $e) {
-            echo $e->getMessage() . '<br>';
+            return [ $total, $total / count($numbers) ];
           }
+
+          list($sum, $average) = getStats(1, 3, 5);
+
+          echo $sum . '<br>';
+          echo $average . '<br>';
 
         ?>
       </p>
