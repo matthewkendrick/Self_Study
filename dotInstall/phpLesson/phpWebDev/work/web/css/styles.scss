@@ -10,6 +10,11 @@ body {
     background: #DC3545;
     margin: 16px auto;
     border-radius: 8px;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
     .text {
       font-weight: bold;
       font-size: 24px;
