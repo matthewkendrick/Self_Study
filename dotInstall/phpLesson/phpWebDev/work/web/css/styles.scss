@@ -9,6 +9,7 @@ body {
     height: fit-content;
     background: #DC3545;
     margin: 16px auto;
+    padding: 8px;
     border-radius: 8px;
     ul {
       li {
@@ -30,23 +31,54 @@ body {
     }
     form {
       text-align: center;
-      padding-bottom: 8px;
       input {
-        height: 24px;
-        border-radius: 16px;
+        height: 32px;
+        width: 240px;
+        border-radius: 8px;
         border: 2px solid lightgray;
         padding: 0 8px;
+        margin: 4px 0;
       }
       button {
-        height: 26px;
-        width: 48px;
-        border-radius: 16px;
+        height: 48px;
+        width: 240px;
+        border-radius: 48px;
         border: 2px solid lightgray;
         font-weight: bold;
         cursor: pointer;
         background: gray;
+        margin: 24px 0;
         &:hover {
           background: lightgray;
+        }
+      }
+      .info-field {
+        padding: 8px;
+        label {
+          font-weight: bold;
+          font-size: 18px;
+          text-align: left;
+        }
+      }
+    }
+    .result {
+      text-align: center;
+      .back-btn {
+        display: inline-block;
+        width: 64px;
+        background: darkgray;
+        border-radius: 4px;
+        margin: 16px;
+        cursor: pointer;
+        a {
+          color: blue;
+          text-decoration: none;
+        }
+        &:hover {
+          background: gray;
+          a {
+            color: black;
+          }
         }
       }
     }

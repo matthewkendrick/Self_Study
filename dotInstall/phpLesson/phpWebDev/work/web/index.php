@@ -11,10 +11,23 @@
     <div class="text">
       <p><?= $today ?></p><br>
     </div>
-    <form action="result.php" method="get">
-      <input type="text" name="message" id="">
-      <button>Send</button>
-    </form>
+    <div class="input-field">
+      <form action="result.php" method="get">
+        <div class="info-field">
+          <label for="message">Message</label>
+          <div>
+            <input type="text" name="message" id="">
+          </div>
+        </div>
+        <div class="info-field">
+          <label for="username">User Name</label>
+          <div>
+            <input type="text" name="username" id="">
+          </div>
+        </div>
+        <button>Send</button>
+      </form>
+    </div>
   </section>
 
 

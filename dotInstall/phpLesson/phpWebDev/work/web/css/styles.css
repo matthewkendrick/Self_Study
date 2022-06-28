@@ -10,6 +10,7 @@ body section {
   height: fit-content;
   background: #DC3545;
   margin: 16px auto;
+  padding: 8px;
   border-radius: 8px;
 }
 
@@ -35,28 +36,66 @@ body section .material-symbols-rounded {
 
 body section form {
   text-align: center;
-  padding-bottom: 8px;
 }
 
 body section form input {
-  height: 24px;
-  border-radius: 16px;
+  height: 32px;
+  width: 240px;
+  border-radius: 8px;
   border: 2px solid lightgray;
   padding: 0 8px;
+  margin: 4px 0;
 }
 
 body section form button {
-  height: 26px;
-  width: 48px;
-  border-radius: 16px;
+  height: 48px;
+  width: 240px;
+  border-radius: 48px;
   border: 2px solid lightgray;
   font-weight: bold;
   cursor: pointer;
   background: gray;
+  margin: 24px 0;
 }
 
 body section form button:hover {
   background: lightgray;
+}
+
+body section form .info-field {
+  padding: 8px;
+}
+
+body section form .info-field label {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+body section .result {
+  text-align: center;
+}
+
+body section .result .back-btn {
+  display: inline-block;
+  width: 64px;
+  background: darkgray;
+  border-radius: 4px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+body section .result .back-btn a {
+  color: blue;
+  text-decoration: none;
+}
+
+body section .result .back-btn:hover {
+  background: gray;
+}
+
+body section .result .back-btn:hover a {
+  color: black;
 }
 
 footer {

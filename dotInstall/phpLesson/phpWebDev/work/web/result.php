@@ -1,6 +1,10 @@
 <?php
 
   require('../app/functions.php');
+
+  $message = filter_input(INPUT_GET, 'message');
+  $username = filter_input(INPUT_GET, 'username');
+
   include('../app/_parts/_header.php');
 
   $today = date('Y-m-d H:i:s l');
@@ -12,13 +16,11 @@
       <p><?= $today ?></p><br>
     </div>
 
-    <p><?= h($message); ?></p>
-    <p><a href="index.php">back</a></p>
-
-    <form action="result.php" method="get">
-      <input type="text" name="message" id="">
-      <button>Send</button>
-    </form>
+    <div class="result">
+      <p><?= h($message); ?></p>
+      <p><?= h($message); ?> by <?= h($username); ?></p>
+      <p class="back-btn"><a href="index.php">back</a></p>
+    </div>
   </section>
 
 
