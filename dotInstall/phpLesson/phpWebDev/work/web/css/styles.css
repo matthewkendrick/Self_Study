@@ -33,6 +33,32 @@ body section .material-symbols-rounded {
   color: #FFC107;
 }
 
+body section form {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+body section form input {
+  height: 24px;
+  border-radius: 16px;
+  border: 2px solid lightgray;
+  padding: 0 8px;
+}
+
+body section form button {
+  height: 26px;
+  width: 48px;
+  border-radius: 16px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: gray;
+}
+
+body section form button:hover {
+  background: lightgray;
+}
+
 footer {
   font-size: 14px;
   text-align: center;

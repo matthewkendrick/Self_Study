@@ -11,6 +11,10 @@
     <div class="text">
       <p><?= $today ?></p><br>
     </div>
+
+    <p><?= h($message); ?></p>
+    <p><a href="index.php">back</a></p>
+
     <form action="result.php" method="get">
       <input type="text" name="message" id="">
       <button>Send</button>

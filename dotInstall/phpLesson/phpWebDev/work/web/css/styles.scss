@@ -28,6 +28,28 @@ body {
       font-size: 64px;
       color: #FFC107;
     }
+    form {
+      text-align: center;
+      padding-bottom: 8px;
+      input {
+        height: 24px;
+        border-radius: 16px;
+        border: 2px solid lightgray;
+        padding: 0 8px;
+      }
+      button {
+        height: 26px;
+        width: 48px;
+        border-radius: 16px;
+        border: 2px solid lightgray;
+        font-weight: bold;
+        cursor: pointer;
+        background: gray;
+        &:hover {
+          background: lightgray;
+        }
+      }
+    }
   }
 }
 
