@@ -32,4 +32,9 @@ body section .material-symbols-rounded {
   font-size: 64px;
   color: #FFC107;
 }
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
