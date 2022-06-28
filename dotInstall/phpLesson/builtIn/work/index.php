@@ -15,15 +15,17 @@
       <p>
         <?php
 
-          use Dotinstall\MyPHPApp;
-           
           require('Post.php');
-          
-          $posts[0] = new MyPHPApp\Post('hello');
-          $posts[1] = new MyPHPApp\Post('hello again');
 
-          foreach ($posts as $post) {
-            $post->show();
+          try { 
+            $posts[0] = new Post('!');
+            $posts[1] = new Post('hello again');
+
+            foreach ($posts as $post) {
+              $post->show();
+            }
+          } catch (Exception $e) {
+            echo $e->getMessage() . '<br>';
           }
 
         ?>

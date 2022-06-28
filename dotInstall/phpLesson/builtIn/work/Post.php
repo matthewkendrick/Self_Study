@@ -6,12 +6,15 @@
   {
     private $text;
 
-    function __construct($text)
+    public function __construct($text)
     {
+      if (strlen($text) <= 3) {
+        throw new Exception('Text too short!');
+      }
       $this->text = $text;
     }
 
-    function show()
+    public function show()
     {
       printf('%s' . '<br>', $this->text);
     }
