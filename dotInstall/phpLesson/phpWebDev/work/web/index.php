@@ -1,5 +1,7 @@
 <?php
 
+  require('../app/functions.php');
+
   $today = date('Y-m-d H:i:s l');
   $name = 'Anna';
 
@@ -14,7 +16,8 @@
 <body>
   <section>
     <div class="text">
-      <p>Hello, <?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?></p>
+      <p><?= $today ?></p>
+      <p>Hello, <?= h($name); ?></p>
     </div>
   </section>
 </body>
