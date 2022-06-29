@@ -5,7 +5,8 @@
   $message = trim(filter_input(INPUT_GET, 'message'));
   $message = $message !== '' ? $message : '...';
 
-  $color = filter_input(INPUT_GET, 'color');
+  $colors = filter_input(INPUT_GET, 'colors', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+  $colors = empty($colors) ? 'None selected' : implode(',', $colors);
 
   $username = trim( filter_input(INPUT_GET, 'username') );
   $username = $username !== '' ? $username : '...';
@@ -23,7 +24,7 @@
 
     <div class="result">
       <p><?= nl2br(h($message)); ?></p>
-      <p><?= nl2br(h($color)); ?></p>
+      <p><?= nl2br(h($colors)); ?></p>
       <p> by <?= h($username); ?></p>
       <p class="back-btn"><a href="index.php">back</a></p>
     </div>

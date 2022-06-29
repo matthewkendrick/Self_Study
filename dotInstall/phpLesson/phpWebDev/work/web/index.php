@@ -22,7 +22,7 @@
         <div class="info-field">
           <label for="select">Color Pick</label>
           <div>
-            <select name="color" id="">
+            <select name="colors[]" id="" multiple>
               <option value="orange">Orange</option>
               <option value="pink">Pink</option>
               <option value="gold">Gold</option>
