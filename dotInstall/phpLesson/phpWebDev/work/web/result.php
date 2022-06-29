@@ -2,8 +2,11 @@
 
   require('../app/functions.php');
 
-  $message = filter_input(INPUT_GET, 'message');
-  $username = filter_input(INPUT_GET, 'username');
+  $message = trim(filter_input(INPUT_GET, 'message'));
+  $message = $message !== '' ? $message : '...';
+
+  $username = trim( filter_input(INPUT_GET, 'username') );
+  $username = $username !== '' ? $username : '...';
 
   include('../app/_parts/_header.php');
 
