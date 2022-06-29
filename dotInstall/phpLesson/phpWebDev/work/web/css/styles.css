@@ -57,6 +57,25 @@ body section form input {
   margin: 4px 0;
 }
 
+body section form .reset-btn {
+  height: 48px;
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  padding: 4px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+
+body section form .reset-btn:hover {
+  background: gray;
+  color: #000;
+}
+
 body section form .radio-group input {
   vertical-align: middle;
   margin: 0 8px;

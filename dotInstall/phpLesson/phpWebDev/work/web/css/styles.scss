@@ -46,6 +46,23 @@ body {
         padding: 0 8px;
         margin: 4px 0;
       }
+      .reset-btn {
+        height: 48px;
+        border-radius: 48px;
+        border: 2px solid lightgray;
+        font-weight: bold;
+        cursor: pointer;
+        background: lightgray;
+        margin: 24px 0;
+        padding: 4px;
+        font-size: 14px;
+        color: blue;
+        text-decoration: none;
+        &:hover {
+          background: gray;
+          color: #000;
+        }
+      }
       .radio-group {
         input {
           vertical-align: middle;

@@ -48,6 +48,7 @@
           </div>
         </div> -->
         <button>Send</button>
+        <a href="reset.php" class="reset-btn">reset</a>
       </form>
     </div>
   </section>
