@@ -6,4 +6,4 @@
   <script src="https://kit.fontawesome.com/051eb814e7.js" crossorigin="anonymous"></script>
   <title>PHP Practice</title>
 </head>
-<body>
+<body style="background-color: <?= h($color); ?>;">

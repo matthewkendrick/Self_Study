@@ -3,6 +3,7 @@
   require('../app/functions.php');
   include('../app/_parts/_header.php');
 
+  $color = 'transparent';
   $today = date('Y-m-d H:i:s l');
 
 ?>

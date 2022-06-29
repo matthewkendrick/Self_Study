@@ -5,7 +5,7 @@
   $message = trim(filter_input(INPUT_GET, 'message'));
   $message = $message !== '' ? $message : '...';
 
-  $color = filter_input(INPUT_GET, 'color');
+  $color = filter_input(INPUT_GET, 'color') ?? 'transparent';
 
   $sex = filter_input(INPUT_GET, 'sex');
   $sex = filter_input(INPUT_GET, 'sex') ?? 'Not selected';
