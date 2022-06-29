@@ -59,6 +59,12 @@ body {
           background: lightgray;
         }
       }
+      select {
+        width: 120px;
+        height: 24px;
+        border-radius: 8px;
+        border: 2px solid lightgray;
+      }
       .info-field {
         padding: 8px;
         label {

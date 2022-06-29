@@ -70,6 +70,13 @@ body section form button:hover {
   background: lightgray;
 }
 
+body section form select {
+  width: 120px;
+  height: 24px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+}
+
 body section form .info-field {
   padding: 8px;
 }

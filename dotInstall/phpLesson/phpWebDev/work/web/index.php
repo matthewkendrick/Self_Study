@@ -20,6 +20,16 @@
           </div>
         </div>
         <div class="info-field">
+          <label for="select">Color Pick</label>
+          <div>
+            <select name="color" id="">
+              <option value="orange">Orange</option>
+              <option value="pink">Pink</option>
+              <option value="gold">Gold</option>
+            </select>
+          </div>
+        </div>
+        <div class="info-field">
           <label for="message">Message</label>
           <div>
             <textarea name="message" id="" rows="10"></textarea>
