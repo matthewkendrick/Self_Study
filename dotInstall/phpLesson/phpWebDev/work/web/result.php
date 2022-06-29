@@ -32,6 +32,7 @@
       <p> by <?= h($username); ?></p>
       <p class="back-btn"><a href="index.php">back</a></p>
     </div>
+    <p class="border"></p>
   </section>
 
 

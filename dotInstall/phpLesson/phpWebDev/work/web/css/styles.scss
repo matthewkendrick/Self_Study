@@ -17,6 +17,10 @@ body {
         list-style: none;
       }
     }
+    .border {
+      border-bottom: 2px dashed gray;
+      margin: 8px;
+    }
     .text {
       font-weight: bold;
       font-size: 24px;

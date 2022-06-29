@@ -41,14 +41,12 @@
             <textarea name="message" id="" rows="10"></textarea>
           </div>
         </div>
-        <!-- <div class="info-field">
-          <label for="message">Message</label>
-          <div>
-            <input type="text" name="message" id="">
-          </div>
-        </div> -->
         <button>Send</button>
         <a href="reset.php" class="reset-btn">reset</a>
+      </form>
+      <p class="border"></p>
+      <form action="" method="post">
+        sample
       </form>
     </div>
   </section>
