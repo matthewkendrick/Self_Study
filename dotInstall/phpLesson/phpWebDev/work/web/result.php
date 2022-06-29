@@ -20,8 +20,8 @@
     </div>
 
     <div class="result">
-      <p><?= h($message); ?></p>
-      <p><?= h($message); ?> by <?= h($username); ?></p>
+      <p><?= nl2br(h($message)); ?></p>
+      <p> by <?= h($username); ?></p>
       <p class="back-btn"><a href="index.php">back</a></p>
     </div>
   </section>

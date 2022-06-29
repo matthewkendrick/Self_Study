@@ -31,6 +31,12 @@ body {
     }
     form {
       text-align: center;
+      textarea {
+        width: 240px;
+        border-radius: 8px;
+        border: 2px solid lightgray;
+        padding: 4px 8px;
+      }
       input {
         height: 32px;
         width: 240px;
@@ -48,6 +54,7 @@ body {
         cursor: pointer;
         background: gray;
         margin: 24px 0;
+        font-size: 18px;
         &:hover {
           background: lightgray;
         }

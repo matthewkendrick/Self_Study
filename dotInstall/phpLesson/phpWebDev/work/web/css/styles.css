@@ -38,6 +38,13 @@ body section form {
   text-align: center;
 }
 
+body section form textarea {
+  width: 240px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  padding: 4px 8px;
+}
+
 body section form input {
   height: 32px;
   width: 240px;
@@ -56,6 +63,7 @@ body section form button {
   cursor: pointer;
   background: gray;
   margin: 24px 0;
+  font-size: 18px;
 }
 
 body section form button:hover {
