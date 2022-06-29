@@ -19,10 +19,10 @@
             <input type="text" name="username" id="">
           </div>
         </div>
-        <div class="info-field">
+        <div class="info-field color">
           <label for="select">Color Pick</label>
           <div>
-            <select name="colors[]" id="" multiple>
+            <select name="color" id="">
               <option value="orange">Orange</option>
               <option value="pink">Pink</option>
               <option value="gold">Gold</option>

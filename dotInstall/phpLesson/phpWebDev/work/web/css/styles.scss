@@ -52,16 +52,18 @@ body {
         border: 2px solid lightgray;
         font-weight: bold;
         cursor: pointer;
-        background: gray;
+        background: lightgray;
         margin: 24px 0;
         font-size: 18px;
+        color: blue;
         &:hover {
-          background: lightgray;
+          background: gray;
+          color: #000;
         }
       }
       select {
         width: 120px;
-        height: 24px;
+        height: 32px;
         border-radius: 8px;
         border: 2px solid lightgray;
       }
@@ -73,6 +75,17 @@ body {
           text-align: left;
         }
       }
+      .color {
+        margin: 0 auto;
+        width: 240px;
+        height: fit-content;
+        line-height: 2rem;
+        font-size: 14px;
+        input {
+          border-radius: 8px;
+          border: 2px solid lightgray;
+        }
+      }
     }
     .result {
       text-align: center;
@@ -80,6 +93,7 @@ body {
         display: inline-block;
         width: 64px;
         background: darkgray;
+        border: 2px solid gray;
         border-radius: 4px;
         margin: 16px;
         cursor: pointer;
@@ -99,6 +113,7 @@ body {
 }
 
 footer {
+  margin: 32px;
   font-size: 14px;
   text-align: center;
 }
