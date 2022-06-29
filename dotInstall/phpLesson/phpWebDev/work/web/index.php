@@ -30,9 +30,9 @@
           <div>
             <select name="color" id="">
               <option value="Not selected">Not selected</option>
-              <option value="orange">Orange</option>
-              <option value="pink">Pink</option>
-              <option value="gold">Gold</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="gold">Orange</option>
             </select>
           </div>
         </div>

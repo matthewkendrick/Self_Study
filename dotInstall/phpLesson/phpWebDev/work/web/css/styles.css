@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  padding: 16px 0;
+}
+
 body section {
   width: 90%;
   height: -webkit-fit-content;
