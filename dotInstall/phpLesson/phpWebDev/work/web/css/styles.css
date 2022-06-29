@@ -47,11 +47,16 @@ body section form textarea {
 
 body section form input {
   height: 32px;
-  width: 240px;
   border-radius: 8px;
   border: 2px solid lightgray;
   padding: 0 8px;
   margin: 4px 0;
+}
+
+body section form .radio-group input {
+  vertical-align: middle;
+  margin: 0 8px;
+  cursor: pointer;
 }
 
 body section form button {

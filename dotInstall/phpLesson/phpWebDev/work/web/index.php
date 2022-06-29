@@ -18,11 +18,17 @@
           <div>
             <input type="text" name="username" id="">
           </div>
+          <div class="radio-group">
+            <label for=""><input type="radio" name="sex" value="man">Man</label>
+            <label for=""><input type="radio" name="sex" value="women">Women</label>
+            <label for=""><input type="radio" name="sex" value="other">Other</label>
+          </div>
         </div>
         <div class="info-field color">
           <label for="select">Color Pick</label>
           <div>
             <select name="color" id="">
+              <option value="Not selected">Not selected</option>
               <option value="orange">Orange</option>
               <option value="pink">Pink</option>
               <option value="gold">Gold</option>

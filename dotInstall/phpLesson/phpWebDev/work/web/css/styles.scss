@@ -39,11 +39,18 @@ body {
       }
       input {
         height: 32px;
-        width: 240px;
+        // width: 240px;
         border-radius: 8px;
         border: 2px solid lightgray;
         padding: 0 8px;
         margin: 4px 0;
+      }
+      .radio-group {
+        input {
+          vertical-align: middle;
+          margin: 0 8px;
+          cursor: pointer;
+        }
       }
       button {
         height: 48px;

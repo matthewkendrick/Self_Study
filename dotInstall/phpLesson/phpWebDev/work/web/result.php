@@ -7,6 +7,9 @@
 
   $color = filter_input(INPUT_GET, 'color');
 
+  $sex = filter_input(INPUT_GET, 'sex');
+  $sex = filter_input(INPUT_GET, 'sex') ?? 'Not selected';
+
   $username = trim( filter_input(INPUT_GET, 'username') );
   $username = $username !== '' ? $username : '...';
 
@@ -22,7 +25,8 @@
     </div>
 
     <div class="result">
-      <p><?= nl2br(h($message)); ?></p>
+      <p><?= nl2br(h($message)); ?><//p>
+      <p><?= nl2br(h($sex)); ?><//p>
       <p><?= nl2br(h($color)); ?></p>
       <p> by <?= h($username); ?></p>
       <p class="back-btn"><a href="index.php">back</a></p>
