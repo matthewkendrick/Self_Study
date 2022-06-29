@@ -6,7 +6,7 @@
   $message = $message !== '' ? $message : '...';
 
   $colorFromGet = filter_input(INPUT_GET, 'color') ?? 'transparent';
-  setcookie('color', $colorFromGet);
+  $_SESSION['color'] = $colorFromGet;
 
   $sex = filter_input(INPUT_GET, 'sex');
   $sex = filter_input(INPUT_GET, 'sex') ?? 'Not selected';

@@ -1,6 +1,6 @@
 <?php 
 
-  $color = $colorFromGet ?? filter_input(INPUT_COOKIE, 'color') ?? 'transparent';
+  $color = $_SESSION['color'] ?? filter_input(INPUT_COOKIE, 'color') ?? 'transparent';
 
 ?>
 <!DOCTYPE html>
