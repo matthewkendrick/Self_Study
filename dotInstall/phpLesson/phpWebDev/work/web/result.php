@@ -5,7 +5,8 @@
   $message = trim(filter_input(INPUT_GET, 'message'));
   $message = $message !== '' ? $message : '...';
 
-  $color = filter_input(INPUT_GET, 'color') ?? 'transparent';
+  $colorFromGet = filter_input(INPUT_GET, 'color') ?? 'transparent';
+  setcookie('color', $colorFromGet);
 
   $sex = filter_input(INPUT_GET, 'sex');
   $sex = filter_input(INPUT_GET, 'sex') ?? 'Not selected';
@@ -27,7 +28,7 @@
     <div class="result">
       <p><?= nl2br(h($message)); ?><//p>
       <p><?= nl2br(h($sex)); ?><//p>
-      <p><?= nl2br(h($color)); ?></p>
+      <p><?= nl2br(h($colorFromGet)); ?></p>
       <p> by <?= h($username); ?></p>
       <p class="back-btn"><a href="index.php">back</a></p>
     </div>

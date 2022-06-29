@@ -1,3 +1,8 @@
+<?php 
+
+  $color = $colorFromGet ?? filter_input(INPUT_COOKIE, 'color') ?? 'transparent';
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
