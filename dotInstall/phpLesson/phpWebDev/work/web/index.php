@@ -3,6 +3,9 @@
   require('../app/functions.php');
   include('../app/_parts/_header.php');
 
+  $filename = '../app/messages.txt';
+  $messages = file($filename, FILE_IGNORE_NEW_LINES);
+
   $today = date('Y-m-d H:i:s l');
 
 ?>
@@ -12,7 +15,7 @@
       <p><?= $today ?></p><br>
     </div>
     <div class="input-field">
-      <form action="result.php" method="get">
+      <form class="form form1" action="result.php" method="get">
         <div class="info-field">
           <label for="username">User Name</label>
           <div>
@@ -45,8 +48,15 @@
         <a href="reset.php" class="reset-btn">reset</a>
       </form>
       <p class="border"></p>
-      <form action="" method="post">
-        sample
+
+      <ul class="">
+        <?php foreach ($messages as $message): ?>
+          <li class=""><?= h($message); ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <form class="form form2" action="" method="post">
+        <input type="text," name="message">
+        <button>send</button>
       </form>
     </div>
   </section>

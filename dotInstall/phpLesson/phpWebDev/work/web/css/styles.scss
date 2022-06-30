@@ -12,6 +12,7 @@ body {
     margin: 16px auto;
     padding: 8px;
     border-radius: 8px;
+    text-align: center;
     ul {
       li {
         list-style: none;
@@ -33,6 +34,43 @@ body {
     .material-symbols-rounded {
       font-size: 64px;
       color: #FFC107;
+    }
+    .form1 {
+      button {
+        height: 48px;
+        width: 240px;
+        border-radius: 48px;
+        border: 2px solid lightgray;
+        font-weight: bold;
+        cursor: pointer;
+        background: lightgray;
+        margin: 24px 0;
+        font-size: 18px;
+        color: blue;
+        &:hover {
+          background: gray;
+          color: #000;
+        }
+      }
+    }
+    .form2 {
+      button {
+        // height: 48px;
+        border-radius: 48px;
+        border: 2px solid lightgray;
+        font-weight: bold;
+        cursor: pointer;
+        background: lightgray;
+        margin: 24px 0;
+        padding: 8px;
+        font-size: 14px;
+        color: blue;
+        text-decoration: none;
+        &:hover {
+          background: gray;
+          color: #000;
+        }
+      }
     }
     form {
       text-align: center;
@@ -72,22 +110,6 @@ body {
           vertical-align: middle;
           margin: 0 8px;
           cursor: pointer;
-        }
-      }
-      button {
-        height: 48px;
-        width: 240px;
-        border-radius: 48px;
-        border: 2px solid lightgray;
-        font-weight: bold;
-        cursor: pointer;
-        background: lightgray;
-        margin: 24px 0;
-        font-size: 18px;
-        color: blue;
-        &:hover {
-          background: gray;
-          color: #000;
         }
       }
       select {

@@ -16,6 +16,7 @@ body section {
   margin: 16px auto;
   padding: 8px;
   border-radius: 8px;
+  text-align: center;
 }
 
 body section ul li {
@@ -41,6 +42,42 @@ body section .text .border {
 body section .material-symbols-rounded {
   font-size: 64px;
   color: #FFC107;
+}
+
+body section .form1 button {
+  height: 48px;
+  width: 240px;
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  font-size: 18px;
+  color: blue;
+}
+
+body section .form1 button:hover {
+  background: gray;
+  color: #000;
+}
+
+body section .form2 button {
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  padding: 8px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+
+body section .form2 button:hover {
+  background: gray;
+  color: #000;
 }
 
 body section form {
@@ -85,24 +122,6 @@ body section form .radio-group input {
   vertical-align: middle;
   margin: 0 8px;
   cursor: pointer;
-}
-
-body section form button {
-  height: 48px;
-  width: 240px;
-  border-radius: 48px;
-  border: 2px solid lightgray;
-  font-weight: bold;
-  cursor: pointer;
-  background: lightgray;
-  margin: 24px 0;
-  font-size: 18px;
-  color: blue;
-}
-
-body section form button:hover {
-  background: gray;
-  color: #000;
 }
 
 body section form select {
