@@ -161,7 +161,7 @@ body section .result {
   text-align: center;
 }
 
-body section .result .back-btn {
+body section .back-btn {
   display: inline-block;
   width: 64px;
   background: darkgray;
@@ -171,16 +171,16 @@ body section .result .back-btn {
   cursor: pointer;
 }
 
-body section .result .back-btn a {
+body section .back-btn a {
   color: blue;
   text-decoration: none;
 }
 
-body section .result .back-btn:hover {
+body section .back-btn:hover {
   background: gray;
 }
 
-body section .result .back-btn:hover a {
+body section .back-btn:hover a {
   color: black;
 }
 

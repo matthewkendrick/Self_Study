@@ -2,19 +2,6 @@
 
   require('../app/functions.php');
 
-
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $message = trim(filter_input(INPUT_POST, 'message'));
-    $message = $message !== '' ? $message : '...';
-
-    $filename = '../app/messages.txt';
-    $fp = fopen($filename, 'a');
-    fwrite($fp, $message . "\n");
-    fclose($fp);
-  } else {
-    exit('Invalid Request');
-  }
-
   $colorFromGet = filter_input(INPUT_GET, 'color') ?? 'transparent';
   $_SESSION['color'] = $colorFromGet;
 
@@ -36,14 +23,13 @@
     </div>
 
     <div class="result">
-      <p><?= nl2br(h($message)); ?><//p>
-      <p><?= nl2br(h($sex)); ?><//p>
+      <p><?= nl2br(h($sex)); ?></p>
       <p><?= nl2br(h($colorFromGet)); ?></p>
       <p> by <?= h($username); ?></p>
-      <p class="back-btn"><a href="index.php">back</a></p>
     </div>
     <p class="border"></p>
     <p>Message added!</p>
+      <p class="back-btn"><a href="index.php">back</a></p>
   </section>
 
 
