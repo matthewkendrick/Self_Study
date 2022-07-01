@@ -54,9 +54,9 @@
           <li class=""><?= h($message); ?></li>
         <?php endforeach; ?>
       </ul>
-      <form class="form form2" action="" method="post">
-        <input type="text," name="message">
-        <button>send</button>
+      <form class="form form2" action="result.php" method="post">
+        <input type="text" name="message">
+        <button>Post</button>
       </form>
     </div>
   </section>

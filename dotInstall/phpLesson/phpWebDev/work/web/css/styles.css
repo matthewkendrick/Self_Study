@@ -129,6 +129,7 @@ body section form select {
   height: 32px;
   border-radius: 8px;
   border: 2px solid lightgray;
+  cursor: pointer;
 }
 
 body section form .info-field {

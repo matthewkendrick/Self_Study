@@ -2,8 +2,13 @@
 
   require('../app/functions.php');
 
-  $message = trim(filter_input(INPUT_GET, 'message'));
+  $message = trim(filter_input(INPUT_POST, 'message'));
   $message = $message !== '' ? $message : '...';
+
+  $filename = '../app/messages.txt';
+  $fp = fopen($filename, 'a');
+  fwrite($fp, $message . "\n");
+  fclose($fp);
 
   $colorFromGet = filter_input(INPUT_GET, 'color') ?? 'transparent';
   $_SESSION['color'] = $colorFromGet;
@@ -33,6 +38,7 @@
       <p class="back-btn"><a href="index.php">back</a></p>
     </div>
     <p class="border"></p>
+    <p>Message added!</p>
   </section>
 
 
