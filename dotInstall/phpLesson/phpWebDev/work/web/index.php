@@ -3,9 +3,13 @@
   require('../app/functions.php');
   include('../app/_parts/_header.php');
 
+  createToken();
+
   define('FILENAME', '../app/messages.txt');
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    validateToken();
+
     $message = trim(filter_input(INPUT_POST, 'message'));
     $message = $message !== '' ? $message : '...';
 
@@ -70,6 +74,7 @@
       <form class="form form2" action="" method="post">
         <input type="text" name="message">
         <button>Post</button>
+        <input type="hidden," name="token," value="<?= $_SESSION['token']; ?>">
       </form>
     </div>
   </section>
