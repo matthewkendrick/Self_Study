@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 16px 0;
+}
+
+body section {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #DC3545;
+  margin: 16px auto;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+body section ul li {
+  list-style: none;
+}
+
+body section .border {
+  border-bottom: 2px dashed gray;
+  margin: 8px;
+}
+
+body section .text {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+body section .text .border {
+  border: 2px dashed lightgray;
+  margin: 0 8px;
+}
+
+body section .material-symbols-rounded {
+  font-size: 64px;
+  color: #FFC107;
+}
+
+body section .form1 button {
+  height: 48px;
+  width: 240px;
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  font-size: 18px;
+  color: blue;
+}
+
+body section .form1 button:hover {
+  background: gray;
+  color: #000;
+}
+
+body section .form2 button {
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  padding: 8px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+
+body section .form2 button:hover {
+  background: gray;
+  color: #000;
+}
+
+body section form {
+  text-align: center;
+}
+
+body section form textarea {
+  width: 240px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  padding: 4px 8px;
+}
+
+body section form input {
+  height: 32px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  padding: 0 8px;
+  margin: 4px 0;
+}
+
+body section form .reset-btn {
+  height: 48px;
+  border-radius: 48px;
+  border: 2px solid lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  margin: 24px 0;
+  padding: 8px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+
+body section form .reset-btn:hover {
+  background: gray;
+  color: #000;
+}
+
+body section form .radio-group input {
+  vertical-align: middle;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+body section form select {
+  width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  cursor: pointer;
+}
+
+body section form .info-field {
+  padding: 8px;
+}
+
+body section form .info-field label {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+body section form .color {
+  margin: 0 auto;
+  width: 240px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 2rem;
+  font-size: 14px;
+}
+
+body section form .color input {
+  border-radius: 8px;
+  border: 2px solid lightgray;
+}
+
+body section .result {
+  text-align: center;
+}
+
+body section .back-btn {
+  display: inline-block;
+  width: 64px;
+  background: darkgray;
+  border: 2px solid gray;
+  border-radius: 4px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+body section .back-btn a {
+  color: blue;
+  text-decoration: none;
+}
+
+body section .back-btn:hover {
+  background: gray;
+}
+
+body section .back-btn:hover a {
+  color: black;
+}
+
+footer {
+  margin: 32px;
+  font-size: 14px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
