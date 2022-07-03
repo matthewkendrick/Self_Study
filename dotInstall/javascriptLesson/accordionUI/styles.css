@@ -35,6 +35,8 @@ details summary {
 
 .js-accordion dl div.appear dd {
   display: block;
+  -webkit-animation: 0.3s fadeIn;
+          animation: 0.3s fadeIn;
 }
 
 .js-accordion dl div.appear dt::after {
@@ -64,6 +66,10 @@ details summary {
   position: absolute;
   top: 8px;
   right: 16px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .js-accordion dl dd {
@@ -74,5 +80,31 @@ details summary {
 
 .js-accordion dl dd::before {
   content: 'A. ';
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
