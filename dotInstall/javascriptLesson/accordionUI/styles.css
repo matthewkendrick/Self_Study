@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+details {
+  border-top: 2px solid #bfbfbf;
+}
+
+details[open] {
+  background: #fff4e7;
+}
+
+details p {
+  padding: 12px;
+}
+
+details summary {
+  background: #e6e6e6;
+  cursor: pointer;
+  padding: 12px;
+  outline: none;
+}
+
+.js-accordion h1 {
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.js-accordion dl div {
+  margin-bottom: 8px;
+}
+
+.js-accordion dl div.appear dd {
+  display: block;
+  -webkit-animation: 0.3s fadeIn;
+          animation: 0.3s fadeIn;
+}
+
+.js-accordion dl div.appear dt::after {
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+.js-accordion dl dt {
+  padding: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  background: #e6e6e6;
+}
+
+.js-accordion dl dt::before {
+  content: 'Q. ';
+}
+
+.js-accordion dl dt::after {
+  content: '+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.js-accordion dl dd {
+  background: #fff4e7;
+  padding: 8px;
+  display: none;
+}
+
+.js-accordion dl dd::before {
+  content: 'A. ';
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
