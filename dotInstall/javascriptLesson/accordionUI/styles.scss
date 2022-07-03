@@ -29,12 +29,23 @@ details {
   dl {
     div {
       margin-bottom: 8px;
+      &.appear {
+        dd {
+          display: block;
+        }
+        dt::after {
+          font-weight: bold;
+          transform: rotate(45deg);
+          border-radius: 50%;
+        }
+      }
     }
     dt {
       padding: 8px;
       cursor: pointer;
       user-select: none;
       position: relative;
+      background: #e6e6e6;
       &::before {
         content: 'Q. ';
       }
@@ -46,6 +57,7 @@ details {
       }
     }
     dd {
+      background: #fff4e7;
       padding: 8px;
       display: none;
       &::before {

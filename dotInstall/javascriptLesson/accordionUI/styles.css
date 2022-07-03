@@ -33,6 +33,17 @@ details summary {
   margin-bottom: 8px;
 }
 
+.js-accordion dl div.appear dd {
+  display: block;
+}
+
+.js-accordion dl div.appear dt::after {
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 50%;
+}
+
 .js-accordion dl dt {
   padding: 8px;
   cursor: pointer;
@@ -41,6 +52,7 @@ details summary {
       -ms-user-select: none;
           user-select: none;
   position: relative;
+  background: #e6e6e6;
 }
 
 .js-accordion dl dt::before {
@@ -55,6 +67,7 @@ details summary {
 }
 
 .js-accordion dl dd {
+  background: #fff4e7;
   padding: 8px;
   display: none;
 }
