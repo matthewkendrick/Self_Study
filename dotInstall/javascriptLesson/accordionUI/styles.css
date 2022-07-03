@@ -40,10 +40,18 @@ details summary {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: relative;
 }
 
 .js-accordion dl dt::before {
   content: 'Q. ';
+}
+
+.js-accordion dl dt::after {
+  content: '+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 .js-accordion dl dd {

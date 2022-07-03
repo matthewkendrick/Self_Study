@@ -34,8 +34,15 @@ details {
       padding: 8px;
       cursor: pointer;
       user-select: none;
+      position: relative;
       &::before {
         content: 'Q. ';
+      }
+      &::after {
+        content: '+';
+        position: absolute;
+        top: 8px;
+        right: 16px;
       }
     }
     dd {
