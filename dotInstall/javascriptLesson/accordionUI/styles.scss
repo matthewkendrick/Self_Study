@@ -32,9 +32,18 @@ details {
     }
     dt {
       padding: 8px;
+      cursor: pointer;
+      user-select: none;
+      &::before {
+        content: 'Q. ';
+      }
     }
     dd {
       padding: 8px;
+      display: none;
+      &::before {
+        content: 'A. ';
+      }
     }
   }
 }

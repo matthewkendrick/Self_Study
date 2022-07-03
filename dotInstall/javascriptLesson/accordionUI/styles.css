@@ -35,9 +35,23 @@ details summary {
 
 .js-accordion dl dt {
   padding: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.js-accordion dl dt::before {
+  content: 'Q. ';
 }
 
 .js-accordion dl dd {
   padding: 8px;
+  display: none;
+}
+
+.js-accordion dl dd::before {
+  content: 'A. ';
 }
 /*# sourceMappingURL=styles.css.map */
