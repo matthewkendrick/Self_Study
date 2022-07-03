@@ -21,4 +21,23 @@ details summary {
   padding: 12px;
   outline: none;
 }
+
+.js-accordion h1 {
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.js-accordion dl div {
+  margin-bottom: 8px;
+}
+
+.js-accordion dl dt {
+  padding: 8px;
+}
+
+.js-accordion dl dd {
+  padding: 8px;
+}
 /*# sourceMappingURL=styles.css.map */
