@@ -14,7 +14,8 @@
   #prev,
   #next {
     position: absolute;
-    top: 80px;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: bold;
     background: none;
     cursor: pointer;
