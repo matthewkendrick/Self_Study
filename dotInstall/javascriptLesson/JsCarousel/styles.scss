@@ -48,6 +48,7 @@
     list-style: none;
     height: 100%;
     display: flex;
+    transition: transform 0.3s;
     li {
       height: 100%;
       min-width: 100%;
