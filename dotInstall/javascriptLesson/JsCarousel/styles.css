@@ -9,6 +9,48 @@
   margin: 16px auto;
   border-radius: 16px;
   overflow: hidden;
+  position: relative;
+}
+
+.container #prev,
+.container #next {
+  position: absolute;
+  top: 80px;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+}
+
+.container #prev.material-symbols-rounded,
+.container #next.material-symbols-rounded {
+  width: 24px;
+  height: 32px;
+  padding: 16px 4px;
+  font-size: 32px;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.container #prev:hover,
+.container #next:hover {
+  background: lightgray;
+  color: #000;
+}
+
+.container #prev {
+  left: 0;
+}
+
+.container #prev:hover {
+  border-radius: 0 6px 6px 0;
+}
+
+.container #next {
+  right: 0;
+}
+
+.container #next:hover {
+  border-radius: 6px 0 0 6px;
 }
 
 .container ul {
