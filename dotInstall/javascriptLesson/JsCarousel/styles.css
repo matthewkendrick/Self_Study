@@ -78,4 +78,8 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.container .hidden {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
