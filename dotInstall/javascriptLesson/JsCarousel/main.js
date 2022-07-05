@@ -5,6 +5,7 @@
   const prev = document.getElementById('prev');
   const ul = document.querySelector('ul');
   const slides = ul.children;
+  const dots = [];
   let currentIndex = 0;
 
   function updateButtons() {
@@ -24,7 +25,17 @@
     ul.style.transform = `translateX(${-1 * slideWidth * currentIndex}px)`;
   }
 
+  function setupDots() {
+    for (let i = 0; i < slides.length; i++) {
+      const button = document.createElement('p');
+      dots.push(button);
+      document.querySelector('nav').appendChild(button);
+    }
+    dots[0].classList.add('current');
+  }
+
   updateButtons();
+  setupDots();
 
   next.addEventListener('click', () => {
     currentIndex++;
