@@ -16,6 +16,10 @@
       this.img.addEventListener('load', () => {
         this.render();
       });
+      this.canvas.addEventListener('click', e => {
+        const rect = this.canvas.getBoundingClientRect();
+        console.log(e.clientX - rect.left, e.clientY - rect.top);
+      })
     }
 
     render() {
