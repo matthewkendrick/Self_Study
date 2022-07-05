@@ -3,10 +3,31 @@
   margin: 0;
 }
 
-canvas {
-  background: pink;
-  border-radius: 8px;
-  display: block;
-  margin: 16px auto;
-  cursor: pointer;
+.title {
+  h1, h3 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.3rem;
+    margin: 16px 0;
+  }
+}
+
+.puzzle {
+  padding: 16px 0;
+  canvas {
+    background: pink;
+    border-radius: 8px;
+    display: block;
+    margin: 16px auto;
+    cursor: pointer;
+  }
+}
+
+footer {
+  height: 80px;
+  padding: 32px 0;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  color: darkgray;
 }
