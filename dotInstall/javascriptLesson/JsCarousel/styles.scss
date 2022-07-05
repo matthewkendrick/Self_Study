@@ -68,12 +68,17 @@
     display: flex;
     justify-content: center;
     .indicator {
-      width: 40px;
-      margin: 24px;
-      border: 4px solid #000;
+      width: 32px;
+      height: 12px;
+      margin: 24px 12px;
+      background: lightgray;
       border-radius: 8px;
+      &.current {
+        background: #424242;
+      }
       &:hover {
         cursor: pointer;
+        background: gray;
       }
     }
   }

@@ -97,13 +97,19 @@
 }
 
 .carousel nav .indicator {
-  width: 40px;
-  margin: 24px;
-  border: 4px solid #000;
+  width: 32px;
+  height: 12px;
+  margin: 24px 12px;
+  background: lightgray;
   border-radius: 8px;
+}
+
+.carousel nav .indicator.current {
+  background: #424242;
 }
 
 .carousel nav .indicator:hover {
   cursor: pointer;
+  background: gray;
 }
 /*# sourceMappingURL=styles.css.map */
