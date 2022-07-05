@@ -18,7 +18,9 @@
       });
       this.canvas.addEventListener('click', e => {
         const rect = this.canvas.getBoundingClientRect();
-        console.log(e.clientX - rect.left, e.clientY - rect.top);
+        const col = Math.floor( (e.clientX - rect.left) / 70 );
+        const row = Math.floor( (e.clientY - rect.top) / 70 );
+        console.log(col, row);
       })
     }
 
