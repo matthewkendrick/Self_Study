@@ -12,10 +12,10 @@
     prev.classList.remove('hidden');
     next.classList.remove('hidden');
 
-    if (currentIndex == 0) {
+    if (currentIndex === 0) {
       prev.classList.add('hidden');
     }
-    if (currentIndex == slides.length - 1) {
+    if (currentIndex === slides.length - 1) {
       next.classList.add('hidden');
     }
   }
@@ -27,7 +27,16 @@
 
   function setupDots() {
     for (let i = 0; i < slides.length; i++) {
-      const button = document.createElement('p');
+      const button = document.createElement('button');
+      button.addEventListener('click', () => {
+        currentIndex = i;
+        dots.forEach(dot => {
+          dot.classList.remove('current');
+        });
+        dots[currentIndex].classList.add('current');
+        updateButtons();
+        moveSlides();
+      });
       dots.push(button);
       document.querySelector('nav').appendChild(button);
     }

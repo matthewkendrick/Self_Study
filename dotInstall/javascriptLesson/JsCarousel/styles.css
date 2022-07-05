@@ -94,25 +94,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.carousel nav p + p {
-  margin-left: 8px;
-}
-
-.carousel nav .indicator {
-  width: 32px;
-  height: 12px;
   margin: 24px 12px;
-  background: lightgray;
-  border-radius: 8px;
 }
 
-.carousel nav .indicator.current {
+.carousel nav .current {
   background: #424242;
 }
 
-.carousel nav .indicator:hover {
+.carousel nav button {
+  width: 40px;
+  height: 16px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 8px;
+}
+
+.carousel nav button:hover {
   cursor: pointer;
   background: gray;
 }

@@ -67,18 +67,16 @@
   nav {
     display: flex;
     justify-content: center;
-    p + p {
-      margin-left: 8px;
+    margin: 24px 12px;
+    & .current {
+      background: #424242;
     }
-    .indicator {
-      width: 32px;
-      height: 12px;
-      margin: 24px 12px;
-      background: lightgray;
+    button {
+      width: 40px;
+      height: 16px;
       border-radius: 8px;
-      &.current {
-        background: #424242;
-      }
+      border: none;
+      margin: 0 8px;
       &:hover {
         cursor: pointer;
         background: gray;
