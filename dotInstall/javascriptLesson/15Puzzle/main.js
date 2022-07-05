@@ -51,7 +51,26 @@
             destRow = row;
             break;
       }
+
+      if (
+        destCol < 0 || destCol > 3 ||
+        destRow < 0 || destRow > 3
+        ) {
+          continue;
+      }
+
+      if (this.tiles[destRow][destCol] === 15) {
+        [
+          this.tiles[row][col],
+          this.tiles[destRow][destCol],
+        ] = [
+          this.tiles[destRow][destCol],
+          this.tiles[row][col],
+        ];
+        break;
+      }
     }
+  }
 
     render() {
       for (let row = 0; row < 4; row++) {
