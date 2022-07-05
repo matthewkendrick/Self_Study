@@ -66,7 +66,6 @@
     updateButtons();
     moveSlides();
   });
-
   window.addEventListener('resize', () => {
     moveSlides();
   });
