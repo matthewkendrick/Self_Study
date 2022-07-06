@@ -36,6 +36,12 @@
         let destRow;
         do {
           const dir = Math.floor(Math.random() * 4);
+          const UDLR = [
+            [0, -1],
+            [0, 1],
+            [-1, 0],
+            [1, 0],
+          ];
           switch (dir) {
             case 0:
               destCol = blankCol;
