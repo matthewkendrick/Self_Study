@@ -44,10 +44,7 @@
           const dir = Math.floor(Math.random() * 4);
           destCol = blankCol + this.UDLR[dir][0];
           destRow = blankRow + this.UDLR[dir][1];
-        } while (
-          destCol < 0 || destCol > 3 ||
-          destRow < 0 || destRow > 3
-        );
+        } while (this.isOutside(destCol, destRow) === true);
         [
           this.tiles[blankRow][blankCol],
           this.tiles[destRow][destCol],
@@ -68,11 +65,8 @@
       for (let i = 0; i < 4; i++) {
         const destCol = col + this.UDLR[i][0];
         const destRow = row + this.UDLR[i][1];
-      if (
-        destCol < 0 || destCol > 3 ||
-        destRow < 0 || destRow > 3
-        ) {
-          continue;
+      if (this.isOutside(destCol, destRow) === true) {
+        continue;
       }
       if (this.tiles[destRow][destCol] === 15) {
         [
@@ -85,6 +79,13 @@
         break;
       }
     }
+  }
+
+  isOutside(destCol, destRow) {
+    return ( 
+      destCol < 0 || destCol > 3 ||
+      destRow < 0 || destRow > 3
+    );
   }
 
     render() {
