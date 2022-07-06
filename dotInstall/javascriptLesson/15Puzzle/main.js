@@ -29,6 +29,10 @@
         const row = Math.floor( (e.clientY - rect.top) / 70 );
         this.swapTiles(col, row);
         this.render();
+
+        if (isComplete() === true) {
+          this.renderGameClear();
+        }
       });
       this.shuffle(this.level);
     }
@@ -65,28 +69,40 @@
       for (let i = 0; i < 4; i++) {
         const destCol = col + this.UDLR[i][0];
         const destRow = row + this.UDLR[i][1];
-      if (this.isOutside(destCol, destRow) === true) {
-        continue;
-      }
-      if (this.tiles[destRow][destCol] === 15) {
-        [
-          this.tiles[row][col],
-          this.tiles[destRow][destCol],
-        ] = [
-          this.tiles[destRow][destCol],
-          this.tiles[row][col],
-        ];
-        break;
+        if (this.isOutside(destCol, destRow) === true) {
+          continue;
+        }
+        if (this.tiles[destRow][destCol] === 15) {
+          [
+            this.tiles[row][col],
+            this.tiles[destRow][destCol],
+          ] = [
+            this.tiles[destRow][destCol],
+            this.tiles[row][col],
+          ];
+          break;
+        }
       }
     }
-  }
 
-  isOutside(destCol, destRow) {
-    return ( 
-      destCol < 0 || destCol > 3 ||
-      destRow < 0 || destRow > 3
-    );
-  }
+    isOutside(destCol, destRow) {
+      return ( 
+        destCol < 0 || destCol > 3 ||
+        destRow < 0 || destRow > 3
+      );
+    }
+
+    isComplete() {
+      return true;
+    }
+
+    renderGameClear() {
+      this.ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+      this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+      this.ctx.font = '28px Arial';
+      this.ctx.fillStyle = '#fff';
+      this.ctx.fillText('GAME CLEAR!!!', 40, 150);
+    }
 
     render() {
       for (let row = 0; row < 4; row++) {
