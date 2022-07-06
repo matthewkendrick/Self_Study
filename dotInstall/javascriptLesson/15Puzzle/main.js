@@ -42,24 +42,10 @@
             [-1, 0],
             [1, 0],
           ];
-          switch (dir) {
-            case 0:
-              destCol = blankCol;
-              destRow = blankRow - 1;
-              break;
-            case 1:
-              destCol = blankCol;
-              destRow = blankRow + 1;
-              break;
-            case 2:
-              destCol = blankCol - 1;
-              destRow = blankRow;
-              break;
-            case 3:
-              destCol = blankCol + 1;
-              destRow = blankRow;
-              break;
-          }
+          
+          destCol = blankCol + UDLR[dir][0];
+          destRow = blankRow + UDLR[dir][1];
+
         } while (
           destCol < 0 || destCol > 3 ||
           destRow < 0 || destRow > 3
@@ -145,5 +131,5 @@
     return;
   }
   
-  new Puzzle(canvas, 30);
+  new Puzzle(canvas, 80);
 })();
