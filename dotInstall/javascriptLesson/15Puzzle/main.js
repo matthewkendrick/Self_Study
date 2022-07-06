@@ -25,6 +25,35 @@
       })
     }
 
+    shuffle(n) {
+      let blankCol = 3;
+      let blankRow = 3;
+
+      for (let i = 0; i < n; i++) {
+        let destCol;
+        let destRow;
+        const dir = Math.floor(Math.random() * 4);
+        switch (dir) {
+          case 0:
+            destCol = blankCol;
+            destRow = blankRow - 1;
+            break;
+          case 1:
+            destCol = blankCol;
+            destRow = blankRow + 1;
+            break;
+          case 2:
+            destCol = blankCol - 1;
+            destRow = blankRow;
+            break;
+          case 3:
+            destCol = blankCol + 1;
+            destRow = blankRow;
+            break;
+        }
+      }
+    }
+
     swapTiles(col, row) {
       if (this.tiles[row][col] == 15) {
         return;

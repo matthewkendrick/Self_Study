@@ -3,18 +3,22 @@
   margin: 0;
 }
 
-.title h1, .title h3 {
+body {
+  padding-top: 16px;
+}
+
+body .title h1, body .title h3 {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 0.3rem;
   margin: 16px 0;
 }
 
-.puzzle {
+body .puzzle {
   padding: 16px 0;
 }
 
-.puzzle canvas {
+body .puzzle canvas {
   background: pink;
   border-radius: 8px;
   display: block;
