@@ -12,6 +12,12 @@
         [8, 9, 10, 11],
         [12, 13, 14, 15],
       ];
+      this.UDLR = [
+          [0, -1],
+          [0, 1],
+          [-1, 0],
+          [1, 0],
+      ];
       this.img = document.createElement('img');
       this.img.src = 'img/15puzzle.png'
       this.img.addEventListener('load', () => {
@@ -36,16 +42,8 @@
         let destRow;
         do {
           const dir = Math.floor(Math.random() * 4);
-          const UDLR = [
-            [0, -1],
-            [0, 1],
-            [-1, 0],
-            [1, 0],
-          ];
-          
-          destCol = blankCol + UDLR[dir][0];
-          destRow = blankRow + UDLR[dir][1];
-
+          destCol = blankCol + this.UDLR[dir][0];
+          destRow = blankRow + this.UDLR[dir][1];
         } while (
           destCol < 0 || destCol > 3 ||
           destRow < 0 || destRow > 3
@@ -66,36 +64,16 @@
       if (this.tiles[row][col] == 15) {
         return;
       }
+
       for (let i = 0; i < 4; i++) {
-        let destCol;
-        let destRow;
-
-        switch (i) {
-          case 0:
-            destCol = col;
-            destRow = row - 1;
-            break;
-          case 1:
-            destCol = col;
-            destRow = row + 1;
-            break;
-          case 2:
-            destCol = col - 1;
-            destRow = row;
-            break;
-          case 3:
-            destCol = col + 1;
-            destRow = row;
-            break;
-      }
-
+        const destCol = col + this.UDLR[i][0];
+        const destRow = row + this.UDLR[i][1];
       if (
         destCol < 0 || destCol > 3 ||
         destRow < 0 || destRow > 3
         ) {
           continue;
       }
-
       if (this.tiles[destRow][destCol] === 15) {
         [
           this.tiles[row][col],
