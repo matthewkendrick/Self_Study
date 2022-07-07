@@ -19,22 +19,24 @@
           [1, 0],
       ];
       this.img = document.createElement('img');
-      this.img.src = 'img/15puzzle.png'
+      this.img.src = 'img/15puzzle.png';
       this.img.addEventListener('load', () => {
         this.render();
       });
       this.canvas.addEventListener('click', e => {
         const rect = this.canvas.getBoundingClientRect();
-        const col = Math.floor( (e.clientX - rect.left) / 70 );
-        const row = Math.floor( (e.clientY - rect.top) / 70 );
+        const col = Math.floor((e.clientX - rect.left) / 70);
+        const row = Math.floor((e.clientY - rect.top) / 70);
         this.swapTiles(col, row);
         this.render();
 
-        if (isComplete() === true) {
+        if (this.isComplete() === true) {
           this.renderGameClear();
         }
       });
-      this.shuffle(this.level);
+      do {
+        this.shuffle(this.level);
+      } while (this.isComplete() === true);
     }
 
     shuffle(n) {
@@ -62,7 +64,7 @@
     }
 
     swapTiles(col, row) {
-      if (this.tiles[row][col] == 15) {
+      if (this.tiles[row][col] === 15) {
         return;
       }
 
@@ -72,6 +74,7 @@
         if (this.isOutside(destCol, destRow) === true) {
           continue;
         }
+
         if (this.tiles[destRow][destCol] === 15) {
           [
             this.tiles[row][col],
@@ -86,13 +89,21 @@
     }
 
     isOutside(destCol, destRow) {
-      return ( 
+      return (
         destCol < 0 || destCol > 3 ||
         destRow < 0 || destRow > 3
       );
     }
 
     isComplete() {
+      let i = 0;
+      for (let row = 0; row < 4; row++) {
+        for (let col = 0; col < 4; col++) {
+          if (this.tiles[row][col] !== i++) {
+            return false;
+          }
+        }
+      }
       return true;
     }
 
@@ -116,7 +127,7 @@
       this.ctx.drawImage(
         this.img,
         (n % 4) * 70, Math.floor(n / 4) * 70, 70, 70,
-        col * 70, row * 70, 70, 70,
+        col * 70, row * 70, 70, 70
       );
     }
   }
@@ -125,6 +136,6 @@
   if (typeof canvas.getContext === 'undefined') {
     return;
   }
-  
-  new Puzzle(canvas, 80);
+
+  new Puzzle(canvas, 2);
 })();
