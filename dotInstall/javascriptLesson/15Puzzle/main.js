@@ -12,17 +12,17 @@
         this.render();
       });
       this.canvas.addEventListener('click', e => {
-        if (this.isCompleted === true) {
+        if (this.puzzle.getCompletedStatus === true) {
           return;
         }
         const rect = this.canvas.getBoundingClientRect();
         const col = Math.floor((e.clientX - rect.left) / 70);
         const row = Math.floor((e.clientY - rect.top) / 70);
-        this.swapTiles(col, row);
+        this.puzzle.swapTiles(col, row);
         this.render();
 
-        if (this.isComplete() === true) {
-          this.isCompleted = true;
+        if (this.puzzle.isComplete() === true) {
+          this.puzzle.setCompletedStatus(true);
           this.renderGameClear();
         }
       });
@@ -38,7 +38,7 @@
     render() {
       for (let row = 0; row < 4; row++) {
         for (let col = 0; col < 4; col++) {
-          this.renderTile(this.tiles[row][col], col, row);
+          this.renderTile(this.puzzle.getTiles( row, col ), col, row);
         }
       }
     }
@@ -70,6 +70,18 @@
       do {
         this.shuffle(this.level);
       } while (this.isComplete() === true);
+    }
+
+    getCompletedStatus() {
+      return this.isCompleted;
+    }
+
+    setCompletedStatus(value) {
+      this.isCompleted = value;
+    }
+
+    getTiles(row, col) {
+      return this.tiles[row][col];
     }
 
     shuffle(n) {
