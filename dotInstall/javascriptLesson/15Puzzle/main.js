@@ -6,6 +6,7 @@
       this.puzzle = puzzle;
       this.canvas = canvas;
       this.ctx = this.canvas.getContext('2d');
+      this.TILE_SIZE = 70;
       this.img = document.createElement('img');
       this.img.src = 'img/animal2.png';
       this.img.addEventListener('load', () => {
@@ -16,8 +17,8 @@
           return;
         }
         const rect = this.canvas.getBoundingClientRect();
-        const col = Math.floor((e.clientX - rect.left) / 70);
-        const row = Math.floor((e.clientY - rect.top) / 70);
+        const col = Math.floor((e.clientX - rect.left) / this.TILE_SIZE);
+        const row = Math.floor((e.clientY - rect.top) / this.TILE_SIZE);
         this.puzzle.swapTiles(col, row);
         this.render();
 
@@ -45,12 +46,12 @@
     renderTile(n, col, row) {
       if (n === 15) {
         this.ctx.fillStyle = '#fff';
-        this.ctx.fillRect(col * 70, row * 70, 70, 70);
+        this.ctx.fillRect(col * this.TILE_SIZE, row * this.TILE_SIZE, this.TILE_SIZE, this.TILE_SIZE);
       } else {
         this.ctx.drawImage(
           this.img,
-          (n % 4) * 70, Math.floor(n / 4) * 70, 70, 70,
-          col * 70, row * 70, 70, 70
+          (n % 4) * this.TILE_SIZE, Math.floor(n / 4) * this.TILE_SIZE, this.TILE_SIZE, this.TILE_SIZE,
+          col * this.TILE_SIZE, row * this.TILE_SIZE, this.TILE_SIZE, this.TILE_SIZE
         );
       }
     }
