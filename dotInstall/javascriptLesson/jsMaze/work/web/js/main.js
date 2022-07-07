@@ -16,7 +16,9 @@
     render() {
       for (let row = 0; row < 5; row++) {
         for (let col = 0; col < 5; col++) {
-          index
+          if (this.data[row][col] === 1) {
+            this.ctx.fillRect(col * 10, row * 10, 10, 10);
+          }
         }
       }
     }

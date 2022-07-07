@@ -3,7 +3,20 @@
   margin: 0;
 }
 
-.sample {
-  color: red;
-  font-size: 24px;
+$themeColor: #CCCCCC;
+
+.canvas {
+  width: 50%;
+  height: 100%;
+  background: $themeColor;
+  margin: 16px auto;
+  border-radius: 8px;
+}
+
+footer {
+  height: 80px;
+  color: $themeColor;
+  font-size: 14px;
+  text-align: center;
+  padding: 16px;
 }
