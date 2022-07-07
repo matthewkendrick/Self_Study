@@ -1,24 +1,11 @@
 'use strict';
 
 (() => {
-  class Puzzle {
-    constructor(canvas, level) {
+  class PuzzleRenderer {
+    constructor(puzzle, canvas) {
+      this.puzzle = puzzle;
       this.canvas = canvas;
-      this.level = level;
       this.ctx = this.canvas.getContext('2d');
-      this.tiles = [
-        [0, 1, 2, 3],
-        [4, 5, 6, 7],
-        [8, 9, 10, 11],
-        [12, 13, 14, 15],
-      ];
-      this.UDLR = [
-          [0, -1],
-          [0, 1],
-          [-1, 0],
-          [1, 0],
-      ];
-      this.isCompleted = false;
       this.img = document.createElement('img');
       this.img.src = 'img/15puzzle.png';
       this.img.addEventListener('load', () => {
@@ -39,6 +26,47 @@
           this.renderGameClear();
         }
       });
+    }
+
+    renderGameClear() {
+      this.ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+      this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+      this.ctx.font = '28px Arial';
+      this.ctx.fillStyle = '#fff';
+      this.ctx.fillText('GAME CLEAR!!!', 40, 150);
+    }
+    render() {
+      for (let row = 0; row < 4; row++) {
+        for (let col = 0; col < 4; col++) {
+          this.renderTile(this.tiles[row][col], col, row);
+        }
+      }
+    }
+    renderTile(n, col, row) {
+      this.ctx.drawImage(
+        this.img,
+        (n % 4) * 70, Math.floor(n / 4) * 70, 70, 70,
+        col * 70, row * 70, 70, 70
+      );
+    }
+  }
+  class Puzzle {
+    constructor(canvas, level) {
+      this.canvas = canvas;
+      this.level = level;
+      this.tiles = [
+        [0, 1, 2, 3],
+        [4, 5, 6, 7],
+        [8, 9, 10, 11],
+        [12, 13, 14, 15],
+      ];
+      this.UDLR = [
+          [0, -1],
+          [0, 1],
+          [-1, 0],
+          [1, 0],
+      ];
+      this.isCompleted = false;
       do {
         this.shuffle(this.level);
       } while (this.isComplete() === true);
@@ -110,30 +138,6 @@
         }
       }
       return true;
-    }
-
-    renderGameClear() {
-      this.ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-      this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-      this.ctx.font = '28px Arial';
-      this.ctx.fillStyle = '#fff';
-      this.ctx.fillText('GAME CLEAR!!!', 40, 150);
-    }
-
-    render() {
-      for (let row = 0; row < 4; row++) {
-        for (let col = 0; col < 4; col++) {
-          this.renderTile(this.tiles[row][col], col, row);
-        }
-      }
-    }
-
-    renderTile(n, col, row) {
-      this.ctx.drawImage(
-        this.img,
-        (n % 4) * 70, Math.floor(n / 4) * 70, 70, 70,
-        col * 70, row * 70, 70, 70
-      );
     }
   }
 
