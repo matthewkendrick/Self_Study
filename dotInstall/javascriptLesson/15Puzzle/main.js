@@ -98,7 +98,7 @@
         let destCol;
         let destRow;
         do {
-          const dir = Math.floor(Math.random() * 4);
+          const dir = Math.floor(Math.random() * this.UDLR.length);
           destCol = blankCol + this.UDLR[dir][0];
           destRow = blankRow + this.UDLR[dir][1];
         } while (this.isOutside(destCol, destRow) === true);
@@ -119,7 +119,7 @@
         return;
       }
 
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < this.UDLR.length; i++) {
         const destCol = col + this.UDLR[i][0];
         const destRow = row + this.UDLR[i][1];
         if (this.isOutside(destCol, destRow) === true) {
