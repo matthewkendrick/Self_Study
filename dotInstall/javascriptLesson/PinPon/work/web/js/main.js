@@ -15,7 +15,7 @@
     
     draw() {
       this.ctx.beginPath();
-      this.ctx.fillStyle = '#fdfdfd';
+      this.ctx.fillStyle = '#DC3545';
       this.ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
       this.ctx.fill();
     }

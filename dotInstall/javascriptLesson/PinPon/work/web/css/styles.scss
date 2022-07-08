@@ -3,8 +3,11 @@
   margin: 0;
 }
 
+$themeColor: #222;
+
 .title {
   text-align: center;
+  color: $themeColor;
   letter-spacing: 0.3rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 16px 0;
@@ -14,7 +17,7 @@
 }
 
 canvas {
-  background: #222;
+  background: $themeColor;
   display: block;
   margin: 16px auto;
   border-radius: 16px;
@@ -26,6 +29,7 @@ footer {
   align-items: center;
   height: 80px;
   font-size: 14px;
+  color: $themeColor;
   font-weight: light;
   text-align: center;
   letter-spacing: 0.05rem;
