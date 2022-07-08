@@ -6,10 +6,28 @@
       this.ctx = canvas.getContext('2d');
       this.WALL_SIZE = 10;
     }
+
+    render(data) {
+      canvas.height = data.length * this.WALL_SIZE;
+      canvas.width = data[0].length * this.WALL_SIZE;
+
+      for (let row = 0; row < data.length; row++) {
+        for (let col = 0; col < data[0].length; col++) {
+          if (data[row][col] === 1) {
+            this.ctx.fillRect(
+              col * this.WALL_SIZE,
+              row * this.WALL_SIZE,
+              this.WALL_SIZE,
+              this.WALL_SIZE
+            );
+          }
+        }
+      }
+    }
   }
   class Maze {
     constructor(row, col, renderer) {
-      if (row < 5 || row % 2 === 0 || col % 2 === 0) {
+      if (row < 5 || col < 5 || row % 2 === 0 || col % 2 === 0) {
         alert('Size not valid!!!');
         return;
       }
@@ -77,18 +95,7 @@
     }
     
     render() {
-      for (let row = 0; row < this.data.length; row++) {
-        for (let col = 0; col < this.data[row].length; col++) {
-          if (this.data[row][col] === 1) {
-            this.ctx.fillRect(
-              col * this.WALL_SIZE,
-              row * this.WALL_SIZE,
-              this.WALL_SIZE,
-              this.WALL_SIZE
-            );
-          }
-        }
-      }
+      this.renderer.render(this.data);
     }
   }
   const canvas = document.querySelector('canvas');
