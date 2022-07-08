@@ -3,6 +3,23 @@
   margin: 0;
 }
 
+.title {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 16px 0;
+  h1 {
+    margin: 16px 0;
+  }
+}
+
+canvas {
+  background: #222;
+  display: block;
+  margin: 16px auto;
+  border-radius: 16px;
+}
+
 footer {
   display: flex;
   justify-content: center;
