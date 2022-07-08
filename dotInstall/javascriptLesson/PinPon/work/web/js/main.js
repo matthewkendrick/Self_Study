@@ -1,15 +1,18 @@
 'use strict';
 
 (() => {
+  function rand(min, max) {
+    return Math.random() * (max - min) + min;
+  }
   class Ball {
     constructor(canvas) {
       this.canvas = canvas;
       this.ctx = this.canvas.getContext('2d');
-      this.x = 30;
+      this.x = (30, 250);
       this.y = 30;
       this.r = 10;
-      this.vx = 2;
-      this.vy = 3;
+      this.vx = rand(3, 5) * (Math.random() < 0.5 ? 1 : -1);
+      this.vy = rand(3, 5);
     }
     
     update() {
