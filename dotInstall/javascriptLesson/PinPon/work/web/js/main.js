@@ -15,6 +15,20 @@
     update() {
       this.x += this.vx;
       this.y += this.vy;
+
+      if (
+        this.x - this.r < 0 ||
+        this.x + this.r > this.canvas.width
+      ) {
+        this.vx *= -1;
+      }
+
+      if (
+        this.y - this.r < 0 ||
+        this.y + this.r > this.canvas.height
+      ) {
+        this.vy *= -1;
+      }
     }
     
     draw() {
