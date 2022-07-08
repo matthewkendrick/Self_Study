@@ -3,9 +3,18 @@
 (() => {
   class Maze {
     constructor(row, col, canvas) {
+      if (row < 5 || row % 2 === 0 || col % 2 === 0) {
+        alert('Size not valid!!!');
+        return;
+      }
       this.ctx = canvas.getContext('2d');
       this.row = row;
       this.col = col;
+
+      this.WALL_SIZE = 10;
+      canvas.height = this.row * this.WALL_SIZE;
+      canvas.width = this.col * this.WALL_SIZE;
+
       this.data = this.getData();
     }
 
@@ -70,7 +79,12 @@
       for (let row = 0; row < this.data.length; row++) {
         for (let col = 0; col < this.data[row].length; col++) {
           if (this.data[row][col] === 1) {
-            this.ctx.fillRect(col * 10, row * 10, 10, 10);
+            this.ctx.fillRect(
+              col * this.WALL_SIZE,
+              row * this.WALL_SIZE,
+              this.WALL_SIZE,
+              this.WALL_SIZE
+            );
           }
         }
       }
@@ -81,6 +95,6 @@
     return;
   }
 
-  const maze = new Maze(15, 30, canvas);
+  const maze = new Maze(45, 45, canvas);
   maze.render();
 })();

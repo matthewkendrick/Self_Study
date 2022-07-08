@@ -45,12 +45,18 @@ $basePadding: 16px;
 }
 
 .canvas {
-  width: 50%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   background: $themeColor;
-  margin: 16px auto;
   padding: $basePadding;
   border-radius: 8px;
+  overflow: scroll;
+  .canvas-wrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 footer {

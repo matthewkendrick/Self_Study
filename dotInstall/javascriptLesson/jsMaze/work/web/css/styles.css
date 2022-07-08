@@ -50,12 +50,19 @@
 }
 
 .canvas {
-  width: 50%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   background: #797979;
-  margin: 16px auto;
   padding: 16px;
   border-radius: 8px;
+  overflow: scroll;
+}
+
+.canvas .canvas-wrapper {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
 
 footer {
