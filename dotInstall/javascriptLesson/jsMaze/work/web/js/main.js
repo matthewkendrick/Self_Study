@@ -4,18 +4,24 @@
   class Maze {
     constructor(canvas) {
       this.ctx = canvas.getContext('2d');
-      this.data = [
-        [1, 1, 1, 1, 1],
-        [1, 0, 0, 0, 1],
-        [1, 0, 1, 0, 1],
-        [1, 0, 1, 0, 1],
-        [1, 1, 1, 1, 1],
-      ];
+      this.data = this.geData();
+    }
+
+    geData() {
+      const data = [];
+
+      for (let row = 0; row < 9; row++) {
+        data[row] = [];
+        for (let col = 0; col < 7; col++) {
+          data[row][col] = 1;
+        }
+      }
+      return data;
     }
     
     render() {
-      for (let row = 0; row < 5; row++) {
-        for (let col = 0; col < 5; col++) {
+      for (let row = 0; row < this.data.length; row++) {
+        for (let col = 0; col < this.data[row].length; col++) {
           if (this.data[row][col] === 1) {
             this.ctx.fillRect(col * 10, row * 10, 10, 10);
           }
