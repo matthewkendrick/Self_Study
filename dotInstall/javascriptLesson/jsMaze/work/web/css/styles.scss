@@ -17,6 +17,33 @@ $basePadding: 16px;
   }
 }
 
+.start-btn {
+  margin: 32px auto;
+  padding-right: 8px;
+  width: 80px;
+  a {
+    text-align: center;
+    background: linear-gradient($themeColor 50%, #545454 50%);
+    box-shadow: 0 3px 1px 4px $themeColor;
+    padding: $basePadding;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+    display:inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 2px 2px $themeColor;
+    }
+  }
+}
+
 .canvas {
   width: 50%;
   height: 100%;
