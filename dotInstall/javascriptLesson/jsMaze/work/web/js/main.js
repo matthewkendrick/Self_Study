@@ -1,20 +1,21 @@
 'use strict';
 
 (() => {
+  class MazeRenderer {
+    constructor(canvas) {
+      this.ctx = canvas.getContext('2d');
+      this.WALL_SIZE = 10;
+    }
+  }
   class Maze {
-    constructor(row, col, canvas) {
+    constructor(row, col, renderer) {
       if (row < 5 || row % 2 === 0 || col % 2 === 0) {
         alert('Size not valid!!!');
         return;
       }
-      this.ctx = canvas.getContext('2d');
+      this.renderer = renderer;
       this.row = row;
       this.col = col;
-
-      this.WALL_SIZE = 10;
-      canvas.height = this.row * this.WALL_SIZE;
-      canvas.width = this.col * this.WALL_SIZE;
-
       this.data = this.getData();
     }
 
@@ -95,6 +96,6 @@
     return;
   }
 
-  const maze = new Maze(45, 45, canvas);
+  const maze = new Maze(35, 35, new MazeRenderer( canvas ));
   maze.render();
 })();

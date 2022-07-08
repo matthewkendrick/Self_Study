@@ -24,7 +24,7 @@ $basePadding: 16px;
   a {
     text-align: center;
     background: linear-gradient($themeColor 50%, #545454 50%);
-    box-shadow: 0 3px 1px 4px $themeColor;
+    box-shadow: 0 4px 1px 4px $themeColor;
     padding: $basePadding;
     border-radius: 50%;
     border: 1px solid darkgray;
@@ -45,7 +45,7 @@ $basePadding: 16px;
 }
 
 .canvas {
-  width: 90%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   background: $themeColor;
