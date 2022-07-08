@@ -33,6 +33,29 @@
         for (let col = 2; col < 7 - 2; col += 2) {
           let destRow;
           let destCol;
+
+          do {
+            const dir = Math.floor(Math.random() * 4);
+            switch (dir) {
+              case 0:
+                destRow = row - 1;
+                destCol = col;
+                break;
+              case 1:
+                destRow = row + 1;
+                destCol = col;
+                break;
+              case 2:
+                destRow = row;
+                destCol = col - 1;
+                break;
+              case 3:
+                destRow = row;
+                destCol = col + 1;
+                break;
+            }
+          } while (data[destRow][destCol] === 1);
+
           const dir = Math.floor(Math.random() * 4);
           switch (dir) {
             case 0:
@@ -51,10 +74,9 @@
               destRow = row;
               destCol = col + 1;
               break;
-          
-            default:
-              break;
           }
+
+          data[destRow][destCol] = 1;
         }
       }
       return data;
