@@ -15,6 +15,14 @@
       this.vy = rand(3, 5);
     }
 
+    bounce() {
+      this.vy *= -1;
+    }
+
+    reposition(paddleTop) {
+      this.y = paddleTop - this.r;
+    }
+
     getX() {
       return this.x;
     }
@@ -71,7 +79,7 @@
     }
     
     update(ball) {
-      const ballBottom = ball.getY() + ball.getR;
+      const ballBottom = ball.getY() + ball.getR();
       const paddleTop = this.y;
       const ballTop = ball.getY() - ball.getR();
       const paddleBottom = this.y + this.h;
@@ -83,9 +91,10 @@
           ballBottom > paddleTop &&
           ballTop < paddleBottom &&
           ballCenter > paddleLeft &&
-          ballCenter > paddleRight
+          ballCenter < paddleRight
         ) {
-        
+          ball.bounce();
+          ball.reposition(paddleTop);
       }
       const rect = this.canvas.getBoundingClientRect();
       this.x = this.mouseX - rect.left - (this.w / 2);
@@ -124,7 +133,7 @@
   
     update() {
       this.ball.update();
-      this.paddle.update();
+      this.paddle.update(this.ball);
     }  
 
     draw() {
