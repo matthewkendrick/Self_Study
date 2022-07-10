@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* a {
+  text-decoration: none;
+}
+
+header img {
+  width: 40%;
+  height: 40%;
+}
+
+header .btn {
+  width: 160px;
+  height: 48px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 8px;
+  background: #28A745;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-size: 14px;
+  font-weight: light;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+/*# sourceMappingURL=styles.css.map */
