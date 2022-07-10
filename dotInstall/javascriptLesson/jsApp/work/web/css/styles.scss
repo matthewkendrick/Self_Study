@@ -1,9 +1,11 @@
 
 $themeColor: #28A745;
+$defaultLetterSpacing: 0.08rem;
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   a {
     text-decoration: none;
   }
@@ -17,7 +19,10 @@ $themeColor: #28A745;
   }
 }
 
-body {
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   header {
     padding: 16px 0;
     &.container {
@@ -27,7 +32,7 @@ body {
       max-width: 800px;
     }
     h1 {
-      width: 160px;
+      width: 200px;
     }
     img {
       width: 100%;
@@ -44,8 +49,9 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 8px;
-    background: $themeColor;
-    box-shadow: 0 3px 0 green;
+    background: linear-gradient($themeColor 50%, green 50%);
+    box-shadow: 0 3px 0 darkgreen;
+    user-select: none;
     &:hover {
       opacity: 0.8;
     }
@@ -54,16 +60,38 @@ body {
       transform: translateY(1px);
     }
   }
+
+  .hero {
+    background-color: #99e6ff;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding-top: 64px;
+    text-align: center;
+    p {
+      margin-top: 8px;
+      letter-spacing: $defaultLetterSpacing;
+    }
+    .btn {
+      margin: 64px auto;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
 }
 
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  font-size: 14px;
-  font-weight: light;
+  margin-top: auto;
+  padding: 8% 0;
   text-align: center;
-  letter-spacing: 0.05rem;
+  background: $themeColor;
+  & .container {
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: $defaultLetterSpacing;
+  }
 }
