@@ -1,11 +1,11 @@
 
 $themeColor: #28A745;
-$defaultLetterSpacing: 0.08rem;
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
   a {
     text-decoration: none;
   }
@@ -20,10 +20,20 @@ $defaultLetterSpacing: 0.08rem;
 }
 
 html, body {
-
   height: 100%;
   display: flex;
   flex-direction: column;
+  section {
+    h1 {
+      text-align: center;
+      background: $themeColor;
+      margin: 0 160px;
+      padding: 16px 0;
+      border-radius: 64px;
+      color: #fff;
+    }
+  }
+
   header {
     padding: 16px 0;
     &.container {
@@ -69,12 +79,27 @@ html, body {
     background-position: center bottom;
     padding-top: 64px;
     text-align: center;
-    p {
-      margin-top: 8px;
-      letter-spacing: $defaultLetterSpacing;
-    }
-    .btn {
-      margin: 64px auto;
+    .desc {
+      color: #fff;
+      h1 {
+        letter-spacing: 0.5rem;
+        color: navy;
+        font-weight: bolder;
+        background: none;
+        & :not(span), :not(i) {
+          letter-spacing: normal;
+        }
+        span {
+          color: #fff;
+          i {
+            padding: 16px;
+            font-size: 80px;
+          }
+          .fa-dog {
+            font-size: 32px;
+          }
+        }
+      }
     }
     img {
       width: 50%;
@@ -84,14 +109,6 @@ html, body {
 
   .features {
     margin: 64px 0;
-    h1 {
-      text-align: center;
-      background: $themeColor;
-      margin: 0 160px;
-      padding: 16px 0;
-      border-radius: 64px;
-      color: #fff;
-    }
     h2 {
       padding: 16px 0;
     }
@@ -113,13 +130,13 @@ html, body {
 
 }
 
-
 footer {
-  margin-top: auto;
-  padding: 8% 0;
-  text-align: center;
-  background: $themeColor;
-  & .container {
+  .container {
+    width: 100%;
+    margin-top: auto;
+    padding: 8% 0;
+    text-align: center;
+    background: $themeColor;
     font-size: 14px;
     color: #fff;
     font-weight: bold;

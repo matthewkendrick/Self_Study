@@ -1,8 +1,10 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
 
 * a {
@@ -28,6 +30,15 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+html section h1, body section h1 {
+  text-align: center;
+  background: #28A745;
+  margin: 0 160px;
+  padding: 16px 0;
+  border-radius: 64px;
+  color: #fff;
 }
 
 html header, body header {
@@ -95,6 +106,34 @@ html .hero, body .hero {
   text-align: center;
 }
 
+html .hero .desc, body .hero .desc {
+  color: #fff;
+}
+
+html .hero .desc h1, body .hero .desc h1 {
+  letter-spacing: 0.5rem;
+  color: navy;
+  font-weight: bolder;
+  background: none;
+}
+
+html .hero .desc h1 :not(span), html .hero .desc h1 :not(i), body .hero .desc h1 :not(span), body .hero .desc h1 :not(i) {
+  letter-spacing: normal;
+}
+
+html .hero .desc h1 span, body .hero .desc h1 span {
+  color: #fff;
+}
+
+html .hero .desc h1 span i, body .hero .desc h1 span i {
+  padding: 16px;
+  font-size: 80px;
+}
+
+html .hero .desc h1 span .fa-dog, body .hero .desc h1 span .fa-dog {
+  font-size: 32px;
+}
+
 html .hero p, body .hero p {
   margin-top: 8px;
   letter-spacing: 0.08rem;
@@ -111,15 +150,6 @@ html .hero img, body .hero img {
 
 html .features, body .features {
   margin: 64px 0;
-}
-
-html .features h1, body .features h1 {
-  text-align: center;
-  background: #28A745;
-  margin: 0 160px;
-  padding: 16px 0;
-  border-radius: 64px;
-  color: #fff;
 }
 
 html .features h2, body .features h2 {
@@ -142,14 +172,12 @@ html .features section .desc p, body .features section .desc p {
   line-height: 1.5rem;
 }
 
-footer {
+footer .container {
+  width: 100%;
   margin-top: auto;
   padding: 8% 0;
   text-align: center;
   background: #28A745;
-}
-
-footer .container {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
