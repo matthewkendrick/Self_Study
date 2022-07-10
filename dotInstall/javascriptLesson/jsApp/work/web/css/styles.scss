@@ -1,23 +1,58 @@
+
+$themeColor: #28A745;
+
 * {
   padding: 0;
   margin: 0;
   a {
     text-decoration: none;
   }
+  img {
+    vertical-align: bottom;
+  }
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
+  }
 }
 
-header {
-  img {
-    width: 40%;
-    height: 40%;
+body {
+  header {
+    padding: 16px 0;
+    &.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+    }
+    h1 {
+      width: 160px;
+    }
+    img {
+      width: 100%;
+      height: 50%;
+      vertical-align: middle;
+    }
   }
+
   .btn {
-    width: 160px;
-    height: 48px;
+    display: block;
+    width: 120px;
     padding: 8px;
     color: #fff;
+    text-align: center;
+    font-weight: bold;
     border-radius: 8px;
-    background: #28A745;
+    background: $themeColor;
+    box-shadow: 0 3px 0 green;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      box-shadow: none;
+      transform: translateY(1px);
+    }
   }
 }
 
