@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  color: #222;
+  letter-spacing: 0.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 16px 0;
+}
+
+.title h1 {
+  margin: 16px 0;
+}
+
+canvas {
+  background: #222;
+  display: block;
+  margin: 16px auto;
+  border-radius: 16px;
+}
+
+.start-btn {
+  margin: 32px auto;
+  padding-right: 8px;
+  width: 80px;
+}
+
+.start-btn a {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #DC3545), color-stop(50%, #f00));
+  background: linear-gradient(#DC3545 50%, #f00 50%);
+  -webkit-box-shadow: 0 6px 1px 4px #222;
+          box-shadow: 0 6px 1px 4px #222;
+  padding: 16px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: inline-block;
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #222;
+}
+
+.start-btn a:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.start-btn a:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 0 1px 2px 2px #f00;
+          box-shadow: 0 1px 2px 2px #f00;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-size: 14px;
+  color: #222;
+  font-weight: light;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+/*# sourceMappingURL=styles.css.map */
