@@ -13,6 +13,11 @@
       this.r = 10;
       this.vx = rand(3, 5) * (Math.random() < 0.5 ? 1 : -1);
       this.vy = rand(3, 5);
+      this.isMissed = false;
+    }
+
+    getMissedStatus() {
+      return this.isMissed;
     }
 
     bounce() {
@@ -37,6 +42,10 @@
       this.x += this.vx;
       this.y += this.vy;
 
+      if (this.y - this.r > this.canvas.height) {
+        this.isMissed = true;
+      }
+
       if (
         this.x - this.r < 0 ||
         this.x + this.r > this.canvas.width
@@ -45,8 +54,7 @@
       }
 
       if (
-        this.y - this.r < 0 ||
-        this.y + this.r > this.canvas.height
+        this.y - this.r < 0 
       ) {
         this.vy *= -1;
       }
@@ -157,7 +165,7 @@
     drawGameOver() {
       this.ctx.font = '28px "Arial Black"';
       this.ctx.fillStyle = 'tomato';
-      this.ctx.fillText = ('GAME OVER', 50, 150);
+      this.ctx.fillText('GAME OVER ...', 30, 150);
     }
   }
 
