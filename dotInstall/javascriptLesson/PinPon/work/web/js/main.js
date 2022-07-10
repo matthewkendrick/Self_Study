@@ -69,8 +69,9 @@
   }
 
   class Paddle {
-    constructor(canvas) {
+    constructor(canvas, game) {
       this.canvas = canvas;
+      this.game = game;
       this.ctx = this.canvas.getContext('2d');
       this.w = 60;
       this.h = 16;
@@ -103,6 +104,7 @@
         ) {
           ball.bounce();
           ball.reposition(paddleTop);
+          this.game.addScore();
       }
       const rect = this.canvas.getBoundingClientRect();
       this.x = this.mouseX - rect.left - (this.w / 2);
@@ -126,9 +128,14 @@
       this.canvas = canvas;
       this.ctx = this.canvas.getContext('2d');
       this.ball = new Ball(this.canvas);
-      this.paddle = new Paddle(this.canvas);
+      this.paddle = new Paddle(this.canvas, this);
       this.loop();
       this.isGameOver = false;
+      this.score = 0;
+    }
+
+    addScore() {
+      this.score++;
     }
     
     loop() {
@@ -160,12 +167,19 @@
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       this.ball.draw();
       this.paddle.draw();
+      this.drawScore();
     }
 
     drawGameOver() {
       this.ctx.font = '28px "Arial Black"';
       this.ctx.fillStyle = 'tomato';
-      this.ctx.fillText('GAME OVER ...', 30, 150);
+      this.ctx.fillText('GAME OVER ...', 80, 160);
+    }
+
+    drawScore() {
+      this.ctx.font = '20px Arial';
+      this.ctx.fillStyle = '#fdfdfd';
+      this.ctx.fillText(this.score, 10, 25);
     }
   }
 

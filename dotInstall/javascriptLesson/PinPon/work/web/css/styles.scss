@@ -4,6 +4,7 @@
 }
 
 $themeColor: #222;
+$subColor: #DC3545;
 
 .title {
   text-align: center;
@@ -21,6 +22,35 @@ canvas {
   display: block;
   margin: 16px auto;
   border-radius: 16px;
+}
+
+.start-btn {
+  margin: 32px auto;
+  padding-right: 8px;
+  width: 80px;
+  a {
+    text-align: center;
+    background: linear-gradient($subColor 50%, #f00 50%);
+    box-shadow: 0 6px 1px 4px $themeColor;
+    padding: 16px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display:inline-block;
+    color: $themeColor;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px $themeColor;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 2px 2px #f00;
+    }
+  }
 }
 
 footer {
