@@ -20,6 +20,7 @@ $defaultLetterSpacing: 0.08rem;
 }
 
 html, body {
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -80,6 +81,36 @@ html, body {
       height: 50%;
     }
   }
+
+  .features {
+    margin: 64px 0;
+    h1 {
+      text-align: center;
+      background: $themeColor;
+      margin: 0 160px;
+      padding: 16px 0;
+      border-radius: 64px;
+      color: #fff;
+    }
+    h2 {
+      padding: 16px 0;
+    }
+    section {
+      margin: 32px 0;
+      .pic {
+        padding: 32px;
+        img {
+          width: 100%;
+        }
+      }
+      .desc {
+        p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
 }
 
 
