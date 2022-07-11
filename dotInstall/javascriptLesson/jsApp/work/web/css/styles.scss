@@ -181,3 +181,56 @@ footer {
   }
 }
 
+// large screen
+
+@media (min-width: 600px) {
+  .hero {
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .desc, .pic {
+      width: 80%;
+    }
+    section {
+      display: flex;
+    }
+  }
+
+  .features {
+    section {
+      display: flex;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .voices {
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+    section {
+      width: calc((100% - 32px) / 3);
+      display: flex;
+      font-display: column;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+  }
+
+  footer {
+    .container {
+      width: 100%;
+      margin-top: auto;
+      padding: 8% 0;
+      text-align: center;
+      background: $themeColor;
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
