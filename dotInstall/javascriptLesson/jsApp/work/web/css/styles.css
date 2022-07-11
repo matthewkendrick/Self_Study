@@ -278,4 +278,10 @@ footer .container {
     letter-spacing: 0.1rem;
   }
 }
+
+@media (max-width: 400px) {
+  header .btn {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
