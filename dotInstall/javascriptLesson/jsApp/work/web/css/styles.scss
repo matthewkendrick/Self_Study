@@ -22,10 +22,16 @@ $alternateColor: #99e6ff;
   .animate {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 0.3s, transform 0.3s;
-    .appear {
+    transition: opacity 0.8s, transform 0.8s;
+    &.appear {
       opacity: 1;
       transform: none;
+    }
+    &.slide-from-left {
+      transform: translateX(-40px);
+    }
+    &.slide-from-right {
+      transform: translateX(40px);
     }
   }
 }
@@ -211,6 +217,7 @@ footer {
   }
 
   .features {
+    // overflow: hidden;
     section {
       display: flex;
       &:nth-child(odd) {
