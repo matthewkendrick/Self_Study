@@ -202,7 +202,7 @@ footer {
 }
 
 // large screen
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .hero {
     .container {
       display: flex;
@@ -237,6 +237,15 @@ footer {
       font-display: column;
       justify-content: space-between;
       margin: 8px 0;
+    }
+  }
+
+  .animate {
+    &.delay {
+      transition-delay: 0.4s;
+    }
+    &.delay-more {
+      transition-delay: 0.8s;
     }
   }
 

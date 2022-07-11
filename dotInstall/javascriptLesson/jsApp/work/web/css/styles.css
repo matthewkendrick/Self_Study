@@ -252,7 +252,7 @@ footer .container {
   letter-spacing: 0.1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,6 +296,14 @@ footer .container {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 8px 0;
+  }
+  .animate.delay {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .animate.delay-more {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
   }
   footer .container {
     width: 100%;
