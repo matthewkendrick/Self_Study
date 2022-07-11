@@ -35,7 +35,7 @@ html, body {
 html section h1, body section h1 {
   text-align: center;
   background: #28A745;
-  margin: 0 160px;
+  margin: 64px;
   padding: 16px 0;
   border-radius: 64px;
   color: #fff;
@@ -102,7 +102,6 @@ html .hero, body .hero {
   background-image: url(../img/bg.png);
   background-repeat: repeat-x;
   background-position: center bottom;
-  padding-top: 64px;
   text-align: center;
 }
 
@@ -134,12 +133,11 @@ html .hero .desc h1 span .fa-dog, body .hero .desc h1 span .fa-dog {
   font-size: 32px;
 }
 
-html .hero p, body .hero p {
-  margin-top: 8px;
-  letter-spacing: 0.08rem;
+html .hero .desc p, body .hero .desc p {
+  letter-spacing: 0.5rem;
 }
 
-html .hero .btn, body .hero .btn {
+html .hero .desc .btn, body .hero .desc .btn {
   margin: 64px auto;
 }
 
@@ -149,7 +147,7 @@ html .hero img, body .hero img {
 }
 
 html .features, body .features {
-  margin: 64px 0;
+  margin-top: 64px;
 }
 
 html .features h2, body .features h2 {
@@ -172,6 +170,45 @@ html .features section .desc p, body .features section .desc p {
   line-height: 1.5rem;
 }
 
+html .voices, body .voices {
+  margin-top: 64px;
+  padding-bottom: 64px;
+  background: #99e6ff;
+}
+
+html .voices section, body .voices section {
+  background: #fff;
+  padding: 16px;
+  margin: 8px 0;
+  border-radius: 16px;
+}
+
+html .voices section footer, body .voices section footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+html .call-to-action, body .call-to-action {
+  margin: 64px;
+  background-color: #99e6ff;
+  background-image: url(../img/bg.png);
+  background-repeat: repeat-x;
+  border-radius: 16px;
+  background-position: center bottom;
+}
+
+html .call-to-action .btn, body .call-to-action .btn {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+}
+
 footer .container {
   width: 100%;
   margin-top: auto;
@@ -181,6 +218,6 @@ footer .container {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=styles.css.map */
