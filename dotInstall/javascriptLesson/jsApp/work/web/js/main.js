@@ -15,12 +15,16 @@
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         header.classList.add('scrolled');
+        toTop.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
+        toTop.classList.remove('scrolled');
       }
     });
   }
+
   const header = document.querySelector('header');
+  const toTop = document.getElementById('to_top');
   const inViewObserver = new IntersectionObserver(inViewCallback, {
     threshold: 0.2,
   });
@@ -30,5 +34,6 @@
   });
 
   const onScrollObserver = new IntersectionObserver(onScrollCallback);
+
   onScrollObserver.observe(document.getElementById('target'));
 }
