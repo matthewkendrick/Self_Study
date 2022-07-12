@@ -34,6 +34,14 @@
   });
 
   const onScrollObserver = new IntersectionObserver(onScrollCallback);
-
   onScrollObserver.observe(document.getElementById('target'));
+
+  toTop.addEventListener('click', e => {
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
 }

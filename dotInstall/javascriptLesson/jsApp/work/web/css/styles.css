@@ -65,13 +65,8 @@ html #to_top, body #to_top {
   left: 16px;
   width: 32px;
   height: 32px;
-  opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-
-html #to_top.scrolled, body #to_top.scrolled {
-  opacity: 1;
 }
 
 html #to_top i, body #to_top i {
