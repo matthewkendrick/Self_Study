@@ -53,6 +53,8 @@ html, body {
 
   header {
     position: fixed;
+    top: 0;
+    width: 100%;
     background: #fff;
     height: 10%;
     &.container {
@@ -60,6 +62,10 @@ html, body {
       justify-content: space-between;
       align-items: center;
       max-width: 800px;
+    }
+    &.scrolled {
+      background-color: rgba($color: #fff, $alpha: 0.95);
+      box-shadow: 0 0 4px rgba($color: gray, $alpha: 0.3);
     }
     h1 {
       width: 200px;
@@ -98,7 +104,7 @@ html, body {
     background-repeat: repeat-x;
     background-position: center bottom;
     text-align: center;
-    margin-top: 32px;
+    padding-top: 128px;
     .desc {
       color: #fff;
       h1 {
@@ -134,7 +140,7 @@ html, body {
   }
 
   .features {
-    margin-top: 64px;
+    margin: 64px;
     h2 {
       padding: 16px 0;
     }
@@ -142,6 +148,7 @@ html, body {
       margin: 32px 0;
       .pic {
         padding: 32px;
+        margin: auto 0;
         img {
           width: 100%;
         }
