@@ -1,0 +1,297 @@
+
+$themeColor: #28A745;
+$alternateColor: #99e6ff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  a {
+    text-decoration: none;
+  }
+  img {
+    vertical-align: bottom;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 800px;
+  }
+  .animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s, transform 0.8s;
+    &.appear {
+      opacity: 1;
+      transform: none;
+    }
+    &.slide-from-left {
+      transform: translateX(-40px);
+    }
+    &.slide-from-right {
+      transform: translateX(40px);
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  & #to_top {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    // opacity: 0;
+    transition: opacity 0.3s;
+    // .scrolled {
+    //   opacity: 1;
+    // }
+    i {
+      font-size: 32px;
+      color: #22577a;
+    }
+  }
+  section {
+    h1 {
+      text-align: center;
+      background: $themeColor;
+      margin: 64px;
+      padding: 16px 0;
+      border-radius: 64px;
+      color: #fff;
+    }
+  }
+
+  .btn {
+    display: block;
+    width: 120px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient($themeColor 50%, green 50%);
+    box-shadow: 0 3px 0 darkgreen;
+    user-select: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      box-shadow: none;
+      transform: translateY(1px);
+    }
+  }
+
+  .hero {
+    background-color: $alternateColor;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    text-align: center;
+    padding-top: 128px;
+    .desc {
+      color: #fff;
+      h1 {
+        letter-spacing: 0.5rem;
+        color: navy;
+        font-weight: bolder;
+        background: none;
+        & :not(span), :not(i) {
+          letter-spacing: normal;
+        }
+        span {
+          color: #fff;
+          i {
+            padding: 16px;
+            font-size: 80px;
+          }
+          .fa-dog {
+            font-size: 32px;
+          }
+        }
+      }
+      p {
+        letter-spacing: 0.5rem;
+      }
+      .btn {
+        margin: 64px auto;
+      }
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .features {
+    margin: 64px;
+    h2 {
+      padding: 16px 0;
+    }
+    section {
+      margin: 32px 0;
+      .pic {
+        padding: 32px;
+        margin: auto 0;
+        img {
+          width: 100%;
+        }
+      }
+      .desc {
+        p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .voices {
+    margin-top: 64px;
+    padding-bottom: 64px;
+    background: $alternateColor;
+    section {
+      background: #fff;
+      padding: 16px;
+      margin: 8px 0;
+      border-radius: 16px;
+      footer {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .call-to-action {
+    margin: 64px;
+    background-color: $alternateColor;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+    border-radius: 16px;
+    background-position: center bottom;
+    .btn {
+      position: relative;
+      top: 20px;
+      margin: 0 auto;
+    }
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    &.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+    }
+    &.scrolled {
+      background-color: rgba($color: #fff, $alpha: 0.98);
+      box-shadow: 0 0 4px rgba($color: gray, $alpha: 0.3);
+    }
+    h1 {
+      width: 200px;
+    }
+    img {
+      width: 100%;
+      height: 60%;
+      margin: 16px 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+footer {
+  .container {
+    width: 100%;
+    margin-top: auto;
+    padding: 8% 0;
+    text-align: center;
+    background: $themeColor;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+}
+
+// large screen
+@media (min-width: 400px) {
+  .hero {
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .desc, .pic {
+      width: 80%;
+    }
+    section {
+      display: flex;
+    }
+  }
+
+  .features {
+    // overflow: hidden;
+    section {
+      display: flex;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .voices {
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+    section {
+      width: calc((100% - 32px) / 3);
+      display: flex;
+      font-display: column;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+  }
+
+  .animate {
+    &.delay {
+      transition-delay: 0.4s;
+    }
+    &.delay-more {
+      transition-delay: 0.8s;
+    }
+  }
+
+  footer {
+    .container {
+      width: 100%;
+      margin-top: auto;
+      padding: 8% 0;
+      text-align: center;
+      background: $themeColor;
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+// small screen
+@media (max-width: 400px) {
+  header {
+    .btn {
+      display: none;
+    }
+  }
+}
