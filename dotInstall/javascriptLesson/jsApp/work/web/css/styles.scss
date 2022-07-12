@@ -55,8 +55,8 @@ html, body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #fff;
     height: 10%;
+    transition: background-color 0.3s, box-shadow 0.3s;
     &.container {
       display: flex;
       justify-content: space-between;

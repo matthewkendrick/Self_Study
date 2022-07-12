@@ -12,9 +12,15 @@
   }
 
   function onScrollCallback(entries) {
-    forEach(entry => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     });
   }
+  const header = document.querySelector('header');
   const inViewObserver = new IntersectionObserver(inViewCallback, {
     threshold: 0.2,
   });
