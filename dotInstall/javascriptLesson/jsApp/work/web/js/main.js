@@ -1,7 +1,7 @@
 'use strict';
 
 {
-  function callback(entries, obs) {
+  function inViewCallback(entries, obs) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         return;
@@ -10,11 +10,19 @@
       obs.unobserve(entry.target);
     });
   }
-  const observer = new IntersectionObserver(callback, {
+
+  function onScrollCallback(entries) {
+    forEach(entry => {
+    });
+  }
+  const inViewObserver = new IntersectionObserver(inViewCallback, {
     threshold: 0.2,
   });
 
   document.querySelectorAll('.animate').forEach(el => {
-    observer.observe(el);
+    inViewObserver.observe(el);
   });
+
+  const onScrollObserver = new IntersectionObserver(onScrollCallback);
+  onScrollObserver.observe(document.getElementById('target'));
 }
