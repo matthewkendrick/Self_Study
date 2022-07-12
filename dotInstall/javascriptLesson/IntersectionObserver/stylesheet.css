@@ -7,17 +7,10 @@ img {
   width: 200px;
   height: 200px;
   opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: opacity 0.8s, -webkit-transform 0.5s;
-  transition: opacity 0.8s, -webkit-transform 0.5s;
+  transform: translateY(50px);
   transition: opacity 0.8s, transform 0.5s;
-  transition: opacity 0.8s, transform 0.5s, -webkit-transform 0.5s;
 }
-
 img.appear {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-/*# sourceMappingURL=stylesheet.css.map */
+  transform: translateY(0);
+}/*# sourceMappingURL=stylesheet.css.map */

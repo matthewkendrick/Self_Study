@@ -4,57 +4,44 @@
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (100px)[3];
-      grid-template-columns: repeat(3, 100px);
-  -ms-grid-rows: (100px)[2];
-      grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
   width: 400px;
   height: 300px;
   background: #eee;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .container div {
   width: 50px;
   height: 50px;
 }
 
 .box1 {
-  background: #d65c5c;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  background: hsl(0deg, 60%, 60%);
+  justify-self: start;
+  align-self: start;
 }
 
 .box2 {
-  background: #d6d65c;
+  background: hsl(60deg, 60%, 60%);
 }
 
 .box3 {
-  background: #5cd65c;
+  background: hsl(120deg, 60%, 60%);
 }
 
 .box4 {
-  background: #5cd6d6;
+  background: hsl(180deg, 60%, 60%);
 }
 
 .box5 {
-  background: #5c5cd6;
+  background: hsl(240deg, 60%, 60%);
 }
 
 .box6 {
-  background: #d65cd6;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+  background: hsl(300deg, 60%, 60%);
+}/*# sourceMappingURL=stylesheet.css.map */

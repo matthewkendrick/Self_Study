@@ -7,20 +7,17 @@ body {
   font-size: 16px;
   font-family: Verdana, Geneva, sans-serif;
 }
-
 body .container {
   width: 300px;
   margin: auto;
   text-align: center;
 }
-
 body #app h1 {
   font-size: 24px;
   letter-spacing: 0.5rem;
   border-bottom: 1px solid #ddd;
   padding: 16px 0;
 }
-
 body #app h1 button {
   float: right;
   margin-top: 4px;
@@ -32,12 +29,10 @@ body #app h1 button {
   border: 2px solid #E71F63;
   border-radius: 8px;
 }
-
 body #app h1 button:hover {
   background: #E71F63;
   color: #fff;
 }
-
 body #app h1 .info {
   color: #bbb;
   font-size: 12px;
@@ -46,40 +41,33 @@ body #app h1 .info {
   letter-spacing: normal;
   margin-left: -1rem;
 }
-
 body #app form .btn {
   font-weight: bold;
   width: 50px;
   height: 28px;
   margin: 16px 0 24px;
 }
-
 body #app form .btn:hover {
   background: lightgray;
   cursor: pointer;
 }
-
 body #app form input {
   border: 2px solid gray;
   border-radius: 16px;
   height: 24px;
 }
-
-body #app form input[type="text"] {
+body #app form input[type=text] {
   padding: 0 8px;
 }
-
 body #app ul li {
   line-height: 2;
   height: 40px;
   list-style: none;
 }
-
 body #app ul li span.done {
   text-decoration: line-through;
   color: #bbb;
 }
-
 body #app ul .command {
   font-weight: bold;
   height: 20px;
@@ -93,13 +81,11 @@ body #app ul .command {
   border-radius: 50%;
   margin-bottom: 0.1rem;
 }
-
 body #app ul .command:hover {
   color: #fff;
   background-color: #007BFF;
   border-radius: 50%;
 }
-
 body #app ul .command .icon {
   height: 20px;
   width: 20px;
@@ -108,5 +94,4 @@ body #app ul .command .icon {
   vertical-align: middle;
   text-align: center;
   padding-bottom: 0.7rem;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -11,11 +11,9 @@ body section {
   margin: 16px;
   text-align: center;
 }
-
 body section .profile h1 {
   margin: 8px;
 }
-
 body section .profile img {
   border-radius: 50%;
 }
@@ -27,5 +25,4 @@ footer {
   height: 40px;
   padding: 16px;
   text-align: center;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
 * a {
   color: #007BFF;
 }
@@ -10,33 +9,25 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 16px;
 }
-
 body header .logo h1 {
   font-size: 22px;
   line-height: 64px;
 }
-
 body header .sp-menu {
   margin-left: auto;
 }
-
 body header .sp-menu #open {
   font-size: 32px;
   line-height: 64px;
   cursor: pointer;
 }
-
 body header .sp-menu #open.hide {
   display: none;
 }
-
 body .overlay {
   position: fixed;
   top: 0;
@@ -48,29 +39,20 @@ body .overlay {
   padding: 64px;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-
 body .overlay ul {
   list-style-type: none;
 }
-
 body .overlay ul li {
   margin-top: 24px;
   opacity: 0;
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transform: translateY(16px);
   transition: opacity 0.3s, transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
-
 body .overlay ul li a {
   text-decoration: none;
 }
-
 body .overlay #close {
   position: absolute;
   top: 16px;
@@ -78,41 +60,29 @@ body .overlay #close {
   font-size: 32px;
   cursor: pointer;
 }
-
 body .overlay.show {
   opacity: 1;
   pointer-events: auto;
 }
-
 body .overlay.show li {
   opacity: 1;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
-
 body .overlay.show li:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
-
 body .overlay.show li:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
-
 body .overlay.show li:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-
 body main {
   padding: 0 16px;
 }
-
 body .pc-menu {
   display: none;
 }
-
 @media (min-width: 600px) {
   body .pc-menu {
     display: block;
@@ -120,8 +90,6 @@ body .pc-menu {
   }
   body .pc-menu ul {
     list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   body .pc-menu a {
@@ -138,5 +106,4 @@ body .pc-menu {
   body .sp-menu {
     display: none;
   }
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */
