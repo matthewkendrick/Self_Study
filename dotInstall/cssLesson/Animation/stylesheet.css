@@ -13,8 +13,7 @@ body {
   background: #2c2c2c;
   color: #ddd;
   border-radius: 8px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: fixed;
   right: 32px;
   bottom: 32px;
@@ -24,20 +23,17 @@ body {
 
 @-webkit-keyframes popup {
   0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
   20%, 80% {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
     pointer-events: none;
   }
@@ -45,30 +41,25 @@ body {
 
 @keyframes popup {
   0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
   20%, 80% {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
     pointer-events: none;
   }
 }
-
 button {
   width: 300px;
   padding: 8px 16px;
   position: fixed;
   right: 32px;
   bottom: 32px;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

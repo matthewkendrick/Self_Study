@@ -1,9 +1,9 @@
 body {
-  background: #f7edf7;
+  background: hsl(300deg, 40%, 95%);
 }
 
 h1, p {
-  color: #b464b4;
+  color: hsl(300deg, 35%, 55%);
 }
 
 .btn {
@@ -12,6 +12,5 @@ h1, p {
   padding: 8px;
   border-radius: 8px;
   text-align: center;
-  background: #40bf40;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+  background: hsl(120deg, 50%, 50%);
+}/*# sourceMappingURL=stylesheet.css.map */

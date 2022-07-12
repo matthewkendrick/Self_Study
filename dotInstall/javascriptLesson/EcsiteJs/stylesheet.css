@@ -8,100 +8,70 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body h1,
 body h2 {
   margin: 0;
   font-weight: normal;
 }
-
 body p {
   margin: 0;
 }
-
 body img {
   vertical-align: bottom;
 }
-
 body .container {
   margin: 0 16px;
 }
-
 body ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 body a {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
-
 body a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* header */
 header {
   padding: 8px 0;
 }
-
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 12px;
   text-align: center;
 }
-
 header ul li a i {
   font-size: 18px;
 }
-
 header ul li + li {
   margin-left: 8px;
 }
-
 header form {
   display: none;
 }
-
 header input,
 header button {
   all: unset;
 }
-
 header input {
   border-bottom: 1px solid #aaa;
   padding: 4px;
   width: 300px;
 }
-
 header button {
   cursor: pointer;
 }
@@ -110,7 +80,6 @@ header button {
 .hero {
   height: 400px;
 }
-
 .hero img {
   width: 100%;
   height: 400px;
@@ -118,10 +87,8 @@ header button {
      object-fit: cover;
   position: absolute;
   opacity: 0;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
-
 .hero img .current {
   opacity: 1;
 }
@@ -130,34 +97,25 @@ header button {
 .products {
   padding: 80px 0;
 }
-
 .products.products ul {
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 16px;
 }
-
 .products.products ul li {
   width: calc((100% - 16px) / 2);
 }
-
 .products.products ul li img {
   width: 100%;
 }
-
 .products.products ul li h2 {
   font-size: 16px;
   margin-top: 8px;
 }
-
 .products.products ul li a {
   display: block;
 }
-
 .products.more {
   display: block;
   width: 70%;
@@ -173,33 +131,20 @@ footer {
   padding: 16px 0;
   color: #eee;
 }
-
 footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 footer small {
   font-size: 16px;
 }
-
 footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer ul li i {
   font-size: 24px;
 }
-
 footer ul + li {
   margin-left: 8px;
 }
@@ -210,7 +155,6 @@ footer ul + li {
     width: calc((100% - 32px) / 3);
   }
 }
-
 /* large screen */
 @media (min-width: 800px) {
   .container {
@@ -221,5 +165,4 @@ footer ul + li {
   header form {
     display: block;
   }
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -12,19 +12,15 @@ body section {
   margin: 16px auto;
   border-radius: 8px;
 }
-
 body section .text {
   font-size: 32px;
   text-align: center;
 }
-
 body section .text .border {
   border: 2px dashed lightgray;
   margin: 0 8px;
 }
-
 body section .material-symbols-rounded {
   font-size: 64px;
   color: #FFC107;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

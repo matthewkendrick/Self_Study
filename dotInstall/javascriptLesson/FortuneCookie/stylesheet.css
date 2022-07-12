@@ -6,7 +6,6 @@
 body {
   background: #efefef;
 }
-
 body #btn {
   width: 200px;
   height: 200px;
@@ -19,21 +18,16 @@ body #btn {
   font-weight: bold;
   font-size: 42px;
   cursor: pointer;
-  -webkit-box-shadow: 0 10px 0  10px #d1483e;
-          box-shadow: 0 10px 0  10px #d1483e;
+  box-shadow: 0 10px 0 10px #d1483e;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-
 body #btn:hover {
   opacity: 0.9;
 }
-
 body #btn:active {
-  -webkit-box-shadow: 0 5px 0  5px #d1483e;
-          box-shadow: 0 5px 0  5px #d1483e;
+  box-shadow: 0 5px 0 5px #d1483e;
   margin-top: 35px;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

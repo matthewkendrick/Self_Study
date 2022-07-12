@@ -6,18 +6,15 @@
 body {
   padding-top: 16px;
 }
-
 body .title h1, body .title h3 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.3rem;
   margin: 16px 0;
 }
-
 body .puzzle {
   padding: 16px 0;
 }
-
 body .puzzle canvas {
   background: pink;
   border-radius: 8px;
@@ -33,5 +30,4 @@ footer {
   text-align: center;
   letter-spacing: 0.05rem;
   color: darkgray;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

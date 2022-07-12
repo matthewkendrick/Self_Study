@@ -1,14 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
   font-size: 14px;
   background: #eee;
 }
-
 body .container {
   margin: 20px auto;
   width: 270px;
@@ -17,7 +16,6 @@ body .container {
   text-align: center;
   border-radius: 16px;
 }
-
 body #timer {
   background: #ddd;
   height: 120px;
@@ -26,20 +24,13 @@ body #timer {
   margin-bottom: 15px;
   border-radius: 8px;
 }
-
 body .controlls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 body .controlls .inactive {
   opacity: 0.6;
 }
-
 body .controlls .button {
   width: 80px;
   height: 45px;
@@ -52,5 +43,4 @@ body .controlls .button {
       -ms-user-select: none;
           user-select: none;
   border-radius: 50%;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

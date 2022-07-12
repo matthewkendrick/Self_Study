@@ -7,19 +7,15 @@ html a {
   text-decoration: none;
   color: inherit;
 }
-
 html p {
   line-height: 1.6;
 }
-
 html p + p {
   margin-top: 16px;
 }
-
 html img {
   vertical-align: bottom;
 }
-
 html .container {
   width: calc(100% - 32px);
   margin: 0 auto;
@@ -29,21 +25,17 @@ html .container {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body h1, body h2 {
   font-weight: normal;
   color: #222577;
 }
-
 body h1 {
   text-align: center;
   font-size: 24px;
 }
-
 body h2 {
   font-size: 20px;
 }
-
 body .btn {
   display: block;
   width: 160px;
@@ -58,22 +50,14 @@ body .btn {
 header {
   padding: 16px 0;
 }
-
 header h1 img {
   width: 240px;
   height: 27px;
 }
-
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
@@ -84,20 +68,16 @@ header .container {
   padding-top: 64px;
   text-align: center;
 }
-
 .hero img {
   width: 320px;
   height: 330px;
 }
-
 .hero p {
   margin-top: 8px;
 }
-
 .hero img {
   margin-top: 64px;
 }
-
 .hero .btn {
   margin: 64px auto 0;
 }
@@ -105,23 +85,18 @@ header .container {
 .features {
   padding: 64px 0;
 }
-
 .features img {
   width: 100%;
 }
-
 .features h1 {
   padding-bottom: 64px;
 }
-
 .features h2 {
   padding-bottom: 16px;
 }
-
 .features section + section {
   margin-top: 40px;
 }
-
 .features .pic {
   padding: 32px;
 }
@@ -130,34 +105,25 @@ header .container {
   background: #99e6ff;
   padding: 64px 0;
 }
-
 .voices h1 {
   text-align: center;
   padding-bottom: 64px;
 }
-
 .voices img {
   width: 40px;
   height: 40px;
 }
-
 .voices section {
   background: #fff;
   padding: 16px;
   border-radius: 16px;
 }
-
 .voices section footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 16px;
 }
-
 .voices section + section {
   margin-top: 16px;
 }
@@ -169,11 +135,9 @@ header .container {
   background-position: center bottom;
   padding: 64px 0;
 }
-
 .call-to-action h1 {
   padding-bottom: 64px;
 }
-
 .call-to-action .btn {
   margin: 0 auto;
 }
@@ -183,7 +147,6 @@ header .container {
   padding: 64px 0;
   text-align: center;
 }
-
 .copyright small {
   font-size: 16px;
   color: #eee;
@@ -196,48 +159,29 @@ header .container {
     height: auto;
   }
   .hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .hero .desc, .hero .pic {
     width: 50%;
   }
   .features section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .features section:nth-child(odd) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .voices section {
     width: calc((100% - 32px) / 3);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .voices section + section {
     margin-top: 0;
   }
   .voices .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 16px;
   }
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -6,35 +6,28 @@
 body {
   background: #ccc;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   font-weight: bold;
 }
-
 body #container {
   margin: 16px auto;
   border-radius: 8px;
 }
-
 body #container #timer {
   margin-bottom: 8px;
   font-size: 20px;
   text-align: right;
 }
-
 body #container #board {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
   padding: 10px;
   margin: 0 0 8px;
   background: #fff;
   border-radius: 8px;
 }
-
 body #container #board li {
   background: #0af;
   width: 40px;
@@ -44,18 +37,14 @@ body #container #board li {
   border-radius: 8px;
   line-height: 40px;
   text-align: center;
-  -webkit-box-shadow: 0 4px 0 #0088cc;
-          box-shadow: 0 4px 0 #0088cc;
+  box-shadow: 0 4px 0 #0088cc;
 }
-
 body #container #board li.pressed {
   background: #ccc;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-top: 9px;
   margin-bottom: 1px;
 }
-
 body #container #btn {
   cursor: pointer;
   -webkit-user-select: none;
@@ -66,13 +55,9 @@ body #container #btn {
   padding: 8px;
   border-radius: 8px;
   text-align: center;
-  -webkit-box-shadow: 0 4px 0 #d1483e;
-          box-shadow: 0 4px 0 #d1483e;
+  box-shadow: 0 4px 0 #d1483e;
 }
-
 body #container #btn:active {
   margin-top: 12px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+  box-shadow: none;
+}/*# sourceMappingURL=stylesheet.css.map */

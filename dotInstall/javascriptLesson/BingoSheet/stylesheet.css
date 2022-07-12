@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 table {
@@ -12,7 +12,6 @@ table {
   background: #EC407A;
   border-radius: 8px;
 }
-
 table th, table td {
   background: pink;
   width: 40px;
@@ -20,8 +19,6 @@ table th, table td {
   text-align: center;
   line-height: 40px;
 }
-
 table th {
   font-size: 24px;
-}
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -8,69 +8,51 @@ body {
   font-family: Verdana, sans-serif;
   margin: 0;
 }
-
 body header {
   background-color: #efefef;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body .container {
   /* background-color: pink; */
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body .container .icon {
   /* background-color: skyblue; */
 }
-
 body .container .icon img {
   border-radius: 50%;
   border-width: 8px;
   border-style: solid;
   border-color: white;
 }
-
 body .container .info {
   /* background-color: tomato; */
   margin-left: 32px;
 }
-
 body .container .info h1 {
   font-weight: normal;
   font-size: 24px;
   margin: 0;
 }
-
 body .container .info p {
   margin: 0;
   margin-bottom: 16px;
 }
-
 body .container .info ul {
   margin: 0;
   padding: 0px;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body .container .info ul li {
   margin-right: 8px;
 }
-
 body .container .info ul li:hover {
   opacity: 0.6;
 }
@@ -80,11 +62,9 @@ body .container .info ul li:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 .works img {
   border-radius: 16px;
 }
-
 .works > h1 {
   font-weight: normal;
   font-size: 24px;
@@ -92,20 +72,16 @@ body .container .info ul li:hover {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-
 .works > section {
   margin-bottom: 60px;
 }
-
 .works > section > h1 {
   margin: 24px 0;
 }
-
 .works p {
   line-height: 1.8;
   padding-bottom: 16px;
 }
-
 .works a {
   text-decoration: none;
   display: block;
@@ -116,7 +92,6 @@ body .container .info ul li:hover {
   padding: 12px;
   color: #fff;
 }
-
 .works a:hover {
   opacity: 0.7;
 }
@@ -126,5 +101,4 @@ footer p {
   font-size: 14px;
   margin-bottom: 60px;
   color: gray;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
