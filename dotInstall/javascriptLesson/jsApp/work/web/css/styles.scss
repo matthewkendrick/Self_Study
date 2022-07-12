@@ -40,6 +40,22 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  & #to_top {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    &.scrolled {
+      opacity: 1;
+    }
+    i {
+      font-size: 32px;
+      color: #22577a;
+    }
+  }
   section {
     h1 {
       text-align: center;
