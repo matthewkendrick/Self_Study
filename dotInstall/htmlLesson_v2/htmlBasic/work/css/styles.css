@@ -5,42 +5,42 @@
   color: #323232;
 }
 
-section {
+.hero {
   width: 90%;
   margin: 16px auto;
   justify-content: center;
   align-items: center;
 }
-section .icon {
+.hero .icon {
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   min-width: 240px;
   text-align: center;
   vertical-align: middle;
   margin: auto;
 }
-section .icon h1 {
+.hero .icon h1 {
   color: #e59400;
   margin: 16px 0;
 }
-section .icon img {
+.hero .icon img {
   border-radius: 50%;
   transition: transform 1s;
 }
-section .icon img:hover {
+.hero .icon img:hover {
   transform: rotate(360deg);
 }
-section .desc h1 i {
+.hero .desc h1 i {
   color: rgb(229, 96, 52);
 }
-section .desc .text {
+.hero .desc .text {
   max-width: 480px;
   padding: 16px 0;
   margin: 32px auto;
 }
-section .desc .text p {
+.hero .desc .text p {
   margin: 16px 0;
 }
-section .button {
+.hero .button {
   width: 180px;
   background: linear-gradient(#007BFF 50%, blue 50%);
   border-radius: 8px;
@@ -54,7 +54,7 @@ section .button {
   box-shadow: 0 5px 1px navy;
   transition: opacity 0.2s;
 }
-section .button:hover {
+.hero .button:hover {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -62,9 +62,16 @@ section .button:hover {
           user-select: none;
   opacity: 0.7;
 }
-section .button:active {
+.hero .button:active {
   box-shadow: none;
   transform: translateY(2px);
+}
+
+.about {
+  margin: 32px auto;
+}
+.about .about_item {
+  padding: 16px;
 }
 
 @media (min-width: 800px) {
