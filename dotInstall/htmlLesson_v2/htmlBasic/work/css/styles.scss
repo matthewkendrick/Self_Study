@@ -71,11 +71,16 @@ section {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   section {
+    width: 80%;
     display: flex;
     .icon {
+      width: 100%;
       margin: 48px auto 0;
+    }
+    .desc {
+      width: 100%;
     }
   }
 }
