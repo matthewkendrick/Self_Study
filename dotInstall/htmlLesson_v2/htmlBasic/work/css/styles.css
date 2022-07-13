@@ -1,6 +1,8 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+  color: #323232;
 }
 
 section {
@@ -10,12 +12,14 @@ section {
   align-items: center;
 }
 section .icon {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   min-width: 240px;
   text-align: center;
   vertical-align: middle;
+  margin: auto;
 }
 section .icon h1 {
-  color: orange;
+  color: #e59400;
   margin: 16px 0;
 }
 section .icon img {
@@ -27,11 +31,19 @@ section .icon img {
 section .icon img:hover {
   transform: rotate(360deg);
 }
+section .desc h1 i {
+  color: rgb(229, 96, 52);
+}
 section .desc .text {
+  max-width: 480px;
   padding: 16px 0;
+  margin: 32px auto;
+}
+section .desc .text p {
+  margin: 16px 0;
 }
 section .button {
-  width: 160px;
+  width: 180px;
   background: linear-gradient(#007BFF 50%, blue 50%);
   border-radius: 8px;
   text-align: center;
@@ -39,6 +51,7 @@ section .button {
   margin: 0 auto;
   padding: 16px 8px 16px 16px;
   color: #fff;
+  font-size: 20px;
   font-weight: bold;
   box-shadow: 0 5px 1px navy;
   transition: opacity 0.2s;
@@ -59,6 +72,9 @@ section .button:active {
 @media (min-width: 600px) {
   section {
     display: flex;
+  }
+  section .icon {
+    margin: 48px auto 0;
   }
 }
 @media (max-width: 400px) {
