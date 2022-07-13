@@ -1,4 +1,68 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+section {
+  width: 90%;
+  margin: 16px auto;
+  justify-content: center;
+  align-items: center;
+}
+section .icon {
+  min-width: 240px;
+  text-align: center;
+  vertical-align: middle;
+}
+section .icon h1 {
+  color: orange;
+  margin: 16px 0;
+}
+section .icon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+section .icon img:hover {
+  transform: rotate(360deg);
+}
+section .desc .text {
+  padding: 16px 0;
+}
+section .button {
+  width: 160px;
+  background: linear-gradient(#007BFF 50%, blue 50%);
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  margin: 0 auto;
+  padding: 16px 8px 16px 16px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 5px 1px navy;
+  transition: opacity 0.2s;
+}
+section .button:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0.7;
+}
+section .button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+@media (min-width: 600px) {
+  section {
+    display: flex;
+  }
+}
+@media (max-width: 400px) {
+  section .icon {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

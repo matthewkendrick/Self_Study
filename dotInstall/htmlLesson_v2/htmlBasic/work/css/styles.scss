@@ -1,4 +1,73 @@
+$themeColor: #007BFF;
+
 * {
   padding: 0;
   margin: 0;
+  // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+section {
+  width: 90%;
+  margin: 16px auto;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    min-width: 240px;
+    text-align: center;
+    vertical-align: middle;
+    h1 {
+      color: orange;
+      margin: 16px 0;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: transform 1s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .desc {
+    .text {
+      padding: 16px 0;
+    }
+  }
+  .button {
+    width: 160px;
+    background: linear-gradient($themeColor 50%, blue 50%);
+    border-radius: 8px;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    padding: 16px 8px 16px 16px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 5px 1px navy;
+    transition: opacity 0.2s;
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.7;
+    }
+    &:active {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  section {
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    .icon {
+      text-align: center;
+    }
+  }
 }
