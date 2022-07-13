@@ -23,8 +23,6 @@ section .icon h1 {
   margin: 16px 0;
 }
 section .icon img {
-  width: 80px;
-  height: 80px;
   border-radius: 50%;
   transition: transform 1s;
 }
