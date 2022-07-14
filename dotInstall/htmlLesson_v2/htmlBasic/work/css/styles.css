@@ -3,6 +3,47 @@
   padding: 0;
   margin: 0;
   color: #323232;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 90px;
+  background: navy;
+}
+header .header_icon {
+  display: flex;
+}
+header .header_icon a {
+  width: 240px;
+  height: 60px;
+  margin: 16px;
+  background: #e59400;
+  border-radius: 48px;
+  text-decoration: none;
+}
+header .header_icon a h1 {
+  position: absolute;
+  top: 35px;
+  left: 85px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+header .header_icon a img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: auto 0;
+  border-radius: 50%;
 }
 
 .hero {
@@ -16,7 +57,9 @@
   min-width: 240px;
   text-align: center;
   vertical-align: middle;
-  margin: auto;
+  margin: 16px;
+  border-radius: 16px;
+  padding: 64px;
 }
 .hero .icon h1 {
   color: #e59400;
@@ -34,20 +77,19 @@
 }
 .hero .desc .text {
   max-width: 480px;
-  padding: 16px 0;
   margin: 32px auto;
 }
 .hero .desc .text p {
   margin: 16px 0;
 }
 .hero .button {
-  width: 180px;
+  width: 240px;
   background: linear-gradient(#007BFF 50%, blue 50%);
   border-radius: 8px;
   text-align: center;
   letter-spacing: 0.3rem;
   margin: 0 auto;
-  padding: 16px 8px 16px 16px;
+  padding: 16px;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -74,6 +116,14 @@
   padding: 16px;
 }
 
+footer {
+  margin-top: auto;
+  padding: 40px 0;
+  text-align: center;
+  background: navy;
+  color: #fff;
+}
+
 @media (min-width: 800px) {
   section {
     width: 80%;
@@ -85,6 +135,10 @@
   }
   section .desc {
     width: 100%;
+  }
+  .about .about_item > h2 {
+    display: inline-block;
+    min-height: 120px;
   }
 }
 @media (max-width: 400px) {
