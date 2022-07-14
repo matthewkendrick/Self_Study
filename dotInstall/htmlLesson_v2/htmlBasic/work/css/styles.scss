@@ -14,6 +14,79 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  .hero {
+    width: 90%;
+    margin: 16px auto;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      min-width: 240px;
+      text-align: center;
+      vertical-align: middle;
+      margin: 16px;
+      border-radius: 16px;
+      padding: 64px;
+      h1 {
+        color: #e59400;
+        margin: 16px 0;
+      }
+      img {
+        border-radius: 50%;
+        transition: transform 1s;
+        &:hover {
+          transform: rotate(360deg);
+        }
+        &:active {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    .desc {
+      h1 {
+        i {
+          color: rgb(229, 96, 52);
+        }
+      }
+      .text {
+        max-width: 480px;
+        margin: 32px auto;
+        p {
+          margin: 16px 0;
+        }
+      }
+    }
+    .button {
+      width: 240px;
+      background: linear-gradient(#007BFF 50%, blue 50%);
+      border-radius: 8px;
+      text-align: center;
+      letter-spacing: 0.3rem;
+      margin: 0 auto;
+      padding: 16px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 5px 1px navy;
+      transition: opacity 0.2s;
+      &:hover {
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.7;
+      }
+      &:active {
+        box-shadow: none;
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .about {
+    margin: 32px auto;
+    .about_item {
+      padding: 16px;
+    }
+  }
 }
 
 header {
@@ -47,77 +120,6 @@ header {
   }
 }
 
-.hero {
-  width: 90%;
-  margin: 16px auto;
-  justify-content: center;
-  align-items: center;
-  .icon {
-    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    min-width: 240px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 16px;
-    border-radius: 16px;
-    padding: 64px;
-    h1 {
-      color: #e59400;
-      margin: 16px 0;
-    }
-    img {
-      border-radius: 50%;
-      transition: transform 1s;
-      &:hover {
-        transform: rotate(360deg);
-      }
-    }
-  }
-  .desc {
-    h1 {
-      i {
-        color: rgb(229, 96, 52);
-      }
-    }
-    .text {
-      max-width: 480px;
-      margin: 32px auto;
-      p {
-        margin: 16px 0;
-      }
-    }
-  }
-  .button {
-    width: 240px;
-    background: linear-gradient(#007BFF 50%, blue 50%);
-    border-radius: 8px;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    margin: 0 auto;
-    padding: 16px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 5px 1px navy;
-    transition: opacity 0.2s;
-    &:hover {
-      cursor: pointer;
-      user-select: none;
-      opacity: 0.7;
-    }
-    &:active {
-      box-shadow: none;
-      transform: translateY(2px);
-    }
-  }
-}
-
-.about {
-  margin: 32px auto;
-  .about_item {
-    padding: 16px;
-  }
-}
-
 footer {
   margin-top: auto;
   padding: 40px 0;
@@ -148,7 +150,16 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  header {
+    .header_icon {
+      background: none;
+      width: 80px;
+      h1 {
+        display: none;
+      }
+    }
+  }
   section {
     .icon {
       text-align: center;

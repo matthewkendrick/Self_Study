@@ -14,6 +14,77 @@ body {
   display: flex;
   flex-direction: column;
 }
+body .hero {
+  width: 90%;
+  margin: 16px auto;
+  justify-content: center;
+  align-items: center;
+}
+body .hero .icon {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  min-width: 240px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 16px;
+  border-radius: 16px;
+  padding: 64px;
+}
+body .hero .icon h1 {
+  color: #e59400;
+  margin: 16px 0;
+}
+body .hero .icon img {
+  border-radius: 50%;
+  transition: transform 1s;
+}
+body .hero .icon img:hover {
+  transform: rotate(360deg);
+}
+body .hero .icon img:active {
+  transform: rotate(0deg);
+}
+body .hero .desc h1 i {
+  color: rgb(229, 96, 52);
+}
+body .hero .desc .text {
+  max-width: 480px;
+  margin: 32px auto;
+}
+body .hero .desc .text p {
+  margin: 16px 0;
+}
+body .hero .button {
+  width: 240px;
+  background: linear-gradient(#007BFF 50%, blue 50%);
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  margin: 0 auto;
+  padding: 16px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 5px 1px navy;
+  transition: opacity 0.2s;
+}
+body .hero .button:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0.7;
+}
+body .hero .button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+body .about {
+  margin: 32px auto;
+}
+body .about .about_item {
+  padding: 16px;
+}
 
 header {
   height: 90px;
@@ -46,76 +117,6 @@ header .header_icon a img {
   border-radius: 50%;
 }
 
-.hero {
-  width: 90%;
-  margin: 16px auto;
-  justify-content: center;
-  align-items: center;
-}
-.hero .icon {
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-  min-width: 240px;
-  text-align: center;
-  vertical-align: middle;
-  margin: 16px;
-  border-radius: 16px;
-  padding: 64px;
-}
-.hero .icon h1 {
-  color: #e59400;
-  margin: 16px 0;
-}
-.hero .icon img {
-  border-radius: 50%;
-  transition: transform 1s;
-}
-.hero .icon img:hover {
-  transform: rotate(360deg);
-}
-.hero .desc h1 i {
-  color: rgb(229, 96, 52);
-}
-.hero .desc .text {
-  max-width: 480px;
-  margin: 32px auto;
-}
-.hero .desc .text p {
-  margin: 16px 0;
-}
-.hero .button {
-  width: 240px;
-  background: linear-gradient(#007BFF 50%, blue 50%);
-  border-radius: 8px;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  margin: 0 auto;
-  padding: 16px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 5px 1px navy;
-  transition: opacity 0.2s;
-}
-.hero .button:hover {
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  opacity: 0.7;
-}
-.hero .button:active {
-  box-shadow: none;
-  transform: translateY(2px);
-}
-
-.about {
-  margin: 32px auto;
-}
-.about .about_item {
-  padding: 16px;
-}
-
 footer {
   margin-top: auto;
   padding: 40px 0;
@@ -141,7 +142,14 @@ footer {
     min-height: 120px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  header .header_icon {
+    background: none;
+    width: 80px;
+  }
+  header .header_icon h1 {
+    display: none;
+  }
   section .icon {
     text-align: center;
   }
