@@ -146,6 +146,9 @@ footer {
   background: navy;
   color: #fff;
 }
+footer i {
+  color: #fff;
+}
 
 @media (min-width: 800px) {
   section {

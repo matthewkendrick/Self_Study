@@ -149,6 +149,9 @@ footer {
   text-align: center;
   background: $themeColor;
   color: #fff;
+  i {
+    color: #fff;
+  }
 }
 
 @media (min-width: 800px) {
