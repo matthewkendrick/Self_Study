@@ -80,11 +80,33 @@ body {
       }
     }
   }
-
   .about {
     margin: 32px auto;
     .about_item {
-      padding: 16px;
+      margin: 16px;
+      .about_icon {
+        .bi {
+          font-size: 48px;
+          &.bi-incognito {
+            color: #17A2B8;
+          }
+          &.bi-flag {
+            color: #DC3545;
+          }
+          &.bi-gear-wide-connected {
+            color: #FFC107;
+          }
+          &.bi-question-lg {
+            color: #28A745;
+          }
+        }
+      }
+    }
+    .about_icon, h2 {
+      text-align: center;
+    }
+    h2 {
+      padding: 16px 0;
     }
   }
 }
@@ -106,6 +128,7 @@ header {
         top: 35px;
         left: 85px;
         color: #fff;
+        letter-spacing: 0.1rem;
         font-size: 16px;
         font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
       }
@@ -142,8 +165,7 @@ footer {
   }
   .about {
     .about_item {
-      & > h2 {
-        display: inline-block;
+      h2 {
         min-height: 120px;
       }
     }

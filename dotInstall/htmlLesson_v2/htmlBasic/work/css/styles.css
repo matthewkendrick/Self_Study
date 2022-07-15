@@ -83,7 +83,28 @@ body .about {
   margin: 32px auto;
 }
 body .about .about_item {
-  padding: 16px;
+  margin: 16px;
+}
+body .about .about_item .about_icon .bi {
+  font-size: 48px;
+}
+body .about .about_item .about_icon .bi.bi-incognito {
+  color: #17A2B8;
+}
+body .about .about_item .about_icon .bi.bi-flag {
+  color: #DC3545;
+}
+body .about .about_item .about_icon .bi.bi-gear-wide-connected {
+  color: #FFC107;
+}
+body .about .about_item .about_icon .bi.bi-question-lg {
+  color: #28A745;
+}
+body .about .about_icon, body .about h2 {
+  text-align: center;
+}
+body .about h2 {
+  padding: 16px 0;
 }
 
 header {
@@ -106,6 +127,7 @@ header .header_icon a h1 {
   top: 35px;
   left: 85px;
   color: #fff;
+  letter-spacing: 0.1rem;
   font-size: 16px;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
 }
@@ -137,8 +159,7 @@ footer {
   section .desc {
     width: 100%;
   }
-  .about .about_item > h2 {
-    display: inline-block;
+  .about .about_item h2 {
     min-height: 120px;
   }
 }
