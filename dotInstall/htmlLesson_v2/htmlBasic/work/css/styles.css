@@ -85,6 +85,10 @@ body .about {
 }
 body .about .about_item {
   margin: 16px;
+  min-width: 160px;
+}
+body .about .about_item .about_icon {
+  text-align: center;
 }
 body .about .about_item .about_icon .bi {
   font-size: 48px;
@@ -101,11 +105,12 @@ body .about .about_item .about_icon .bi.bi-gear-wide-connected {
 body .about .about_item .about_icon .bi.bi-question-lg {
   color: #28A745;
 }
-body .about .about_icon, body .about h2 {
-  text-align: center;
-}
 body .about h2 {
+  text-align: center;
   padding: 16px 0;
+}
+body .about .list {
+  margin: 0 16px 16px;
 }
 
 header {

@@ -85,7 +85,9 @@ body {
     margin: 32px auto;
     .about_item {
       margin: 16px;
+      min-width: 160px;
       .about_icon {
+        text-align: center;
         .bi {
           font-size: 48px;
           &.bi-incognito {
@@ -103,11 +105,12 @@ body {
         }
       }
     }
-    .about_icon, h2 {
-      text-align: center;
-    }
     h2 {
+      text-align: center;
       padding: 16px 0;
+    }
+    .list {
+      margin: 0 16px 16px;
     }
   }
 }
