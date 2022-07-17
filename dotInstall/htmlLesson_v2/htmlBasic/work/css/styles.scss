@@ -82,6 +82,7 @@ body {
     }
   }
   .about {
+    width: 90%;
     margin: 32px auto;
     .about_item {
       margin: 16px;
@@ -153,8 +154,14 @@ footer {
   text-align: center;
   background: $themeColor;
   color: #fff;
-  i {
+  i, a {
     color: #fff;
+  }
+  .about_company {
+    margin-top: 16px;
+    a {
+      text-decoration: none;
+    }
   }
 }
 

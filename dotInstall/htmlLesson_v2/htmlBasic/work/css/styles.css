@@ -81,6 +81,7 @@ body .hero .button:active {
   transform: translateY(2px);
 }
 body .about {
+  width: 90%;
   margin: 32px auto;
 }
 body .about .about_item {
@@ -152,8 +153,14 @@ footer {
   background: navy;
   color: #fff;
 }
-footer i {
+footer i, footer a {
   color: #fff;
+}
+footer .about_company {
+  margin-top: 16px;
+}
+footer .about_company a {
+  text-decoration: none;
 }
 
 @media (min-width: 800px) {
