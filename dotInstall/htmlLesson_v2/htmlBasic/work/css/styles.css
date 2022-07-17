@@ -113,6 +113,18 @@ body .about h2 {
 body .about .list {
   margin: 0 16px 16px;
 }
+body .history {
+  width: 90%;
+  margin: 32px auto;
+}
+body .history table {
+  margin-top: 8px;
+  width: 100%;
+  border: 3px solid #000;
+}
+body .history table th, body .history table td {
+  padding: 4px;
+}
 
 header {
   height: 90px;
