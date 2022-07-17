@@ -161,6 +161,12 @@ footer {
     margin-top: 16px;
     a {
       text-decoration: none;
+      &:hover {
+        color: #000;
+        background: #fff;
+        border-radius: 4px;
+        padding: 4px;
+      }
     }
   }
 }

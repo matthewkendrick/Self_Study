@@ -162,6 +162,12 @@ footer .about_company {
 footer .about_company a {
   text-decoration: none;
 }
+footer .about_company a:hover {
+  color: #000;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
 
 @media (min-width: 800px) {
   section {
