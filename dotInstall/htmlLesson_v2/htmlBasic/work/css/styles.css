@@ -189,7 +189,7 @@ footer {
   background: navy;
   color: #fff;
 }
-footer i, footer a {
+footer p, footer i, footer a {
   color: #fff;
 }
 footer .about_company {
