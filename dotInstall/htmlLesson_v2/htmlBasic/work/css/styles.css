@@ -68,6 +68,10 @@ body .hero .button {
   box-shadow: 0 5px 1px navy;
   transition: opacity 0.2s;
 }
+body .hero .button a {
+  color: #fff;
+  text-decoration: none;
+}
 body .hero .button:hover {
   cursor: pointer;
   -webkit-user-select: none;
