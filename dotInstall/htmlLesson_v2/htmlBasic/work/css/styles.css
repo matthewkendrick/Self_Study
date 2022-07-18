@@ -132,14 +132,13 @@ body .about .list {
   margin: 0 16px 16px;
 }
 body .history {
-  width: 90%;
-  margin: 32px auto;
+  width: 95%;
+  margin: 64px auto;
   padding: 16px;
-  background: rgba(211, 211, 211, 0.5);
-  border-radius: 16px;
 }
-body .history h2 {
-  padding: 8px 16px;
+body .history .border {
+  border: 3px solid gray;
+  border-radius: 8px;
 }
 body .history table {
   margin-top: 16px;
@@ -148,6 +147,30 @@ body .history table {
 }
 body .history table th, body .history table td {
   padding: 4px;
+}
+body .notices {
+  width: 95%;
+  margin: 0 auto;
+  padding: 16px;
+}
+body .notices .border {
+  border: 3px solid gray;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+body .notices h2 {
+  padding-bottom: 8px;
+}
+body .notices article {
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background: rgba(128, 128, 128, 0.2);
+}
+body .notices article .footer {
+  padding-top: 16px;
+  text-align: right;
+  font-weight: bold;
 }
 
 header {

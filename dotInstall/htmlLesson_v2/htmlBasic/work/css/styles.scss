@@ -133,13 +133,12 @@ body {
     }
   }
   .history {
-    width: 90%;
-    margin: 32px auto;
+    width: 95%;
+    margin: 64px auto;
     padding: 16px;
-    background: rgba($color: lightgray, $alpha: 0.5);
-    border-radius: 16px;
-    h2 {
-      padding: 8px 16px;
+    .border {
+      border: 3px solid gray;
+      border-radius: 8px;
     }
     table {
       margin-top: 16px;
@@ -147,6 +146,30 @@ body {
       border: 3px solid #000;
       th, td {
         padding: 4px;
+      }
+    }
+  }
+  .notices {
+    width: 95%;
+    margin: 0 auto;
+    padding: 16px;
+    .border {
+      border: 3px solid gray;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      padding-bottom: 8px;
+    }
+    article {
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 8px;
+      background: rgba($color: gray, $alpha: 0.2);
+      .footer {
+        padding-top: 16px;
+        text-align: right;
+        font-weight: bold;
       }
     }
   }
