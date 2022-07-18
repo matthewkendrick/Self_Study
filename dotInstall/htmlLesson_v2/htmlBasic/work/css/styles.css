@@ -9,6 +9,20 @@
 html, body {
   height: 100%;
 }
+html .back_to_top, body .back_to_top {
+  position: fixed;
+  bottom: 8px;
+  left: 16px;
+  font-size: 32px;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+html .back_to_top:hover, body .back_to_top:hover {
+  opacity: 1;
+}
+html .back_to_top i, body .back_to_top i {
+  color: #e59400;
+}
 
 body {
   display: flex;

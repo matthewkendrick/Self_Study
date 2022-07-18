@@ -9,6 +9,20 @@ $themeColor: navy;
 
 html, body {
   height: 100%;
+  .back_to_top {
+    position: fixed;
+    bottom: 8px;
+    left: 16px;
+    font-size: 32px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+    i {
+      color: #e59400;
+    }
+  }
 }
 
 body {
@@ -192,6 +206,7 @@ footer {
     }
   }
 }
+
 
 @media (min-width: 800px) {
   section {
