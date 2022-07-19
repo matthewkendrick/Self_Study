@@ -1,0 +1,270 @@
+$themeColor: navy;
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #323232;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  .back_to_top {
+    position: fixed;
+    bottom: 8px;
+    left: 16px;
+    font-size: 32px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+    i {
+      color: #e59400;
+    }
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  .hero {
+    width: 90%;
+    margin: 32px auto;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      min-width: 240px;
+      text-align: center;
+      vertical-align: middle;
+      margin: 16px;
+      border-radius: 16px;
+      padding: 64px;
+      h1 {
+        color: #e59400;
+        margin: 16px 0;
+      }
+      img {
+        border-radius: 50%;
+        transition: transform 1s;
+        &:hover {
+          transform: rotate(360deg);
+        }
+        &:active {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    .desc {
+      h1 {
+        i {
+          color: rgb(229, 96, 52);
+        }
+      }
+      .text {
+        max-width: 480px;
+        margin: 32px auto;
+        p {
+          margin: 16px 0;
+        }
+      }
+    }
+    .button {
+      width: 240px;
+      background: linear-gradient(#007BFF 50%, blue 50%);
+      border-radius: 8px;
+      text-align: center;
+      letter-spacing: 0.3rem;
+      margin: 0 auto;
+      padding: 16px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      box-shadow: 0 5px 1px navy;
+      transition: opacity 0.2s;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      &:hover {
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.7;
+      }
+      &:active {
+        box-shadow: none;
+        transform: translateY(2px);
+      }
+    }
+  }
+  .about {
+    width: 90%;
+    margin: 32px auto;
+    .about_item {
+      margin: 16px;
+      min-width: 160px;
+      .about_icon {
+        text-align: center;
+        .bi {
+          font-size: 48px;
+          &.bi-incognito {
+            color: #17A2B8;
+          }
+          &.bi-flag {
+            color: #DC3545;
+          }
+          &.bi-gear-wide-connected {
+            color: #FFC107;
+          }
+          &.bi-question-lg {
+            color: #28A745;
+          }
+        }
+      }
+    }
+    h2 {
+      text-align: center;
+      padding: 16px 0;
+    }
+    .list {
+      margin: 0 16px 16px;
+    }
+  }
+  .history {
+    width: 95%;
+    margin: 64px auto;
+    padding: 16px;
+    .border {
+      border: 3px solid gray;
+      border-radius: 8px;
+    }
+    table {
+      margin-top: 16px;
+      width: 100%;
+      border: 3px solid #000;
+      th, td {
+        padding: 4px;
+      }
+    }
+  }
+  .notices {
+    width: 95%;
+    margin: 0 auto;
+    padding: 16px;
+    .border {
+      border: 3px solid gray;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      padding-bottom: 8px;
+    }
+    article {
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 8px;
+      background: rgba($color: gray, $alpha: 0.2);
+      .footer {
+        padding-top: 16px;
+        text-align: right;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+header {
+  height: 90px;
+  background: $themeColor;
+  .header_icon {
+    display: flex;
+    a { 
+      width: 240px;
+      height: 60px;
+      margin: 16px;
+      background: #e59400;
+      border-radius: 48px;
+      text-decoration: none;
+      h1 {
+        position: absolute;
+        top: 35px;
+        left: 85px;
+        color: #fff;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+        font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      }
+      img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: auto 0;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  padding: 40px 0;
+  text-align: center;
+  background: $themeColor;
+  color: #fff;
+  p, i, a {
+    color: #fff;
+  }
+  .about_company {
+    vertical-align: middle;
+    margin: 16px;
+    a {
+      text-decoration: none;
+      padding: 4px;
+      &:hover {
+        color: #000;
+        background: #fff;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  section {
+    width: 80%;
+    display: flex;
+    .icon {
+      width: 100%;
+      margin: 48px auto 0;
+    }
+    .desc {
+      width: 100%;
+    }
+  }
+  .about {
+    .about_item {
+      h2 {
+        min-height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    .header_icon {
+      background: none;
+      width: 80px;
+      h1 {
+        display: none;
+      }
+    }
+  }
+  section {
+    .icon {
+      text-align: center;
+    }
+  }
+}
