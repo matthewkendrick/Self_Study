@@ -217,19 +217,19 @@ footer {
     color: #fff;
   }
   .about_company {
-    margin-top: 16px;
+    vertical-align: middle;
+    margin: 16px;
     a {
       text-decoration: none;
+      padding: 4px;
       &:hover {
         color: #000;
         background: #fff;
         border-radius: 4px;
-        padding: 4px;
       }
     }
   }
 }
-
 
 @media (min-width: 800px) {
   section {
