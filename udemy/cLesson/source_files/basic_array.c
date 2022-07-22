@@ -7,13 +7,13 @@ int main(void) {
 
   sum = 0.0;
   for (i = 0; i < 4; i++) {
-    printf("%f ", d[i]);
+    printf("%f \n", d[i]);
     sum += d[i];
   }
 
-  printf("\n");
-  
   avg = sum / 4.0;
+
+  printf("----------\n");
   printf("合計値: %f\n", sum);
   printf("平均値: %f\n", avg);
 
