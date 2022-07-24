@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../header_files/calc.h"
 
-void main() {
+int main(void) {
   double d1, d2, d3;
   double a = 1.2, b = 3.4, c = 2.7;
 
