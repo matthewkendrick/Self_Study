@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
   int a = 3;
-  int i = 0;
 
   printf("\n==============================\n");
-  for (i = 0; i < a; i++) {
-    printf("a = %d\n", i);
+  for (a = a; a > (a - a) - 1; a--) {
+    printf("a = %d\n", a);
   }
   printf("\n==============================\n");
 }
