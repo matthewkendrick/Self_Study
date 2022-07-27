@@ -9,15 +9,24 @@ int main(void) {
 
   printf("\n==============================\n");
   for (i = 0; i < ARRAY_SIZE; i++) {
-    int rand_num = rand() % 10 + 1;
-    int data[] = {rand_num};
+    data[i] = rand() % ARRAY_SIZE + 1;
+    printf("%d ", data[i]);
   }
-  printf("%d ", data[i]);
-  if (data % 2 == 0) {
-    printf("\n偶数：%d \n", data[i]);
+
+  printf("\n\n");
+  printf("偶数：");
+  for (i = 0; i < ARRAY_SIZE; i++) {
+    if (data[i] % 2 == 0) {
+      printf("%d ", data[i]);
+    }
   }
-  if (data % 2 == 1) {
-    printf("奇数：%d \n", data[i]);
+
+  printf("\n");
+  printf("奇数：");
+  for (i = 0; i < ARRAY_SIZE; i++) {
+    if (data[i] % 2 == 1) {
+      printf("%d ", data[i]);
+    }
   }
   printf("\n");
   printf("\n==============================\n");
