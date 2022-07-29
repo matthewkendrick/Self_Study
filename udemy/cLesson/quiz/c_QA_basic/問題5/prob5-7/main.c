@@ -15,10 +15,10 @@ void main() {
 	}
 
 	printf("\n\n");
-	printf("‡ŒvF%d\n", total);
-	printf("•½‹ÏF%d\n\n", total / 5);
+	printf("ï¿½ï¿½ï¿½vï¿½F%d\n", total);
+	printf("ï¿½ï¿½ï¿½ÏF%d\n\n", total / 5);
 
-	printf("•½‹Ï’l‚æ‚è‘å‚«‚¢”F");
+	printf("ï¿½ï¿½ï¿½Ï’lï¿½ï¿½ï¿½å‚«ï¿½ï¿½ï¿½ï¿½ï¿½F");
 	for (i = 0; i < 5; i++) {
 		if (data[i] > total / 5) {
 			printf("%d ", data[i]);
@@ -26,7 +26,7 @@ void main() {
 	}
 
 	printf("\n");
-	printf("•½‹Ï’l‚æ‚è¬‚³‚¢”F");
+	printf("ï¿½ï¿½ï¿½Ï’lï¿½ï¿½è¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F");
 	for (i = 0; i < 5; i++) {
 		if (data[i] < total / 5) {
 			printf("%d ", data[i]);
