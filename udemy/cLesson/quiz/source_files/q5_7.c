@@ -9,7 +9,6 @@ int main(void) {
   int data[array_size];
   srand((unsigned)time(NULL));
 
-  printf("\n");
   printf("==============================\n");
 
   for (i = 0; i < array_size; i++) {
@@ -31,7 +30,6 @@ int main(void) {
   }
 
   printf("\n");
-
   printf("平均値より小さい数：");
   for (i = 0; i < array_size; i++) {
     if (data[i] < avg) {
