@@ -22,10 +22,11 @@ int main(void) {
     }
   }
 
-  printf("0より大きい数：\n", large);
-  printf("0より小さい数：\n", small);
-  printf("0の個数：\n", zero);
+  printf("\n\n");
+  printf("0より大きい数：%d 個\n", large);
+  printf("0より小さい数：%d 個\n", small);
+  printf("0の個数      ：%d 個\n", zero);
 
-  printf("\n==============================\n");
+  printf("==============================\n");
   return 0;
 }
