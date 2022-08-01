@@ -6,10 +6,24 @@
   border-radius: 16px;
 }
 
-.desc {
-  width: 320px;
+header {
+  background: skyblue;
 }
-.desc img {
+
+section {
+  margin: 32px;
+  padding: 16px;
+  background: lightgray;
+  border-radius: 8px;
+}
+section.desc {
+  width: 400px;
+}
+section.desc img {
   height: 100%;
   width: 100%;
+  margin: 16px 0;
+}
+section.desc ul, section.desc ol {
+  padding: 0 24px;
 }/*# sourceMappingURL=styles.css.map */
