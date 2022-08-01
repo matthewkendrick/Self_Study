@@ -11,6 +11,7 @@ header {
   padding: 16px;
 }
 header a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -20,6 +21,11 @@ section {
   width: 90%;
   background: lightgray;
   border-radius: 8px;
+}
+section .avatar {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
 }
 section img {
   margin: 16px auto;

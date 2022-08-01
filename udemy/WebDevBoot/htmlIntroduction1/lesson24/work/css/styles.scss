@@ -10,6 +10,7 @@ header {
   background: skyblue;
   padding: 16px;
   a {
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -20,6 +21,11 @@ section {
   width: 90%;
   background: lightgray;
   border-radius: 8px;
+  .avatar {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+  }
   img {
     margin: 16px auto;
     width: 100%;
