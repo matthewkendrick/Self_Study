@@ -8,7 +8,20 @@
 
 header {
   background: skyblue;
+  padding: 16px;
+  a {
+    text-decoration: none;
+  }
 }
 
-// section {
-// }
+section {
+  margin: 16px auto;
+  padding: 16px;
+  width: 90%;
+  background: lightgray;
+  border-radius: 8px;
+  img {
+    margin: 16px auto;
+    width: 100%;
+  }
+}

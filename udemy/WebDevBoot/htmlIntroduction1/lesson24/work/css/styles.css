@@ -8,4 +8,20 @@
 
 header {
   background: skyblue;
+  padding: 16px;
+}
+header a {
+  text-decoration: none;
+}
+
+section {
+  margin: 16px auto;
+  padding: 16px;
+  width: 90%;
+  background: lightgray;
+  border-radius: 8px;
+}
+section img {
+  margin: 16px auto;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
