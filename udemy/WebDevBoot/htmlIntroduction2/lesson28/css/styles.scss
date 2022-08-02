@@ -14,3 +14,39 @@ header {
     text-decoration: none;
   }
 }
+
+section {
+  .section {
+    margin: 16px 0;
+  }
+
+  .block {
+    background: pink;
+    p {
+      background: skyblue;
+    }
+  }
+
+  .inline {
+    background: pink;
+    span {
+      background: skyblue;
+    }
+  }
+
+  .img {
+    width: 50%;
+    border-radius: 16px;
+    background: pink;
+    padding: 16px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      background: skyblue;
+    }
+    p {
+      padding: 8px;
+      background: skyblue;
+    }
+  }
+}

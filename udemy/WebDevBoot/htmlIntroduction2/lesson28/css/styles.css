@@ -13,4 +13,35 @@ header {
 header a {
   color: #fff;
   text-decoration: none;
+}
+
+section .section {
+  margin: 16px 0;
+}
+section .block {
+  background: pink;
+}
+section .block p {
+  background: skyblue;
+}
+section .inline {
+  background: pink;
+}
+section .inline span {
+  background: skyblue;
+}
+section .img {
+  width: 50%;
+  border-radius: 16px;
+  background: pink;
+  padding: 16px;
+  margin: 0 auto;
+}
+section .img img {
+  width: 100%;
+  background: skyblue;
+}
+section .img p {
+  padding: 8px;
+  background: skyblue;
 }/*# sourceMappingURL=styles.css.map */
