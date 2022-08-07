@@ -8,22 +8,26 @@
 
 header {
   background: skyblue;
+  padding: 16px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
 }
 
 section {
-  margin: 32px;
+  margin: 16px auto;
   padding: 16px;
+  width: 90%;
   background: lightgray;
   border-radius: 8px;
 }
-section.desc {
-  width: 400px;
+section .avatar {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
 }
-section.desc img {
-  height: 100%;
+section img {
+  margin: 16px auto;
   width: 100%;
-  margin: 16px 0;
-}
-section.desc ul, section.desc ol {
-  padding: 0 24px;
 }/*# sourceMappingURL=styles.css.map */

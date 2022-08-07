@@ -5,3 +5,25 @@
     border-radius: 16px;
   }
 }
+
+header {
+  background: skyblue;
+}
+
+section {
+  margin: 32px;
+  padding: 16px;
+  background: lightgray;
+  border-radius: 8px;
+  &.desc {
+    width: 400px;
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 16px 0;
+    }
+    ul, ol {
+      padding: 0 24px;
+    }
+  }
+}

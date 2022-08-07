@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 8px;
+  background: pink;
+}
+
+section {
+  margin: 16px;
+}
+section .list {
+  margin: 16px;
+  padding: 16px;
+}
+section .list ul, section .list ol {
+  padding: 0 32px;
+  line-height: 2;
+}
+
+@media (min-width: 800px) {
+  ul, ol {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=styles.css.map */

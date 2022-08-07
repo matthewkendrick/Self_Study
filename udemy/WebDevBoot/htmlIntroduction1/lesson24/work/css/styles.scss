@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  img {
+    border-radius: 16px;
+  }
+}
+
+header {
+  background: skyblue;
+  padding: 16px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+section {
+  margin: 16px auto;
+  padding: 16px;
+  width: 90%;
+  background: lightgray;
+  border-radius: 8px;
+  .avatar {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+  }
+  img {
+    margin: 16px auto;
+    width: 100%;
+  }
+}
