@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void symbol(int, int);
-int height, vertical;
+int height_num, vertical_num;
 char str[] = "■ ";
 
 #endif // _DRAW_H_

@@ -12,7 +12,7 @@ int main(void) {
   scanf("%d", &vertical);
 
   printf("\n");
-  symbol(height, vertical);
+  symbol(height_num, vertical_num);
   
   printf("==============================\n");
 }
