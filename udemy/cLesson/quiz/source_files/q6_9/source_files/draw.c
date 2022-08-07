@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include "draw.h"
-
-char str[] = "■ ";
+#include "../header_files/draw.h"
 
 void symbol(int height, int vertical) {
   int i, j;

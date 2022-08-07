@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include "draw.h"
-
-char str[] = "■ ";
+#include "../header_files/draw.h"
 
 int main(void) {
   int height, vertical;
