@@ -17,7 +17,13 @@ header {
 
 section {
   .section {
-    margin: 16px 0;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    p, span {
+      padding: 0 8px;
+      border-radius: 8px;
+    }
   }
 
   .block {

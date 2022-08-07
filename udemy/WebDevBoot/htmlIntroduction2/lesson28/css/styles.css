@@ -16,7 +16,13 @@ header a {
 }
 
 section .section {
-  margin: 16px 0;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+section .section p, section .section span {
+  padding: 0 8px;
+  border-radius: 8px;
 }
 section .block {
   background: pink;
