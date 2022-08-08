@@ -1,6 +1,4 @@
-#include <stdio.h>
-
-void max(int, int, int);
+#include "../header_files/judge.h"
 
 int main(void) {
   int a, b;
@@ -14,16 +12,4 @@ int main(void) {
   printf("\n");
   max(a, b, result);
   printf("\n==============================\n");
-}
-
-void max(int a, int b, int result) {
-  char str1[] = "入力された";
-  char str2[] = "小さい値は";
-
-  if (a < b) {
-    result = a;
-  } else {
-    result = b;
-  }
-  printf("%s %d と %d のうち、\n%s %d です。", str1, a, b, str2, result);
 }
