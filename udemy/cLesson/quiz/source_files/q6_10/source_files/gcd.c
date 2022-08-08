@@ -1,5 +1,4 @@
 #include "../header_files/gcd.h"
-#include <stdio.h>
 
 void gcd(int n1, int n2) {
   int c;

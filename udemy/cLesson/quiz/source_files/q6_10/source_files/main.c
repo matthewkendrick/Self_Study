@@ -1,6 +1,5 @@
 #include "../header_files/gcd.h"
 #include "../header_files/lcm.h"
-#include <stdio.h>
 
 int main(void) {
   int a, b, result;
