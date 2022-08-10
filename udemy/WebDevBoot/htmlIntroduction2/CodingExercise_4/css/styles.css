@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.title hr {
+  border: 3px solid pink;
+  width: 240px;
+  margin: 8px auto;
+}/*# sourceMappingURL=styles.css.map */
