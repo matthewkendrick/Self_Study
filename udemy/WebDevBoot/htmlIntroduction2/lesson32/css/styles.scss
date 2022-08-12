@@ -5,6 +5,9 @@
     text-align: center;
     margin: 8px 0;
   }
+  img {
+    border-radius: 8px;
+  }
 }
 
 header {
@@ -32,9 +35,19 @@ header {
 }
 
 body {
-  .text {
+  section {
     width: 90%;
-    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto 64px;
+    img {
+      width: 70%;
+      padding: 16px 0;
+      border-radius: 8px;
+    }
+    .text {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }
 
