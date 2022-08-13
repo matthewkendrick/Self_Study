@@ -51,6 +51,13 @@ body {
   }
 }
 
+footer {
+  span {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+}
+
 @media (min-width: 800px) {
   nav {
     li {
