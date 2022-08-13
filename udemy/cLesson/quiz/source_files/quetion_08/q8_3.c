@@ -13,6 +13,4 @@ int main(void) {
   }
   printf("%dの階乗は、%dです。\n", num, result);
   printf("==============================\n");
-
-  return 0;
 }
