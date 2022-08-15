@@ -34,6 +34,9 @@ body .data_table h2 {
 body .data_table table {
   margin: 16px auto;
 }
+body .data_table table th {
+  padding: 8px 0;
+}
 body .data_table table td {
   width: 100px;
   text-align: center;
