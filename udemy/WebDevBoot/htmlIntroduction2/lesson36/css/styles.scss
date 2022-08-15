@@ -37,6 +37,10 @@ body {
       td {
         width: 100px;
         text-align: center;
+        transition: background 0.5s;
+        &:hover {
+          background: skyblue;
+        }
       }
     }
   }
