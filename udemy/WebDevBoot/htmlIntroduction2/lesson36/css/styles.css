@@ -49,5 +49,16 @@ footer {
   margin-top: auto;
 }
 footer p {
-  padding: 32px;
+  margin: 32px 0;
+}
+footer .link {
+  font-size: 14px;
+}
+footer .link a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+footer .link a:hover {
+  color: gray;
 }/*# sourceMappingURL=styles.css.map */

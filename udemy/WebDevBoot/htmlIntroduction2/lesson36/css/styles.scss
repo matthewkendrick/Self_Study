@@ -48,6 +48,17 @@ footer {
   background: pink;
   margin-top: auto;
   p {
-    padding: 32px;
+    margin: 32px 0;
+  }
+  .link {
+    font-size: 14px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.5s;
+      &:hover {
+        color: gray;
+      }
+    }
   }
 }
