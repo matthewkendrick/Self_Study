@@ -8,11 +8,6 @@ html, body {
   height: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 header {
   text-align: center;
   margin: 16px 0;
@@ -21,6 +16,27 @@ header hr {
   width: 160px;
   margin: 16px auto;
   border: 3px solid pink;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .data_table {
+  margin: 0 auto;
+}
+body .data_table h2 {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border-radius: 64px;
+}
+body .data_table table {
+  margin: 16px auto;
+}
+body .data_table table td {
+  width: 100px;
+  text-align: center;
 }
 
 footer {
