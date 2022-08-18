@@ -14,6 +14,7 @@ header {
 }
 header hr {
   border: 3px solid pink;
+  border-radius: 8px;
   width: 160px;
   margin: 16px auto;
 }
@@ -21,6 +22,44 @@ header hr {
 body {
   display: flex;
   flex-direction: column;
+}
+body .register_form {
+  text-align: center;
+  width: 35%;
+  margin: 80px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+}
+body .register_form h2 {
+  margin: 16px 16px 24px;
+}
+body .register_form .form_item {
+  margin: 32px 0;
+}
+body .register_form .form_item hr {
+  border: 2px solid pink;
+  border-radius: 8px;
+  width: 80px;
+  margin: 0 auto 16px;
+}
+body .register_form .form_item input {
+  width: 240px;
+  border: 2px solid gray;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+body .register_form .register_btn a input {
+  border: none;
+  border-radius: 64px;
+  font-weight: bold;
+  background: pink;
+  transition: opacity 0.3s;
+}
+body .register_form .register_btn a input:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 footer {
