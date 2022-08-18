@@ -1,9 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <math.h>
+
+#define PI 3.14
 
 int main(void) {
-  int rand_max = 10, rand_min = 1;
-  int a, b;
-  srand((unsigned)time(NULL));
+  int angle;
+  double rad;
+
+  printf("==================================================\n");
+  printf("角度を入力してください(0~360) → ");
+  scanf("%d", &angle);
+  rad = PI * (double)angle / 180.0;
+
+  printf("sin(%d) = %.2f\n", angle, sin(rad));
+  printf("cos(%d) = %.2f\n", angle, cos(rad));
+  printf("tan(%d) = %.2f\n", angle, tan(rad));
+  printf("==================================================\n");
 }
