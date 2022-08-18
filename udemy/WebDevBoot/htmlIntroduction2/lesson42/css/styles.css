@@ -34,6 +34,10 @@ body .register_form {
 body .register_form h2 {
   margin: 16px 16px 24px;
 }
+body .register_form hr {
+  border: 1px solid gray;
+  border-radius: 8px;
+}
 body .register_form .form_item {
   margin: 32px 0;
 }
@@ -60,6 +64,22 @@ body .register_form .register_btn a input {
 body .register_form .register_btn a input:hover {
   cursor: pointer;
   opacity: 0.9;
+}
+body .register_form .check_list {
+  width: 80%;
+  margin: 16px auto;
+  text-align: left;
+  font-size: 12px;
+}
+body .register_form .check_list .check_item {
+  display: flex;
+  margin: 8px;
+}
+body .register_form .check_list input {
+  margin-right: 8px;
+}
+body .register_form .check_list label:hover, body .register_form .check_list input:hover {
+  cursor: pointer;
 }
 
 footer {

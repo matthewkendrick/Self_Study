@@ -34,6 +34,10 @@ body {
     h2 {
       margin: 16px 16px 24px;
     }
+    hr {
+      border: 1px solid gray;
+      border-radius: 8px;
+    }
     .form_item {
       margin: 32px 0;
       hr {
@@ -62,6 +66,24 @@ body {
             cursor: pointer;
             opacity: 0.9;
           }
+        }
+      }
+    }
+    .check_list {
+      width: 80%;
+      margin: 16px auto;
+      text-align: left;
+      font-size: 12px;
+      .check_item {
+        display: flex;
+        margin: 8px;
+      }
+      input {
+        margin-right: 8px;
+      }
+      label, input {
+        &:hover {
+          cursor: pointer;
         }
       }
     }
