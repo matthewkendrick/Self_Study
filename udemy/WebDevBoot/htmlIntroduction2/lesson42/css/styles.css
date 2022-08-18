@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background: #EFEBE0;
+}
+
+header {
+  text-align: center;
+  margin: 16px 0;
+}
+header hr {
+  border: 3px solid pink;
+  width: 160px;
+  margin: 16px auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+  background: pink;
+}
+footer .footer_link {
+  margin-top: 8px;
+}
+footer .footer_link a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .footer_link a:hover {
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */

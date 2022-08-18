@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$theme_color: pink;
+
+html, body {
+  height: 100%;
+  background: #EFEBE0;
+}
+
+header {
+  text-align: center;
+  margin: 16px 0;
+  hr {
+    border: 3px solid $theme_color;
+    width: 160px;
+    margin: 16px auto;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+  background: $theme_color;
+  .footer_link {
+    margin-top: 8px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}
