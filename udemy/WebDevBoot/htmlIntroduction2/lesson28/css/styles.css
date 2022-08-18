@@ -24,6 +24,14 @@ section .section p, section .section span {
   padding: 0 8px;
   border-radius: 8px;
 }
+section .section hr {
+  border: 2px solid red;
+  width: 80px;
+  margin: 0 auto 16px;
+}
+section .section h2 {
+  text-align: center;
+}
 section .block {
   background: pink;
 }
