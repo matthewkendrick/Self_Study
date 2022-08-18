@@ -12,6 +12,23 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  .plan_table {
+    h2 {
+      width: 40%;
+      margin: 16px auto;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      border-radius: 64px;
+    }
+    table {
+      width: 40%;
+      margin: 0 auto;
+      th {
+        text-align: left;
+      }
+    }
+  }
 }
 
 header {

@@ -11,6 +11,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+body .plan_table h2 {
+  width: 40%;
+  margin: 16px auto;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border-radius: 64px;
+}
+body .plan_table table {
+  width: 40%;
+  margin: 0 auto;
+}
+body .plan_table table th {
+  text-align: left;
+}
 
 header {
   text-align: center;
