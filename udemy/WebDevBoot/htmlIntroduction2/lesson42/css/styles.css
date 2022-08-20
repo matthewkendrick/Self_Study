@@ -28,20 +28,26 @@ body .post_form .search_window {
   text-align: center;
   margin: 32px auto;
   border-radius: 64px;
-  background: #fff;
 }
-body .post_form .search_window i {
+body .post_form .search_window button {
+  border: none;
+  background: #EFEBE0;
+}
+body .post_form .search_window button:hover {
+  cursor: pointer;
+}
+body .post_form .search_window button i {
   color: pink;
-  font-size: 32px;
+  font-size: 24px;
   vertical-align: middle;
-  margin: 8px;
-  padding-left: 56px;
+  margin: 0 8px;
 }
 body .post_form .search_window input {
   width: 240px;
-  border: none;
-  padding: 16px;
+  padding: 8px;
+  border: 2px solid pink;
   border-radius: 8px;
+  background: #EFEBE0;
 }
 body .post_form .post {
   width: 95%;

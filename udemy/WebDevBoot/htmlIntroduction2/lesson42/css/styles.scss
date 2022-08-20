@@ -30,19 +30,25 @@ body {
       text-align: center;
       margin: 32px auto;
       border-radius: 64px;
-      background: #fff;
-      i {
-        color: $theme_color;
-        font-size: 32px;
-        vertical-align: middle;
-        margin: 8px;
-        padding-left: 56px;
+      button {
+        border: none;
+        background: #EFEBE0;
+        &:hover {
+          cursor: pointer;
+        }
+        i {
+          color: $theme_color;
+          font-size: 24px;
+          vertical-align: middle;
+          margin: 0 8px;
+        }
       }
       input {
         width: 240px;
-        border: none;
-        padding: 16px;
+        padding: 8px;
+        border: 2px solid $theme_color;
         border-radius: 8px;
+        background: #EFEBE0;
       }
     }
     .post {
