@@ -25,30 +25,39 @@ body {
   display: flex;
   flex-direction: column;
   .post_form {
+    .logo {
+      position: relative;
+      top: 80px;
+      left: 24px;
+      img {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+      }
+    }
     .search_window {
-      width: 400px;
+      background: #fff;
       text-align: center;
-      margin: 32px auto;
-      border-radius: 64px;
+      margin: 0 auto 64px;
+      padding: 24px;
       button {
         border: none;
-        background: #EFEBE0;
+        background: #fff;
         &:hover {
           cursor: pointer;
         }
         i {
-          color: $theme_color;
-          font-size: 24px;
+          color: gray;
+          font-size: 20px;
           vertical-align: middle;
           margin: 0 8px;
         }
       }
       input {
-        width: 240px;
+        width: 320px;
         padding: 8px;
-        border: 2px solid $theme_color;
+        border: 2px solid gray;
         border-radius: 8px;
-        background: #EFEBE0;
       }
     }
     .post {

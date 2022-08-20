@@ -23,31 +23,40 @@ body {
   display: flex;
   flex-direction: column;
 }
+body .post_form .logo {
+  position: relative;
+  top: 80px;
+  left: 24px;
+}
+body .post_form .logo img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
 body .post_form .search_window {
-  width: 400px;
+  background: #fff;
   text-align: center;
-  margin: 32px auto;
-  border-radius: 64px;
+  margin: 0 auto 64px;
+  padding: 24px;
 }
 body .post_form .search_window button {
   border: none;
-  background: #EFEBE0;
+  background: #fff;
 }
 body .post_form .search_window button:hover {
   cursor: pointer;
 }
 body .post_form .search_window button i {
-  color: pink;
-  font-size: 24px;
+  color: gray;
+  font-size: 20px;
   vertical-align: middle;
   margin: 0 8px;
 }
 body .post_form .search_window input {
-  width: 240px;
+  width: 320px;
   padding: 8px;
-  border: 2px solid pink;
+  border: 2px solid gray;
   border-radius: 8px;
-  background: #EFEBE0;
 }
 body .post_form .post {
   width: 95%;
