@@ -9,9 +9,10 @@ int main(void) {
   char s1[SIZE], s2[SIZE];
   int a = rand() % (rand_max - rand_min) + rand_min, b = rand() % (rand_max - rand_min) + rand_min;
 
-  printf("====================");
   sprintf(s1, "a の値は %d 、", a);
   sprintf(s2, "b の値は %d です。", b);
+
+  printf("====================");
   printf("\n");
   puts(s1);
   puts(s2);
