@@ -24,6 +24,39 @@ header {
 body {
   display: flex;
   flex-direction: column;
+  .post_form {
+    .search_window {
+      width: 400px;
+      text-align: center;
+      margin: 32px auto;
+      border-radius: 64px;
+      background: #fff;
+      i {
+        color: $theme_color;
+        font-size: 32px;
+        vertical-align: middle;
+        margin: 8px;
+        padding-left: 56px;
+      }
+      input {
+        width: 240px;
+        border: none;
+        padding: 16px;
+        border-radius: 8px;
+      }
+    }
+    .post {
+      width: 95%;
+      height: 80%;
+      font-size: 56px;
+      text-align: center;
+      padding: 80px 0;
+      margin: 0 auto;
+      color: #fff;
+      background: gray;
+      border-radius: 8px;
+    }
+  }
   .register_form {
     text-align: center;
     width: 35%;
