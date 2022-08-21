@@ -16,7 +16,7 @@ int main(void) {
   int i;
   int id[] = {1, 2, 3, 4};
   int age[] = {18, 24, 32, 21};
-  char name[][256] = {"Anna Kendrick", "Matthew Kendrick", "Jessica Jones", "Ryan Hansen"};
+  char name[][256] = {"Anna Kendrick", "Ryan Hansen", "Matthew Kendrick", "Jessica Jones"};
 
   for (i = 0; i < SIZE; i++) {
     setData(&data[i], id[i], age[i], name[i]);
