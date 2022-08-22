@@ -59,6 +59,14 @@ body {
         border: 2px solid gray;
         border-radius: 8px;
       }
+      .checkboxes {
+        font-size: 12px;
+        margin-bottom: -16px;
+        input {
+          margin: 16px -150px;
+          vertical-align: middle;
+        }
+      }
     }
     .post {
       width: 95%;

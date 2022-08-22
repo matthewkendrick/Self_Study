@@ -58,6 +58,14 @@ body .post_form .search_window input {
   border: 2px solid gray;
   border-radius: 8px;
 }
+body .post_form .search_window .checkboxes {
+  font-size: 12px;
+  margin-bottom: -16px;
+}
+body .post_form .search_window .checkboxes input {
+  margin: 16px -150px;
+  vertical-align: middle;
+}
 body .post_form .post {
   width: 95%;
   font-size: 56px;
