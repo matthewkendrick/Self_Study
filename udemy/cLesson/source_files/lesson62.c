@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 typedef struct {
   int a;
@@ -31,9 +33,10 @@ void dealData_1(num_data data) {
 }
 
 void dealData_2(num_data* pData) {
+  srand((unsigned)time(NULL));
   printf("a = %d | f = %.3f\n", pData -> a, pData -> d);
   printf("dealData_2に渡ってきたデータのアドレス\n→ 0x%p\n", pData);
 
-  pData -> a = 2;
+  pData -> a = rand() % 10 + 1;
   pData -> d = 2.4;
 }

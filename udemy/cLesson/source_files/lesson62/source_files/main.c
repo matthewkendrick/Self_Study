@@ -8,5 +8,4 @@ int main(void) {
   dealData_2(&n2);
   printf("n1.a = %d | n2.d = %.3f\n", n1.a, n1.d);
   printf("n2.a = %d | n2.d = %.3f\n", n1.a, n1.d);
-  printf("==================================================\n");
 }
