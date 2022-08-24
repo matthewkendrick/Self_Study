@@ -28,6 +28,7 @@ int main(void) {
 void dealData_1(num_data data) {
   printf("a = %d | f = %.3f\n", data.a, data.d);
   printf("dealData_1に渡ってきたデータのアドレス\n→ 0x%p\n", &data);
+
   data.a = 2;
   data.d = 2.4;
 }

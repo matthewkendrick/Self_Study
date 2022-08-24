@@ -1,16 +1,16 @@
-#if !defined(_STUDENT_H_)
-#define _STUDENT_H_
+#if !defined(_NUM_H_)
+#define _NUM_H_
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
-char text[] = "に渡ってきたデータのアドレス";
+static char text[] = "に渡ってきたデータのアドレス";
 
 typedef struct {
   int a;
   double d;
 } num_data;
 
-num_data n1 = {1, 1.2f}, n2 = {1, 1.2f};
+static num_data n1 = {1, 1.2f}, n2 = {1, 1.2f};
 
-#endif // _STUDENT_H_
+#endif // _NUM_H_
