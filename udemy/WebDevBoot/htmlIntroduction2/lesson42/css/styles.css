@@ -134,6 +134,14 @@ body .register_form .check_list input {
 body .register_form .check_list label:hover, body .register_form .check_list input:hover {
   cursor: pointer;
 }
+body .register_form select {
+  display: block;
+  margin: 8px auto;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
 
 footer {
   margin-top: auto;
