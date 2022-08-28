@@ -12,6 +12,7 @@ int main(void) {
 
   fprintf(file, "Hello World.\n\n");
   // fprintf(file, "ABCDEF\n\n");
-  fprintf(file, "I'm Matthew");
+  fprintf(file, "I'm Matthew\n\n");
+  fprintf(file, "アイウエオ");
   fclose(file);
 }
