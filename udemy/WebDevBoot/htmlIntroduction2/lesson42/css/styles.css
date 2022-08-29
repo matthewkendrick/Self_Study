@@ -142,6 +142,9 @@ body .register_form select {
   border: 1px solid gray;
   border-radius: 8px;
 }
+body .register_form .sex:hover {
+  cursor: pointer;
+}
 
 footer {
   margin-top: auto;
