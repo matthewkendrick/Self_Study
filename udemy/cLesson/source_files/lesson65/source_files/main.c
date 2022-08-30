@@ -7,7 +7,7 @@ int main(void) {
   FILE *file;
   char line[SIZE];
   line[0] = '\0';
-  file = fopen("c:¥¥test¥¥sample.txt", "r");
+  file = fopen("/Users/matthewkendrick/Desktop/Self_Study/udemy/cLesson/source_files/lesson65/test/test.txt", "r");
   if (file == NULL) {
     printf("=========================\n");
     printf("ファイルが開けません\n");
