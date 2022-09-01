@@ -20,8 +20,8 @@ int main(void) {
 
   printf("====================\n");
   for (i = 0; i < size; i++) {
-    printf("%x ", rdata[i]);
+    printf("%x \n", rdata[i]);
   }
-  printf("\n====================\n");
+  printf("====================\n");
   free(rdata);
 }
