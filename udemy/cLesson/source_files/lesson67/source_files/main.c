@@ -8,7 +8,7 @@ int main(void) {
   char wdata[] = {0x10, 0x1e, 0x1e, 0x1f};
   char rdata[4];
 
-  file = fopen("FilePath", "wb");
+  file = fopen("/Users/matthewkendrick/Desktop/Self_Study/udemy/cLesson/source_files/lesson68/test/test.bin", "wb");
     if (file == NULL) {
       printf("ファイルが開けません。\n");
       exit(1);
@@ -16,7 +16,7 @@ int main(void) {
     fwrite(wdata, sizeof(char), sizeof(wdata), file);
   fclose(file);
 
-  file = fopen("FilePath", "rb");
+  file = fopen("/Users/matthewkendrick/Desktop/Self_Study/udemy/cLesson/source_files/lesson68/test/test.bin", "rb");
     if (file == NULL) {
       printf("ファイルが開けません。\n");
       exit(1);
@@ -25,7 +25,7 @@ int main(void) {
   fclose(file);
   printf("=======\n");
   for (i = 0; i < sizeof(rdata); i++) {
-    printf("%x \n", rdata[i]);
+    printf("%x \n\n", rdata[i]);
   }
   printf("=======\n");
 }
