@@ -13,6 +13,7 @@ enum ERROR {
 
 typedef struct {
   int id;
+  char name[LENGTH];
 } student;
 
 int num = 0;
@@ -28,7 +29,7 @@ void showError();
 int main(void) {
   int i;
   char names[][LENGTH] = {"Anna Kendrick", "Sean Ash", "Gareth Nolan", "Matthew Kendrick"};
-  int ids[] = {1, 2, 3, 4};
+  int ids[] = {1, 2, 2, 3};
   initDatabase();
   for (i = 0; i < 4; i++) {
     add(ids[i], names[i]);
