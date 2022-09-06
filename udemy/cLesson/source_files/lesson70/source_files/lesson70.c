@@ -58,8 +58,7 @@ int add(int id, char* name) {
     num++;
     Error = MESSAGE_OK;
     return 1;
-  }
-  Error = MESSAGE_ERROR;
+  } Error = MESSAGE_ERROR;
   return 0;
 }
 
