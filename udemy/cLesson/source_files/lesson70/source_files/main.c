@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "studentDatabase.h"
-#include "detaOutput.h"
+#include "../header_files/studentDatabase.h"
+#include "../header_files/detaOutput.h"
 
-void main() {
+int main(void) {
   int i;
   char names[][LENGTH] = {"Anna Kendrick", "Jeremy Renner", "Rose Byrne", "Matthew Kendrick"};
   int ids[] = {1, 2, 2, 3};

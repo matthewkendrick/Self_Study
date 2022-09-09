@@ -4,7 +4,7 @@
 #define MAX_STUDENT 10
 #define LENGTH 50
 
-enum Error {
+enum ERROR {
   MESSAGE_OK,
   MESSAGE_ERROR
 };

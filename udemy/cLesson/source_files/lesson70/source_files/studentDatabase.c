@@ -1,8 +1,9 @@
-#include "studentDatabase.h"
+#include "../header_files/studentDatabase.h"
 #include <string.h>
 
 #define MESSAGE_LENGTH 256
 
+static student student_database[MAX_LENGTH];
 static student = student_database[MAX_LENGTH];
 int Error = MESSAGE_OK;
 
@@ -10,7 +11,7 @@ void initDatabase() {
   int i;
   for (i = 0; i < MAX_STUDENT; i++) {
     student_database[i].id = -1;
-    strcpy(student_database[i].name,"");
+    strcpy(student_database[i].name, "");
   }
   Error = MESSAGE_OK;
   num = 0;
