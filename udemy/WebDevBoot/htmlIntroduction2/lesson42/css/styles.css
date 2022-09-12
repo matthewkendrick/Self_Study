@@ -13,7 +13,7 @@ header {
   margin: 16px 0;
 }
 header hr {
-  border: 3px solid pink;
+  border: 3px solid skyblue;
   border-radius: 8px;
   width: 160px;
   margin: 16px auto;
@@ -22,6 +22,7 @@ header hr {
 body {
   display: flex;
   flex-direction: column;
+  vertical-align: middle;
 }
 body .post_form .logo {
   position: relative;
@@ -29,7 +30,7 @@ body .post_form .logo {
   left: 24px;
 }
 body .post_form .logo img {
-  height: 64px;
+  height: 72px;
   width: 64px;
   border-radius: 50%;
 }
@@ -95,7 +96,7 @@ body .register_form .form_item {
   margin: 32px 0;
 }
 body .register_form .form_item hr {
-  border: 2px solid pink;
+  border: 2px solid skyblue;
   border-radius: 8px;
   width: 80px;
   margin: 0 auto 16px;
@@ -111,7 +112,7 @@ body .register_form .register_btn a input {
   border: none;
   border-radius: 64px;
   font-weight: bold;
-  background: pink;
+  background: skyblue;
   transition: opacity 0.3s;
 }
 body .register_form .register_btn a input:hover {
@@ -151,7 +152,7 @@ footer {
   padding: 24px;
   text-align: center;
   color: #fff;
-  background: pink;
+  background: skyblue;
 }
 footer .footer_link {
   margin-top: 8px;
