@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$themeColor: skyblue;
+
+.signUp_form {
+  width: 30%;
+  background: skyblue;
+  margin: 16px auto;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+input {
+  margin: 8px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+button {
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 8px;
+  color: #fff;
+  background: blue;
+  border-radius: 32px;
+  border: none;
+  margin: 16px 16px 0;
+  padding: 8px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
