@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 16px 0;
+}
+
+.form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: skyblue;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 24px;
+}/*# sourceMappingURL=styles.css.map */
