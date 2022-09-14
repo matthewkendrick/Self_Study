@@ -15,7 +15,37 @@ header {
 .form {
   width: fit-content;
   background: $themeColor;
-  border-radius: 8px;
+  border: 4px solid rgba($color: blue, $alpha: 0.5);
+  border-radius: 24px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 24px 48px;
+  h1, h3 {
+    font-family: "Hiragino Maru Gothic Pro";
+  }
+  .form_item {
+    padding: 24px 24px 24px 0;
+    input {
+      width: 100%;
+      border: 1px solid gray;
+      border-radius: 4px;
+      padding: 8px;
+    }
+  }
+  button {
+    display: block;
+    border: none;
+    border-radius: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: rgba($color: blue, $alpha: 0.5);
+    box-shadow: 2px 2px 2px black;
+    padding: 8px 32px;
+    margin: 16px auto 0;
+    transition: background 0.3s;
+    &:hover {
+      cursor: pointer;
+      background: rgba($color: blue, $alpha: 1);
+    }
+  }
 }
