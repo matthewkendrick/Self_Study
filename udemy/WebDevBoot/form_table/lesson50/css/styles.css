@@ -1,6 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  color: #565656;
+}
+
+html, body {
+  height: 100%;
+  background: #EFEBE0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -8,6 +19,12 @@ header {
   text-align: center;
   vertical-align: middle;
   margin: 16px 0;
+}
+header p {
+  width: 20%;
+  margin: 8px auto 32px;
+  border: 4px solid skyblue;
+  border-radius: 8px;
 }
 
 .form {
@@ -17,10 +34,13 @@ header {
   background: skyblue;
   border: 4px solid rgba(0, 0, 255, 0.5);
   border-radius: 24px;
-  margin: 0 auto;
+  margin: 32px auto 0;
   padding: 24px 48px;
 }
-.form h1, .form h3 {
+.form h2 {
+  letter-spacing: 4px;
+}
+.form h2, .form h3 {
   font-family: "Hiragino Maru Gothic Pro";
 }
 .form .form_item {
@@ -31,6 +51,9 @@ header {
   border: 1px solid gray;
   border-radius: 4px;
   padding: 8px;
+}
+.form .form_item input:nth-child(3) {
+  margin-top: 8px;
 }
 .form button {
   display: block;
@@ -43,9 +66,30 @@ header {
   box-shadow: 2px 2px 2px black;
   padding: 8px 32px;
   margin: 16px auto 0;
-  transition: background 0.3s;
+  transition: background 0.6s;
 }
 .form button:hover {
   cursor: pointer;
   background: blue;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 32px;
+  background: skyblue;
+  font-weight: bold;
+}
+footer .link-item {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+footer .link-item a {
+  text-decoration: none;
+  transition: opacity 0.4s;
+}
+footer .link-item a:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
