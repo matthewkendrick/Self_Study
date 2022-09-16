@@ -14,6 +14,72 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background-image: url(http://placeimg.com/640/480/nature);
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .landing {
+    min-width: 90%;
+    margin: 0 auto;
+    .hero {
+      max-width: 40%;
+      margin: 32px auto 16px;
+      padding: 16px;
+      line-height: 3;
+      font-weight: bold;
+      font-family: "Hiragino Maru Gothic Pro";
+      h2 {
+        font-family: inital;
+        font-size: 32px;
+        letter-spacing: 2px;
+      }
+    }
+    .form {
+      width: fit-content;
+      background: $themeColor;
+      border: 4px solid rgba($color: blue, $alpha: 0.5);
+      border-radius: 16px;
+      margin: 32px auto 16px;
+      padding: 24px;
+      h2 {
+        letter-spacing: 4px;
+      }
+      h2, h3 {
+        font-family: "Hiragino Maru Gothic Pro";
+      }
+      .form_item {
+        padding: 24px 24px 24px 0;
+        input {
+          width: 100%;
+          border: 2px solid lightgray;
+          border-radius: 8px;
+          padding: 8px;
+          &:nth-child(3) {
+            margin-top: 8px;
+          }
+        }
+      }
+      button {
+        display: block;
+        border: none;
+        border-radius: 32px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        background: rgba($color: blue, $alpha: 0.5);
+        box-shadow: 2px 2px 2px black;
+        padding: 8px 32px;
+        margin: 16px auto 0;
+        transition: background 0.6s;
+        &:hover {
+          cursor: pointer;
+          background: rgba($color: blue, $alpha: 1);
+        }
+      }
+    }
+  }
 }
 
 header {
@@ -26,50 +92,6 @@ header {
     margin: 8px auto 32px;
     border: 4px solid $themeColor;
     border-radius: 8px;
-  }
-}
-
-.form {
-  width: fit-content;
-  background: $themeColor;
-  border: 4px solid rgba($color: blue, $alpha: 0.5);
-  border-radius: 24px;
-  margin: 32px auto 16px;
-  padding: 24px 48px;
-  h2 {
-    letter-spacing: 4px;
-  }
-  h2, h3 {
-    font-family: "Hiragino Maru Gothic Pro";
-  }
-  .form_item {
-    padding: 24px 24px 24px 0;
-    input {
-      width: 100%;
-      border: 1px solid gray;
-      border-radius: 4px;
-      padding: 8px;
-      &:nth-child(3) {
-        margin-top: 8px;
-      }
-    }
-  }
-  button {
-    display: block;
-    border: none;
-    border-radius: 32px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    background: rgba($color: blue, $alpha: 0.5);
-    box-shadow: 2px 2px 2px black;
-    padding: 8px 32px;
-    margin: 16px auto 0;
-    transition: background 0.6s;
-    &:hover {
-      cursor: pointer;
-      background: rgba($color: blue, $alpha: 1);
-    }
   }
 }
 
@@ -90,6 +112,16 @@ footer {
         cursor: pointer;
         opacity: 0.5;
       }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .landing {
+    display: flex;
+    margin: 0 auto;
+    .hero {
+      max-width: 40%;
     }
   }
 }

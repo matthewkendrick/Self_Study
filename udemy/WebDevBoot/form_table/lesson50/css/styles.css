@@ -12,6 +12,74 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background-image: url(http://placeimg.com/640/480/nature);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .landing {
+  min-width: 90%;
+  margin: 0 auto;
+}
+body .landing .hero {
+  max-width: 40%;
+  margin: 32px auto 16px;
+  padding: 16px;
+  line-height: 3;
+  font-weight: bold;
+  font-family: "Hiragino Maru Gothic Pro";
+}
+body .landing .hero h2 {
+  font-family: inital;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+body .landing .form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: skyblue;
+  border: 4px solid rgba(0, 0, 255, 0.5);
+  border-radius: 16px;
+  margin: 32px auto 16px;
+  padding: 24px;
+}
+body .landing .form h2 {
+  letter-spacing: 4px;
+}
+body .landing .form h2, body .landing .form h3 {
+  font-family: "Hiragino Maru Gothic Pro";
+}
+body .landing .form .form_item {
+  padding: 24px 24px 24px 0;
+}
+body .landing .form .form_item input {
+  width: 100%;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 8px;
+}
+body .landing .form .form_item input:nth-child(3) {
+  margin-top: 8px;
+}
+body .landing .form button {
+  display: block;
+  border: none;
+  border-radius: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 255, 0.5);
+  box-shadow: 2px 2px 2px black;
+  padding: 8px 32px;
+  margin: 16px auto 0;
+  transition: background 0.6s;
+}
+body .landing .form button:hover {
+  cursor: pointer;
+  background: blue;
 }
 
 header {
@@ -25,52 +93,6 @@ header p {
   margin: 8px auto 32px;
   border: 4px solid skyblue;
   border-radius: 8px;
-}
-
-.form {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: skyblue;
-  border: 4px solid rgba(0, 0, 255, 0.5);
-  border-radius: 24px;
-  margin: 32px auto 16px;
-  padding: 24px 48px;
-}
-.form h2 {
-  letter-spacing: 4px;
-}
-.form h2, .form h3 {
-  font-family: "Hiragino Maru Gothic Pro";
-}
-.form .form_item {
-  padding: 24px 24px 24px 0;
-}
-.form .form_item input {
-  width: 100%;
-  border: 1px solid gray;
-  border-radius: 4px;
-  padding: 8px;
-}
-.form .form_item input:nth-child(3) {
-  margin-top: 8px;
-}
-.form button {
-  display: block;
-  border: none;
-  border-radius: 32px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  background: rgba(0, 0, 255, 0.5);
-  box-shadow: 2px 2px 2px black;
-  padding: 8px 32px;
-  margin: 16px auto 0;
-  transition: background 0.6s;
-}
-.form button:hover {
-  cursor: pointer;
-  background: blue;
 }
 
 footer {
@@ -92,4 +114,14 @@ footer .link-item a {
 footer .link-item a:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+@media (min-width: 800px) {
+  .landing {
+    display: flex;
+    margin: 0 auto;
+  }
+  .landing .hero {
+    max-width: 40%;
+  }
 }/*# sourceMappingURL=styles.css.map */
