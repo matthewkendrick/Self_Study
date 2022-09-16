@@ -11,6 +11,11 @@ html, body {
   background: #EFEBE0;
 }
 
+header {
+  height: 8%;
+  background: rgba($color: $themeColor, $alpha: 0.4);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,19 +26,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   .landing {
-    min-width: 90%;
-    margin: 32px auto;
+    width: 90%;
+    margin: auto;
     .hero {
-      max-width: 40%;
-      margin: 32px auto 16px;
+      margin: 48px auto 16px;
       padding: 16px;
       line-height: 3;
+      letter-spacing: 2px;
       font-weight: bold;
       font-family: "Hiragino Maru Gothic Pro";
       h2 {
-        font-family: inital;
+        font-family: initial;
         font-size: 32px;
-        letter-spacing: 2px;
+        transition: all 0.8s;
       }
     }
     .form {
@@ -67,6 +72,7 @@ body {
         border-radius: 32px;
         font-weight: bold;
         color: #fff;
+        letter-spacing: 4px;
         text-align: center;
         background: rgba($color: blue, $alpha: 0.5);
         box-shadow: 2px 2px 2px black;
@@ -82,18 +88,6 @@ body {
   }
 }
 
-header {
-  text-align: center;
-  vertical-align: middle;
-  background: $themeColor;
-  padding: 16px 0;
-  p {
-    width: 20%;
-    margin: 8px auto 32px;
-    border: 4px solid $themeColor;
-    border-radius: 8px;
-  }
-}
 
 footer {
   margin-top: auto;
@@ -117,11 +111,71 @@ footer {
 }
 
 @media (min-width: 800px) {
+  header {
+    height: 8%;
+    background: rgba($color: $themeColor, $alpha: 0.4);
+  }
+  .logo a {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Rockwell";
+  }
+  .nav-list {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    ul {
+      display: flex;
+      li {
+        margin: 0 8px;
+        letter-spacing: 2px;
+        list-style: none;
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+  }
   .landing {
     display: flex;
     margin: 0 auto;
     .hero {
-      max-width: 40%;
+      width: 70%;
     }
+    .form {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .logo a {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Rockwell";
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburger {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+  .pc-logo {
+    display: none;
+  }
+  .smartPhone-logo {
+    background: $themeColor;
+    border-radius: 50%;
+    margin-top: -10px;
+    padding: 16px 16px 1px;
+    vertical-align: middle;
   }
 }
