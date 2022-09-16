@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   .landing {
     min-width: 90%;
-    margin: 0 auto;
+    margin: 32px auto;
     .hero {
       max-width: 40%;
       margin: 32px auto 16px;
@@ -83,10 +83,10 @@ body {
 }
 
 header {
-  height: 80px;
   text-align: center;
   vertical-align: middle;
-  margin: 16px 0;
+  background: $themeColor;
+  padding: 16px 0;
   p {
     width: 20%;
     margin: 8px auto 32px;

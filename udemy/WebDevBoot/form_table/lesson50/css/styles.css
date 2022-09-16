@@ -21,7 +21,7 @@ body {
 }
 body .landing {
   min-width: 90%;
-  margin: 0 auto;
+  margin: 32px auto;
 }
 body .landing .hero {
   max-width: 40%;
@@ -83,10 +83,10 @@ body .landing .form button:hover {
 }
 
 header {
-  height: 80px;
   text-align: center;
   vertical-align: middle;
-  margin: 16px 0;
+  background: skyblue;
+  padding: 16px 0;
 }
 header p {
   width: 20%;
