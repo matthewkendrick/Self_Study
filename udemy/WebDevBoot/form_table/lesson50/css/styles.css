@@ -11,7 +11,7 @@ html, body {
 }
 
 header {
-  height: 10%;
+  height: 8%;
   background: rgba(135, 206, 235, 0.4);
 }
 
@@ -111,10 +111,6 @@ footer .link-item a:hover {
 }
 
 @media (min-width: 800px) {
-  header {
-    height: 8%;
-    background: rgba(135, 206, 235, 0.4);
-  }
   .logo a {
     position: absolute;
     top: 3%;
@@ -123,20 +119,21 @@ footer .link-item a:hover {
     text-decoration: none;
     font-family: "Rockwell";
   }
-  .globalMenuSp {
+  nav.nav-list {
     position: absolute;
-    top: 3%;
-    right: 3%;
+    right: 16px;
+    top: 16px;
   }
-  .globalMenuSp ul {
+  nav.nav-list ul {
     display: flex;
   }
-  .globalMenuSp ul li {
-    margin: 0 8px;
-    letter-spacing: 2px;
+  nav.nav-list ul li {
     list-style: none;
   }
-  .hamburger {
+  nav.nav-list a {
+    margin-left: 8px;
+  }
+  nav.globalMenuSp, .hamburger {
     display: none;
   }
   .landing {
@@ -240,6 +237,9 @@ footer .link-item a:hover {
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
     transform: translateY(0%);
+  }
+  .nav-list {
+    display: none;
   }
   .pc-logo {
     display: none;

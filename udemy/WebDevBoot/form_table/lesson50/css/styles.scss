@@ -12,7 +12,7 @@ html, body {
 }
 
 header {
-  height: 10%;
+  height: 8%;
   background: rgba($color: $themeColor, $alpha: 0.4);
 }
 
@@ -111,10 +111,6 @@ footer {
 }
 
 @media (min-width: 800px) {
-  header {
-    height: 8%;
-    background: rgba($color: $themeColor, $alpha: 0.4);
-  }
   .logo a {
     position: absolute;
     top: 3%;
@@ -123,22 +119,23 @@ footer {
     text-decoration: none;
     font-family: "Rockwell";
   }
-  .globalMenuSp {
+  nav.nav-list {
     position: absolute;
-    top: 3%;
-    right: 3%;
+    right: 16px;
+    top: 16px;
     ul {
       display: flex;
       li {
-        margin: 0 8px;
-        letter-spacing: 2px;
         list-style: none;
       }
     }
-  } 
-  .hamburger {
-    display: none;
+    a {
+      margin-left: 8px;
+    }
   }
+  nav.globalMenuSp, .hamburger {
+    display: none;
+  } 
   .landing {
     display: flex;
     margin: 0 auto;
@@ -252,15 +249,9 @@ footer {
   nav.globalMenuSp.active {
     transform: translateY(0%);
   }
-
-  // .nav-list {
-  //   display: none;
-  // }
-  // .hamburger {
-  //   position: absolute;
-  //   top: 3%;
-  //   right: 3%;
-  // }
+  .nav-list {
+    display: none;
+  }
   .pc-logo {
     display: none;
   }
