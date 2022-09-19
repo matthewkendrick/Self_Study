@@ -13,17 +13,19 @@
   <div class="logo">
     <a href="index.html" class="pc-logo">Udemy Lesson 50 ~</a>
     <a href="index.html" class="smartPhone-logo">U</a>
-    <div class="nav-list">
-      <ul>
-        <li>会社案内</li>
-        <li>お問い合わせ</li>
-        <li>製品情報</li>
-        <li>サポート情報</li>
-      </ul>
-    </div>
     <div class="hamburger">
-      hamburger
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+    <nav class="globalMenuSp">
+      <ul>
+        <li><a href="">会社案内</a></li>
+        <li><a href="">お問い合わせ</a></li>
+        <li><a href="">製品情報</a></li>
+        <li><a href="">サポート情報</a></li>
+        </ul>
+    </nav>
   </div>
 </header>
 
@@ -55,6 +57,20 @@
       </form>
     </div>
   </div>
+  <!-- <script src="../javascript/main.js"></script> -->
+  <script src="">
+    $(function() {
+      $('.hamburger').click(function() {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+              $('.globalMenuSp').addClass('active');
+          } else {
+              $('.globalMenuSp').removeClass('active');
+          }
+      });
+    });
+  </script>
 </body>
 
 <footer>
