@@ -19,6 +19,7 @@ header {
 }
 header h1 {
   padding: 8px 16px;
+  font-family: papyrus;
 }
 
 .container {
@@ -31,11 +32,57 @@ header h1 {
   margin: 32px auto;
   padding: 16px;
 }
+.container h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 8px;
+  background: white;
+  border-radius: 32px;
+}
+.container .formItem {
+  margin: 16px 0;
+}
 .container input {
+  position: relative;
+  align-items: end;
   padding: 8px;
   margin: 8px;
   border: 1px solid gray;
   border-radius: 8px;
+}
+.container select {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.container button {
+  width: 100%;
+  border: none;
+  border-radius: 32px;
+  background: red;
+  padding: 16px;
+  margin: 24px auto;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 4px black;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.container button:hover {
+  opacity: 0.7;
+}
+.container button:active {
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 footer {
@@ -43,4 +90,5 @@ footer {
   background: pink;
   text-align: center;
   padding: 16px 0;
+  font-family: papyrus;
 }/*# sourceMappingURL=styles.css.map */
