@@ -32,6 +32,9 @@ header h1 {
   margin: 32px auto;
   padding: 16px;
 }
+.container label {
+  font-weight: bold;
+}
 .container h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
