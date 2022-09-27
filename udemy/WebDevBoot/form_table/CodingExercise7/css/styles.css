@@ -84,6 +84,9 @@ header h1 {
   transform: translateY(1px);
   box-shadow: none;
 }
+.container button .menuItem label:hover {
+  cursor: pointer;
+}
 
 footer {
   margin-top: auto;

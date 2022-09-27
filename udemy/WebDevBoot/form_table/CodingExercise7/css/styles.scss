@@ -62,7 +62,7 @@ header {
     width: 100%;
     border: none;
     border-radius: 32px;
-    background: red;
+    background: $themeColor;
     padding: 16px;
     margin: 24px auto;
     text-align: center;
@@ -79,6 +79,11 @@ header {
     &:active {
       transform: translateY(1px);
       box-shadow: none;
+    }
+    .menuItem label {
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
