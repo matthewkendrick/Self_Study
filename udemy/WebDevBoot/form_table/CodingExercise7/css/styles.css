@@ -28,7 +28,7 @@ header h1 {
   width: fit-content;
   background: rgba(249, 245, 235, 0.7);
   border-radius: 16px;
-  border: 4px solid #17A2B8;
+  border: 8px solid #17A2B8;
   margin: 32px auto;
   padding: 16px;
 }
@@ -42,7 +42,7 @@ header h1 {
   letter-spacing: 4px;
   text-align: center;
   margin: 0 auto;
-  padding: 8px;
+  padding: 16px;
   background: white;
   border-radius: 32px;
 }
